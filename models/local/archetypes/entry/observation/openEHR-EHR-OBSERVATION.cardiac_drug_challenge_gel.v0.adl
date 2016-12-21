@@ -1,0 +1,164 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0
+
+concept
+	[at0000]	-- Cardiac drug challenge GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-11-24">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For recording details of cardiac drug challenge test in Genomics England Rare Diseases dataset.">
+			use = <"Use to record details of cardiac challenge tests as part of Genomics England Rare Diseases dataset.
+
+The 'patient status' slot is intended to be filled with a local cluster archetype designed for this purpose. The archetype also contains a 'challenge details 'slot to enable the capture of particular challenge tests such as sodium channel blocker challenge or epinephrine challenge.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"2A8820DED17950B1BEE7DCBE5D7F72D5">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Cardiac drug challenge GEL
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Cardiac challenge test
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {	-- Patient status
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.patient_status_gel(-[a-zA-Z0-9_]+)*\.v0/}
+									}
+									allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Challenge details
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Premature termination?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012, 	-- Yes
+													at0013, 	-- No
+													at0014]	-- Unknown
+												}
+											}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Reason for termination
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0008] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cardiac drug challenge GEL">
+					description = <"Local archetype to capture cardiac drug challenge results for Genomics England Rare Diseases dataset.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Cardiac challenge test">
+					description = <"Details of cardiac challenge test.">
+				>
+				["at0005"] = <
+					text = <"Patient status">
+					description = <"Slot to capture patient status details relating to this test.">
+				>
+				["at0007"] = <
+					text = <"Challenge details">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0010"] = <
+					text = <"Comment">
+					description = <"Narrative description of any other detail not captured in other fields.">
+				>
+				["at0011"] = <
+					text = <"Premature termination?">
+					description = <"Statement whether drug challenge test was terminated prematureliy.">
+				>
+				["at0012"] = <
+					text = <"Yes">
+					description = <"Drug challenge test was terminated prematurely.">
+				>
+				["at0013"] = <
+					text = <"No">
+					description = <"Drug challenge test was not terminated prematurely.">
+				>
+				["at0014"] = <
+					text = <"Unknown">
+					description = <"It is not known whether drug challenge test was terminated prematurely.">
+				>
+				["at0015"] = <
+					text = <"Reason for termination">
+					description = <"Reason for premature termination before a standard maximum dose was infused in a drug challenge test.">
+				>
+			>
+		>
+	>

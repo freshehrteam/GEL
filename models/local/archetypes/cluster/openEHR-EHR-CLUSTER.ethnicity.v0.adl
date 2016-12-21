@@ -1,0 +1,153 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.ethnicity.v0
+
+concept
+	[at0000]	-- Ethnicity
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-12-09">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording of ethnicity.">
+			use = <"Use to record ethnic category. The source for the internal code list is the NHS data dictionary used in the UK.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC BY-SA 3.0">
+		["references"] = <"http://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp?shownav=1
+">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"B9D6A5EBE4BC6F0B8014DA490F544EE7">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Ethnicity
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Ethnicity
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002, 	-- D: Mixed White and Black Caribbean
+							at0003, 	-- E: Mixed: White and Black African.
+							at0004, 	-- F: Mixed: White and Asian
+							at0005, 	-- G: Mixed: Any other mixed background.
+							at0006, 	-- A: White: British
+							at0007, 	-- B: White: Irish
+							at0008, 	-- C: White: White: Any other White background.
+							at0009, 	-- L: Asian or Asian British: Any other Asian background
+							at0010, 	-- M: Black or Black British: Caribbean
+							at0011, 	-- N: Black or Black British: African
+							at0012, 	-- H: Asian or Asian British: Indian
+							at0013, 	-- J: Asian or Asian British: Pakistani
+							at0014, 	-- K: Asian or Asian British: Bangladeshi
+							at0015, 	-- P: Black or Black British: Any other Black background
+							at0016, 	-- S: Other Ethnic Groups: Any other ethnic group
+							at0017, 	-- R: Other Ethnic Groups: Chinese
+							at0018, 	-- Z: Not stated
+							at0019]	-- 99: Not known
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ethnicity">
+					description = <"For the recording of ethnic category.">
+				>
+				["at0001"] = <
+					text = <"Ethnicity">
+					description = <"The subject's ethnic category.">
+				>
+				["at0002"] = <
+					text = <"D: Mixed White and Black Caribbean">
+					description = <"The subject's ethic category is Mixed: White and Black Caribbean.">
+				>
+				["at0003"] = <
+					text = <"E: Mixed: White and Black African.">
+					description = <"The subject's ethnic category is Mixed: White and Black African.">
+				>
+				["at0004"] = <
+					text = <"F: Mixed: White and Asian">
+					description = <"The subject's ethinic category is Mixed: White and Asian.">
+				>
+				["at0005"] = <
+					text = <"G: Mixed: Any other mixed background.">
+					description = <"The subject's ethnic category is Mixed: Any other mixed background.">
+				>
+				["at0006"] = <
+					text = <"A: White: British">
+					description = <"The subject's ethnic category is White: British.">
+				>
+				["at0007"] = <
+					text = <"B: White: Irish">
+					description = <"The subject's ethnic category is White: Irish.">
+				>
+				["at0008"] = <
+					text = <"C: White: White: Any other White background.">
+					description = <"The subject's ethnic category is White: Any other White background.">
+				>
+				["at0009"] = <
+					text = <"L: Asian or Asian British: Any other Asian background">
+					description = <"The subject's ethnic category is Asian or Asian British: Any other Asian background.">
+				>
+				["at0010"] = <
+					text = <"M: Black or Black British: Caribbean">
+					description = <"The subject's ethnic category is Black or Black British: Caribbean.">
+				>
+				["at0011"] = <
+					text = <"N: Black or Black British: African">
+					description = <"The subject's ethnic category is Black or Black British: African.">
+				>
+				["at0012"] = <
+					text = <"H: Asian or Asian British: Indian">
+					description = <"The subject's ethnic category is Asian or Asian British: Indian.">
+				>
+				["at0013"] = <
+					text = <"J: Asian or Asian British: Pakistani">
+					description = <"The subject's ethnic category is Asian or Asian British: Pakistani.">
+				>
+				["at0014"] = <
+					text = <"K: Asian or Asian British: Bangladeshi">
+					description = <"The subject's ethnic category is Asian or Asian British: Bangladeshi.">
+				>
+				["at0015"] = <
+					text = <"P: Black or Black British: Any other Black background">
+					description = <"The subject's ethnic category is Black or Black British: Any other Black background.">
+				>
+				["at0016"] = <
+					text = <"S: Other Ethnic Groups: Any other ethnic group">
+					description = <"The subject's ethnic category is Other Ethnic Groups: Any other ethnic group.">
+				>
+				["at0017"] = <
+					text = <"R: Other Ethnic Groups: Chinese">
+					description = <"The subject's ethnic category is Other Ethnic Groups: Chinese.">
+				>
+				["at0018"] = <
+					text = <"Z: Not stated">
+					description = <"The subject's ethnic category is Not stated.">
+				>
+				["at0019"] = <
+					text = <"99: Not known">
+					description = <"The subject's ethnic category is Not known.">
+				>
+			>
+		>
+	>

@@ -1,0 +1,218 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.metadata_relative_gel.v0
+
+concept
+	[at0000]	-- Relative details GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-12-20">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording and reporting of participant details where the participant is a relative of the proband as part of the Genomics England Rare diseases dataset.">
+			use = <"Use to record details specific to a relative being the participant as part of the Genomics England Rare diseases dataset.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["licence"] = <"CC-BY-SA 3.0">
+		["MD5-CAM-1.0.1"] = <"6E57D6922A4205C3764CA2940578FAB1">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Relative details GEL
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Biological relationship to proband
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002, 	-- Mother
+							at0003, 	-- Father
+							at0004, 	-- TwinsMonozygous
+							at0005, 	-- TwinsDizygous
+							at0006, 	-- TwinsUnknown
+							at0007, 	-- FullSibling
+							at0008, 	-- FullSiblingM
+							at0009, 	-- FullSiblingF
+							at0010, 	-- MaternalAunt
+							at0011, 	-- PaternalAunt
+							at0012, 	-- MaternalUncle
+							at0013, 	-- PaternalUncle
+							at0014, 	-- MaternalCousinSister
+							at0015, 	-- MaternalCousinBrother
+							at0016, 	-- PaternalCousinSister
+							at0017, 	-- PaternalCousinBrother
+							at0018, 	-- MaternalGrandmother
+							at0019, 	-- MaternalGrandfather
+							at0020, 	-- PaternalGrandmother
+							at0021, 	-- PaternalGrandfather
+							at0022, 	-- DoubleFirstCousin
+							at0023, 	-- FirstCousinOnceRemoved
+							at0024, 	-- SecondCousin
+							at0025, 	-- SecondCousinOnceRemoved
+							at0026, 	-- ThirdCousin
+							at0027, 	-- Son
+							at0028, 	-- Daughter
+							at0029]	-- Other
+						}
+					}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {	-- Other biological relationship to proband
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0031] occurrences matches {0..*} matches {	-- Proband details
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.person_identifiable_parent(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Relative details GEL">
+					description = <"Local cluster to record relative details where the participant is a relative of the proband.">
+				>
+				["at0001"] = <
+					text = <"Biological relationship to proband">
+					description = <"The biological relationship of the relative to the proband.">
+				>
+				["at0002"] = <
+					text = <"Mother">
+					description = <"The relative is the mother of the proband.">
+				>
+				["at0003"] = <
+					text = <"Father">
+					description = <"The relative is the father of the proband.">
+				>
+				["at0004"] = <
+					text = <"TwinsMonozygous">
+					description = <"The relative is the monozygous twin of the proband.">
+				>
+				["at0005"] = <
+					text = <"TwinsDizygous">
+					description = <"The relative is the dizygous twin of the proband.">
+				>
+				["at0006"] = <
+					text = <"TwinsUnknown">
+					description = <"The relative is the twin (type unknown) of the proband.">
+				>
+				["at0007"] = <
+					text = <"FullSibling">
+					description = <"The relative is a full sibling of the proband.">
+				>
+				["at0008"] = <
+					text = <"FullSiblingM">
+					description = <"The relative is a half sibling of the proband sharing the same mother.">
+				>
+				["at0009"] = <
+					text = <"FullSiblingF">
+					description = <"The relative is a half sibling of the proband sharing the same father.">
+				>
+				["at0010"] = <
+					text = <"MaternalAunt">
+					description = <"The relative is a maternal aunt of the proband.">
+				>
+				["at0011"] = <
+					text = <"PaternalAunt">
+					description = <"The relative is a paternal aunt of the proband.">
+				>
+				["at0012"] = <
+					text = <"MaternalUncle">
+					description = <"The relative is a maternal uncle of the proband.">
+				>
+				["at0013"] = <
+					text = <"PaternalUncle">
+					description = <"The relative is a paternal uncle of the proband.">
+				>
+				["at0014"] = <
+					text = <"MaternalCousinSister">
+					description = <"The relative is a maternal cousin - child of mother's sister - of the proband.">
+				>
+				["at0015"] = <
+					text = <"MaternalCousinBrother">
+					description = <"The relative is a maternal cousin - child of mother's brother - of the proband.">
+				>
+				["at0016"] = <
+					text = <"PaternalCousinSister">
+					description = <"The relative is a paternal cousin - child of father's sister - of the proband.">
+				>
+				["at0017"] = <
+					text = <"PaternalCousinBrother">
+					description = <"The relative is a paternal cousin - child of father's brother - of the proband.">
+				>
+				["at0018"] = <
+					text = <"MaternalGrandmother">
+					description = <"The relative is the maternal grandmother of the proband.">
+				>
+				["at0019"] = <
+					text = <"MaternalGrandfather">
+					description = <"The relative is the maternal grandfather of the proband.">
+				>
+				["at0020"] = <
+					text = <"PaternalGrandmother">
+					description = <"The relative is the paternal grandmother of the proband.">
+				>
+				["at0021"] = <
+					text = <"PaternalGrandfather">
+					description = <"The relative is the paternal grandfather of the proband.">
+				>
+				["at0022"] = <
+					text = <"DoubleFirstCousin">
+					description = <"The relative is the double first cousin of the proband.">
+				>
+				["at0023"] = <
+					text = <"FirstCousinOnceRemoved">
+					description = <"The relative is a first cousin once removed of the proband.">
+				>
+				["at0024"] = <
+					text = <"SecondCousin">
+					description = <"The relative is a second cousin of the proband.">
+				>
+				["at0025"] = <
+					text = <"SecondCousinOnceRemoved">
+					description = <"The relative is a second cousin once removed of the proband.">
+				>
+				["at0026"] = <
+					text = <"ThirdCousin">
+					description = <"The relative is a third cousin of the proband.">
+				>
+				["at0027"] = <
+					text = <"Son">
+					description = <"The relative is a son of the proband.">
+				>
+				["at0028"] = <
+					text = <"Daughter">
+					description = <"The relative is a daughter of the proband.">
+				>
+				["at0029"] = <
+					text = <"Other">
+					description = <"The relative has another biological relationship with the proband.">
+				>
+				["at0030"] = <
+					text = <"Other biological relationship to proband">
+					description = <"Textual description of other biological relationship to proband which is not listed in the enumeration list.">
+				>
+				["at0031"] = <
+					text = <"Proband details">
+					description = <"The names, NHS Number and date of birth of the proband for consistency checking purposes.">
+				>
+			>
+		>
+	>

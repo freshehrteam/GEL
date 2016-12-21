@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gelCAN:consent-updates xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/3.1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gelCAN:metadata>
+        <gelCAN:schema-name>ConsentUpdatesCancer</gelCAN:schema-name>
+        <gelCAN:schema-version>3.1.2</gelCAN:schema-version>
+        <gelCAN:date-time>2006-05-04T18:13:51.0</gelCAN:date-time>
+        <gelCAN:source-organisation>source-organisation0</gelCAN:source-organisation>
+        <gelCAN:source-system>source-system0</gelCAN:source-system>
+        <gelCAN:local-report-id>local-report-id0</gelCAN:local-report-id>
+    </gelCAN:metadata>
+    <gelCAN:subject>
+        <gelCAN:participant-identifiers>
+            <gelCAN:person-identifier>
+                <gelCAN:nhs-number>0000000000</gelCAN:nhs-number>
+            </gelCAN:person-identifier>
+            <gelCAN:participant-id>900000017</gelCAN:participant-id>
+            <gelCAN:date-of-birth>2006-05-04</gelCAN:date-of-birth>
+            <gelCAN:surname>joanna-maber</gelCAN:surname>
+            <gelCAN:forenames>blogger x</gelCAN:forenames>
+        </gelCAN:participant-identifiers>
+        <gelCAN:consent-update>
+            <gelCAN:event-details>
+                <gelCAN:event-date>2006-05-04T18:13:51.0</gelCAN:event-date>
+                <gelCAN:event-reference>event-reference01239871238n</gelCAN:event-reference>
+            </gelCAN:event-details>
+            <gelCAN:consent-details>
+                <gelCAN:health-related-additional-findings>yes</gelCAN:health-related-additional-findings>
+                <gelCAN:reproductive-additional-findings>no</gelCAN:reproductive-additional-findings>
+            </gelCAN:consent-details>
+            <gelCAN:name-and-version-of-consent-form-update>c1_cf</gelCAN:name-and-version-of-consent-form-update>
+            <gelCAN:consent-given>yes</gelCAN:consent-given>
+            <gelCAN:consent-form>consent-form0.pdf</gelCAN:consent-form>
+            <gelCAN:person-taking-consent>Gary Smith</gelCAN:person-taking-consent>
+            <gelCAN:name-and-version-of-participant-information-sheet-update>c1_pis</gelCAN:name-and-version-of-participant-information-sheet-update>
+            <gelCAN:name-and-version-of-assent-form>c3_c4</gelCAN:name-and-version-of-assent-form>
+            <gelCAN:assent-form>assent-form0.pdf</gelCAN:assent-form>
+            <gelCAN:additional-optional-consent-materials>8_prezis_for_participant_information</gelCAN:additional-optional-consent-materials>
+        </gelCAN:consent-update>
+    </gelCAN:subject>
+</gelCAN:consent-updates>

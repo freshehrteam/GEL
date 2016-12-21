@@ -1,0 +1,918 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.inas_gel.v0
+
+concept
+	[at0000]	-- Inventory of Non-Ataxia Signs (INAS)
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-09-13">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the purpose of recording clinical descriptions of ataxia assessment.">
+			use = <"">
+			keywords = <"INAS", "ataxia", "inventory">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"NotSet">
+	other_contributors = <>
+	other_details = <
+		["references"] = <"Ataxia Study Group cited 13-Sep-2016 http://www.ataxia-study-group.net/html/about/ataxiascales/inas ">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"5A38E2933C16481C3D91FA6B52670AF9">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Inventory of Non-Ataxia Signs (INAS)
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0058] occurrences matches {0..1} matches {	-- Reflexes
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {	-- Biceps reflex
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0005, 	-- Normal
+															at0006, 	-- Hyperreflexia
+															at0007, 	-- Areflexia
+															at0008]	-- Not assessed or no information
+														}
+													}
+												}
+											}
+											ELEMENT[at0009] occurrences matches {0..1} matches {	-- Patellar reflex
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0010, 	-- Normal
+															at0011, 	-- Hyperreflexia
+															at0012, 	-- Areflexia
+															at0013]	-- Not assessed or no information
+														}
+													}
+												}
+											}
+											ELEMENT[at0023] occurrences matches {0..1} matches {	-- Extensor plantar reflex
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0024, 	-- None
+															at0025, 	-- Unilateral
+															at0026, 	-- Bilateral
+															at0027]	-- Not assessed or no information
+														}
+													}
+												}
+											}
+											ELEMENT[at0014] occurrences matches {0..1} matches {	-- Achilles reflex
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0015, 	-- Normal
+															at0016, 	-- Hyperreflexia
+															at0017, 	-- Areflexia
+															at0018]	-- Not assessed or no information
+														}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0060] occurrences matches {0..1} matches {	-- Motor symptoms
+										items cardinality matches {1..*; unordered} matches {
+											CLUSTER[at0061] occurrences matches {0..1} matches {	-- Spasticity
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0028] occurrences matches {0..1} matches {	-- Gait
+														value matches {
+															DV_CODED_TEXT matches {
+																defining_code matches {
+																	[local::
+																	at0029, 	-- None
+																	at0030, 	-- Mild
+																	at0031, 	-- Moderate
+																	at0032, 	-- Severe
+																	at0033]	-- Not assessed or no information
+																}
+															}
+														}
+													}
+													ELEMENT[at0034] occurrences matches {0..1} matches {	-- Upper limbs
+														value matches {
+															DV_CODED_TEXT matches {
+																defining_code matches {
+																	[local::
+																	at0035, 	-- None
+																	at0036, 	-- Mild
+																	at0037, 	-- Moderate
+																	at0038, 	-- Severe
+																	at0039]	-- Not assessed or no information
+																}
+															}
+														}
+													}
+													ELEMENT[at0040] occurrences matches {0..1} matches {	-- Lower limbs
+														value matches {
+															DV_CODED_TEXT matches {
+																defining_code matches {
+																	[local::
+																	at0041, 	-- None
+																	at0042, 	-- Mild
+																	at0043, 	-- Moderate
+																	at0044, 	-- Severe
+																	at0045]	-- Not assessed or no information
+																}
+															}
+														}
+													}
+												}
+											}
+											CLUSTER[at0062] occurrences matches {0..1} matches {	-- Paresis
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0046] occurrences matches {0..1} matches {	-- Face/tongue
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0047] occurrences matches {0..1} matches {	-- Upper limbs proximal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0048] occurrences matches {0..1} matches {	-- Upper limbs distal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0049] occurrences matches {0..1} matches {	-- Lower limbs proximal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0050] occurrences matches {0..1} matches {	-- Lower limbs distal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0063] occurrences matches {0..1} matches {	-- Muscle atrophy
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0051] occurrences matches {0..1} matches {	-- Face/tongue
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0052] occurrences matches {0..1} matches {	-- Upper limb proximal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0053] occurrences matches {0..1} matches {	-- Upper limb distal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0054] occurrences matches {0..1} matches {	-- Lower limb proximal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0055] occurrences matches {0..1} matches {	-- Lower limn distal
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0068] occurrences matches {0..1} matches {	-- Fasciculations
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0056] occurrences matches {0..1} matches {	-- Face/tongue fasciculations
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0057] occurrences matches {0..1} matches {	-- Upper limbs fasciculations
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0069] occurrences matches {0..1} matches {	-- Lower limbs fasciculations
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0067] occurrences matches {0..1} matches {	-- Myoclonus
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0070] occurrences matches {0..1} matches {	-- Face/tongue myoclonus
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0071] occurrences matches {0..1} matches {	-- Trunk myoclonus
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0072] occurrences matches {0..1} matches {	-- Upper limbs myoclonus
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0073] occurrences matches {0..1} matches {	-- Lower limbs myoclonus
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0066] occurrences matches {0..1} matches {	-- Rigidity
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0074] occurrences matches {0..1} matches {	-- Axial rigidity
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0075] occurrences matches {0..1} matches {	-- Upper limbs rigidity
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0076] occurrences matches {0..1} matches {	-- Lower limbs rigidity
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0065] occurrences matches {0..1} matches {	-- Chorea/dyskinesia
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0077] occurrences matches {0..1} matches {	-- Face/tongue chorea/dyskinesia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0078] occurrences matches {0..1} matches {	-- Neck chorea/dyskinesia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0079] occurrences matches {0..1} matches {	-- Trunk chorea/dyskinesia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0080] occurrences matches {0..1} matches {	-- Upper limbs chorea/dyskinesia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0081] occurrences matches {0..1} matches {	-- Lower limbs chorea/dyskinesia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0064] occurrences matches {0..1} matches {	-- Dystonia
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0082] occurrences matches {0..1} matches {	-- Face/tongue dystonia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0083] occurrences matches {0..1} matches {	-- Neck dystonia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0084] occurrences matches {0..1} matches {	-- Trunk dystonia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0085] occurrences matches {0..1} matches {	-- Upper limbs dystonia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0086] occurrences matches {0..1} matches {	-- Lower limbs dystonia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											ELEMENT[at0087] occurrences matches {0..1} matches {	-- Resting tremor
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0088] occurrences matches {0..1} matches {	-- Sensory symptoms
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0089] occurrences matches {0..1} matches {	-- Impaired vibration sense left foot
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0090] occurrences matches {0..1} matches {	-- Impaired vibration sense right foot
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0091] occurrences matches {0..1} matches {	-- Ophthalmological findings
+										items cardinality matches {1..*; unordered} matches {
+											CLUSTER[at0093] occurrences matches {0..1} matches {	-- Fixation and smooth pursuit
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0092] occurrences matches {0..1} matches {	-- Broken up smooth pursuit
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0094] occurrences matches {0..1} matches {	-- Square wave jerks on fixation
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0095] occurrences matches {0..1} matches {	-- Downbeat-nystagmus on fixation
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0096] occurrences matches {0..1} matches {	-- Gaze evoked-nystagmus on horizontal testing
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0097] occurrences matches {0..1} matches {	-- Gaze evoked-nystagmus on vertical testing
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0098] occurrences matches {0..1} matches {	-- Ophthalmoparesis on horizontal gaze
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0099] occurrences matches {0..1} matches {	-- Ophthalmoparesis on vertical gaze
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											CLUSTER[at0100] occurrences matches {0..1} matches {	-- Fast saccades
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0101] occurrences matches {0..1} matches {	-- Slowing of saccades
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0102] occurrences matches {0..1} matches {	-- Hypometric saccades
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0103] occurrences matches {0..1} matches {	-- Hypermetric saccades
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+												}
+											}
+											ELEMENT[at0104] occurrences matches {0..1} matches {	-- Impaired visual acuity
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0105] occurrences matches {0..1} matches {	-- Reported abnormalities
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0106] occurrences matches {0..1} matches {	-- Double vision
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0107] occurrences matches {0..1} matches {	-- Dysphagia
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0108] occurrences matches {0..1} matches {	-- Urinary dysfunction
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0109] occurrences matches {0..1} matches {	-- Cognitive impairment
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0110] occurrences matches {0..*} matches {	-- Other clinical findings or reported abnormalities
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0021] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0022] occurrences matches {0..*} matches {	-- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0019] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0020] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Inventory of Non-Ataxia Signs (INAS)">
+					description = <"Inventory of Non-Ataxia Signs (INAS) can be used for clinical descriptions when assessing intracerebellar involvement in Spinocerebellar Ataxia (SCA).">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Biceps reflex">
+					description = <"The assessment of the biceps reflex.">
+				>
+				["at0005"] = <
+					text = <"Normal">
+					description = <"The assessment indicates that biceps reflex is normal.">
+				>
+				["at0006"] = <
+					text = <"Hyperreflexia">
+					description = <"The assessment indicates that there is biceps hyperreflexia.">
+				>
+				["at0007"] = <
+					text = <"Areflexia">
+					description = <"The assessment indicates that there is biceps areflexia.">
+				>
+				["at0008"] = <
+					text = <"Not assessed or no information">
+					description = <"Biceps reflex was not assessed or no information about biceps reflex is available.">
+				>
+				["at0009"] = <
+					text = <"Patellar reflex">
+					description = <"The assessment of the patellar reflex.">
+				>
+				["at0010"] = <
+					text = <"Normal">
+					description = <"The assessment indicates that patellar reflex is normal.">
+				>
+				["at0011"] = <
+					text = <"Hyperreflexia">
+					description = <"The assessment indicates that there is patellar hyperreflexia.">
+				>
+				["at0012"] = <
+					text = <"Areflexia">
+					description = <"The assessment indicates that there is patellar areflexia.">
+				>
+				["at0013"] = <
+					text = <"Not assessed or no information">
+					description = <"Patellar reflex was not assessed or no information about patellar reflex is available.">
+				>
+				["at0014"] = <
+					text = <"Achilles reflex">
+					description = <"The assessment of the achilles reflex.">
+				>
+				["at0015"] = <
+					text = <"Normal">
+					description = <"The assessment indicates that achilles reflex is normal.">
+				>
+				["at0016"] = <
+					text = <"Hyperreflexia">
+					description = <"The assessment indicates that there is achilles hyperreflexia.">
+				>
+				["at0017"] = <
+					text = <"Areflexia">
+					description = <"The assessment indicates that there is achilles areflexia.">
+				>
+				["at0018"] = <
+					text = <"Not assessed or no information">
+					description = <"Achilles reflex was not assessed or no information about achilles reflex is available.">
+				>
+				["at0019"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0020"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0021"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0022"] = <
+					text = <"Confounding factors">
+					description = <"Record any issues or factors that may impact on the overall assessment">
+				>
+				["at0023"] = <
+					text = <"Extensor plantar reflex">
+					description = <"The assessment of the extensor planar reflex.">
+				>
+				["at0024"] = <
+					text = <"None">
+					description = <"The assessment indicates that there is no extensor plantar reflex.">
+				>
+				["at0025"] = <
+					text = <"Unilateral">
+					description = <"The assessment indicates that there is a unilateral extensor plantar reflex.">
+				>
+				["at0026"] = <
+					text = <"Bilateral">
+					description = <"The assessment indicates that there is a bilateral extensor plantar reflex.">
+				>
+				["at0027"] = <
+					text = <"Not assessed or no information">
+					description = <"The extensor plantar reflex was not assessed or no information about the extensor plantar reflex  is available.">
+				>
+				["at0028"] = <
+					text = <"Gait">
+					description = <"The assessment of spasticity of gait.">
+				>
+				["at0029"] = <
+					text = <"None">
+					description = <"The assessment indicates that there is no gait spasticity.">
+				>
+				["at0030"] = <
+					text = <"Mild">
+					description = <"The assessment indicates mild gait spasticity.">
+				>
+				["at0031"] = <
+					text = <"Moderate">
+					description = <"The assessmenet indicates moderate gait spasticity.">
+				>
+				["at0032"] = <
+					text = <"Severe">
+					description = <"The assessment indicates severe gait spasticity.">
+				>
+				["at0033"] = <
+					text = <"Not assessed or no information">
+					description = <"Gait spasticity has not been assessed or information about gait spasticity is not available.">
+				>
+				["at0034"] = <
+					text = <"Upper limbs">
+					description = <"The assessment of spasticity of the upper limbs.">
+				>
+				["at0035"] = <
+					text = <"None">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Mild">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Moderate">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"Severe">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"Not assessed or no information">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"Lower limbs">
+					description = <"The assessment of spasticity of the lower limbs.">
+				>
+				["at0041"] = <
+					text = <"None">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"Mild">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"Moderate">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Severe">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"Not assessed or no information">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"Face/tongue">
+					description = <"The assessment of paresis of the face and/or tongue.">
+				>
+				["at0047"] = <
+					text = <"Upper limbs proximal">
+					description = <"The assessment of proximal paresis of the  upper limbs.">
+				>
+				["at0048"] = <
+					text = <"Upper limbs distal">
+					description = <"The assessment of distal paresis of the upper limbs.">
+				>
+				["at0049"] = <
+					text = <"Lower limbs proximal">
+					description = <"The assessment of proximal paresis of the lower limbs.">
+				>
+				["at0050"] = <
+					text = <"Lower limbs distal">
+					description = <"The assessment of distal paresis of the lower limbs.">
+				>
+				["at0051"] = <
+					text = <"Face/tongue">
+					description = <"The assessment of muscle atrophy of the face and/or tongue.">
+				>
+				["at0052"] = <
+					text = <"Upper limb proximal">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"Upper limb distal">
+					description = <"*">
+				>
+				["at0054"] = <
+					text = <"Lower limb proximal">
+					description = <"*">
+				>
+				["at0055"] = <
+					text = <"Lower limn distal">
+					description = <"*">
+				>
+				["at0056"] = <
+					text = <"Face/tongue fasciculations">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"Upper limbs fasciculations">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"Reflexes">
+					description = <"The assessment of reflexes.">
+				>
+				["at0060"] = <
+					text = <"Motor symptoms">
+					description = <"The assessment of motor symptoms.">
+				>
+				["at0061"] = <
+					text = <"Spasticity">
+					description = <"The assessment of spasticity.">
+				>
+				["at0062"] = <
+					text = <"Paresis">
+					description = <"The assessment of paresis.">
+				>
+				["at0063"] = <
+					text = <"Muscle atrophy">
+					description = <"The assessment of muscle atrophy.">
+				>
+				["at0064"] = <
+					text = <"Dystonia">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"Chorea/dyskinesia">
+					description = <"*">
+				>
+				["at0066"] = <
+					text = <"Rigidity">
+					description = <"*">
+				>
+				["at0067"] = <
+					text = <"Myoclonus">
+					description = <"*">
+				>
+				["at0068"] = <
+					text = <"Fasciculations">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"Lower limbs fasciculations">
+					description = <"*">
+				>
+				["at0070"] = <
+					text = <"Face/tongue myoclonus">
+					description = <"*">
+				>
+				["at0071"] = <
+					text = <"Trunk myoclonus">
+					description = <"*">
+				>
+				["at0072"] = <
+					text = <"Upper limbs myoclonus">
+					description = <"*">
+				>
+				["at0073"] = <
+					text = <"Lower limbs myoclonus">
+					description = <"*">
+				>
+				["at0074"] = <
+					text = <"Axial rigidity">
+					description = <"*">
+				>
+				["at0075"] = <
+					text = <"Upper limbs rigidity">
+					description = <"*">
+				>
+				["at0076"] = <
+					text = <"Lower limbs rigidity">
+					description = <"*">
+				>
+				["at0077"] = <
+					text = <"Face/tongue chorea/dyskinesia">
+					description = <"*">
+				>
+				["at0078"] = <
+					text = <"Neck chorea/dyskinesia">
+					description = <"*">
+				>
+				["at0079"] = <
+					text = <"Trunk chorea/dyskinesia">
+					description = <"*">
+				>
+				["at0080"] = <
+					text = <"Upper limbs chorea/dyskinesia">
+					description = <"*">
+				>
+				["at0081"] = <
+					text = <"Lower limbs chorea/dyskinesia">
+					description = <"*">
+				>
+				["at0082"] = <
+					text = <"Face/tongue dystonia">
+					description = <"*">
+				>
+				["at0083"] = <
+					text = <"Neck dystonia">
+					description = <"*">
+				>
+				["at0084"] = <
+					text = <"Trunk dystonia">
+					description = <"*">
+				>
+				["at0085"] = <
+					text = <"Upper limbs dystonia">
+					description = <"*">
+				>
+				["at0086"] = <
+					text = <"Lower limbs dystonia">
+					description = <"*">
+				>
+				["at0087"] = <
+					text = <"Resting tremor">
+					description = <"*">
+				>
+				["at0088"] = <
+					text = <"Sensory symptoms">
+					description = <"*">
+				>
+				["at0089"] = <
+					text = <"Impaired vibration sense left foot">
+					description = <"*">
+				>
+				["at0090"] = <
+					text = <"Impaired vibration sense right foot">
+					description = <"*">
+				>
+				["at0091"] = <
+					text = <"Ophthalmological findings">
+					description = <"*">
+				>
+				["at0092"] = <
+					text = <"Broken up smooth pursuit">
+					description = <"*">
+				>
+				["at0093"] = <
+					text = <"Fixation and smooth pursuit">
+					description = <"*">
+				>
+				["at0094"] = <
+					text = <"Square wave jerks on fixation">
+					description = <"*">
+				>
+				["at0095"] = <
+					text = <"Downbeat-nystagmus on fixation">
+					description = <"*">
+				>
+				["at0096"] = <
+					text = <"Gaze evoked-nystagmus on horizontal testing">
+					description = <"*">
+				>
+				["at0097"] = <
+					text = <"Gaze evoked-nystagmus on vertical testing">
+					description = <"*">
+				>
+				["at0098"] = <
+					text = <"Ophthalmoparesis on horizontal gaze">
+					description = <"*">
+				>
+				["at0099"] = <
+					text = <"Ophthalmoparesis on vertical gaze">
+					description = <"*">
+				>
+				["at0100"] = <
+					text = <"Fast saccades">
+					description = <"*">
+				>
+				["at0101"] = <
+					text = <"Slowing of saccades">
+					description = <"*">
+				>
+				["at0102"] = <
+					text = <"Hypometric saccades">
+					description = <"*">
+				>
+				["at0103"] = <
+					text = <"Hypermetric saccades">
+					description = <"*">
+				>
+				["at0104"] = <
+					text = <"Impaired visual acuity">
+					description = <"*">
+				>
+				["at0105"] = <
+					text = <"Reported abnormalities">
+					description = <"*">
+				>
+				["at0106"] = <
+					text = <"Double vision">
+					description = <"*">
+				>
+				["at0107"] = <
+					text = <"Dysphagia">
+					description = <"*">
+				>
+				["at0108"] = <
+					text = <"Urinary dysfunction">
+					description = <"*">
+				>
+				["at0109"] = <
+					text = <"Cognitive impairment">
+					description = <"*">
+				>
+				["at0110"] = <
+					text = <"Other clinical findings or reported abnormalities">
+					description = <"Narrative description of other clinical findings or reported abnormalities.">
+				>
+			>
+		>
+	>

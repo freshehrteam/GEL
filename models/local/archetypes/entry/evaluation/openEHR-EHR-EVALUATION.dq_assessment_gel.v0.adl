@@ -1,0 +1,105 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-EVALUATION.dq_assessment_gel.v0
+
+concept
+	[at0000]	-- Development Quotient Assessment GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-11-23">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For recording Development Quotient Assessment data as part of the Genomics England Rare Diseases dataset.">
+			use = <"To record the Development Quotient Assessment result and method in the Performance Measures section of the Genomics England Rare Diseases dataset.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"03CA8D2233752C0815815EAE367AA2F1">
+	>
+
+definition
+	EVALUATION[at0000] matches {	-- Development Quotient Assessment GEL
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- DQ score
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- DQ assessment method
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004, 	-- Griffiths
+									at0005, 	-- WISC-3
+									at0006, 	-- WPPSI
+									at0007]	-- Bayley
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Development Quotient Assessment GEL">
+					description = <"A local archetype to capture Development Quotient Assessment for Genomics England Rare Diseases dataset.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"DQ score">
+					description = <"The Development Quotient score as a numeric value.">
+				>
+				["at0003"] = <
+					text = <"DQ assessment method">
+					description = <"The method used to calculate the Development Quotient score.">
+				>
+				["at0004"] = <
+					text = <"Griffiths">
+					description = <"Griffiths Mental Development scales.">
+				>
+				["at0005"] = <
+					text = <"WISC-3">
+					description = <"Wechsler Intelligence Scales for Children.">
+				>
+				["at0006"] = <
+					text = <"WPPSI">
+					description = <"Wechsler Preschool and Primary Scale of Intelligence.">
+				>
+				["at0007"] = <
+					text = <"Bayley">
+					description = <"Bayley Scales of infant and toddler development.">
+				>
+			>
+		>
+	>

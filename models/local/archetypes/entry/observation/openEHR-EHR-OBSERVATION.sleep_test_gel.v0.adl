@@ -1,0 +1,164 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.sleep_test_gel.v0
+
+concept
+	[at0000]	-- Sleep test GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-11-24">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For recording sleep test data as part of the non-imaging diagnostics section in the Genomics England Rare Diseases dataset.">
+			use = <"Use to record sleep test details.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"7F019125CD596415937F2432DC7CEF01">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Sleep test GEL
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Technique
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Mean sleep latency result
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- SOREM
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>=0|}
+											}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Total sleep time
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::128]>
+												list = <
+													["1"] = <
+														units = <"h">
+														magnitude = <|>=0.0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Sleep related breathing parameters
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Sleep efficiency
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- PMLS
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0011] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0012] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sleep test GEL">
+					description = <"Local archetype to capture sleep test data in non-imaging diagnostic results in the Genomics England Rare Diseases dataset.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Technique">
+					description = <"The non-imaging analytical technique used.">
+				>
+				["at0005"] = <
+					text = <"Mean sleep latency result">
+					description = <"Narrative description of mean sleep latency results.">
+				>
+				["at0006"] = <
+					text = <"SOREM">
+					description = <"Count of sleep onset rapid eye movements.">
+				>
+				["at0007"] = <
+					text = <"Total sleep time">
+					description = <"The total sleep time in hours.">
+				>
+				["at0008"] = <
+					text = <"Sleep related breathing parameters">
+					description = <"Narrative description of sleep related breathing parameters.">
+				>
+				["at0009"] = <
+					text = <"Sleep efficiency">
+					description = <"Narrative description of sleep efficiency.">
+				>
+				["at0010"] = <
+					text = <"PMLS">
+					description = <"Narrative description of periodic limb movements in sleep.">
+				>
+				["at0011"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+			>
+		>
+	>

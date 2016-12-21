@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gelCAN:disease-information-updates xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+ xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/2.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="https://genomicsengland.co.uk/xsd/cancer/2.0.0 file:/Users/genomicsengland/Documents/Cancer/MainProgrammeCancer/Cancer%20Schemas%20v2.0.0%20FINAL/DiseaseInformationUpdatesCancer-v2.0.0.xsd">
+    <gelCAN:metadata>
+        <gelCAN:schema-name>DiseaseInformationUpdatesCancer</gelCAN:schema-name>
+        <gelCAN:schema-version>2.0.0</gelCAN:schema-version>
+        <gelCAN:date>2006-05-04</gelCAN:date>
+        <gelCAN:source-organisation>source-organisation0</gelCAN:source-organisation>
+        <gelCAN:source-system>source-system0</gelCAN:source-system>
+        <gelCAN:local-report-id>local-report-id0</gelCAN:local-report-id>
+    </gelCAN:metadata>
+    <gelCAN:subject>
+        <gelCAN:participant-identifiers>
+            <gelCAN:participant-id>participant-id0</gelCAN:participant-id>
+            <gelCAN:date-of-birth>2006-05-04</gelCAN:date-of-birth>
+            <gelCAN:nhs-number>0000000000</gelCAN:nhs-number>
+            <gelCAN:chi-number>chi-number0</gelCAN:chi-number>
+            <gelCAN:surname>surname0</gelCAN:surname>
+            <gelCAN:forenames>forenames0</gelCAN:forenames>
+        </gelCAN:participant-identifiers>
+        <gelCAN:disease-information-tumour-sample>
+            <gelCAN:event-details>
+                <gelCAN:event-date>2006-05-04T18:13:51.0</gelCAN:event-date>
+                <gelCAN:event-reference>event-reference0</gelCAN:event-reference>
+            </gelCAN:event-details>
+            <gelCAN:disease-type-core>Adult Glioma</gelCAN:disease-type-core>
+            <gelCAN:disease-subtype-core>acral_lentiginous</gelCAN:disease-subtype-core>
+            <gelCAN:disease-subtype-core>acral_lentiginous</gelCAN:disease-subtype-core>
+        </gelCAN:disease-information-tumour-sample>
+    </gelCAN:subject>
+    <gelCAN:subject>
+        <gelCAN:participant-identifiers>
+            <gelCAN:participant-id>participant-id1</gelCAN:participant-id>
+            <gelCAN:date-of-birth>2006-05-04</gelCAN:date-of-birth>
+            <gelCAN:nhs-number>0000000000</gelCAN:nhs-number>
+            <gelCAN:chi-number>chi-number1</gelCAN:chi-number>
+            <gelCAN:surname>surname1</gelCAN:surname>
+            <gelCAN:forenames>forenames1</gelCAN:forenames>
+        </gelCAN:participant-identifiers>
+        <gelCAN:disease-information-tumour-sample>
+            <gelCAN:event-details>
+                <gelCAN:event-date>2006-05-04T18:13:51.0</gelCAN:event-date>
+                <gelCAN:event-reference>event-reference1</gelCAN:event-reference>
+            </gelCAN:event-details>
+            <gelCAN:disease-type-core>Adult Glioma</gelCAN:disease-type-core>
+            <gelCAN:disease-subtype-core>acral_lentiginous</gelCAN:disease-subtype-core>
+            <gelCAN:disease-subtype-core>acral_lentiginous</gelCAN:disease-subtype-core>
+        </gelCAN:disease-information-tumour-sample>
+    </gelCAN:subject>
+</gelCAN:disease-information-updates>

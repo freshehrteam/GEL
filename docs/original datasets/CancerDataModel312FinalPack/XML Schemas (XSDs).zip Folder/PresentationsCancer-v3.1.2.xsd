@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:html="http://www.w3.org/1999/xhtml"
+           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+           xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/3.1.2"
+           xmlns="https://genomicsengland.co.uk/xsd/cancer/3.1.2"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://genomicsengland.co.uk/xsd/cancer/3.1.2"
+           vc:minVersion="1.1"
+           elementFormDefault="qualified">
+   <xs:element name="presentations">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="metadata" type="metadata" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="subject"
+                        type="subject-36486"
+                        minOccurs="1"
+                        maxOccurs="unbounded"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="metadata">
+      <xs:sequence>
+         <xs:element name="schema-name" minOccurs="1" maxOccurs="1">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:enumeration value="PresentationsCancer"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="schema-version" minOccurs="1" maxOccurs="1">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:enumeration value="3.1.2"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="date-time" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>
+                  <p>The dateTime that this file was generated</p>
+               </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="source-organisation" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>
+                  <p>ODS code of the source organisation within the GMC sending the message</p>
+               </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="source-system"
+                     type="xs:string"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>
+                  <p>Source system. Optional but may be used to supply source with information if there are any issues with the submitted XML.</p>
+               </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="local-report-id"
+                     type="xs:string"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>
+                  <p>Source system report Id. Optional but may be used to supply source with information if there are any issues with the submitted XML.</p>
+               </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="subject-36486">
+      <xs:sequence>
+         <xs:element name="participant-identifiers"
+                     type="participant-identifiers-39047"
+                     minOccurs="1"
+                     maxOccurs="1"/>
+         <xs:element name="presentation"
+                     type="presentation-3385"
+                     minOccurs="1"
+                     maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="participant-identifiers-39047">
+      <xs:sequence>
+         <xs:element name="person-identifier"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="person-identifier-42125">
+            <xs:annotation>
+               <xs:documentation>Choice of one of either NHS Number (Wales &amp; England) OR CHI Number (Scotland) OR Health and Care Number (Northern Ireland).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="participant-id"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="participantid-3375">
+            <xs:annotation>
+               <xs:documentation>Participant Identifier (supplied by Genomics England)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="date-of-birth" minOccurs="1" maxOccurs="1" type="xs:date">
+            <xs:annotation>
+               <xs:documentation>The date on which a PERSON was born or is officially deemed to have been born.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="surname"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="personfamilyname-321">
+            <xs:annotation>
+               <xs:documentation>The participant's surname</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="forenames"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="persongivenname-323">
+            <xs:annotation>
+               <xs:documentation>The participant's forenames</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="person-identifier-42125">
+      <xs:choice>
+         <xs:element name="nhs-number"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="nhsnumber-3378">
+            <xs:annotation>
+               <xs:documentation>Validated NHS number for participant</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="chi-number"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="chinumber-3380">
+            <xs:annotation>
+               <xs:documentation>The COMMUNITY HEALTH INDEX NUMBER (CHI NUMBER) uniquely identifies a PATIENT on the Community Health Index (Scotland) within the NHS in Scotland.  It is the equivalent of the NHS NUMBER in England and Wales.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="health-and-care-number"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="healthandcarenumber-42127">
+            <xs:annotation>
+               <xs:documentation>Validated HEALTH AND CARE NUMBER (H&amp;C NUMBER). Uniquely identifies a PATIENT within the NHS in Northern Ireland.  It is the equivalent of the NHS NUMBER in England and Wales.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:choice>
+   </xs:complexType>
+   <xs:simpleType name="participantid-3375">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:pattern value="\d{9}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="personfamilyname-321">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:pattern value="[a-zA-Z0-9\s-]{3,35}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="persongivenname-323">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:pattern value="[a-zA-Z0-9\s-]{3,35}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="nhsnumber-3378">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:maxLength value="10"/>
+         <xs:pattern value="[0-9]{10}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="chinumber-3380">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:pattern value="[a-zA-Z0-9]{10}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="healthandcarenumber-42127">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:pattern value="[a-zA-Z0-9]{10}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="presentation-3385">
+      <xs:sequence>
+         <xs:element name="event-details"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="event-details-40374">
+            <xs:annotation>
+               <xs:documentation>The local ‘Event Reference’ combined with the Event Date, is used to identify the actual participant event involved.   GMCs must ensure that local event references are not re-used to refer to different events, therefore two different events on the same date can be easily identified. GMCs must also ensure no two participants are given the same event reference.
+
+If a second submission is received with the same local event reference, then Genomics England will assume that this is an update pertaining to the same participant event, and will be used in place of the original submission; any data values previously supplied that are still applicable must therefore be included.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="presentation"
+                     minOccurs="1"
+                     maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:documentation>
+                  Symptoms presented, recorded against supplied enumerations (for example, breast cancer presentation may be: breast mass, altered breast appearance, axillary mass, other mass, nipple discharge, or screening). The list of disease types will be validated against the types contained in Appendix G. These may be subject to change and GMCs are requested to ensure that data capture systems are flexible enough to accommodate changes to the list of disease contained in Appendix G.
+               </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="tumour-id"
+                     minOccurs="1"
+                     maxOccurs="unbounded"
+                     type="tumourid-42261">
+            <xs:annotation>
+               <xs:documentation>A locally allocated identifier for the participant's tumour. This should be unique for each tumour submitted from a patient.  Two tumours resected at the same time would have unique Tumour IDs. 
+                  All sample reports and event reports that relate to a Genomics England tumour sample must have a locally allocated Tumour ID. Tumour IDs must be unique within the context of a GMC Clinic and should conform to the following convention:
+                  Clinic ID proceeded by "_" proceeded by the local tumour identifier used to refer to a tumour, which must be between 1 and 16 alphanumeric characters
+                  i.e. RN3_A098BC
+               </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="event-details-40374">
+      <xs:sequence>
+         <xs:element name="event-date"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation>Date of the clinical event or observation being reported e.g. date biopsy was taken</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="event-reference" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>Unique identifier for local record of clinical event or observation</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="tumourid-42261">
+      <xs:restriction base="xs:string">
+         <xs:minLength value="1"/>
+         <xs:pattern value="[a-zA-Z0-9]{3,9}_[a-zA-Z0-9]{1,16}"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

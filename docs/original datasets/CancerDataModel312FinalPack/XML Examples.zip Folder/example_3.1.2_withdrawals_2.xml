@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gelCAN:withdrawals xmlns:html="http://www.w3.org/1999/xhtml"
+ xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+ xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/3.1.2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gelCAN:metadata>
+        <gelCAN:schema-name>WithdrawalsCancer</gelCAN:schema-name>
+        <gelCAN:schema-version>3.1.2</gelCAN:schema-version>
+        <gelCAN:date-time>2006-05-04T18:13:51.0</gelCAN:date-time>
+        <gelCAN:source-organisation>source-organisation0</gelCAN:source-organisation>
+        <gelCAN:source-system>source-system0</gelCAN:source-system>
+        <gelCAN:local-report-id>local-report-id0</gelCAN:local-report-id>
+    </gelCAN:metadata>
+    <gelCAN:subject>
+        <gelCAN:participant-identifiers>
+            <gelCAN:person-identifier>
+                <gelCAN:health-and-care-number>0000000000</gelCAN:health-and-care-number>
+            </gelCAN:person-identifier>
+            <gelCAN:participant-id>900000017</gelCAN:participant-id>
+            <gelCAN:date-of-birth>2006-05-04</gelCAN:date-of-birth>
+            <gelCAN:surname>janet</gelCAN:surname>
+            <gelCAN:forenames>bloggs</gelCAN:forenames>
+        </gelCAN:participant-identifiers>
+        <gelCAN:withdrawal>
+            <gelCAN:event-details>
+                <gelCAN:event-date>2006-05-04T18:13:51</gelCAN:event-date>
+                <gelCAN:event-reference>event-referencsdsaasdsadasadasde0</gelCAN:event-reference>
+            </gelCAN:event-details>
+            <gelCAN:withdrawal-form>withdrawal-form0.pdf</gelCAN:withdrawal-form>
+            <gelCAN:withdrawal-option>full_withdrawal</gelCAN:withdrawal-option>
+            <gelCAN:name-and-version-of-the-withdrawal-form-used>6a</gelCAN:name-and-version-of-the-withdrawal-form-used>
+            <gelCAN:person-reporting-withdrawal>jenkins smithson</gelCAN:person-reporting-withdrawal>
+        </gelCAN:withdrawal>
+    </gelCAN:subject>
+</gelCAN:withdrawals>

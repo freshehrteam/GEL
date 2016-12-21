@@ -1,0 +1,130 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.metadata_participant_gel.v0
+
+concept
+	[at0000]	-- Participation details GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-12-20">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording of participant metadata information in the Genomics England Rare diseases dataset.">
+			use = <"Use to record participant type and basic participant metadata in the Genomics England Rare diseases dataset.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC-BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"D1E72AB23AFF92DF2B86EF8CFC34D682">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Participation details GEL
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Participant type
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005, 	-- Proband
+													at0006]	-- Relative
+												}
+											}
+										}
+									}
+									allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Proband details
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.proband_gel(-[a-zA-Z0-9_]+)*\.v0/}
+									}
+									allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {	-- Relative details
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.metadata_relative_gel(-[a-zA-Z0-9_]+)*\.v0/}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0008] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Participation details GEL">
+					description = <"Participation details (proband or relative) details for Genomics England Rare diseases dataset.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Participant type">
+					description = <"The type of participant.">
+				>
+				["at0005"] = <
+					text = <"Proband">
+					description = <"The participant is the proband.">
+				>
+				["at0006"] = <
+					text = <"Relative">
+					description = <"The participant is a relative of the proband.">
+				>
+				["at0007"] = <
+					text = <"Proband details">
+					description = <"The details of the proband if the proband is the participant.">
+				>
+				["at0008"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0010"] = <
+					text = <"Relative details">
+					description = <"The details of the relative if the participant is a relative of the proband.">
+				>
+			>
+		>
+	>

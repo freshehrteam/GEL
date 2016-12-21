@@ -1,0 +1,420 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.inas_ophthalmological_gel.v0
+
+concept
+	[at0000]	-- Ophthalmological Findings INAS Dataset GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2016-11-09">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording of ophthalmological findings in the Inventory of Non-Ataxia Signs as part of the Genomics England dataset.">
+			use = <"To be used for the recording of ophthalmological findings in the Inventory of Non-Ataxia Signs as part of the Genomics England dataset.
+
+This archetype is intended to be used in the context of the INAS only, and whilst it is understood that the values for each of the data points may have been captured elsewhere, the specific responses required for INAS should be captured through this archetype.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC-BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"5F96F107B1C1854811EF1D7AABACF783">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Ophthalmological Findings INAS Dataset GEL
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Broken up smooth pursuit present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005, 	-- Yes
+													at0006, 	-- No
+													at0007]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Square wave jerks on fixation present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0009, 	-- Yes
+													at0010, 	-- No
+													at0011]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Downbeat nystagmus on fixation present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0013, 	-- Yes
+													at0014, 	-- No
+													at0015]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Gaze evoked-nystagmus on horizontal testing present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0017, 	-- Yes
+													at0018, 	-- No
+													at0019]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {	-- Gaze evoked-nystagmus on vertical testing present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0021, 	-- Yes
+													at0022, 	-- No
+													at0023]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Ophthalmoparesis on horizontal gaze present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0025, 	-- Yes
+													at0026, 	-- No
+													at0027]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {	-- Ophthalmoparesis on vertical gaze present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0029, 	-- Yes
+													at0030, 	-- No
+													at0031]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0032] occurrences matches {0..1} matches {	-- Slowing of saccades present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0033, 	-- Yes
+													at0034, 	-- No
+													at0035]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..1} matches {	-- Hypometric saccades present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0037, 	-- Yes
+													at0038, 	-- No
+													at0039]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0040] occurrences matches {0..1} matches {	-- Hypermetric saccades present?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0041, 	-- Yes
+													at0042, 	-- No
+													at0043]	-- N/A
+												}
+											}
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {	-- Impaired visual acuity present
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0045, 	-- Yes
+													at0046, 	-- No
+													at0047]	-- N/A
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0050] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0051] occurrences matches {0..*} matches {	-- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0048] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0049] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ophthalmological Findings INAS Dataset GEL">
+					description = <"The ophthalmological findings in the context of the Inventory of Non-Ataxia Signs dataset within the Genomics England dataset.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Broken up smooth pursuit present?">
+					description = <"Statement of whether broken up smooth pursuit is present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0005"] = <
+					text = <"Yes">
+					description = <"Broken up smooth pursuit is present.">
+				>
+				["at0006"] = <
+					text = <"No">
+					description = <"Broken up smooth pursuit is absent.">
+				>
+				["at0007"] = <
+					text = <"N/A">
+					description = <"Presence of broken up smooth pursuit was not assessed or no information is available.">
+				>
+				["at0008"] = <
+					text = <"Square wave jerks on fixation present?">
+					description = <"Statement of whether square wave jerks are present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0009"] = <
+					text = <"Yes">
+					description = <"Square wave jerks on fixation are present.">
+				>
+				["at0010"] = <
+					text = <"No">
+					description = <"Square wave jerks on fixation are absent.">
+				>
+				["at0011"] = <
+					text = <"N/A">
+					description = <"Presence of square wave jerks on fixation were not assessed or no information is available.">
+				>
+				["at0012"] = <
+					text = <"Downbeat nystagmus on fixation present?">
+					description = <"Statement of whether downbeat nystagmus on fixation is present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0013"] = <
+					text = <"Yes">
+					description = <"Downbeat nystagmus on fixation is present.">
+				>
+				["at0014"] = <
+					text = <"No">
+					description = <"Downbeat nystagmus on fixation is absent.">
+				>
+				["at0015"] = <
+					text = <"N/A">
+					description = <"Presence of downbeat nystagmus was not assessed or no information is available,">
+				>
+				["at0016"] = <
+					text = <"Gaze evoked-nystagmus on horizontal testing present?">
+					description = <"Statement of whether gaze-evoked nystagmus on horizontal testing is present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0017"] = <
+					text = <"Yes">
+					description = <"Gaze-evoked nystagmus on horizontal testing is present.">
+				>
+				["at0018"] = <
+					text = <"No">
+					description = <"Gaze-evoked nystagmus on horizontal testing is absent.">
+				>
+				["at0019"] = <
+					text = <"N/A">
+					description = <"Presence of gaze-evoked nystagmus on horizontal testing was not assessed or no information is available.">
+				>
+				["at0020"] = <
+					text = <"Gaze evoked-nystagmus on vertical testing present?">
+					description = <"Statement of whether gaze-evoked nystagmus on vertical testing is present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0021"] = <
+					text = <"Yes">
+					description = <"Gaze-evoked nystagmus on vertical testing is present.">
+				>
+				["at0022"] = <
+					text = <"No">
+					description = <"Gaze-evoked nystagmus on vertical testing is absent.">
+				>
+				["at0023"] = <
+					text = <"N/A">
+					description = <"Presence of gaze-evoked nystagmus on vertical testing was not assessed or no information is available.">
+				>
+				["at0024"] = <
+					text = <"Ophthalmoparesis on horizontal gaze present?">
+					description = <"Statement of whether ophthalmoparesis on horizontal gaze is present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0025"] = <
+					text = <"Yes">
+					description = <"Ophthalmoparesis on horizontal gaze is present.">
+				>
+				["at0026"] = <
+					text = <"No">
+					description = <"Ophthalmoparesis on horizontal gaze is absent.">
+				>
+				["at0027"] = <
+					text = <"N/A">
+					description = <"Presence of ophthalmoparesis on horizontal gaze was not assessed or no information is available.">
+				>
+				["at0028"] = <
+					text = <"Ophthalmoparesis on vertical gaze present?">
+					description = <"Statement of whether ophthalmoparesis on vertical gaze is present or absent on testing of fixation and smooth pursuit.">
+				>
+				["at0029"] = <
+					text = <"Yes">
+					description = <"Ophthalmoparesis on vertical gaze is present.">
+				>
+				["at0030"] = <
+					text = <"No">
+					description = <"Ophthalmoparesis on vertical gaze is absent.">
+				>
+				["at0031"] = <
+					text = <"N/A">
+					description = <"Presence of ophthalmoparesis on vertical gaze was not assessed or no information is available.">
+				>
+				["at0032"] = <
+					text = <"Slowing of saccades present?">
+					description = <"Statement whether slowing of saccades is present or absent on testing of fast saccades.">
+				>
+				["at0033"] = <
+					text = <"Yes">
+					description = <"Slowing of saccades is present.">
+				>
+				["at0034"] = <
+					text = <"No">
+					description = <"Slowing of saccades is absent.">
+				>
+				["at0035"] = <
+					text = <"N/A">
+					description = <"Presence of slowing of saccades was not assessed or no information is available.">
+				>
+				["at0036"] = <
+					text = <"Hypometric saccades present?">
+					description = <"Statement whether hypometric saccades are present or absent on fast saccades testing.">
+				>
+				["at0037"] = <
+					text = <"Yes">
+					description = <"Hypometric saccades are present.">
+				>
+				["at0038"] = <
+					text = <"No">
+					description = <"Hypometric saccades are absent.">
+				>
+				["at0039"] = <
+					text = <"N/A">
+					description = <"Presence of hypometric saccades was not assessed or no information is available.">
+				>
+				["at0040"] = <
+					text = <"Hypermetric saccades present?">
+					description = <"Statement whether hypermetric saccades are present or absent on fast saccades testing.">
+				>
+				["at0041"] = <
+					text = <"Yes">
+					description = <"Hypermetric saccades are present.">
+				>
+				["at0042"] = <
+					text = <"No">
+					description = <"Hypermetric saccades are absent.">
+				>
+				["at0043"] = <
+					text = <"N/A">
+					description = <"Presence of hypermetric saccades was not assessed or no information is available.">
+				>
+				["at0044"] = <
+					text = <"Impaired visual acuity present">
+					description = <"Statement whether impaired visual acuity (loss of visual acuity less than 0.6 for binocular sight in distance testing) is present or absent.">
+				>
+				["at0045"] = <
+					text = <"Yes">
+					description = <"Impaired visual acuity is present.">
+				>
+				["at0046"] = <
+					text = <"No">
+					description = <"Impaired visual acuity is absent.">
+				>
+				["at0047"] = <
+					text = <"N/A">
+					description = <"Presence of impaired visual acuity was not assessed or no information is available.">
+				>
+				["at0048"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0049"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0050"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0051"] = <
+					text = <"Confounding factors">
+					description = <"Record any issues or factors that may impact on the assessment.">
+				>
+			>
+		>
+	>
