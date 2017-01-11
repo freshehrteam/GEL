@@ -15,8 +15,8 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For the recording and reporting of consent details for Genomics England Rare diseases dataset.">
-			use = <"Use to record and report consent details, such as the date, the name and version of the consent form, the person taking consent and a particular consent question and answer, as part of the Genomics England Rare diseases dataset.">
+			purpose = <"For the recording and reporting of consent details for Genomics England Rare diseases and cancer datasets.">
+			use = <"Use to record and report consent details, such as the date, the name and version of the consent / assent form, the person taking consent and a particular consent question and answer, participant information sheets and any other consent materials, as part of the Genomics England Rare diseases and cancer datasets.">
 			misuse = <"">
 			copyright = <"">
 		>
@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"AB3D9D5E919430E00A7B506DA68FA42D">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"7B2547AB6DAD8DC9292482E74AB8D1E9">
 	>
 
 definition
@@ -39,12 +39,22 @@ definition
 							DV_DATE_TIME matches {*}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Name of consent form
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Name of consent form (rare diseases)
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Version of consent form
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Version of consent form (rare diseases)
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {	-- Name of consent form (cancer)
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {	-- Version of consent form (cancer)
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -73,22 +83,32 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0009] occurrences matches {0..1} matches {	-- Name of participant information sheet
+					ELEMENT[at0009] occurrences matches {0..1} matches {	-- Name of participant information sheet (rare diseases)
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {	-- Version of participant information sheet
+					ELEMENT[at0010] occurrences matches {0..1} matches {	-- Version of participant information sheet (rare diseases)
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Consent question
+					ELEMENT[at0018] occurrences matches {0..1} matches {	-- Name of participant information sheet (cancer)
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Consent response
+					ELEMENT[at0019] occurrences matches {0..1} matches {	-- Version of participant information sheet (cancer)
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Consent question (rare diseases)
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Consent response (rare diseases)
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -98,6 +118,56 @@ definition
 								}
 							}
 						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {	-- Name of assent form (cancer)
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {	-- Version of assent form (cancer)
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {	-- Filename of assent form
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {	-- Copy of assent form
+						value matches {
+							DV_MULTIMEDIA matches {
+								media_type matches {[openEHR::518]}
+							}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..*} matches {	-- Additional consent materials
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {	-- Health related additional findings (cancer)
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {True, False}
+							}
+						}
+					}
+					ELEMENT[at0025] occurrences matches {0..1} matches {	-- Reproductive additional findings (cancer)
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0026, 	-- Yes
+									at0027, 	-- No
+									at0028]	-- Not relevant
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0029] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -110,7 +180,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Consent Details GEL">
-					description = <"Consent details for Genomics England Rare diseases dataset.">
+					description = <"Consent details for Genomics England Rare diseases and cancer datasets.">
 				>
 				["at0001"] = <
 					text = <"Tree">
@@ -121,12 +191,12 @@ ontology
 					description = <"The date when the consent was given.">
 				>
 				["at0003"] = <
-					text = <"Name of consent form">
-					description = <"The name of the consent form used.">
+					text = <"Name of consent form (rare diseases)">
+					description = <"The name of the consent form (for rare diseases) used.">
 				>
 				["at0004"] = <
-					text = <"Version of consent form">
-					description = <"The version of the consent form used.">
+					text = <"Version of consent form (rare diseases)">
+					description = <"The version of the consent form (for rare diseases) used.">
 				>
 				["at0005"] = <
 					text = <"Consent given?">
@@ -142,22 +212,22 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Person taking consent">
-					description = <"The full name of the person taking the consent">
+					description = <"The full name of the person taking the consent.">
 				>
 				["at0009"] = <
-					text = <"Name of participant information sheet">
-					description = <"The name of the participant information sheet used.">
+					text = <"Name of participant information sheet (rare diseases)">
+					description = <"The name of the participant information sheet (for rare diseases) used.">
 				>
 				["at0010"] = <
-					text = <"Version of participant information sheet">
-					description = <"The version of the participant information sheet used.">
+					text = <"Version of participant information sheet (rare diseases)">
+					description = <"The version of the participant information sheet (for rare diseases) used.">
 				>
 				["at0011"] = <
-					text = <"Consent question">
+					text = <"Consent question (rare diseases)">
 					description = <"A particular question on the consent form.">
 				>
 				["at0012"] = <
-					text = <"Consent response">
+					text = <"Consent response (rare diseases)">
 					description = <"Yes or no response to a particular question on the consent form.">
 				>
 				["at0013"] = <
@@ -167,6 +237,67 @@ ontology
 				["at0014"] = <
 					text = <"No">
 					description = <"The response is no.">
+				>
+				["at0015"] = <
+					text = <"Name of assent form (cancer)">
+					description = <"The name of the assent form used.">
+				>
+				["at0016"] = <
+					text = <"Name of consent form (cancer)">
+					description = <"The name of the consent form (for cancer) used.">
+				>
+				["at0017"] = <
+					text = <"Version of consent form (cancer)">
+					description = <"The version of the consent form (for cancer) used.">
+				>
+				["at0018"] = <
+					text = <"Name of participant information sheet (cancer)">
+					description = <"The name of the participant information sheet (for cancer) used.">
+				>
+				["at0019"] = <
+					text = <"Version of participant information sheet (cancer)">
+					description = <"The version of the participant information sheet (for cancer) used.">
+				>
+				["at0020"] = <
+					text = <"Version of assent form (cancer)">
+					description = <"The version of the assent form used.">
+				>
+				["at0021"] = <
+					text = <"Filename of assent form">
+					description = <"The filename of the uploaded PDF copy of the assentform.">
+				>
+				["at0022"] = <
+					text = <"Copy of assent form">
+					description = <"The uploaded PDF copy of the assent form.">
+				>
+				["at0023"] = <
+					text = <"Additional consent materials">
+					description = <"Additional consent materials used.">
+				>
+				["at0024"] = <
+					text = <"Health related additional findings (cancer)">
+					description = <"Health-related additional findings: Does the participant want these looked for and fed back to their clinical team?">
+				>
+				["at0025"] = <
+					text = <"Reproductive additional findings (cancer)">
+					description = <"Reproductive additional findings: Does the participant want these looked for and fed back to their clinical team?">
+				>
+				["at0026"] = <
+					text = <"Yes">
+					description = <"The participant wants reproductive additional findings looked for and fed back to clinical team.">
+				>
+				["at0027"] = <
+					text = <"No">
+					description = <"The participant does not want reproductive additional findings looked for and fed back to clinical team.">
+				>
+				["at0028"] = <
+					text = <"Not relevant">
+					description = <"The question about reproductive additional findings is not relevant to the participant.">
+				>
+				["at0029"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>
