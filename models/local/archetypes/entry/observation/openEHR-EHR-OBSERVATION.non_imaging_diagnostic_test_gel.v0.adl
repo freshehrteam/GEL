@@ -28,7 +28,7 @@ Can be used to record colour plate test, electro-oculogram, dark adaptation test
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"5BA5BDD309F0AAAB13341D388CAE5A86">
+		["MD5-CAM-1.0.1"] = <"691E6C79CF3E41076D42F48FFC30F8E8">
 	>
 
 definition
@@ -45,11 +45,13 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Test result
+									ELEMENT[at0005] occurrences matches {0..*} matches {	-- Test result
 										value matches {
 											DV_TEXT matches {*}
 											C_DV_QUANTITY <
 											>
+											DV_PROPORTION matches {*}
+											DV_COUNT matches {*}
 										}
 									}
 								}

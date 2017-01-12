@@ -28,7 +28,7 @@ The 'patient status' slot is intended to be filled with a local cluster archetyp
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"2A8820DED17950B1BEE7DCBE5D7F72D5">
+		["MD5-CAM-1.0.1"] = <"C2E2B699B428AD12376A8E441DFB71E7">
 	>
 
 definition
@@ -40,11 +40,6 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Cardiac challenge test
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
 									allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {	-- Patient status
 										include
 											archetype_id/value matches {/openEHR-EHR-CLUSTER\.patient_status_gel(-[a-zA-Z0-9_]+)*\.v0/}
@@ -52,28 +47,6 @@ definition
 									allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Challenge details
 										include
 											archetype_id/value matches {/.*/}
-									}
-									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Comment
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Premature termination?
-										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0012, 	-- Yes
-													at0013, 	-- No
-													at0014]	-- Unknown
-												}
-											}
-										}
-									}
-									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Reason for termination
-										value matches {
-											DV_TEXT matches {*}
-										}
 									}
 								}
 							}
@@ -114,17 +87,13 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"Cardiac challenge test">
-					description = <"Details of cardiac challenge test.">
-				>
 				["at0005"] = <
 					text = <"Patient status">
 					description = <"Slot to capture patient status details relating to this test.">
 				>
 				["at0007"] = <
 					text = <"Challenge details">
-					description = <"*">
+					description = <"Cardiac drug challenge test details.">
 				>
 				["at0008"] = <
 					text = <"Tree">
@@ -134,30 +103,6 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
-				>
-				["at0010"] = <
-					text = <"Comment">
-					description = <"Narrative description of any other detail not captured in other fields.">
-				>
-				["at0011"] = <
-					text = <"Premature termination?">
-					description = <"Statement whether drug challenge test was terminated prematureliy.">
-				>
-				["at0012"] = <
-					text = <"Yes">
-					description = <"Drug challenge test was terminated prematurely.">
-				>
-				["at0013"] = <
-					text = <"No">
-					description = <"Drug challenge test was not terminated prematurely.">
-				>
-				["at0014"] = <
-					text = <"Unknown">
-					description = <"It is not known whether drug challenge test was terminated prematurely.">
-				>
-				["at0015"] = <
-					text = <"Reason for termination">
-					description = <"Reason for premature termination before a standard maximum dose was infused in a drug challenge test.">
 				>
 			>
 		>

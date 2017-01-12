@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"EC23340417375920FE946688DBBFB28D">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"D1D101C347D7450EE6941DA294220AE1">
 	>
 
 definition
@@ -64,6 +64,18 @@ definition
 			ELEMENT[at0010] occurrences matches {0..*} matches {	-- High RV in which lead?
 				value matches {
 					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {	-- Pre-excitation?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0020, 	-- Yes
+							at0021, 	-- No
+							at0022]	-- Unknown
+						}
+					}
 				}
 			}
 			ELEMENT[at0011] occurrences matches {0..1} matches {	-- Abnormal Q-waves?
@@ -172,6 +184,22 @@ ontology
 				["at0018"] = <
 					text = <"Unknown">
 					description = <"It is not known whether interventricular delay is present or not.">
+				>
+				["at0019"] = <
+					text = <"Pre-excitation?">
+					description = <"Statement whether ECG shows any evidence of pre-excitation.">
+				>
+				["at0020"] = <
+					text = <"Yes">
+					description = <"ECG shows evidence of pre-excitation.">
+				>
+				["at0021"] = <
+					text = <"No">
+					description = <"ECG does not show evidence of pre-excitation.">
+				>
+				["at0022"] = <
+					text = <"Unknown">
+					description = <"It is not known whether ECG shows evidence of pre-excitation.">
 				>
 			>
 		>

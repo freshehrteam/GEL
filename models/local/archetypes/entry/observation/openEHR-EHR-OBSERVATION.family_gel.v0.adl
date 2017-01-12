@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"2B0841A0D7D61A4994AF6C81C30BABB6">
+		["MD5-CAM-1.0.1"] = <"21692863BD3A2385E649F9AB00D7BDED">
 	>
 
 definition
@@ -34,7 +34,7 @@ definition
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
@@ -204,8 +204,8 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Any event">
-					description = <"*">
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
 				>
 				["at0003"] = <
 					text = <"Tree">

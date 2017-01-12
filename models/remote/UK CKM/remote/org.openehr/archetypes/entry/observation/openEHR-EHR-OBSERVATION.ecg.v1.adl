@@ -16,8 +16,8 @@ language
 description
 	original_author = <
 		["name"] = <"Omer Hotomaroglu">
-		["organisation"] = <"Tepe International">
 		["email"] = <"omermatrix@ada.net.tr">
+		["organisation"] = <"Tepe International">
 		["date"] = <"2007-07-18">
 	>
 	details = <
@@ -46,7 +46,7 @@ Not to be used for recording Holter monitor results.">
 	other_contributors = <"Koray Atalag, University of Auckland, New Zealand", "Marja Buur, Medisch Centrum Alkmaar/ Code24, Netherlands", "Tamsin Cockayne, Australia", "Marc Cotran, identity vision systems, Canada", "Sam Heard, Ocean Informatics, Australia", "Eugene Igras, IRIS Systems, Inc., Canada", "Heather Leslie, Ocean Informatics, Australia (Editor)", "Ian McNicoll, Ocean Informatics, United Kingdom (Editor)", "Raymond Simkus, Brookswood Family Practice, Canada", "Tim Sturgill, United States">
 	other_details = <
 		["references"] = <"Lead descriptions - http://en.wikipedia.org/wiki/Electrocardiography [accessed 22 February, 2010]">
-		["MD5-CAM-1.0.1"] = <"DFCED3C93DE237C3B8DF90FD6F552C6C">
+		["MD5-CAM-1.0.1"] = <"56D22B96C3FCE0A925FB767D9FA14B82">
 	>
 
 definition
@@ -646,12 +646,14 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					allow_archetype CLUSTER[at0083] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	term_definitions = <
@@ -941,6 +943,11 @@ the ST segment onset (J point).">
 				["at0082"] = <
 					text = <"ECG Viewer">
 					description = <"Details of device used to view the ECG output.">
+				>
+				["at0083"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>
@@ -1289,6 +1296,10 @@ T">
 				["at0082"] = <
 					text = <"عارض مخطط كهربية عضلة القلب">
 					description = <"تفاصيل حول الجهيزة المستخدمة لعرض ناتج تخطيط كهربية عضلة القلب.">
+				>
+				["at0083"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
