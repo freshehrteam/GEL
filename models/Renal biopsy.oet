@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>a7fb6701-99cf-4788-a536-9f2fba6227cf</id>
+  <id>b3c62b2a-98ad-41c2-bd9d-c19ae33e1cd1</id>
   <name>Renal biopsy</name>
-  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" max="1" name="Renal biopsy">
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" max="1" name="Renal biopsy" hide_on_form="true">
     <Rule path="/items[at0002]" max="1" hide_on_form="true" />
     <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0001]" name="C1q immunostain result">
       <constraint xsi:type="textConstraint">
