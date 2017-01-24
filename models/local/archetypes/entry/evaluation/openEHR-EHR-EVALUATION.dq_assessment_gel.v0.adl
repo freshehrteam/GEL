@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"03CA8D2233752C0815815EAE367AA2F1">
+		["MD5-CAM-1.0.1"] = <"B9022BCB055649EAC536DE1E709DAF73">
 	>
 
 definition
@@ -58,6 +58,21 @@ definition
 								}
 							}
 						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {	-- Clinical interpretation
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0009] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -99,6 +114,19 @@ ontology
 				["at0007"] = <
 					text = <"Bayley">
 					description = <"Bayley Scales of infant and toddler development.">
+				>
+				["at0008"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative interpretation of assessment.">
+				>
+				["at0009"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0010"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>

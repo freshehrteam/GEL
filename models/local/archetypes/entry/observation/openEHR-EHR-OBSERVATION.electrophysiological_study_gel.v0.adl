@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"4977E3371267A856F2C3D1B1F6E69D0A">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"7FFD92A0D72193998C442025C87C4027">
 	>
 
 definition
@@ -66,6 +66,19 @@ definition
 									ELEMENT[at0014] occurrences matches {0..1} matches {	-- Inducibility intervals
 										value matches {
 											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0016, 	-- Normal
+													at0017, 	-- Unknown
+													at0018, 	-- Abnormal relevant
+													at0019]	-- Abnormal unknown relevance
+												}
+											}
 										}
 									}
 								}
@@ -167,6 +180,26 @@ ontology
 				["at0014"] = <
 					text = <"Inducibility intervals">
 					description = <"Narrative description of inducibilty intervals.">
+				>
+				["at0015"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0016"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0017"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0018"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0019"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

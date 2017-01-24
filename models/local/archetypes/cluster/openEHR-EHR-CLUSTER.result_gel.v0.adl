@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"777B58E8C08FA997E781244087D51C9F">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"6D5D1EDC3D6E31233D45CFCD538F675A">
 	>
 
 definition
@@ -41,6 +41,19 @@ definition
 							at0003, 	-- Unknown
 							at0004, 	-- Abnormal - relevant
 							at0005]	-- Abnormal - unknown
+						}
+					}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {	-- Assessment
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0007, 	-- Normal
+							at0008, 	-- Unknown
+							at0009, 	-- Abnormal relevant
+							at0010]	-- Abnormal unknown relevance
 						}
 					}
 				}
@@ -75,6 +88,26 @@ ontology
 				["at0005"] = <
 					text = <"Abnormal - unknown">
 					description = <"The result of this investigation shows an abnormality of unknown clinical relevance to the patient's condition.">
+				>
+				["at0006"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0007"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0008"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0009"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0010"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

@@ -26,7 +26,7 @@ description
 	other_contributors = <>
 	other_details = <
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"7FC5165A699029D22438A90E1AA9EF42">
+		["MD5-CAM-1.0.1"] = <"3C5942D4F62DC5B8FB392B16D977AA57">
 	>
 
 definition
@@ -110,6 +110,19 @@ definition
 													at0017, 	-- Abnormal relevant
 													at0018, 	-- Abnormal unknown relevance
 													at0019]	-- Unknown
+												}
+											}
+										}
+									}
+									ELEMENT[at0026] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0027, 	-- Normal
+													at0028, 	-- Unknown
+													at0029, 	-- Abnormal relevant
+													at0030]	-- Abnormal unknown relevance
 												}
 											}
 										}
@@ -241,6 +254,26 @@ ontology
 				["at0025"] = <
 					text = <"Per eye">
 					description = <"Grouping of findings by eye.">
+				>
+				["at0026"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0027"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0028"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0029"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0030"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

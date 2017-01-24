@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"D9097B9BA8A76E457134E70FFCC6BE5B">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"27AE738FCC09043EE4FDC124DC68502E">
 	>
 
 definition
@@ -75,6 +75,19 @@ definition
 													>
 												>
 											>
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0013, 	-- Normal
+													at0014, 	-- Unknown
+													at0015, 	-- Abnormal relevant
+													at0016]	-- Abnormal unknown relevance
+												}
+											}
 										}
 									}
 								}
@@ -164,6 +177,26 @@ ontology
 				["at0011"] = <
 					text = <"RMS">
 					description = <"Root mean square voltage of the last 40ms of the QRS">
+				>
+				["at0012"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0013"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0014"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0015"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0016"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

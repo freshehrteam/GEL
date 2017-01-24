@@ -28,7 +28,7 @@ Can be used to record colour plate test, electro-oculogram, dark adaptation test
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"691E6C79CF3E41076D42F48FFC30F8E8">
+		["MD5-CAM-1.0.1"] = <"673A3B79FDA0A6B1EF521E2748F6B316">
 	>
 
 definition
@@ -52,6 +52,19 @@ definition
 											>
 											DV_PROPORTION matches {*}
 											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012, 	-- Normal
+													at0013, 	-- Unknown
+													at0014, 	-- Abnormal relevant
+													at0015]	-- Abnormal unknown relevance
+												}
+											}
 										}
 									}
 								}
@@ -137,6 +150,26 @@ ontology
 				["at0010"] = <
 					text = <"Confounding factors">
 					description = <"Record any issues or factors that may impact on the test or assessment.">
+				>
+				["at0011"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0012"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0013"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0014"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0015"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

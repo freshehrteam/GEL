@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"791ADFDF43D15BF110D01FF040DE4C1C">
 		["references"] = <"IMACS Form 05c: Childhood Myositis Assessment Scale (CMAS) Scoring Sheet, cited 13-Oct-2016 https://www.niehs.nih.gov/research/resources/assets/docs/cmas_508.pdf">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"E358AACCCD16BCE36743CFFEF79153A0">
 	>
 
 definition
@@ -197,6 +197,11 @@ definition
 											DV_COUNT matches {
 												magnitude matches {|0..52|}
 											}
+										}
+									}
+									ELEMENT[at0095] occurrences matches {0..1} matches {	-- Clinical interpretation
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -602,6 +607,10 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0095"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative description of clinical interpretation of assessment.">
 				>
 			>
 		>

@@ -28,7 +28,7 @@ The 'patient status' slot is intended to be filled with a local cluster archetyp
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"C2E2B699B428AD12376A8E441DFB71E7">
+		["MD5-CAM-1.0.1"] = <"B392CA454613E98142195C5A426825B7">
 	>
 
 definition
@@ -40,13 +40,22 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {	-- Patient status
-										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.patient_status_gel(-[a-zA-Z0-9_]+)*\.v0/}
-									}
 									allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Challenge details
 										include
 											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0011, 	-- Normal
+													at0012, 	-- Unknown
+													at0013, 	-- Abnormal relevant
+													at0014]	-- Abnormal unknown relevance
+												}
+											}
+										}
 									}
 								}
 							}
@@ -87,10 +96,6 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0005"] = <
-					text = <"Patient status">
-					description = <"Slot to capture patient status details relating to this test.">
-				>
 				["at0007"] = <
 					text = <"Challenge details">
 					description = <"Cardiac drug challenge test details.">
@@ -103,6 +108,26 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0010"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0011"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0012"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0013"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0014"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

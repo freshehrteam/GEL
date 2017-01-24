@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>f8a66e30-1a74-406b-93bf-b829f2f0e987</id>
+  <name>GEL Rare diseases performance measures v0</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose>For the purpose of capturing and reporting performance measures as part of the Genomics England Rare Diseases dataset.</purpose>
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="Performance Measures">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.story.v1" concept_name="Story/History" max="1" path="/content" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+        <eventConstraint>
+          <allowedType>PointInTime</allowedType>
+        </eventConstraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/protocol[at0007]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.result_gel.v0" concept_name="Result classification GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Long exercise test result" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.result_gel.v0" concept_name="Result classification GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Short exercise test result" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0007]/items[at0008]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.chaq.v0" concept_name="Childhood Health Assessment Questionnaire" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0008]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0042]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0061]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0074]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0082]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0087]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0118]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0143]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0174]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0205]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0212]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0217]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0218]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0223]" min="1" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0225]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/state[at0219]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0219]/items[at0220]" max="0" />
+      <Rule path="/protocol[at0221]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0221]/items[at0222]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.cmas_score.v0" concept_name="Childhood Myositis Assessment Scale" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0011]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0012]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0023]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0024]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0039]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0040]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0045]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0050]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0056]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0062]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0068]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0074]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0080]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0085]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0090]" min="1" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0095]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/state[at0091]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0091]/items[at0092]" max="0" />
+      <Rule path="/protocol[at0093]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0093]/items[at0094]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.iq_assessment_gel.v0" concept_name="Intelligence Quotient Assessment GEL" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0002]" min="1" />
+      <Rule path="/data[at0001]/items[at0004]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0005]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0005]/items[at0006]" name="Multimedia Resource #1" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.piq_assessment_gel.v0" concept_name="Performance Intelligence Quotient Assessment GEL" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0002]" min="1" />
+      <Rule path="/data[at0001]/items[at0004]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0005]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0005]/items[at0006]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.inas_count.v0" concept_name="INAS Count" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0003]" max="0" />
+      <Rule path="/data[at0001]/items[at0002]" max="0" />
+      <Rule path="/data[at0001]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/items[at0005]" max="0" />
+      <Rule path="/data[at0001]/items[at0006]" max="0" />
+      <Rule path="/data[at0001]/items[at0007]" max="0" />
+      <Rule path="/data[at0001]/items[at0008]" max="0" />
+      <Rule path="/data[at0001]/items[at0009]" max="0" />
+      <Rule path="/data[at0001]/items[at0010]" max="0" />
+      <Rule path="/data[at0001]/items[at0011]" max="0" />
+      <Rule path="/data[at0001]/items[at0012]" max="0" />
+      <Rule path="/data[at0001]/items[at0013]" max="0" />
+      <Rule path="/data[at0001]/items[at0014]" max="0" />
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0017]" max="0" />
+      <Rule path="/data[at0001]/items[at0018]" min="1" />
+      <Rule path="/data[at0001]/items[at0051]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0052]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0052]/items[at0053]" name="Multimedia Resource #1" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.sara_scale.v0" concept_name="SARA ataxia scale" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0014]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0022]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0028]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0036]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0047]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0054]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0055]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0062]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0069]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0070]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0076]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0082]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0083]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0089]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0095]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0101]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/state[at0099]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0099]/items[at0100]" max="0" />
+      <Rule path="/protocol[at0097]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0097]/items[at0098]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.sprs.v0" concept_name="Spastic Paraplegia Rating Scale (SPRS)" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0010]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0022]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0028]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0034]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0040]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0046]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0052]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0058]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0064]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0070]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0076]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0082]" min="1" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0083]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0112]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0108]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0108]/items[at0109]" name="Multimedia Resource #1" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.mmt8.v0" concept_name="MMT8 Assessment" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0002]" max="0" />
+      <Rule path="/data[at0001]/items[at0003]" max="0" />
+      <Rule path="/data[at0001]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/items[at0005]" max="0" />
+      <Rule path="/data[at0001]/items[at0006]" max="0" />
+      <Rule path="/data[at0001]/items[at0007]" max="0" />
+      <Rule path="/data[at0001]/items[at0008]" max="0" />
+      <Rule path="/data[at0001]/items[at0009]" max="0" />
+      <Rule path="/data[at0001]/items[at0010]" max="0" />
+      <Rule path="/data[at0001]/items[at0011]" max="0" />
+      <Rule path="/data[at0001]/items[at0012]" max="0" />
+      <Rule path="/data[at0001]/items[at0013]" max="0" />
+      <Rule path="/data[at0001]/items[at0014]" max="0" />
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0017]" max="0" />
+      <Rule path="/data[at0001]/items[at0018]" min="1" />
+      <Rule path="/data[at0001]/items[at0019]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0020]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0020]/items[at0021]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.story.v1" concept_name="Story/History" max="1" path="/content" name="Story/History #1" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+        <eventConstraint>
+          <allowedType>PointInTime</allowedType>
+        </eventConstraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/protocol[at0007]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Physician global activity assessment">
+        <Rule path="/items[at0001]" default="Physician global activity assessment" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" max="0" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="1" name="Visual analogue pain scale" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Physician extra-muscular global activity assessment">
+        <Rule path="/items[at0001]" default="Physician extra-muscular global activity assessment" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" max="0" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="1" name="Visual analogue pain scale" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Patient assessment">
+        <Rule path="/items[at0001]" default="Patient assessment" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" max="0" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="1" name="Visual analogue pain scale" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Parental assessment">
+        <Rule path="/items[at0001]" default="Parental assessment" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" max="0" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="1" name="Visual analogue pain scale" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" name="Assessment" />
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0007]/items[at0008]" name="Multimedia Resource #1" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.dq_assessment_gel.v0" concept_name="Development Quotient Assessment GEL" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0002]" min="1" />
+      <Rule path="/data[at0001]/items[at0003]" min="1" />
+      <Rule path="/data[at0001]/items[at0008]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/protocol[at0009]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0009]/items[at0010]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.beighton_score.v0" concept_name="Beighton hypermobility score" max="1" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0007]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0014]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0017]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0020]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0023]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0026]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0030]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0036]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/state[at0010]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0010]/items[at0011]" max="0" />
+      <Rule path="/protocol[at0012]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0012]/items[at0013]" name="Multimedia Resource #1" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
+    <Context>
+      <Rule path="/context/other_context[at0001]" hide_on_form="true" />
+      <Rule path="/context/other_context[at0001]/items[at0002]" name="Event reference" />
+      <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
+      <hide_on_form>true</hide_on_form>
+    </Context>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
+    <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.story.v1">
+    <digest id="MD5-CAM-1.0.1">1A6AFF556A3135480517C4E830985332</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.result_gel.v0">
+    <digest id="MD5-CAM-1.0.1">6D5D1EDC3D6E31233D45CFCD538F675A</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
+    <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.chaq.v0">
+    <digest id="MD5-CAM-1.0.1">43866712705A35B8DD5AAF47510FB94B</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.cmas_score.v0">
+    <digest id="MD5-CAM-1.0.1">E358AACCCD16BCE36743CFFEF79153A0</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.iq_assessment_gel.v0">
+    <digest id="MD5-CAM-1.0.1">8ADB1F3B795BE6B620627F12DFF31108</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.piq_assessment_gel.v0">
+    <digest id="MD5-CAM-1.0.1">C90BA07ACC5B5A3B7A1E1A33201ADAA7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.inas_count.v0">
+    <digest id="MD5-CAM-1.0.1">346D1C3E98183D3C8C5F84134B374EA4</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.sara_scale.v0">
+    <digest id="MD5-CAM-1.0.1">349F16EAF3105E789CF75757D23CBF33</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.sprs.v0">
+    <digest id="MD5-CAM-1.0.1">CF73A08F9CB2E359D8860AFE8EC33A4A</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.mmt8.v0">
+    <digest id="MD5-CAM-1.0.1">56E35A2D6377104ED01713F2C62A25EA</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1">
+    <digest id="MD5-CAM-1.0.1">D99FDDA78E05025ED49B9F7502795394</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.dq_assessment_gel.v0">
+    <digest id="MD5-CAM-1.0.1">B9022BCB055649EAC536DE1E709DAF73</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.beighton_score.v0">
+    <digest id="MD5-CAM-1.0.1">F5B729AA639C2B2518F1003C627C4E5A</digest>
+  </integrity_checks>
+</template>

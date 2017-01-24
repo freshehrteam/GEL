@@ -61,9 +61,6 @@
     </other_details>
   </description>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="Biopsy report">
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.assessment_rare_diseases_gel.v0" concept_name="Assessment Rare Diseases GEL" max="1" path="/content" hide_on_form="true">
-      <Rule path="/data[at0001]" hide_on_form="true" />
-    </Content>
     <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0" concept_name="Laboratory test" max="1" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
@@ -77,12 +74,20 @@
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0075]" max="0" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0077]" max="0" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0100]" max="0" />
-      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0098]" max="1" name="Biopsy finding" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0101]" max="0" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0010]" max="1" name="Report" />
       <Rule path="/data[at0001]/events[at0002]/state[at0112]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0112]/items[at0113]" max="0" />
+      <Rule path="/protocol[at0004]" hide_on_form="true" />
       <Rule path="/protocol[at0004]/items[at0068]" max="0" />
       <Rule path="/protocol[at0004]/items[at0094]" max="0" />
       <Rule path="/protocol[at0004]/items[at0111]" max="0" />
@@ -296,9 +301,9 @@
           <Rule path="/items[at0002 and name/value='Laboratory result #1']/items[at0006]" max="0" />
         </Items>
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" path="/protocol[at0004]/items[at0117]" hide_on_form="true" />
     </Content>
     <Context>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" path="/context/other_context[at0001]/items[at0006]" hide_on_form="true" />
       <Rule path="/context/other_context[at0001]" hide_on_form="true" />
       <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
       <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
@@ -308,8 +313,8 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.assessment_rare_diseases_gel.v0">
-    <digest id="MD5-CAM-1.0.1">F000A6A0D293D690F1E315791A1F0992</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0">
+    <digest id="MD5-CAM-1.0.1">D0B96D5D971BF4B92B56E26A57C8C53A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0">
     <digest id="MD5-CAM-1.0.1">64F4898018F4D87C7D8ADAF36558AAF7</digest>
@@ -322,8 +327,5 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
     <digest id="MD5-CAM-1.0.1">4609D4C2AA596C22113E03DFFBB7737C</digest>
-  </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0">
-    <digest id="MD5-CAM-1.0.1">D0B96D5D971BF4B92B56E26A57C8C53A</digest>
   </integrity_checks>
 </template>

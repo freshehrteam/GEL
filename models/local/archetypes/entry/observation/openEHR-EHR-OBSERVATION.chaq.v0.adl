@@ -31,7 +31,7 @@ The questionnaire is completed by parents or carers of the child, and it is inte
 
 Childhood Health Assessment Questionnaire cited 26-Oct-2016 http://www.badbir.org/Website%20data/Ethical%20Approval/Amendment8/12.%20CHAQ%20form.pdf">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"F6D7BAFC47C92DA96831BC85D028B595">
+		["MD5-CAM-1.0.1"] = <"43866712705A35B8DD5AAF47510FB94B">
 	>
 
 definition
@@ -603,6 +603,11 @@ definition
 													>
 												>
 											>
+										}
+									}
+									ELEMENT[at0225] occurrences matches {0..1} matches {	-- Clinical interpretation
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -1539,6 +1544,10 @@ ontology
 				["at0224"] = <
 					text = <"Disability Index">
 					description = <"Calculated from the total score divided by the number of categories answered.">
+				>
+				["at0225"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative description of clinical interpretation.">
 				>
 			>
 		>

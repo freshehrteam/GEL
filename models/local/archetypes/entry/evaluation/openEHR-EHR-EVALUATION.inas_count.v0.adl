@@ -25,10 +25,10 @@ For a semiquantitative assessement of non-ataxia signs, the number of non-ataxia
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"CC BY-SA 3.0">
 		["references"] = <"Ataxia Study Group cited 23-Nov-2016 http://www.ataxia-study-group.net/html/asg">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"037EA2B5F7D1927402215918513A6E7E">
+		["MD5-CAM-1.0.1"] = <"346D1C3E98183D3C8C5F84134B374EA4">
 	>
 
 definition
@@ -138,6 +138,21 @@ definition
 								magnitude matches {|0..16|}
 							}
 						}
+					}
+					ELEMENT[at0051] occurrences matches {0..1} matches {	-- Clinical interpretation
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0052] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0053] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -351,6 +366,19 @@ ontology
 				["at0050"] = <
 					text = <"Present">
 					description = <"Cognitive impairment symptoms are present.">
+				>
+				["at0051"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative interpretation of assessment.">
+				>
+				["at0052"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0053"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>

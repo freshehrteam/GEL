@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"6DA59AF88ED142F510F5BD20629C1D27">
+		["MD5-CAM-1.0.1"] = <"8ADB1F3B795BE6B620627F12DFF31108">
 	>
 
 definition
@@ -45,6 +45,21 @@ definition
 						value matches {
 							DV_TEXT matches {*}
 						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Clinical interpretation
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0005] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -71,6 +86,19 @@ ontology
 					text = <"IQ assessment method">
 					description = <"The method used to calculate the Intelligence Quotient score.">
 					comment = <"For example Stanford–Binet Intelligence Scales, Wechsler Adult Intelligence Scale.">
+				>
+				["at0004"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative clinical interpretation of assessment.">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>

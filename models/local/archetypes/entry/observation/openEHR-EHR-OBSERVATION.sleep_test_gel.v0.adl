@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"7F019125CD596415937F2432DC7CEF01">
+		["MD5-CAM-1.0.1"] = <"20A24A6C75A1A58CE1E3BA1CF51A8E4A">
 	>
 
 definition
@@ -81,6 +81,19 @@ definition
 									ELEMENT[at0010] occurrences matches {0..1} matches {	-- PMLS
 										value matches {
 											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0014, 	-- Normal
+													at0015, 	-- Unknown
+													at0016, 	-- Abnormal relevant
+													at0017]	-- Abnormal unknown relevance
+												}
+											}
 										}
 									}
 								}
@@ -158,6 +171,26 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0013"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0014"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical signifance is normal.">
+				>
+				["at0015"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0016"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of clinical relevance to the patient's condition.">
+				>
+				["at0017"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown clinical relevance to the patient's condition.">
 				>
 			>
 		>

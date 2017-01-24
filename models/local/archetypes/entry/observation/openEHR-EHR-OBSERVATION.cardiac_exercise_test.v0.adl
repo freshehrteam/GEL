@@ -22,7 +22,7 @@ description
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"6160ED81E80A51B8488FA444EADB0E12">
+		["MD5-CAM-1.0.1"] = <"071D4C011E89676ABAFC11C46E749A6C">
 	>
 
 definition
@@ -90,6 +90,19 @@ definition
 									ELEMENT[at0027] occurrences matches {0..*} matches {	-- Vasoactive medication
 										value matches {
 											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0029, 	-- Normal
+													at0030, 	-- Unknown
+													at0031, 	-- Abnormal relevant
+													at0032]	-- Abnormal unknown relevance
+												}
+											}
 										}
 									}
 								}
@@ -239,6 +252,26 @@ ontology
 				["at0027"] = <
 					text = <"Vasoactive medication">
 					description = <"Narrative description of any vasoactive medication.">
+				>
+				["at0028"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0029"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0030"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0031"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0032"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

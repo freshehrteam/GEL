@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Ian McNicoll">
-		["organisation"] = <"freshEHR Clinical Informatics">
 		["email"] = <"ian@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics">
 		["date"] = <"2014-07-11">
 	>
 	details = <
@@ -24,7 +24,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"F4F38E21AC9FED5E3731D348E60151C7">
+		["MD5-CAM-1.0.1"] = <"9C9996D70BD0A8E63A405B7807FA74FE">
 	>
 
 definition
@@ -56,6 +56,26 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {	-- Karyotypic sex
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0015, 	-- XY
+							at0016, 	-- XX
+							at0017, 	-- XO
+							at0018, 	-- XXY
+							at0019, 	-- XYY
+							at0020, 	-- XXX
+							at0021, 	-- XXYY
+							at0022, 	-- XXXY
+							at0023, 	-- XXXX
+							at0024, 	-- Other
+							at0025]	-- Unknown
+						}
+					}
+				}
+			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {	-- Vital Status
 				value matches {
 					DV_CODED_TEXT matches {
@@ -81,7 +101,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -121,7 +140,7 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Female">
-					description = <"The sex / gnder is female.">
+					description = <"The sex / gender is female.">
 				>
 				["at0011"] = <
 					text = <"Undetermined">
@@ -134,6 +153,54 @@ ontology
 				["at0013"] = <
 					text = <"Anonymised current location">
 					description = <"The patient's current location anonymised.">
+				>
+				["at0014"] = <
+					text = <"Karyotypic sex">
+					description = <"The karyotypic sex of the person.">
+				>
+				["at0015"] = <
+					text = <"XY">
+					description = <"The person's karyotypic sex is XY.">
+				>
+				["at0016"] = <
+					text = <"XX">
+					description = <"The person karyotypic sex is XX.">
+				>
+				["at0017"] = <
+					text = <"XO">
+					description = <"The person karyotypic sex is XO.">
+				>
+				["at0018"] = <
+					text = <"XXY">
+					description = <"The person karyotypic sex is XXY.">
+				>
+				["at0019"] = <
+					text = <"XYY">
+					description = <"The person karyotypic sex is XYY.">
+				>
+				["at0020"] = <
+					text = <"XXX">
+					description = <"The person karyotypic sex is XXX.">
+				>
+				["at0021"] = <
+					text = <"XXYY">
+					description = <"The person karyotypic sex is XXYY.">
+				>
+				["at0022"] = <
+					text = <"XXXY">
+					description = <"The person karyotypic sex is XXXY.">
+				>
+				["at0023"] = <
+					text = <"XXXX">
+					description = <"The person karyotypic sex is XXXX.">
+				>
+				["at0024"] = <
+					text = <"Other">
+					description = <"The person karyotypic sex is other.">
+				>
+				["at0025"] = <
+					text = <"Unknown">
+					description = <"The person karyotypic sex is unknown.">
 				>
 			>
 		>

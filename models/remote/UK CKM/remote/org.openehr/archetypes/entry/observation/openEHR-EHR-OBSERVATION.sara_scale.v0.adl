@@ -28,7 +28,7 @@ standard neurological examination for their specificity for ataxia and their qua
 	lifecycle_state = <"NotSet">
 	other_contributors = <"Hildegard Franke, freshEHR Clinical Informatics Ltd. UK", "Diego Martinez, Universidade de Santiago de Compostela (USC  www.usc.es)", "Rocio Martinez, Universidade de Santiago de Compostela (USC  www.usc.es)", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Susi Sobrido, Universidade de Santiago de Compostela (USC  www.usc.es)", "Maria Taboada, Universidade de Santiago de Compostela (USC  www.usc.es)">
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"2D033F9076714E9AC1C68198043FD611">
+		["revision"] = <"0.0.1-alpha">
 		["original_publisher"] = <"openEHR Foundation">
 		["current_contact"] = <"Haitham Maarouf, USC, h_maarouf@hotmail.com">
 		["build_uid"] = <"53988246-4a73-4b27-be41-77c709118fbc">
@@ -45,7 +45,7 @@ spinocerebellar ataxia patients. Neurology 2010;74:678-84
 Weyer A, Abele M, Schmitz-HÃ¼bsch T, Schoch B, Frings M et al. Reliability and validity of the Scale for the Assessment and Rating of Ataxia: A Study in 64 ataxia patients. Mov Disord 2007;22:1633-1637.
 
 http://library.med.utah.edu/neurologicexam/html/coordination_abnormal.html#01">
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"349F16EAF3105E789CF75757D23CBF33">
 		["custodian_namespace"] = <"org.openehr">
 		["custodian_organisation"] = <"openEHR Foundation">
 	>
@@ -243,6 +243,11 @@ definition
 													>
 												>
 											>
+										}
+									}
+									ELEMENT[at0101] occurrences matches {0..1} matches {	-- Clinical interpretation
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -674,6 +679,10 @@ of one arm.">
 				["at0100"] = <
 					text = <"Confounding factors">
 					description = <"Record any issues or factors that may impact on the use of the scale and the overall score.">
+				>
+				["at0101"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative interpretation of assessment.">
 				>
 			>
 		>

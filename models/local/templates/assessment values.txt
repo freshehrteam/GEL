@@ -1,0 +1,4 @@
+Normal
+Unknown
+Abnormal relevant
+Abnormal unknown relevance

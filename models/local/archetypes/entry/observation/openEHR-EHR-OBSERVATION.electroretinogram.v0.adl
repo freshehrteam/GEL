@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"F26D450F200681C1CB46D7C64908EC38">
+		["MD5-CAM-1.0.1"] = <"5BF3D363020053C0FED6BA2E3D09E920">
 	>
 
 definition
@@ -130,6 +130,19 @@ definition
 													[local::
 													at0019, 	-- Flicker
 													at0020]	-- Mixed or combined
+												}
+											}
+										}
+									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0026, 	-- Normal
+													at0027, 	-- Unknown
+													at0028, 	-- Abnormal relevant
+													at0029]	-- Abnormal unknown relevance
 												}
 											}
 										}
@@ -268,6 +281,26 @@ ontology
 				["at0024"] = <
 					text = <"Confounding factors">
 					description = <"Record any issues or factors that may impact on the result or assessment.">
+				>
+				["at0025"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0026"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0027"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0028"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0029"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

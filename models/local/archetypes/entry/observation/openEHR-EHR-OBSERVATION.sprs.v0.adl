@@ -32,7 +32,7 @@ The clinical Spastic Paraplegia Rating Scale (SPRS) measures disease severity an
 
 Rating Scale devised for HSP cited 15-Nov-2016  http://www.hspersunite.org.au/rating-scale-devised-for-hsp/">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"B190A2C7A1517AAB33B2F867B4FA429B">
+		["MD5-CAM-1.0.1"] = <"CF73A08F9CB2E359D8860AFE8EC33A4A">
 	>
 
 definition
@@ -199,6 +199,11 @@ definition
 													at0107]	-- Skeletal abnormalities
 												}
 											}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0112] occurrences matches {0..1} matches {	-- Clinical interpretation
+										value matches {
 											DV_TEXT matches {*}
 										}
 									}
@@ -682,6 +687,10 @@ ontology
 				["at0111"] = <
 					text = <"Assessment method">
 					description = <"The method used to for the spastic paraplegia rating scale.">
+				>
+				["at0112"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative interpretation of assessment.">
 				>
 			>
 		>

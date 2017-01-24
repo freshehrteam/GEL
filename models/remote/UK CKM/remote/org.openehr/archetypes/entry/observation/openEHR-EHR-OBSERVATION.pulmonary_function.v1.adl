@@ -16,19 +16,11 @@ language
 description
 	original_author = <
 		["name"] = <"Ian McNicoll">
-		["organisation"] = <"Ocean Informatics, UK">
 		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+		["organisation"] = <"Ocean Informatics, UK">
 		["date"] = <"2013-03-08">
 	>
 	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record results of pulmonary function tests, including spirometry and lung volume testing.">
-			use = <"Used to record all representations of pulmonary function testing, including spirometry. Multiple events and state information may be used to capture pre and post bronchial challenge or bronchodilation results.">
-			keywords = <"respiratory", "pulmonary", "spirometry", "peak flow", "PFT", "lung", "bronchial">
-			misuse = <"Supporting subject information, often required  to interpret the tests, such as smoking status or oxygenation, should be captured in separate, specific archetypes.">
-			copyright = <"© openEHR Foundation">
-		>
 		["sl"] = <
 			language = <[ISO_639-1::sl]>
 			purpose = <"*To record results of pulmonary function tests, including spirometry and lung volume testing. (en)">
@@ -36,6 +28,14 @@ description
 (en)">
 			keywords = <"*respiratory(en)", "*pulmonary(en)", "*spirometry(en)", "*peak flow(en)", "*PFT(en)", "*lung(en)", "*bronchial(en)">
 			misuse = <"*Supporting subject information, often required  to interpret the tests, such as smoking status or oxygenation, should be captured in separate, specific archetypes.(en)">
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record results of pulmonary function tests, including spirometry and lung volume testing.">
+			use = <"Used to record all representations of pulmonary function testing, including spirometry. Multiple events and state information may be used to capture pre and post bronchial challenge or bronchodilation results.">
+			keywords = <"respiratory", "pulmonary", "spirometry", "peak flow", "PFT", "lung", "bronchial">
+			misuse = <"Supporting subject information, often required  to interpret the tests, such as smoking status or oxygenation, should be captured in separate, specific archetypes.">
 			copyright = <"© openEHR Foundation">
 		>
 	>
@@ -47,7 +47,7 @@ Spirometry [Internet]. [date unknown];[cited 2010 Aug 25 ] Available from: http:
 Johns DP, Pierce R. Pocket guide to spirometry.  McGraw-Hill Medical; 2007.
 Pingul EM, de Guia TS, Ayuyao FG. FEV1/FEV6 VS FEV1/FVC IN THE SPIROMETRIC DIAGNOSIS OF AIRWAYS OBSTRUCTION AMONG ASIANS.  In: Chest Meeting Abstracts.  2007 p. 491c.
 Tiffeneau R, Pinelli A. Air circulant et air captif dans l'exploration de la fonction ventilatrice pulmonaire. Paris Med 1947;133:624-8.">
-		["MD5-CAM-1.0.1"] = <"387886EC6090ADD9B2D1C7024ECF6956">
+		["MD5-CAM-1.0.1"] = <"35F8EBE46F4A16BD4555DCF5D81A7CD0">
 	>
 
 definition
@@ -405,12 +405,14 @@ definition
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
 					}
+					allow_archetype CLUSTER[at0131] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	term_definitions = <
@@ -705,6 +707,11 @@ D,   2.986 X T">
 					text = <"Overall Interpretation">
 					description = <"Overall clinical interpretation of the measurements and related findings.">
 				>
+				["at0131"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
 			>
 		>
 		["sl"] = <
@@ -997,6 +1004,10 @@ D,   2.986 X T(en)">
 				["at0130"] = <
 					text = <"*Overall Interpretation(en)">
 					description = <"*Overall clinical interpretation of the measurements and related findings.(en)">
+				>
+				["at0131"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>

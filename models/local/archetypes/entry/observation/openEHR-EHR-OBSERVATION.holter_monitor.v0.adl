@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"40F2CAC0B6F132348AAD4DE6B643B135">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"74B4F9378D6BCEEB548AB8B43AD899FD">
 	>
 
 definition
@@ -83,6 +83,19 @@ definition
 													at0021, 	-- Non-sustained VT
 													at0022, 	-- Nil
 													at0023]	-- Unknown
+												}
+											}
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Assessment
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0025, 	-- Normal
+													at0026, 	-- Unknown
+													at0027, 	-- Abnormal relevant
+													at0028]	-- Abnormal unknown relevance
 												}
 											}
 										}
@@ -222,6 +235,26 @@ ontology
 				["at0023"] = <
 					text = <"Unknown">
 					description = <"It is not known whether the Holter monitor showed any abnormalities.">
+				>
+				["at0024"] = <
+					text = <"Assessment">
+					description = <"Assessment of findings and clinical significance.">
+				>
+				["at0025"] = <
+					text = <"Normal">
+					description = <"The assessment of findings and clinical significance is normal.">
+				>
+				["at0026"] = <
+					text = <"Unknown">
+					description = <"The assessment of findings and clinical significance is unknown or no results are available.">
+				>
+				["at0027"] = <
+					text = <"Abnormal relevant">
+					description = <"The assessment of findings and clinical significance indicates an abnormality relevant to the patient's condition.">
+				>
+				["at0028"] = <
+					text = <"Abnormal unknown relevance">
+					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
 				>
 			>
 		>

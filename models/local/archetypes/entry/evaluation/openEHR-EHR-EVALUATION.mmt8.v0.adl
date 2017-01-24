@@ -24,10 +24,10 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"CC BY-SA 3.0">
 		["references"] = <"https://www.niehs.nih.gov/research/resources/assets/docs/mmt8_grading_and_testing_procedures_for_the_abbreviated_8_muscle_groups_508.pdf">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"A08A828D310CF939F81D415D6EFE4304">
+		["MD5-CAM-1.0.1"] = <"56E35A2D6377104ED01713F2C62A25EA">
 	>
 
 definition
@@ -154,6 +154,21 @@ definition
 							}
 						}
 					}
+					ELEMENT[at0019] occurrences matches {0..1} matches {	-- Clinical interpretation
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0020] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
@@ -238,6 +253,19 @@ ontology
 				["at0018"] = <
 					text = <"Total score">
 					description = <"The total score from all 8 muscles groups, counting each muscle group only once, either in anti-gravity position (AG) or gravity-eliminated position (GE).">
+				>
+				["at0019"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative interpretation of assessment.">
+				>
+				["at0020"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>

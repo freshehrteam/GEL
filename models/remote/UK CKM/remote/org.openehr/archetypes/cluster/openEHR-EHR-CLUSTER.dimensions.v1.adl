@@ -17,8 +17,8 @@ language
 description
 	original_author = <
 		["name"] = <"Heather Leslie">
-		["organisation"] = <"Ocean Informatics">
 		["email"] = <"heather.leslie@oceaninformatics.com">
+		["organisation"] = <"Ocean Informatics">
 	>
 	details = <
 		["de"] = <
@@ -41,8 +41,7 @@ description
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <>
 	other_details = <
-		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"B14424CBA9C103AF726A1081BCA771B4">
+		["MD5-CAM-1.0.1"] = <"DA94E90CFD171192D77E71B99CBB1577">
 	>
 
 definition
@@ -224,14 +223,15 @@ definition
 							["5"] = <
 								units = <"ft3">
 							>
+							["6"] = <
+								units = <"uL">
+							>
 						>
 					>
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	term_definitions = <

@@ -26,7 +26,7 @@ description
 	other_contributors = <>
 	other_details = <
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"1B51AEA3891C50E0FB0622D37A7E71F0">
+		["MD5-CAM-1.0.1"] = <"F5B729AA639C2B2518F1003C627C4E5A">
 	>
 
 definition
@@ -97,6 +97,11 @@ definition
 											DV_COUNT matches {
 												magnitude matches {|0..9|}
 											}
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..1} matches {	-- Clinical interpretation
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -277,6 +282,10 @@ ontology
 				["at0035"] = <
 					text = <"Total score">
 					description = <"Total score of all 9 elements of Beighton test.">
+				>
+				["at0036"] = <
+					text = <"Clinical interpretation">
+					description = <"Narrative interpretation of assessment.">
 				>
 			>
 		>
