@@ -1,0 +1,103 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-ADMIN_ENTRY.participant_gel.v0
+
+concept
+	[at0000]	-- Participant GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2017-01-27">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the capture and reporting of participant details in the Genomics England datasets.">
+			use = <"Use to record participant details not available elsewhere in the context of the Genomics England datasets.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC-BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"4E978BB60C1444593B14C1DEA9A2FDD7">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {	-- Participant GEL
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {	-- Participant details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Participant type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003, 	-- Proband
+									at0004]	-- Relative
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {	-- Proband details
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.proband_gel(-[a-zA-Z0-9_]+)*\.v0/}
+					}
+					allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Relative details
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.metadata_relative_gel(-[a-zA-Z0-9_]+)*\.v0/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Participant GEL">
+					description = <"Local admin archetype to hold participant details not available elsewhere.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Participant type">
+					description = <"The type of participant as defined by the Genomics England dataset.">
+				>
+				["at0003"] = <
+					text = <"Proband">
+					description = <"The participant type is proband.">
+				>
+				["at0004"] = <
+					text = <"Relative">
+					description = <"The participant type is relative.">
+				>
+				["at0005"] = <
+					text = <"Participant details">
+					description = <"Participant details such as identifiers, names, ethnicity and contact details.">
+				>
+				["at0006"] = <
+					text = <"Proband details">
+					description = <"Proband details where the participant is the proband.">
+				>
+				["at0007"] = <
+					text = <"Relative details">
+					description = <"The relative details where the participant is a relative of the proband.">
+				>
+			>
+		>
+	>

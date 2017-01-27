@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Ian McNicoll">
-		["organisation"] = <"Ocean Informatics, UK">
 		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+		["organisation"] = <"Ocean Informatics, UK">
 		["date"] = <"2012-07-18">
 	>
 	details = <
@@ -53,7 +53,7 @@ Chiang MF, Boland MV, Brewer A, Epley KD, Horton MB, Lim MC, et al. Special Requ
 
 Practical Ophthalmology: A Manual for Beginning Residents, 6th Edition [Paperback]
 American Academy Of Ophthalmology (Author), Fred M. Wilson II (Editor), MD (Editor)">
-		["MD5-CAM-1.0.1"] = <"C49A0A66AB60A25B4DB64B675810B486">
+		["MD5-CAM-1.0.1"] = <"E6D8FADFEC1C7CBCE67B3E5FAA1F0E19">
 	>
 
 definition
@@ -340,12 +340,14 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					allow_archetype CLUSTER[at0140] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", ...>
@@ -626,6 +628,11 @@ If the patient can read less than half of a Visual Acuity line, the previous lin
 				["at0139"] = <
 					text = <"Unaided visual acuity">
 					description = <"The test was performed without visual aid.">
+				>
+				["at0140"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>

@@ -1,0 +1,123 @@
+{
+    "ctx/language": "en",
+    "ctx/territory": "GB",
+    "ctx/composer_name": "Silvia Blake",
+    //MSH.7-TS.1
+    "ctx/time": "2017-01-28T18:40:49.715+01:00",
+    //HD.3
+    "ctx/id_namespace": "HOSPITAL-NS",
+    "ctx/id_scheme": "HOSPITAL-NS",
+    //HD.1
+    "ctx/health_care_facility|name": "Royal Free",
+    //HD.2
+    "ctx/health_care_facility|id": "9091",
+    //OBR.4 - CE.1
+    "laboratory_result_report/laboratory_test:0/requested_test|value": "Urea, electrolytes and creatinine measurement",
+      //OBR.4 - CE.2
+    "laboratory_result_report/laboratory_test:0/requested_test|code": "444164000",
+    //OBR.4 - CE.2
+    "laboratory_result_report/laboratory_test:0/requested_test|terminology": "SNOMED-CT",
+    //OBR.15-SPS.1-CE.1
+      "laboratory_result_report/laboratory_test:0/specimen:0/specimen_type": "Plasma",
+    //OBR.7 - TS.1
+    "laboratory_result_report/laboratory_test:0/specimen:0/datetime_collected": "2017-01-28T18:40:49.715+01:00",
+    //OBR.15-SPS.4-CE.1
+    "laboratory_result_report/laboratory_test:0/specimen:0/collection_method": "Venous sample",
+    //OBR.14-TS.1
+    "laboratory_result_report/laboratory_test:0/specimen:0/processing/datetime_received": "2017-01-29T18:40:49.716+01:00",
+    //OBR-25 Mappings
+    //OBR.25 = P
+		//"healthlink_lab_report/laboratory_test:0/test_status|code": "at0037",
+		//"healthlink_lab_report/laboratory_test:0/test_status|value": "Partial",
+
+		//OBR.25 = F
+		//"healthlink_lab_report/laboratory_test:0/test_status|code": "at0038",
+		//"healthlink_lab_report/laboratory_test:0/test_status|value": "Final",
+
+		//OBR.25 = C
+		//"healthlink_lab_report/laboratory_test:0/test_status|code": "at0115",
+		//"healthlink_lab_report/laboratory_test:0/test_status|value": "Corrected"
+
+	//	OBR.25 = X
+	//	"healthlink_lab_report/laboratory_test:0/test_status|code": "at0074",
+	//	"healthlink_lab_report/laboratory_test:0/test_status|value": "Cancelled"
+    "laboratory_result_report/laboratory_test:0/test_status|code": "at0038",
+    "laboratory_result_report/laboratory_test:0/test_status_timestamp": "2017-01-28T18:40:49.716+01:00",
+
+    "laboratory_result_report/laboratory_test:0/clinical_information_provided": "History of angina",
+
+    //OBX.1 - CE.1
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/_name|value": "Urea",
+
+    //OBX.1 - CE.2
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/_name|code": "365755003",
+
+    //OBX.1 - CE.3
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/_name|terminology": "SNOMED-CT",
+
+
+    //OBX.5
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/value2|magnitude": 4.3,
+
+    //OBX.6
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/value2|unit": "mmol/l",
+
+    //OBX-7
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/value2/_normal_range/lower|magnitude": "2.5",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/value2/_normal_range/lower|unit": "mmol/l",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/value2/_normal_range/upper|magnitude": "6.6",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_value/value2/_normal_range/upper|unit": "mmol/l",
+
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/comment": "raised",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:0/result_status|code": "at0009",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/_name|value": "Creatinine",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/_name|code": "70901006",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/_name|terminology": "SNOMED-CT",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/value2|magnitude": 101.4,
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/value2|unit": "mmol/l",
+    //NTE.1 - NTE.3
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/comment": "normal",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_status|code": "at0009",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/value2/_normal_range/lower|magnitude": "80",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/value2/_normal_range/lower|unit": "mmol/l",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/value2/_normal_range/upper|magnitude": "10",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:1/result_value/value2/_normal_range/upper|unit": "mmol/l",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/_name|value": "Sodium",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/_name|code": "365761000",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/_name|terminology": "SNOMED-CT",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/value2|magnitude": 133,
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/value2|unit": "mmol/l",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/value2/_normal_range/lower|magnitude": "133",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/value2/_normal_range/lower|unit": "mmol/l",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/value2/_normal_range/upper|magnitude": "146",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_value/value2/_normal_range/upper|unit": "mmol/l",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/comment": "low",
+    "laboratory_result_report/laboratory_test:0/laboratory_test_panel:0/laboratory_result:2/result_status|code": "at0009",
+    "laboratory_result_report/laboratory_test:0/conclusion": "Not consistent with renal failure",
+    "laboratory_result_report/laboratory_test:0/responsible_laboratory/name_of_organisation": "Royal Free",
+
+    "laboratory_result_report/laboratory_test:0/test_request_details/placer_order_number": "cbf3c55e-ea2e-4860-a5a5-508e8a962d3d",
+    "laboratory_result_report/laboratory_test:0/test_request_details/placer_order_number|issuer": "royalfree",
+    "laboratory_result_report/laboratory_test:0/test_request_details/placer_order_number|assigner": "royalfree",
+    "laboratory_result_report/laboratory_test:0/test_request_details/placer_order_number|type": "Lab_order",
+//OBR.3 - EI.1
+    "laboratory_result_report/laboratory_test:0/test_request_details/filler_order_number": "66cac634-545b-445f-9098-5c651ff54056",
+    //OBR.3 - EI.3
+    "laboratory_result_report/laboratory_test:0/test_request_details/filler_order_number|issuer": "chem path",
+    //OBR.3 - EI.1
+    "laboratory_result_report/laboratory_test:0/test_request_details/filler_order_number|assigner": "chem path",
+    //OBR.3 - EI.1
+    "laboratory_result_report/laboratory_test:0/test_request_details/filler_order_number|type": "chem path",
+// MSH.6-HD.1 - not sure why this is structured, unstructred name is possible too.
+    "laboratory_result_report/laboratory_test:0/test_request_details/requester/ordering_provider/ordering_provider/given_name": "Ian",
+// MSH.6-HD.1
+    "laboratory_result_report/laboratory_test:0/test_request_details/requester/ordering_provider/ordering_provider/family_name": "McNicoll",
+// MSH.6-HD.2
+    "laboratory_result_report/laboratory_test:0/test_request_details/requester/professional_identifier": "361a30c1-a56e-4381-8ac6-9e52c6cf32bd",
+    // MSH.6-HD.3
+    "laboratory_result_report/laboratory_test:0/test_request_details/requester/professional_identifier|issuer": "GMC",
+    // MSH.6-HD.3
+    "laboratory_result_report/laboratory_test:0/test_request_details/requester/professional_identifier|assigner": "GMC",
+    // MSH.6-HD.3
+    "laboratory_result_report/laboratory_test:0/test_request_details/requester/professional_identifier|type": "GMC Number"
+}

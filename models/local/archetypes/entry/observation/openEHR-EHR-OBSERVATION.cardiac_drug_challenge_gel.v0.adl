@@ -28,7 +28,7 @@ The 'patient status' slot is intended to be filled with a local cluster archetyp
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"B392CA454613E98142195C5A426825B7">
+		["MD5-CAM-1.0.1"] = <"032096002388B15846A6C2322820C11B">
 	>
 
 definition
@@ -55,6 +55,23 @@ definition
 													at0014]	-- Abnormal unknown relevance
 												}
 											}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Premature termination
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0017, 	-- Yes
+													at0018, 	-- No
+													at0019]	-- Unknown
+												}
+											}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Reason for premature termination
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -128,6 +145,26 @@ ontology
 				["at0014"] = <
 					text = <"Abnormal unknown relevance">
 					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
+				>
+				["at0015"] = <
+					text = <"Premature termination">
+					description = <"Statement whether drug challenge test was terminated prematurely.">
+				>
+				["at0016"] = <
+					text = <"Reason for premature termination">
+					description = <"Narrative description of reason why drug challenge test was terminated prematurely.">
+				>
+				["at0017"] = <
+					text = <"Yes">
+					description = <"The drug challenge test was terminated prematurely.">
+				>
+				["at0018"] = <
+					text = <"No">
+					description = <"The drug challenge was not terminated prematurely.">
+				>
+				["at0019"] = <
+					text = <"Unknown">
+					description = <"It is not known whether the drug challenge test was terminated prematurely.">
 				>
 			>
 		>

@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Ian McNicoll">
-		["organisation"] = <"Ocean Informatics, UK">
 		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+		["organisation"] = <"Ocean Informatics, UK">
 		["date"] = <"2012-07-18">
 	>
 	details = <
@@ -27,7 +27,6 @@ The 'Description' data element can be used to record simple narrative summary or
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <"Gustavo M Bacelar-Silva, Brazil", ...>
 	other_details = <
-		["current_contact"] = <"Ian McNicoll, Ocean Informatics, UK, ian.mcnicoll@oceaninformatics.com">
 		["references"] = <"Visual Acuity [Internet]. Wikipedia. Available from: http://en.wikipedia.org/wiki/Visual_acuity
 
 Aylward W [Internet].Coding Visual Acuity, openEyes Project;2012.Available from http://www.openeyes.org.uk/documents/OpenEyes%20Coding%20Visual%20Acuity.pdf
@@ -42,7 +41,8 @@ DICOM Supplement 30 [Internet]. [cited 2012 Sep 26]. Available from: http://medi
 
 Practical Ophthalmology: A Manual for Beginning Residents, 6th Edition [Paperback]
 American Academy Of Ophthalmology (Author), Fred M. Wilson II (Editor), MD (Editor)">
-		["MD5-CAM-1.0.1"] = <"1FC072ECEFE11FA70A8F99BAEC6B2282">
+		["current_contact"] = <"Ian McNicoll, Ocean Informatics, UK, ian.mcnicoll@oceaninformatics.com">
+		["MD5-CAM-1.0.1"] = <"7EE93FFAD2F1F08B0181E7EAA7DF82A9">
 	>
 
 definition
@@ -133,12 +133,14 @@ definition
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
 					}
+					allow_archetype CLUSTER[at0140] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", ...>
@@ -240,6 +242,11 @@ ontology
 				["at0139"] = <
 					text = <"Refraction details">
 					description = <"Details of refraction for a single eye.">
+				>
+				["at0140"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>
