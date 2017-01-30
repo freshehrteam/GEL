@@ -60,13 +60,52 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::14667.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12730.3</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12729.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12728.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12731.2</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases withdrawal">
-    <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0" concept_name="Withdrawal GEL" path="/content">
+    <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0" concept_name="Withdrawal GEL" max="1" path="/content" name="Withdrawal">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/items[at0010]" min="1" />
       <Rule path="/data[at0001]/items[at0002]" min="1" />
       <Rule path="/data[at0001]/items[at0004]" min="1" />
-      <Rule path="/data[at0001]/items[at0005]" min="1" />
       <Rule path="/data[at0001]/items[at0006]" min="1" />
       <Rule path="/data[at0001]/items[at0009]" min="1" />
     </Content>
@@ -81,6 +120,6 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B582838757BCD58AAD6A12B9429DC49B</digest>
+    <digest id="MD5-CAM-1.0.1">F1339096FA46B6EF2FFED0F3C9A91423</digest>
   </integrity_checks>
 </template>

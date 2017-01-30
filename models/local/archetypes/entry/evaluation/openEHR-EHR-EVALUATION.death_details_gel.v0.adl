@@ -24,9 +24,9 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"3434BCF39553F31D571CB25CF02539AB">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"DA68842B66954AA4514BBABEF6DEA144">
 	>
 
 definition
@@ -49,22 +49,22 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0009] occurrences matches {0..*} matches {	-- Significant
+					ELEMENT[at0009] occurrences matches {0..1} matches {	-- Significant
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0010] occurrences matches {0..*} matches {	-- Immediate cause
+					ELEMENT[at0010] occurrences matches {0..1} matches {	-- Immediate cause
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..*} matches {	-- Condition
+					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Condition
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..*} matches {	-- New element
+					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Underlying cause
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -142,7 +142,7 @@ ontology
 					description = <"Condition leading to death. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0012"] = <
-					text = <"New element">
+					text = <"Underlying cause">
 					description = <"Underlying cause of death. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0013"] = <

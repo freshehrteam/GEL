@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
   <id>d0113575-25cf-436c-b327-29645e5650b4</id>
-  <name>GEL Rare disease death details output report.v0</name>
+  <name>GEL Rare diseases death details output report.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
@@ -60,8 +60,64 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::14858.3</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12777.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12781.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12778.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12780.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0012]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12779.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0013]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::33515.1</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases death details">
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0" concept_name="Death details GEL" path="/content">
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0" concept_name="Death details GEL" max="1" path="/content" name="Death details">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/protocol[at0014]" hide_on_form="true" />
     </Content>
@@ -76,6 +132,6 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0">
-    <digest id="MD5-CAM-1.0.1">3434BCF39553F31D571CB25CF02539AB</digest>
+    <digest id="MD5-CAM-1.0.1">DA68842B66954AA4514BBABEF6DEA144</digest>
   </integrity_checks>
 </template>

@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"B582838757BCD58AAD6A12B9429DC49B">
+		["MD5-CAM-1.0.1"] = <"F1339096FA46B6EF2FFED0F3C9A91423">
 	>
 
 definition
@@ -44,19 +44,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Copy of withdrawal form
-						value matches {
-							DV_MULTIMEDIA matches {
-								media_type matches {[openEHR::518]}
-							}
-						}
-					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Name of withdrawal form
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Version of withdrawal form
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Name and version of withdrawal form
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -102,17 +90,9 @@ ontology
 					text = <"Withdrawal form">
 					description = <"Filename of uploaded copy of scanned withdrawal form pdf.">
 				>
-				["at0003"] = <
-					text = <"Copy of withdrawal form">
-					description = <"Uploaded PDF copy of withdrawal form.">
-				>
 				["at0004"] = <
-					text = <"Name of withdrawal form">
-					description = <"Name of the withdrawal form used.">
-				>
-				["at0005"] = <
-					text = <"Version of withdrawal form">
-					description = <"Version of the withdrawal form used.">
+					text = <"Name and version of withdrawal form">
+					description = <"Name and version of the withdrawal form used.">
 				>
 				["at0006"] = <
 					text = <"Withdrawal option">
