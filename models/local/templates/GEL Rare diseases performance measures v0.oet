@@ -60,7 +60,399 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="Performance Measures">
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::14858.3</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.result_gel.v0 and name/value='Long exercise test result']/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30217.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.result_gel.v0 and name/value='Long exercise test result']/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29254.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.result_gel.v0 and name/value='Short exercise test result']/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.result_gel.v0 and name/value='Short exercise test result']/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30218.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1]/protocol[at0007]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.chaq.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0223]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30291.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.chaq.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0225]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.chaq.v0]/protocol[at0221]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.cmas_score.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0090]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30221.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.cmas_score.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0095]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.cmas_score.v0]/protocol[at0093]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.iq_assessment_gel.v0]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30223.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.iq_assessment_gel.v0]/data[at0001]/items[at0003]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31287.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.iq_assessment_gel.v0]/data[at0001]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.iq_assessment_gel.v0]/protocol[at0005]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.piq_assessment_gel.v0]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30225.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.piq_assessment_gel.v0]/data[at0001]/items[at0003]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31288.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.piq_assessment_gel.v0]/data[at0001]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.piq_assessment_gel.v0]/protocol[at0005]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.inas_count.v0]/data[at0001]/items[at0018]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30227.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.inas_count.v0]/data[at0001]/items[at0051]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.inas_count.v0]/protocol[at0052]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sara_scale.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0096]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28907.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sara_scale.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0101]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sara_scale.v0]/protocol[at0097]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sprs.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0082]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30229.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sprs.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0112]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sprs.v0]/protocol[at0108]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.sprs.v0]/protocol[at0108]/items[at0111]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31290.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.mmt8.v0]/data[at0001]/items[at0018]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30231.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.mmt8.v0]/protocol[at0020]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.mmt8.v0]/data[at0001]/items[at0019]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Physician global activity assessment']/items[at0026]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30238.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Physician global activity assessment']/items[at0163]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Physician extra-muscular global activity assessment']/items[at0026]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30237.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Physician extra-muscular global activity assessment']/items[at0163]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Patient assessment']/items[at0163]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Patient assessment']/items[at0026]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30235.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Parental assessment']/items[at0026]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30234.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Parental assessment']/items[at0163]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/protocol[at0007]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.dq_assessment_gel.v0]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30243.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.dq_assessment_gel.v0]/data[at0001]/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.dq_assessment_gel.v0]/protocol[at0009]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30242.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.dq_assessment_gel.v0]/protocol[at0009]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.beighton_score.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0035]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28583.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.beighton_score.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0036]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-OBSERVATION.beighton_score.v0]/protocol[at0012]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="Rare diseases performance measures">
     <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.story.v1" concept_name="Story/History" max="1" path="/content" hide_on_form="true">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
@@ -73,7 +465,7 @@
       <Rule path="/protocol[at0007]" hide_on_form="true" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.result_gel.v0" concept_name="Result classification GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Long exercise test result" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.result_gel.v0" concept_name="Result classification GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Short exercise test result" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0007]/items[at0008]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0007]/items[at0008]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -100,6 +492,7 @@
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0217]" max="0" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0218]" max="0" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0223]" min="1" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0224]" max="0" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0225]" name="Assessment">
         <constraint xsi:type="textConstraint">
           <includedValues>Normal</includedValues>
@@ -111,7 +504,7 @@
       <Rule path="/data[at0001]/events[at0002]/state[at0219]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0219]/items[at0220]" max="0" />
       <Rule path="/protocol[at0221]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0221]/items[at0222]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0221]/items[at0222]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -152,7 +545,7 @@
       <Rule path="/data[at0001]/events[at0002]/state[at0091]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0091]/items[at0092]" max="0" />
       <Rule path="/protocol[at0093]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0093]/items[at0094]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0093]/items[at0094]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -160,7 +553,7 @@
         <Rule path="/items[at0004]" max="0" />
       </Items>
     </Content>
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.iq_assessment_gel.v0" concept_name="Intelligence Quotient Assessment GEL" max="1" path="/content">
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.iq_assessment_gel.v0" concept_name="Intelligence Quotient Assessment GEL" max="1" path="/content" name="Intelligence Quotient Assessment">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/items[at0002]" min="1" />
       <Rule path="/data[at0001]/items[at0004]" name="Assessment">
@@ -172,7 +565,7 @@
         </constraint>
       </Rule>
       <Rule path="/protocol[at0005]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0005]/items[at0006]" name="Multimedia Resource #1" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0005]/items[at0006]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -180,7 +573,7 @@
         <Rule path="/items[at0004]" max="0" />
       </Items>
     </Content>
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.piq_assessment_gel.v0" concept_name="Performance Intelligence Quotient Assessment GEL" max="1" path="/content">
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.piq_assessment_gel.v0" concept_name="Performance Intelligence Quotient Assessment GEL" max="1" path="/content" name="Performance Intelligence Quotient Assessment">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/items[at0002]" min="1" />
       <Rule path="/data[at0001]/items[at0004]" name="Assessment">
@@ -192,7 +585,7 @@
         </constraint>
       </Rule>
       <Rule path="/protocol[at0005]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0005]/items[at0006]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0005]/items[at0006]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -228,7 +621,7 @@
         </constraint>
       </Rule>
       <Rule path="/protocol[at0052]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0052]/items[at0053]" name="Multimedia Resource #1" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0052]/items[at0053]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -267,7 +660,7 @@
       <Rule path="/data[at0001]/events[at0002]/state[at0099]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0099]/items[at0100]" max="0" />
       <Rule path="/protocol[at0097]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0097]/items[at0098]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0097]/items[at0098]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -303,7 +696,7 @@
         </constraint>
       </Rule>
       <Rule path="/protocol[at0108]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0108]/items[at0109]" name="Multimedia Resource #1" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0108]/items[at0109]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -339,7 +732,7 @@
         </constraint>
       </Rule>
       <Rule path="/protocol[at0020]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0020]/items[at0021]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0020]/items[at0021]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -470,7 +863,7 @@
         <Rule path="/items[at0031]" max="0" />
         <Rule path="/items[at0163]" name="Assessment" />
       </Items>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0007]/items[at0008]" name="Multimedia Resource #1" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0007]/items[at0008]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -478,10 +871,9 @@
         <Rule path="/items[at0004]" max="0" />
       </Items>
     </Content>
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.dq_assessment_gel.v0" concept_name="Development Quotient Assessment GEL" max="1" path="/content">
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.dq_assessment_gel.v0" concept_name="Development Quotient Assessment GEL" max="1" path="/content" name="Development Quotient Assessment">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/items[at0002]" min="1" />
-      <Rule path="/data[at0001]/items[at0003]" min="1" />
       <Rule path="/data[at0001]/items[at0008]" name="Assessment">
         <constraint xsi:type="textConstraint">
           <includedValues>Normal</includedValues>
@@ -491,7 +883,7 @@
         </constraint>
       </Rule>
       <Rule path="/protocol[at0009]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/protocol[at0009]/items[at0010]" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0009]/items[at0010]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -523,7 +915,7 @@
       <Rule path="/data[at0001]/events[at0002]/state[at0010]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0010]/items[at0011]" max="0" />
       <Rule path="/protocol[at0012]" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0012]/items[at0013]" name="Multimedia Resource #1" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0012]/items[at0013]" name="Report details" hide_on_form="true">
         <Rule path="/items[at0001]" max="0" />
         <Rule path="/items[at0002]" name="Report" />
         <Rule path="/items[at0005]" max="0" />
@@ -578,7 +970,7 @@
     <digest id="MD5-CAM-1.0.1">D99FDDA78E05025ED49B9F7502795394</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.dq_assessment_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B9022BCB055649EAC536DE1E709DAF73</digest>
+    <digest id="MD5-CAM-1.0.1">D10C45B755CC08CCEFFFB42C9C40FA2D</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.beighton_score.v0">
     <digest id="MD5-CAM-1.0.1">F5B729AA639C2B2518F1003C627C4E5A</digest>

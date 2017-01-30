@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"B9022BCB055649EAC536DE1E709DAF73">
+		["MD5-CAM-1.0.1"] = <"D10C45B755CC08CCEFFFB42C9C40FA2D">
 	>
 
 definition
@@ -46,19 +46,6 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {	-- DQ assessment method
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0004, 	-- Griffiths
-									at0005, 	-- WISC-3
-									at0006, 	-- WPPSI
-									at0007]	-- Bayley
-								}
-							}
-						}
-					}
 					ELEMENT[at0008] occurrences matches {0..1} matches {	-- Clinical interpretation
 						value matches {
 							DV_TEXT matches {*}
@@ -73,6 +60,19 @@ definition
 					allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {	-- Extension
 						include
 							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {	-- DQ Assessment method
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0012, 	-- Griffiths
+									at0013, 	-- WISC-3
+									at0014, 	-- WPPSI
+									at0015]	-- Bayley
+								}
+							}
+						}
 					}
 				}
 			}
@@ -95,26 +95,6 @@ ontology
 					text = <"DQ score">
 					description = <"The Development Quotient score as a numeric value.">
 				>
-				["at0003"] = <
-					text = <"DQ assessment method">
-					description = <"The method used to calculate the Development Quotient score.">
-				>
-				["at0004"] = <
-					text = <"Griffiths">
-					description = <"Griffiths Mental Development scales.">
-				>
-				["at0005"] = <
-					text = <"WISC-3">
-					description = <"Wechsler Intelligence Scales for Children.">
-				>
-				["at0006"] = <
-					text = <"WPPSI">
-					description = <"Wechsler Preschool and Primary Scale of Intelligence.">
-				>
-				["at0007"] = <
-					text = <"Bayley">
-					description = <"Bayley Scales of infant and toddler development.">
-				>
 				["at0008"] = <
 					text = <"Clinical interpretation">
 					description = <"Narrative interpretation of assessment.">
@@ -127,6 +107,26 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0011"] = <
+					text = <"DQ Assessment method">
+					description = <"The method used to calculate the Development Quotient score.">
+				>
+				["at0012"] = <
+					text = <"Griffiths">
+					description = <"Griffiths Mental Development scales.">
+				>
+				["at0013"] = <
+					text = <"WISC-3">
+					description = <"Wechsler Intelligence Scales for Children.">
+				>
+				["at0014"] = <
+					text = <"WPPSI">
+					description = <"Wechsler Preschool and Primary Scale of Intelligence.">
+				>
+				["at0015"] = <
+					text = <"Bayley">
+					description = <"Bayley Scales of infant and toddler development.">
 				>
 			>
 		>
