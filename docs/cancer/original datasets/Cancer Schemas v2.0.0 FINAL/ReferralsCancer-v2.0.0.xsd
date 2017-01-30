@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:vc='http://www.w3.org/2007/XMLSchema-versioning' xmlns:gelCAN='https://genomicsengland.co.uk/xsd/cancer/2.0.0' xmlns='https://genomicsengland.co.uk/xsd/cancer/2.0.0' targetNamespace='https://genomicsengland.co.uk/xsd/cancer/2.0.0' vc:minVersion='1.1' elementFormDefault='qualified'>
+  <xs:annotation>
+    <xs:documentation>
+      <h1>ReferralsCancer</h1>
+      <p>Version:2.0.0</p>
+      <p>Description:Main Programme Cancer Referrals Schema</p>
+      <p>Generated: 2016-01-25T16:47:39.759+0000</p>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:element name='referrals'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='metadata' type='metadata' minOccurs='1' maxOccurs='1' />
+        <xs:element name='subject' type='subject-36486.1' minOccurs='1' maxOccurs='unbounded' />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name='metadata'>
+    <xs:sequence>
+      <xs:element name='schema-name' minOccurs='1' maxOccurs='1'>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:enumeration value='ReferralsCancer' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='schema-version' minOccurs='1' maxOccurs='1'>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:enumeration value='2.0.0' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='date' type='xs:date' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The date that this file was generated</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='source-organisation' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>ODS code of the source organisation within the GMC sending the message</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='source-system' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Source system. Optional but may be used to supply source with information if there are any issues with the submitted XML.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='local-report-id' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Source system report Id. Optional but may be used to supply source with information if there are any issues with the submitted XML.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='subject-36486.1'>
+    <xs:sequence>
+      <xs:element name='participant-identifiers' type='participant-identifiers-29330.2' minOccurs='1' maxOccurs='1' />
+      <xs:element name='referral' type='referral-29918.2' minOccurs='1' maxOccurs='unbounded' />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='participant-identifiers-29330.2'>
+    <xs:sequence>
+      <xs:element name='participant-id' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Participant Identifier (supplied by Genomics England)</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='date-of-birth' type='xs:date' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The participant&amp;apos;s date of birth</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='nhs-number' type='nhsnumber-12817.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Validated NHS number for participant</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='chi-number' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Scottish Community Health Index (CHI) number for participant</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='surname' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The participant&amp;apos;s surname</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='forenames' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The participant&amp;apos;s forenames</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='referral-29918.2'>
+    <xs:sequence>
+      <xs:element name='event-details' type='event-details-29940.2' minOccurs='1' maxOccurs='1' />
+      <xs:element name='consultant-details' type='consultant-details-29919.2' minOccurs='1' maxOccurs='1' />
+      <xs:element name='date-first-seen' type='xs:date' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>This is the date that the PATIENT is first seen in the Trust that receives the first referral.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='presentation' type='cancerpresentation-12844.2' minOccurs='1' maxOccurs='unbounded'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Symptoms presented, recorded against supplied enumerations (for example, breast cancer presentation may be: breast mass, altered breast appearance, axillary mass, other mass, or nipple discharge).</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='event-details-29940.2'>
+    <xs:sequence>
+      <xs:element name='event-date' type='xs:dateTime' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Date of the clinical event or observation being reported e.g. date biopsy was taken</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='event-reference' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Unique identifier for local record of clinical event or observation</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='consultant-details-29919.2'>
+    <xs:sequence>
+      <xs:element name='full-name-of-responsible-consultant' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Nominated person responsible for patients clinical care and recipient of clinical reports and communications for Genomics England</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='consultant-gmc-number' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>GMC number of consultant with responsibility for the patient&amp;apos;s clinical care</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='full-name-not-consultant' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Full name of person entering data on behalf of consultant</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='contact-number' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Phone number for the consultant.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='hospital-of-responsible-consultant' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>ODS code of the hospital to which the consultant is contracted under their MAIN SPECIALTY for the purposes of the current work.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name='cancerpresentation-12844.2' final='restriction'>
+    <xs:restriction base='xs:string'>
+      <xs:enumeration value='abdominal_symptoms'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>abdominal_symptoms (Ovarian) (Colorectal)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='altered_breast_appearance'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>altered_breast_appearance (Breast)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='altered_bowel_habit'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>altered_bowel_habit (Colorectal)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='nipple_discharge'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>nipple_discharge (Breast)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='other_mass'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>other_mass (Breast)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='systematic_symptoms'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>systematic_symptoms (General)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='haematuria'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>haematuria (Prostate)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='abdominal_mass'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>abdominal_mass (Ovarian)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='axillary_mass'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>axillary_mass (Breast)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='other_respiratory_symptoms'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>other_respiratory_symptoms (Lung)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='asymptomatic_incidental_findings'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>asymptomatic_incidental_findings (General)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='haemoptysis'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>haemoptysis (Lung)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='asymptomatic_screen_detected'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>asymptomatic_screen_detected (With Screening)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='rectal_bleeding'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>rectal_bleeding (Colorectal)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='breast_mass'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>breast_mass (Breast)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='prostatic_symptoms'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>prostatic_symptoms (Prostate)</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='screening'>
+        <xs:annotation>
+          <xs:appinfo>
+            <display-text>screening</display-text>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name='nhsnumber-12817.1' final='restriction'>
+    <xs:restriction base='xs:token'>
+      <xs:maxLength value='10' />
+      <xs:minLength value='10' />
+      <xs:pattern value='[0-9]{10}' />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
