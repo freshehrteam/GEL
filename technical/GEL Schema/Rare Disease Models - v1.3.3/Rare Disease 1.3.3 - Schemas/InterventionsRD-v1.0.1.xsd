@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:vc='http://www.w3.org/2007/XMLSchema-versioning' xmlns:gelRD='https://genomicsengland.co.uk/xsd/raredisease/1.3.1' xmlns='https://genomicsengland.co.uk/xsd/raredisease/1.3.1' targetNamespace='https://genomicsengland.co.uk/xsd/raredisease/1.3.1' vc:minVersion='1.1'>
+  <xs:annotation>
+    <xs:documentation>
+      <h1>Interventions RD</h1>
+      <p>Version:1.0.0</p>
+      <p>Description:First version of interventions schema</p>
+      <p>Generated: 2015-12-02T01:41:56.790+0000</p>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:element name='interventions'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='metadata' type='metadata' minOccurs='1' maxOccurs='1' />
+        <xs:element name='subject' type='subject-36139.1' minOccurs='1' maxOccurs='unbounded' />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name='metadata'>
+    <xs:sequence>
+      <xs:element name='schema-name' minOccurs='1' maxOccurs='1'>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:enumeration value='Interventions RD' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='schema-version' minOccurs='1' maxOccurs='1'>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:enumeration value='1.0.1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='date' type='xs:date' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The date that this file was generated</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='source-organisation' type='xs:string' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>ODS code of the source organisation within the GMC sending the message</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='source-system' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Source system. Optional but may be used to supply source with information if there are any issues with the submitted XML.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='localReportId' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Source system report Id. Optional but may be used to supply source with information if there are any issues with the submitted XML.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='subject-36139.1'>
+    <xs:sequence>
+      <xs:element name='participant-identifiers' type='participant-identifiers-29049.2' minOccurs='1' maxOccurs='1' />
+      <xs:element name='intervention' type='intervention-36143.1' minOccurs='1' maxOccurs='unbounded' />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='participant-identifiers-29049.2'>
+    <xs:sequence>
+      <xs:element name='participant-id' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Participant Identifier (supplied by Genomics England)</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='date-of-birth' type='xs:date' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The participant&amp;apos;s date of birth</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='nhs-number' type='nhsnumber-12817.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Validated NHS number for participant</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='chi-number' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Scottish Community Health Index (CHI) number for participant</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='hospital-number' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Hospital number of the participant</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='surname' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The participant&amp;apos;s surname</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name='forenames' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>The participant&amp;apos;s forenames</p>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base='xs:string'>
+            <xs:minLength value='1' />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='intervention-36143.1'>
+    <xs:choice>
+      <xs:element name='medication' type='medication-36170.1' minOccurs='1' maxOccurs='1' />
+      <xs:element name='surgical-procedure' type='surgical-procedure-36166.1' minOccurs='1' maxOccurs='1' />
+      <xs:element name='other-procedure' type='other-procedure-36148.1' minOccurs='1' maxOccurs='1' />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name='medication-36170.1'>
+    <xs:sequence>
+      <xs:element name='start-date' type='xs:date' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Start date for the proposed treatment. 
+This may or may not be known at the time of care planning, and therefore is optional.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='end-date' type='xs:date' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>End date, if applicable</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='drug-name' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>dm+d drug name - without manufacturer</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='dose' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Dose prescribed according to the dictionary of medications and devices (http://www.nhsbsa.nhs.uk/1121.aspx)</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='frequency' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Frequency prescribed</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='drug-code' type='drug-code-36171.1' minOccurs='1' maxOccurs='1' />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='drug-code-36171.1'>
+    <xs:choice>
+      <xs:element name='drug-code-dm-d' type='xs:string' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Dm+d Code for the medication used. For more information please visit the dm+d browser: http://www.ppa.org.uk/systems/pcddbrowserv2_3new/browser.jsp#product</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='drug-code-snomed-ct' type='xs:string' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Snomed CT Code for the medication used. For more information please visit the dm+d browser: http://www.ppa.org.uk/systems/pcddbrowserv2_3new/browser.jsp#product</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name='surgical-procedure-36166.1'>
+    <xs:sequence>
+      <xs:element name='comments' type='xs:string' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Follow-up comments</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='primary-procedure' type='primary-procedure-36167.1' minOccurs='0' maxOccurs='unbounded' />
+      <xs:element name='additional-procedures' type='additional-procedures-36168.1' minOccurs='0' maxOccurs='unbounded' />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='primary-procedure-36167.1'>
+    <xs:choice>
+      <xs:element name='primary-procedure-opcs-4' type='opcs-4-12810.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>OPCS-4 code for the primary procedure</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='primary-procedure-snomedct' type='procedurecodesnomedct-29857.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Snomed CT code for the primary procedure</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name='additional-procedures-36168.1'>
+    <xs:choice>
+      <xs:element name='additional-procedures-snomedct' type='procedurecodesnomedct-29857.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>If additional procedures, SnomedCT procedure code for procedure</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='additional-procedures-opcs-4' type='opcs-4-12810.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>If additional procedures, OPCS-4 procedure code for procedure</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name='other-procedure-36148.1'>
+    <xs:sequence>
+      <xs:element name='end-date' type='xs:date' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>End date, if applicable</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='start-date' type='xs:date' minOccurs='0' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Start date for the proposed treatment. 
+This may or may not be known at the time of care planning, and therefore is optional.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='primary-treatment' type='primary-treatment-36149.1' minOccurs='1' maxOccurs='1' />
+      <xs:element name='additional-treatment' type='additional-treatment-36154.1' minOccurs='0' maxOccurs='unbounded' />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='primary-treatment-36149.1'>
+    <xs:choice>
+      <xs:element name='primary-treatment-opcs-4' type='opcs-4-12810.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>OPCS-4 code for non-surgical and non-medicinal primary treatment</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='primary-treatment-snomedct' type='proceduresnomedct-13162.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Snomed CT code for non-surgical and non-medicinal primary treatment</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name='additional-treatment-36154.1'>
+    <xs:choice>
+      <xs:element name='additional-treatment-opcs-4' type='opcs-4-12810.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>OPCS-4 code for non-surgical and non-medicinal additional treatments</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name='additional-treatment-snomedct' type='proceduresnomedct-13162.1' minOccurs='1' maxOccurs='1'>
+        <xs:annotation>
+          <xs:documentation>
+            <p>Snomed CT code for non-surgical and non-medicinal additional treatments</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:simpleType name='opcs-4-12810.1' final='restriction'>
+    <xs:restriction base='xs:string' />
+  </xs:simpleType>
+  <xs:simpleType name='nhsnumber-12817.1' final='restriction'>
+    <xs:restriction base='xs:token'>
+      <xs:pattern value='[0-9]{10}' />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name='proceduresnomedct-13162.1' final='restriction'>
+    <xs:restriction base='xs:string' />
+  </xs:simpleType>
+  <xs:simpleType name='procedurecodesnomedct-29857.1' final='restriction'>
+    <xs:restriction base='xs:string' />
+  </xs:simpleType>
+</xs:schema>
