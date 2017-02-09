@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>a007447b-4125-44e3-907d-ccd207ad123d</id>
+  <name>Laboratory test</name>
+  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0" concept_name="Laboratory test">
+    <Rule path="/data[at0001]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]" max="1" hide_on_form="true">
+      <eventConstraint>
+        <allowedType>PointInTime</allowedType>
+      </eventConstraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" name="Requested Test" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0077]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0098]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0101]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0010]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/state[at0112]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/state[at0112]/items[at0113]" max="0" />
+    <Rule path="/protocol[at0004]" hide_on_form="true" />
+    <Rule path="/protocol[at0004]/items[at0068]" max="0" />
+    <Rule path="/protocol[at0004]/items[at0094]" max="1" hide_on_form="true" />
+    <Rule path="/protocol[at0004]/items[at0094]/items[at0106]" max="0" />
+    <Rule path="/protocol[at0004]/items[at0094]/items[at0062]" name="Placer order number" />
+    <Rule path="/protocol[at0004]/items[at0094]/items[at0063]" name="Filler order number" />
+    <Rule path="/protocol[at0004]/items[at0111]" max="0" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.specimen.v0" concept_name="Specimen" path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]">
+      <Rule path="/items[at0008]" max="0" />
+      <Rule path="/items[at0079]" max="0" />
+      <Rule path="/items[at0005]" max="0" />
+      <Rule path="/items[at0067]" max="0" />
+      <Rule path="/items[at0070]" max="0" />
+      <Rule path="/items[at0080]" max="0" />
+      <Rule path="/items[at0039]" max="0" />
+      <Rule path="/items[at0046]" hide_on_form="true" />
+      <Rule path="/items[at0046]/items[at0001]" max="0" />
+      <Rule path="/items[at0081]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]">
+      <Rule path="/items[at0002]/items[at0001]">
+        <constraint xsi:type="multipleConstraint">
+          <includedTypes>Text</includedTypes>
+          <includedTypes>Quantity</includedTypes>
+        </constraint>
+      </Rule>
+      <Rule path="/items[at0002]/items[at0003]" max="1" />
+      <Rule path="/items[at0002]/items[at0004]" max="0" />
+      <Rule path="/items[at0002]/items[at0006]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.organisation.v1" concept_name="Organisation" max="1" path="/protocol[at0004]/items[at0017]" name="Responsible laboratory" hide_on_form="true">
+      <Rule path="/items[at0011]" max="0" />
+      <Rule path="/items[at0005]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.individual_professional.v1" concept_name="Individual professional demographics (UK)" max="1" path="/protocol[at0004]/items[at0094]/items[at0090]" name="Requester" hide_on_form="true">
+      <Rule path="/items[at0006]" max="0" />
+      <Rule path="/items[at0005]" max="0" />
+      <Rule path="/items[at0012]" max="0" />
+      <Rule path="/items[at0011]" max="1" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_name.v1" concept_name="Person name" max="1" path="/items[at0015]" name="Ordering provider">
+        <Rule path="/items[at0006]" max="0" />
+        <Rule path="/items[at0022]" max="0" />
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Ordering provider" />
+        <Rule path="/items[at0002]/items[at0017]" max="0" />
+        <Rule path="/items[at0002]/items[at0004]" max="0" />
+        <Rule path="/items[at0002]/items[at0018]" max="0" />
+        <Rule path="/items[at0014]" max="0" />
+      </Items>
+    </Items>
+  </definition>
+  <view>
+    <constraints path="[openEHR-EHR-OBSERVATION.laboratory_test.v0]/data[at0001]/events[at0002]/time">
+      <items id="VisibleInView">
+        <value>time</value>
+      </items>
+    </constraints>
+  </view>
+</template>

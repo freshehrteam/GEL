@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>541f9b1c-4e01-468d-8888-8d2a2f9df324</id>
+  <name>Problem/Diagnosis</name>
+  <definition xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" hide_on_form="true">
+    <Rule path="/data[at0001]" hide_on_form="true" />
+    <Rule path="/data[at0001]/items[at0002]" name="Specific disease" />
+    <Rule path="/data[at0001]/items[at0009]" max="0" />
+    <Rule path="/data[at0001]/items[at0012]" max="0" />
+    <Rule path="/data[at0001]/items[at0077]" max="0" />
+    <Rule path="/data[at0001]/items[at0003]" max="0" />
+    <Rule path="/data[at0001]/items[at0005]" max="0" />
+    <Rule path="/data[at0001]/items[at0072]" max="0" />
+    <Rule path="/data[at0001]/items[at0030]" max="0" />
+    <Rule path="/data[at0001]/items[at0073]" max="0" />
+    <Rule path="/data[at0001]/items[at0069]" max="0" />
+    <Rule path="/protocol[at0032]" hide_on_form="true" />
+    <Rule path="/protocol[at0032]/items[at0070]" max="0" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.eligibility_gel.v0" concept_name="Eligibility GEL" max="1" path="/data[at0001]/items[at0043]" hide_on_form="true">
+      <Rule path="/items[at0001]" min="1" />
+      <Rule path="/items[at0002]" min="1" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.disease_group_rd_gel.v0" concept_name="Disease group rare diseases GEL" max="1" path="/data[at0001]/items[at0043]" hide_on_form="true" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0" concept_name="Age DEBRA" max="1" path="/data[at0001]/items[at0043]" name="Age" hide_on_form="true">
+      <Rule path="/items[at0001]" max="1" name="Age at onset">
+        <constraint xsi:type="durationConstraint">
+          <pattern>PY</pattern>
+          <includesMaximum>false</includesMaximum>
+          <includesMinimum>false</includesMinimum>
+        </constraint>
+      </Rule>
+    </Items>
+  </definition>
+</template>

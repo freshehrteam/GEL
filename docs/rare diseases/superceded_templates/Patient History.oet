@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>5be185d3-2c83-48d0-a2b2-993021a31c05</id>
+  <name>Ad hoc heading</name>
+  <annotations path="[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29827.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-EVALUATION.clinical_synopsis.v1]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.age_debra.v0 and name/value='Age at diagnosis of chronic kidney disease']/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30193.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Motor symptoms']/items[openEHR-EHR-CLUSTER.age_debra.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28939.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Infection metrics']/items[at0028]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28882.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Infection metrics']/items[at0003]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28879.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.age_debra.v0 and name/value='Age at transplant loss']/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30192.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.age_debra.v0 and name/value='Age at ESRD']/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30194..2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.apgar.v1]/data[at0002]/events[at0003]/data[at0001]/items[at0025]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28660.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.apgar.v1]/data[at0002]/events[at0028]/data[at0001]/items[at0025]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28661.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Inflammation metrics']/items[openEHR-EHR-CLUSTER.age_debra.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30195.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.story.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1 and name/value='Inflammation metrics']/items[at0028]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::33320.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-EVALUATION.alcohol_use_summary.v0]/data[at0001]/items[at0029]/items[at0064]/items[at0023]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::14447.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1]/data[at0001]/items[at0043]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::13980.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-OBSERVATION.story.v1 and name/value='Story/History #1']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign.v1]/items[at0165]/items[at0170]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::33314.1</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading">
+    <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1" concept_name="Clinical Synopsis" max="1" path="/items" name="Assessment" hide_on_form="true">
+      <Rule path="/data[at0001]/items[at0002]" hide_on_form="true" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+    </Item>
+    <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" max="1" path="/items" hide_on_form="true">
+      <Rule path="/data[at0001]/items[at0002]" name="OMIM code" />
+      <Rule path="/data[at0001]/items[at0009]" max="0" />
+      <Rule path="/data[at0001]/items[at0012]" max="0" />
+      <Rule path="/data[at0001]/items[at0077]" max="0" />
+      <Rule path="/data[at0001]/items[at0003]" max="0" />
+      <Rule path="/data[at0001]/items[at0005]" max="0" />
+      <Rule path="/data[at0001]/items[at0072]" max="0" />
+      <Rule path="/data[at0001]/items[at0030]" max="0" />
+      <Rule path="/data[at0001]/items[at0073]" max="0" />
+      <Rule path="/data[at0001]/items[at0069]" max="0" />
+      <Rule path="/protocol[at0032]/items[at0070]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0" concept_name="Age DEBRA" max="1" path="/data[at0001]/items[at0043]" name="Age at transplant loss" hide_on_form="true">
+        <Rule path="/items[at0001]" max="1" name="Age at transplant loss">
+          <constraint xsi:type="durationConstraint">
+            <pattern>PY</pattern>
+            <includesMaximum>false</includesMaximum>
+            <includesMinimum>false</includesMinimum>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0" concept_name="Age DEBRA" max="1" path="/data[at0001]/items[at0043]" name="Age at diagnosis of chronic kidney disease" hide_on_form="true">
+        <Rule path="/items[at0001]" max="1" name="Age at onset of chronic kidney disease">
+          <constraint xsi:type="durationConstraint">
+            <pattern>PY</pattern>
+            <includesMaximum>false</includesMaximum>
+            <includesMinimum>false</includesMinimum>
+          </constraint>
+        </Rule>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0" concept_name="Age DEBRA" max="1" path="/data[at0001]/items[at0043]" name="Age at ESRD" hide_on_form="true">
+        <Rule path="/items[at0001]" max="1" name="Age at ESRD">
+          <constraint xsi:type="durationConstraint">
+            <pattern>PY</pattern>
+            <includesMaximum>false</includesMaximum>
+            <includesMinimum>false</includesMinimum>
+          </constraint>
+        </Rule>
+      </Items>
+    </Item>
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.story.v1" concept_name="Story/History" max="1" path="/items" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+        <eventConstraint>
+          <allowedType>PointInTime</allowedType>
+        </eventConstraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/protocol[at0007]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Inflammation metrics">
+        <Rule path="/items[at0001]" default="Inflammation" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" name="Duration of inflammation attacks" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="0" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0" concept_name="Age DEBRA" max="1" path="/items[at0153]" name="Age" hide_on_form="true">
+          <Rule path="/items[at0001]" max="1" name="Age at onset of inflammatory symptoms">
+            <constraint xsi:type="durationConstraint">
+              <pattern>PY</pattern>
+              <includesMaximum>false</includesMaximum>
+              <includesMinimum>false</includesMinimum>
+            </constraint>
+          </Rule>
+        </Items>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Motor symptoms">
+        <Rule path="/items[at0001]" default="Motor symptom" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" max="0" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="0" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0" concept_name="Age DEBRA" max="1" path="/items[at0153]" name="Age" hide_on_form="true">
+          <Rule path="/items[at0001]" max="1" name="Age at onset of motor symptoms">
+            <constraint xsi:type="durationConstraint">
+              <pattern>PY</pattern>
+              <includesMaximum>false</includesMaximum>
+              <includesMinimum>false</includesMinimum>
+            </constraint>
+          </Rule>
+        </Items>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Infection metrics">
+        <Rule path="/items[at0001]" default="Infection" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" name="Typical infection duration over past 3 years" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="0" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" name="Infection frequency over past 3 years">
+          <constraint xsi:type="textConstraint">
+            <includedValues>None</includedValues>
+            <includedValues>&lt;7 days</includedValues>
+            <includedValues>7-13 days</includedValues>
+            <includedValues>14-42 days</includedValues>
+            <includedValues>&gt;42 days</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>No Response</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" max="0" />
+      </Items>
+    </Item>
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.apgar.v1" concept_name="Apgar score" max="1" path="/items">
+      <Rule path="/data[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0009]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0005]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0013]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0017]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0021]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0025]" name="Apgar score at 1 minute" />
+      <Rule path="/data[at0002]/events[at0026]" max="0" />
+      <Rule path="/data[at0002]/events[at0027]" max="0" />
+      <Rule path="/data[at0002]/events[at0028]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]/items[at0009]" max="0" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]/items[at0005]" max="0" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]/items[at0013]" max="0" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]/items[at0017]" max="0" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]/items[at0021]" max="0" />
+      <Rule path="/data[at0002]/events[at0028]/data[at0001]/items[at0025]" name="Apgar score at 5 minutes" />
+      <Rule path="/data[at0002]/events[at0031]" max="0" />
+      <Rule path="/data[at0002]/events[at0037]" max="0" />
+      <Rule path="/protocol[at0029]" hide_on_form="true" />
+      <Rule path="/protocol[at0029]/items[at0030]" max="0" />
+    </Item>
+    <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v0" concept_name="Alcohol use summary" max="1" path="/items" name="Alcohol consumption">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0089]" max="0" />
+      <Rule path="/data[at0001]/items[at0043]" max="0" />
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0080]" max="0" />
+      <Rule path="/data[at0001]/items[at0097]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0052]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0053]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0081]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0013]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0082]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0030]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0023]" min="1" name="Alcohol consumption per week">
+        <constraint xsi:type="quantityConstraint">
+          <excludedUnits>1/d</excludedUnits>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0065]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0025]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0087]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0014]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]/items[at0069]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0019]" max="0" />
+      <Rule path="/protocol[at0021]" hide_on_form="true" />
+      <Rule path="/protocol[at0021]/items[at0071]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0085]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0075]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0076]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0079]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0103]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0104]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+    </Item>
+    <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1" concept_name="Tobacco smoking summary" max="1" path="/items">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0089]" max="0" />
+      <Rule path="/data[at0001]/items[at0043]" name="Smoking status">
+        <constraint xsi:type="textConstraint">
+          <includedValues>1:Current smoker</includedValues>
+          <includedValues>2:Ex smoker</includedValues>
+          <includedValues>3:Non-smoker - history unknown</includedValues>
+          <includedValues>4:Never smoked</includedValues>
+          <includedValues>Z:Not Stated (PERSON asked but declined to provide a response)</includedValues>
+          <includedValues>9:Unknown</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0080]" max="0" />
+      <Rule path="/data[at0001]/items[at0029]" max="0" />
+      <Rule path="/data[at0001]/items[at0016]" max="0" />
+      <Rule path="/data[at0001]/items[at0074]" max="0" />
+      <Rule path="/data[at0001]/items[at0019]" max="0" />
+      <Rule path="/protocol[at0021]" hide_on_form="true" />
+      <Rule path="/protocol[at0021]/items[at0071]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0085]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0075]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0076]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0079]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0072]" max="0" />
+      <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+    </Item>
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.story.v1" concept_name="Story/History" max="1" path="/items" name="Story/History #1" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+        <eventConstraint>
+          <allowedType>PointInTime</allowedType>
+        </eventConstraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/protocol[at0007]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.symptom_sign.v1" concept_name="Symptom/Sign" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" hide_on_form="true">
+        <Rule path="/items[at0001]" default="Renal history" hide_on_form="true" />
+        <Rule path="/items[at0035]" max="0" />
+        <Rule path="/items[at0002]" max="0" />
+        <Rule path="/items[at0151]" max="0" />
+        <Rule path="/items[at0175]" max="0" />
+        <Rule path="/items[at0186]" max="0" />
+        <Rule path="/items[at0152]" max="0" />
+        <Rule path="/items[at0164]" max="0" />
+        <Rule path="/items[at0028]" max="0" />
+        <Rule path="/items[at0021]" max="0" />
+        <Rule path="/items[at0026]" max="0" />
+        <Rule path="/items[at0180]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0018]" max="0" />
+        <Rule path="/items[at0165]" hide_on_form="true" />
+        <Rule path="/items[at0165]/items[at0170]" name="Renal trigger" />
+        <Rule path="/items[at0165]/items[at0171]" max="0" />
+        <Rule path="/items[at0165]/items[at0185]" max="0" />
+        <Rule path="/items[at0155]" max="0" />
+        <Rule path="/items[at0037]" max="0" />
+        <Rule path="/items[at0161]" max="0" />
+        <Rule path="/items[at0057]" max="0" />
+        <Rule path="/items[at0031]" max="0" />
+        <Rule path="/items[at0163]" max="0" />
+      </Items>
+    </Item>
+  </definition>
+</template>

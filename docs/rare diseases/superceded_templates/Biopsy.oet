@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>ec18c9b2-b9b2-4a61-bdb3-f679919aa9fb</id>
+  <name>Laboratory test</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0" concept_name="Laboratory test">
+    <Rule path="/data[at0001]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+      <eventConstraint>
+        <allowedType>PointInTime</allowedType>
+      </eventConstraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" name="Biopsy procedure" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0073]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0075]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0077]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0100]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" name="Assessment">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Normal</includedValues>
+        <includedValues>Unknown</includedValues>
+        <includedValues>Abnormal relevant</includedValues>
+        <includedValues>Abnormal unknown relevance</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0098]" max="1" name="Biopsy finding" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0101]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0010]" max="1" name="Report" />
+    <Rule path="/data[at0001]/events[at0002]/state[at0112]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/state[at0112]/items[at0113]" max="0" />
+    <Rule path="/protocol[at0004]" hide_on_form="true" />
+    <Rule path="/protocol[at0004]/items[at0068]" max="0" />
+    <Rule path="/protocol[at0004]/items[at0094]" max="0" />
+    <Rule path="/protocol[at0004]/items[at0111]" max="0" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.specimen.v0" concept_name="Specimen" path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]" hide_on_form="true">
+      <Rule path="/items[at0029]" max="0" />
+      <Rule path="/items[at0015]" max="0" />
+      <Rule path="/items[at0008]" max="0" />
+      <Rule path="/items[at0007]" name="Analysis type">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Light Microscopy</includedValues>
+          <includedValues>Immunohistochemistry</includedValues>
+          <includedValues>Electron Microscopy</includedValues>
+          <includedValues>Biochemistry</includedValues>
+          <includedValues>Respiratory chain enzyme analysis</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/items[at0079]" max="0" />
+      <Rule path="/items[at0005]" max="0" />
+      <Rule path="/items[at0067]" max="0" />
+      <Rule path="/items[at0070]" max="0" />
+      <Rule path="/items[at0080]" max="0" />
+      <Rule path="/items[at0039]" max="0" />
+      <Rule path="/items[at0046]" max="0" />
+      <Rule path="/items[at0081]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.histopathology_findings.v0" concept_name="Histopathology findings" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]" hide_on_form="true">
+      <Rule path="/items[at0012]" hide_on_form="true">
+        <nameConstraint>
+          <excludedValues>local::at0001</excludedValues>
+          <excludedValues>local::at0002</excludedValues>
+          <excludedValues>local::at0003</excludedValues>
+        </nameConstraint>
+      </Rule>
+      <Rule path="/items[at0012]/items[at0005]" max="1" name="Renal biopsy" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Renal biopsy']/items[at0006]" max="0" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Renal biopsy']/items[at0008]" min="1" default="Renal biopsy" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Renal biopsy']/items[at0010]" max="0" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Renal biopsy']/items[at0014]" max="0" />
+      <Rule path="/items[at0012]/items[at0005]" max="1" clone="true" name="Nasal cilia" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Nasal cilia']/items[at0006]" max="0" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Nasal cilia']/items[at0008]" min="1" default="Nasal cilia" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Nasal cilia']/items[at0010]" max="0" />
+      <Rule path="/items[at0012]/items[at0005 and name/value='Nasal cilia']/items[at0014]" max="0" />
+      <Rule path="/items[at0012]/items[at0011]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" max="1" path="/items[at0012]/items[at0005 and name/value='Renal biopsy']/items[at0009]" name="Renal biopsy" hide_on_form="true">
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" name="C1q immunostain" />
+        <Rule path="/items[at0002 and name/value='C1q immunostain']/items[at0001]" name="C1q immunostain result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='C1q immunostain']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='C1q immunostain']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='C1q immunostain']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='C1q immunostain']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="C3 immunostain" />
+        <Rule path="/items[at0002 and name/value='C3 immunostain']/items[at0001]" name="C3 immunostain result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='C3 immunostain']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='C3 immunostain']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='C3 immunostain']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='C3 immunostain']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Congo red" />
+        <Rule path="/items[at0002 and name/value='Congo red']/items[at0001]" name="Congo red result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Congo red']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Congo red']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Congo red']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Congo red']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Electron dense deposit" />
+        <Rule path="/items[at0002 and name/value='Electron dense deposit']/items[at0001]" name="Electron dense deposit result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>mesangial</includedValues>
+            <includedValues>subendothelial</includedValues>
+            <includedValues>subepithelial</includedValues>
+            <includedValues>intramembranous</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Electron dense deposit']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Electron dense deposit']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Electron dense deposit']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Electron dense deposit']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Glomerular basement membrane morphology" />
+        <Rule path="/items[at0002 and name/value='Glomerular basement membrane morphology']/items[at0001]" name="Glomerular basement membrane morphology result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>normal</includedValues>
+            <includedValues>thinned</includedValues>
+            <includedValues>abnormal</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Glomerular basement membrane morphology']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Glomerular basement membrane morphology']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Glomerular basement membrane morphology']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Glomerular basement membrane morphology']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="IgA immunostain" />
+        <Rule path="/items[at0002 and name/value='IgA immunostain']/items[at0001]" name="IgA immunostain result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='IgA immunostain']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgA immunostain']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgA immunostain']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgA immunostain']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="IgG immunostain" />
+        <Rule path="/items[at0002 and name/value='IgG immunostain']/items[at0001]" name="IgG immunostain result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='IgG immunostain']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgG immunostain']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgG immunostain']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgG immunostain']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="IgM immunostain" />
+        <Rule path="/items[at0002 and name/value='IgM immunostain']/items[at0001]" name="IgM immunostain result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='IgM immunostain']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgM immunostain']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgM immunostain']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='IgM immunostain']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Podocyte foot process effacement" />
+        <Rule path="/items[at0002 and name/value='Podocyte foot process effacement']/items[at0001]" name="Podocyte foot process effacement result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Yes</includedValues>
+            <includedValues>No</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Podocyte foot process effacement']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Podocyte foot process effacement']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Podocyte foot process effacement']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Podocyte foot process effacement']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Tubular basement membrane morphology" />
+        <Rule path="/items[at0002 and name/value='Tubular basement membrane morphology']/items[at0001]" name="Tubular basement membrane morphology result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>normal</includedValues>
+            <includedValues>thinned</includedValues>
+            <includedValues>abnormal</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Tubular basement membrane morphology']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Tubular basement membrane morphology']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Tubular basement membrane morphology']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Tubular basement membrane morphology']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Tubulointerstitial infiltrate" />
+        <Rule path="/items[at0002 and name/value='Tubulointerstitial infiltrate']/items[at0001]" name="Tubulointerstitial infiltrate result">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Text</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Tubulointerstitial infiltrate']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Tubulointerstitial infiltrate']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Tubulointerstitial infiltrate']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Tubulointerstitial infiltrate']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Protein deposition" />
+        <Rule path="/items[at0002 and name/value='Protein deposition']/items[at0001]" name="Protein deposition result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>amyloid</includedValues>
+            <includedValues>fibrin</includedValues>
+            <includedValues>immunotactoid</includedValues>
+            <includedValues>other</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Protein deposition']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Protein deposition']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Protein deposition']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Protein deposition']/items[at0006]" max="0" />
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" max="1" path="/items[at0012]/items[at0005 and name/value='Nasal cilia']/items[at0009]" name="Nasal Cilia" hide_on_form="true">
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" name="Ciliary beat frequency" />
+        <Rule path="/items[at0002 and name/value='Ciliary beat frequency']/items[at0001]" name="Ciliary beat frequency">
+          <constraint xsi:type="quantityConstraint">
+            <includedUnits>Hz</includedUnits>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Ciliary beat frequency']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Ciliary beat frequency']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Ciliary beat frequency']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Ciliary beat frequency']/items[at0006]" max="0" />
+        <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Other ciliary abnormality" />
+        <Rule path="/items[at0002 and name/value='Other ciliary abnormality']/items[at0001]" name="Other ciliary abnormality">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Text</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0002 and name/value='Other ciliary abnormality']/items[at0003]" max="0" />
+        <Rule path="/items[at0002 and name/value='Other ciliary abnormality']/items[at0004]" max="0" />
+        <Rule path="/items[at0002 and name/value='Other ciliary abnormality']/items[at0005]" max="0" />
+        <Rule path="/items[at0002 and name/value='Other ciliary abnormality']/items[at0006]" max="0" />
+      </Items>
+    </Items>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0">
+    <digest id="MD5-CAM-1.0.1">64F4898018F4D87C7D8ADAF36558AAF7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.specimen.v0">
+    <digest id="MD5-CAM-1.0.1">328C511116FD83D7F25973284D8D9F60</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.histopathology_findings.v0">
+    <digest id="MD5-CAM-1.0.1">2F170E3AAD849CBC2B82ABE6CCE9C391</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
+    <digest id="MD5-CAM-1.0.1">4609D4C2AA596C22113E03DFFBB7737C</digest>
+  </integrity_checks>
+</template>

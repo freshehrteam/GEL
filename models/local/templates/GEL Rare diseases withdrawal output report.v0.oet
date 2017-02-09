@@ -101,6 +101,26 @@
     </items>
   </annotations>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases withdrawal">
+    <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0" concept_name="Participant GEL" max="1" path="/content" name="Participant">
+      <Rule path="/data[at0001]/items[at0002]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Identifiable Person" hide_on_form="true">
+        <Rule path="/items[at0001]" min="1" name="Participant Identifier" />
+        <Rule path="/items[at0001]" max="1" min="1" clone="true" name="NHS number" />
+        <Rule path="/items[at0001]" max="1" clone="true" name="CHI number" />
+        <Rule path="/items[at0001]" max="1" clone="true" name="Hospital number" />
+        <Rule path="/items[at0008]" min="1" />
+        <Rule path="/items[at0006]" max="0" />
+        <Rule path="/items[at0007]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_name_isa.v1" concept_name="Person name (ISA)" max="1" path="/items[at0002]" name="Person name" hide_on_form="true">
+          <Rule path="/items[at0004]" max="0" />
+          <Rule path="/items[at0001]" min="1" name="Surname" />
+          <Rule path="/items[at0002]" min="1" name="Forename" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0006]" max="0" />
+        </Items>
+      </Items>
+    </Content>
     <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0" concept_name="Withdrawal GEL" max="1" path="/content" name="Withdrawal">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/items[at0010]" min="1" />
@@ -118,6 +138,15 @@
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0">
+    <digest id="MD5-CAM-1.0.1">4E978BB60C1444593B14C1DEA9A2FDD7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1">
+    <digest id="MD5-CAM-1.0.1">44C831CF11C3BB6A501B53726A545993</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.person_name_isa.v1">
+    <digest id="MD5-CAM-1.0.1">05B27C76383002F3959B99CEEF20E1BA</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0">
     <digest id="MD5-CAM-1.0.1">F1339096FA46B6EF2FFED0F3C9A91423</digest>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>758b55a7-c32f-408c-b92d-3e5923d566a2</id>
+  <name>Forced vital capacity</name>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Forced vital capacity">
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.pulmonary_function.v1" concept_name="Pulmonary Function Testing" max="1" path="/items" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+        <eventConstraint>
+          <allowedType>PointInTime</allowedType>
+        </eventConstraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]" max="1" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0052]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0052]/items[at0087]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0052]/items[at0054]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0052]/items[at0053]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0052]/items[at0044]" min="1" name="FVC/expected FVC result" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0057]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0055]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0128]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0033]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0125]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0126]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0099]" max="1" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0130]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0101]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0031]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0031]/items[at0098]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0031]/items[at0115]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0031]/items[at0046]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0031]/items[at0049]" max="0" />
+      <Rule path="/protocol[at0029]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0" concept_name="Non-imaging analytical technique GEL" max="1" min="1" path="/protocol[at0029]/items[at0131]" name="Non-imaging analytical technique" hide_on_form="true">
+        <Rule path="/items[at0001]" min="1" default="Forced vital capacity" />
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0029]/items[at0131]" name="Report details" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Item>
+  </definition>
+</template>

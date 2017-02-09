@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>ee5d493f-26b9-4948-8f73-d3fa48c4a10f</id>
+  <name>Sleep test</name>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Sleep test">
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.sleep_test_gel.v0" concept_name="Sleep test GEL" max="1" path="/items" name="Sleep test" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" min="1" default="Sleep test" />
+      <Rule path="/protocol[at0011]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0011]/items[at0012]" name="Report details" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Item>
+  </definition>
+</template>

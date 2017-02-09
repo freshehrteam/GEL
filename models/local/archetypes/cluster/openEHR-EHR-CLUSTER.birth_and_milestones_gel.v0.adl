@@ -1,0 +1,167 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.birth_and_milestones_gel.v0
+
+concept
+	[at0000]	-- Birth and milestones GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2017-02-09">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording and reporting of pregnancy, birth and developmental milestone details not available in other archetypes in the context of the Genomics England Rare diseases dataset.">
+			use = <"Use to record pregnancy, birth and developmental milestone details in the General Observations section in the Genomics England Rare diseases dataset.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC-BY-SA 3.0">
+		["MD5-CAM-1.0.1"] = <"595C218966F70F08991AF956AF9945DA">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Birth and milestones GEL
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Parents with at least 3 miscarriages
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002, 	-- Yes
+							at0003, 	-- No
+							at0004]	-- Unknown
+						}
+					}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Conception
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0006, 	-- Spontaneous
+							at0007, 	-- In vitro
+							at0008]	-- Other
+						}
+					}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {	-- Admission to special care
+				value matches {
+					DV_DURATION matches {
+						value matches {PW}
+					}
+				}
+			}
+			CLUSTER[at0010] occurrences matches {0..1} matches {	-- Developmental milestones
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Social smile
+						value matches {
+							DV_DURATION matches {
+								value matches {PM/|>=P0M|}
+							}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Sat independently
+						value matches {
+							DV_DURATION matches {
+								value matches {PM/|>=P0M|}
+							}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {	-- Walked independently
+						value matches {
+							DV_DURATION matches {
+								value matches {PM/|>=P0M|}
+							}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {	-- First words
+						value matches {
+							DV_DURATION matches {
+								value matches {PM/|>=P0M|}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Birth and milestones GEL">
+					description = <"Local cluster to capture pregnancy, birth and milestone details not available elsewhere for the Genomics England datasets.">
+				>
+				["at0001"] = <
+					text = <"Parents with at least 3 miscarriages">
+					description = <"Statement whether the participant's parents have experienced 3 or more miscarriages.">
+				>
+				["at0002"] = <
+					text = <"Yes">
+					description = <"The participant's parents have experienced 3 or more miscarriages.">
+				>
+				["at0003"] = <
+					text = <"No">
+					description = <"The participant's parents have not experienced 3 or more miscarriages.">
+				>
+				["at0004"] = <
+					text = <"Unknown">
+					description = <"It is not known whether the participant's parents have experienced 3 or more miscarraiges.">
+				>
+				["at0005"] = <
+					text = <"Conception">
+					description = <"Statement about the type of conception.">
+				>
+				["at0006"] = <
+					text = <"Spontaneous">
+					description = <"The participant's conception was spontaneous.">
+				>
+				["at0007"] = <
+					text = <"In vitro">
+					description = <"The participant's conception was in vitro.">
+				>
+				["at0008"] = <
+					text = <"Other">
+					description = <"The details of the participant's conception are not known or are other than spontaneous or in vitro.">
+				>
+				["at0009"] = <
+					text = <"Admission to special care">
+					description = <"Duration in weeks of admission to special care if participant was admitted.">
+				>
+				["at0010"] = <
+					text = <"Developmental milestones">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Social smile">
+					description = <"Age in months when participant first exhibited social smile.">
+				>
+				["at0012"] = <
+					text = <"Sat independently">
+					description = <"Age in months when the participant first sat independently.">
+				>
+				["at0013"] = <
+					text = <"Walked independently">
+					description = <"Age in months when the participant first walked independently.">
+				>
+				["at0014"] = <
+					text = <"First words">
+					description = <"Age in months when the participant uttered his or her first words.">
+				>
+			>
+		>
+	>

@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>ab436e84-5b86-42a9-b4c3-cdced3e4b4df</id>
+  <name>Ocular metrics</name>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Ocular metrics">
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ocular malformation metrics">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0" concept_name="Ocular Malformation Metric GEL" max="1" path="/items" name="Ocular Malformation Metric" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0025]" max="1" name="Right eye" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Right eye']/items[at0012]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0013</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0025]" max="1" clone="true" name="Left eye" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Left eye']/items[at0012]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0014</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/state[at0022]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0022]/items[at0024]" max="0" />
+        <Rule path="/protocol[at0020]" hide_on_form="true" />
+        <Rule path="/protocol[at0020]/items[at0021]" min="1" default="Ocular malformation metrics " name="Non-imaging analytical technique" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0020]/items[at0023]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Visual field">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0" concept_name="Non-imaging diagnostic tests GEL" max="1" path="/items" name="Visual field test" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" max="1" name="Central visual field (III, HVF) result">
+          <constraint xsi:type="quantityConstraint">
+            <includedUnits>°</includedUnits>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" max="1" clone="true" name="Continuous central visual field (III.4.e, GVF) result">
+          <constraint xsi:type="quantityConstraint">
+            <includedUnits>°</includedUnits>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]/items[at0010]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+        <Rule path="/protocol[at0006]/items[at0007]" min="1" default="Visual field" name="Non-imaging analytical technique" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0006]/items[at0008]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Ocular pressure">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.intraocular_pressure.v0" concept_name="Intraocular pressure" max="1" path="/items" name="Intraocular pressure right">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+          <eventConstraint>
+            <allowedType>PointInTime</allowedType>
+          </eventConstraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0058</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0061]" max="1" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0063]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]/items[at0074]" max="0" />
+        <Rule path="/protocol[at0068]" hide_on_form="true" />
+        <Rule path="/protocol[at0068]/items[at0046]" min="1" default="Ocular pressure" name="Non-imaging analytical technique">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Text</includedTypes>
+          </constraint>
+        </Rule>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0080]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.intraocular_pressure.v0" concept_name="Intraocular pressure" max="1" path="/items" name="Intraocular pressure left">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+          <eventConstraint>
+            <allowedType>PointInTime</allowedType>
+          </eventConstraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0059</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0061]" max="1" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0063]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]/items[at0074]" max="0" />
+        <Rule path="/protocol[at0068]" hide_on_form="true" />
+        <Rule path="/protocol[at0068]/items[at0046]" min="1" default="Ocular pressure" name="Non-imaging analytical technique">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Text</includedTypes>
+          </constraint>
+        </Rule>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0080]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.intraocular_pressure.v0" concept_name="Intraocular pressure" max="1" path="/items" name="Intraocular pressure right highest">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+          <eventConstraint>
+            <allowedType>Interval</allowedType>
+          </eventConstraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0059</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0061]" max="1" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0063]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]/items[at0074]" max="0" />
+        <Rule path="/protocol[at0068]" hide_on_form="true" />
+        <Rule path="/protocol[at0068]/items[at0046]" min="1" default="Ocular pressure" name="Non-imaging analytical technique">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Text</includedTypes>
+          </constraint>
+        </Rule>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0080]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.intraocular_pressure.v0" concept_name="Intraocular pressure" max="1" path="/items" name="Intraocular pressure left highest">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+          <eventConstraint>
+            <allowedType>Interval</allowedType>
+          </eventConstraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0059</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0061]" max="1" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0063]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0007]/items[at0074]" max="0" />
+        <Rule path="/protocol[at0068]" hide_on_form="true" />
+        <Rule path="/protocol[at0068]/items[at0046]" min="1" default="Ocular pressure" name="Non-imaging analytical technique">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Text</includedTypes>
+          </constraint>
+        </Rule>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0080]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Colour plate test">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0" concept_name="Non-imaging diagnostic tests GEL" max="1" path="/items" name="Colour plate test" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" max="1" min="1" name="Ishihara colour plate result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Fail</includedValues>
+            <includedValues>Pass</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]/items[at0010]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+        <Rule path="/protocol[at0006]/items[at0007]" min="1" default="Colour plate test" name="Non-imaging analytical technique" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0006]/items[at0008]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Electro-oculogram">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0" concept_name="Non-imaging diagnostic tests GEL" max="1" path="/items" name="Electro-oculogram" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" max="1" min="1" name="Arden ratio result">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Proportion</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]/items[at0010]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+        <Rule path="/protocol[at0006]/items[at0007]" min="1" default="Electro-oculogram" name="Non-imaging analytical technique" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0006]/items[at0008]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Dark adaptation test">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0" concept_name="Non-imaging diagnostic tests GEL" max="1" path="/items" name="Dark adaptation test" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" max="1" min="1" name="Dark adaptation final threshold result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Elevated</includedValues>
+            <includedValues>Unknown</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0009]/items[at0010]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+        <Rule path="/protocol[at0006]/items[at0007]" min="1" default="Dark adaptation test" name="Non-imaging analytical technique" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0006]/items[at0008]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Electroretinogram">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.electroretinogram.v0" concept_name="Electroretinogram" max="1" path="/items" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="1" name="Right eye" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Right eye']/items[at0005]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0006</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="1" clone="true" name="Left eye" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Left eye']/items[at0005]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0007</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0002]/state[at0023]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0002]/state[at0023]/items[at0024]" max="0" />
+        <Rule path="/protocol[at0021]" hide_on_form="true" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0" concept_name="Non-imaging analytical technique GEL" max="1" min="1" path="/protocol[at0021]/items[at0022]" name="Non-imaging analytical technique">
+          <Rule path="/items[at0001]" min="1" default="Electroretinogram" />
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0021]/items[at0022]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Visual acuity">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.visual_acuity.v1" concept_name="Visual acuity" max="1" path="/items" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]" max="1" hide_on_form="true" name="Point in time" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0138]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0039]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053]" max="1" name="Right eye" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0007]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0012</excludedValues>
+            <excludedValues>local::at0014</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0055]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0056]" name="Visual acuity" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0009]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0057]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0011]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0046]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0015]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0059]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0010]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0066]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053]" max="1" clone="true" name="Left eye" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0007]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0013</excludedValues>
+            <excludedValues>local::at0014</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0055]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0056]" name="Visual acuity" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0009]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0057]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0011]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0046]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0015]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0059]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0010]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0066]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0054]" max="1" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0040]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/state[at0041]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/state[at0041]/items[at0112]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/state[at0041]/items[at0042]" max="0" />
+        <Rule path="/protocol[at0020]" hide_on_form="true" />
+        <Rule path="/protocol[at0020]/items[at0081]" max="0" />
+        <Rule path="/protocol[at0020]/items[at0023]" max="0" />
+        <Rule path="/protocol[at0020]/items[at0021]" max="0" />
+        <Rule path="/protocol[at0020]/items[at0022]" max="0" />
+        <Rule path="/protocol[at0020]/items[at0092]" max="0" />
+        <Rule path="/protocol[at0020]/items[at0117]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0" concept_name="Non-imaging analytical technique GEL" max="1" min="1" path="/protocol[at0020]/items[at0025]" name="Non-imaging analytical technique" hide_on_form="true">
+          <Rule path="/items[at0001]" min="1" default="Visual acuity" />
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0020]/items[at0140]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+    <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Refraction error">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.refraction.v1" concept_name="Refraction assessment" max="1" path="/items" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0039]" name="Refraction error" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0053]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0054]" max="1" name="Assessment">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal</includedValues>
+            <includedValues>Unknown</includedValues>
+            <includedValues>Abnormal relevant</includedValues>
+            <includedValues>Abnormal unknown relevance</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/events[at0134]/data[at0003]/items[at0040]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/state[at0041]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0134]/state[at0041]/items[at0112]" max="0" />
+        <Rule path="/data[at0001]/events[at0134]/state[at0041]/items[at0042]" max="0" />
+        <Rule path="/protocol[at0020]" hide_on_form="true" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0" concept_name="Non-imaging analytical technique GEL" max="1" min="1" path="/protocol[at0020]/items[at0025]" name="Non-imaging analytical technique" hide_on_form="true">
+          <Rule path="/items[at0001]" min="1" default="Refraction error" />
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0020]/items[at0140]" name="Report details" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+        </Items>
+      </Item>
+    </Item>
+  </definition>
+</template>

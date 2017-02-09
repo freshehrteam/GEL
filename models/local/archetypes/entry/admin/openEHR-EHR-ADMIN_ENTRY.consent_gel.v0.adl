@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"6B9FCDB2CF26084E4D0EDF8C4EAB66ED">
+		["MD5-CAM-1.0.1"] = <"A36D4D708967B026F74E55523A5A5AF7">
 	>
 
 definition
@@ -89,12 +89,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {	-- Name of assent form (cancer)
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0020] occurrences matches {0..1} matches {	-- Version of assent form (cancer)
+					ELEMENT[at0015] occurrences matches {0..1} matches {	-- Name and version of assent form (cancer)
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -201,12 +196,8 @@ ontology
 					description = <"The response is no.">
 				>
 				["at0015"] = <
-					text = <"Name of assent form (cancer)">
-					description = <"The name of the assent form used.">
-				>
-				["at0020"] = <
-					text = <"Version of assent form (cancer)">
-					description = <"The version of the assent form used.">
+					text = <"Name and version of assent form (cancer)">
+					description = <"The name and version of the assent form used.">
 				>
 				["at0021"] = <
 					text = <"Filename of assent form">

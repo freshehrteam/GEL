@@ -1,0 +1,1346 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>8cc939ff-bb28-4c03-956b-ff833e526d67</id>
+  <name>Heart observations</name>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Heart observations']/items[openEHR-EHR-OBSERVATION.pulse.v1]/data[at0002]/events[at0003]/data[at0001]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28040.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Heart observations']/items[openEHR-EHR-OBSERVATION.pulse.v1]/data[at0002]/events[at0003]/data[at0001]/items[at1055]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28043.1 needs to be combined with Regular? data point</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Heart observations']/items[openEHR-EHR-OBSERVATION.pulse.v1]/data[at0002]/events[at0003]/data[at0001]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28043.1 needs to be combined with Irregular type datapoint</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Heart observations']/items[openEHR-EHR-OBSERVATION.pulse.v1]/data[at0002]/events[at0003]/data[at0001]/items[at1022]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Heart observations']/items[openEHR-EHR-OBSERVATION.pulse.v1]/protocol[at0010]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Heart observations']/items[openEHR-EHR-OBSERVATION.pulse.v1]/protocol[at0010]/items[openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34771.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Forced vital capacity']/items[openEHR-EHR-OBSERVATION.pulmonary_function.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0052]/items[at0044]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30181.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Forced vital capacity']/items[openEHR-EHR-OBSERVATION.pulmonary_function.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0127]/items[at0099]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Forced vital capacity']/items[openEHR-EHR-OBSERVATION.pulmonary_function.v1]/protocol[at0029]/items[openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GeL::34774.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Forced vital capacity']/items[openEHR-EHR-OBSERVATION.pulmonary_function.v1]/protocol[at0029]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/data[at0001]/events[at0002]/data[at0005]/items[at0006]/items[at0012]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28601.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/data[at0001]/events[at0002]/data[at0005]/items[at0081]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34777.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/data[at0001]/events[at0002]/data[at0005]/items[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28600.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/data[at0001]/events[at0002]/data[at0005]/items[at0006]/items[at0014]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28602.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/data[at0001]/events[at0002]/data[at0005]/items[at0006]/items[at0023]/items[at0021]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28605.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31392.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31394.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31397.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0019]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28617.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28618.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='ECG diagnostics']/items[openEHR-EHR-OBSERVATION.ecg.v1]/protocol[at0003]/items[openEHR-EHR-CLUSTER.ecg_gel.v0]/items[at0015]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31396.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34780.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/protocol[at0011]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0013]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30185.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30186.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30187.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30190.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30188.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Sleep test']/items[openEHR-EHR-OBSERVATION.sleep_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30189.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/protocol[at0008]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34786.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31407.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31409.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31410.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31474.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31412.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31413.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0015]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31421.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0016]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31415.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31416.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0]/items[at0014]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31417.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34789.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31420.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31422.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0015]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31423.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0019]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31446.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0023]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31424.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Cardiac drug challenge']/items[openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0]/items[at0027]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31425.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/protocol[at0004]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34792.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0024]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/protocol[at0004]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::21501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31433.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31434.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0014]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31435.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0018]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31436.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Holter monitor test']/items[openEHR-EHR-OBSERVATION.holter_monitor.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0019]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31462.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Signal averaged ECG']/items[openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0]/protocol[at0004]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Signal averaged ECG']/items[openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0012]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Signal averaged ECG']/items[openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31442.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Signal averaged ECG']/items[openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0]/protocol[at0004]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34795.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Signal averaged ECG']/items[openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31443.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Signal averaged ECG']/items[openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31444.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/protocol[at0004]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0028]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/protocol[at0004]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34798.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31423.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0014]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31446.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0018]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31434.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0022]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31447.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0026]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31448.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Exercise test cardiac']/items[openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0027]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31463.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electrophysiological study']/items[openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0]/protocol[at0004]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electrophysiological study']/items[openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0015]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electrophysiological study']/items[openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0]/protocol[at0004]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34801.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electrophysiological study']/items[openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31451.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electrophysiological study']/items[openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31452.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electrophysiological study']/items[openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0014]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::31453.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Auditory brainstem response']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Auditory brainstem response']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Auditory brainstem response']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34804.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Auditory brainstem response']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::32999.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Otoacustic emissions']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::32998.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Otoacustic emissions']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Otoacustic emissions']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Otoacustic emissions']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34807.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Right eye']/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28716.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Right eye']/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28731.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Right eye']/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28723.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Right eye']/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28721.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Left eye']/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28717.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Left eye']/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28732.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Left eye']/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28724.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025 and name/value='Left eye']/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28722.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0015]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::33077.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0026]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/protocol[at0020]/items[at0021]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34813.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular malformation metrics']/items[openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0]/protocol[at0020]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual field']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual field']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual field']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34816.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual field']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005 and name/value='Central visual field (III, HVF) result']">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30262.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual field']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005 and name/value='Continuous central visual field (III.4.e, GVF) result']">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30263.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right']/data[at0001]/events[at0002]/data[at0003]/items[at0042]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28713.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right']/data[at0001]/events[at0002]/data[at0003]/items[at0061]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left']/data[at0001]/events[at0002]/data[at0003]/items[at0042]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28714.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left']/data[at0001]/events[at0002]/data[at0003]/items[at0061]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right']/protocol[at0068]/items[at0046]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34819.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left']/protocol[at0068]/items[at0046]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34819.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right highest']/protocol[at0068]/items[at0046]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34819.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right highest']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right highest']/data[at0001]/events[at0002]/data[at0003]/items[at0061]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure right highest']/data[at0001]/events[at0002]/data[at0003]/items[at0042]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30266.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left highest']/data[at0001]/events[at0002]/data[at0003]/items[at0042]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30267.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left highest']/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left highest']/data[at0001]/events[at0002]/data[at0003]/items[at0061]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular pressure']/items[openEHR-EHR-OBSERVATION.intraocular_pressure.v0 and name/value='Intraocular pressure left highest']/protocol[at0068]/items[at0046]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34819.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Colour plate test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Colour plate test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34822.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Colour plate test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30268.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Colour plate test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electro-oculogram']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30270.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electro-oculogram']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electro-oculogram']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electro-oculogram']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34825.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Dark adaptation test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30275.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Dark adaptation test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Dark adaptation test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Dark adaptation test']/items[openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0]/protocol[at0006]/items[at0007]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34828.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/protocol[at0021]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/protocol[at0021]/items[openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34831.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Right eye']/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30292.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Right eye']/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30280.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Right eye']/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30286.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Right eye']/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30284.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Left eye']/items[at0008]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30281.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Left eye']/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30279.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Left eye']/items[at0010]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30287.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0004 and name/value='Left eye']/items[at0011]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30283.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0012]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30290.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0015]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30296.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0018]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30297.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Electroretinogram']/items[openEHR-EHR-OBSERVATION.electroretinogram.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0025]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1 and name/value='Visual acuity right']/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0056]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28734.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1 and name/value='Visual acuity right']/data[at0001]/events[at0134]/data[at0003]/items[at0054]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1 and name/value='Visual acuity right']/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0056]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28735.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1 and name/value='Visual acuity right']/protocol[at0020]/items[openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34834.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1 and name/value='Visual acuity right']/protocol[at0020]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1]/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Right eye']/items[at0028]/items[at0056]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28734.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1]/data[at0001]/events[at0134]/data[at0003]/items[at0053 and name/value='Left eye']/items[at0028]/items[at0056]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::28735.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1]/data[at0001]/events[at0134]/data[at0003]/items[at0054]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1]/protocol[at0020]/items[openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34834.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Visual acuity']/items[openEHR-EHR-OBSERVATION.visual_acuity.v1]/protocol[at0020]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Refraction error']/items[openEHR-EHR-OBSERVATION.refraction.v1]/data[at0001]/events[at0134]/data[at0003]/items[at0039]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::30977.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Refraction error']/items[openEHR-EHR-OBSERVATION.refraction.v1]/data[at0001]/events[at0134]/data[at0003]/items[at0054]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29524.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Refraction error']/items[openEHR-EHR-OBSERVATION.refraction.v1]/protocol[at0020]/items[openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::34837.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-SECTION.adhoc.v1 and name/value='Ocular metrics']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Refraction error']/items[openEHR-EHR-OBSERVATION.refraction.v1]/protocol[at0020]/items[openEHR-EHR-CLUSTER.multimedia.v1]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::29501.2</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Heart observations">
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.pulse.v1" concept_name="Pulse/Heart beat" max="1" path="/items" name="Heart observations" hide_on_form="true">
+      <Rule path="/data[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0003]" max="1" hide_on_form="true">
+        <eventConstraint>
+          <allowedType>PointInTime</allowedType>
+        </eventConstraint>
+      </Rule>
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at1005]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at0004]" min="1">
+        <nameConstraint>
+          <excludedValues>local::at1026</excludedValues>
+        </nameConstraint>
+      </Rule>
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at1030]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at1022]" name="Assessment">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Unknown</includedValues>
+          <includedValues>Abnormal relevant</includedValues>
+          <includedValues>Abnormal unknown relevance</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at1023]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/data[at0001]/items[at1059]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/state[at0012]" hide_on_form="true" />
+      <Rule path="/data[at0002]/events[at0003]/state[at0012]/items[at0013]" max="0" />
+      <Rule path="/data[at0002]/events[at0003]/state[at0012]/items[at1018]" max="0" />
+      <Rule path="/data[at0002]/events[at1036]" max="0" />
+      <Rule path="/protocol[at0010]" hide_on_form="true" />
+      <Rule path="/protocol[at0010]/items[at1019]" max="0" />
+      <Rule path="/protocol[at0010]/items[at1037]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0010]/items[at1056]" name="Report details" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.non_imaging_analytical_technique_gel.v0" concept_name="Non-imaging analytical technique GEL" max="1" min="1" path="/protocol[at0010]/items[at1056]" name="Non-imaging analytical technique" hide_on_form="true">
+        <Rule path="/items[at0001]" min="1" default="Heart observations" />
+      </Items>
+    </Item>
+  </definition>
+</template>

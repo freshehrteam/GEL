@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>febfdcf0-7cff-42b0-a136-9359610109cf</id>
+  <name>Electrophysiological study</name>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Electrophysiological study">
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0" concept_name="Electrophysiological study GEL" max="1" path="/items" name="Electrophysiological study" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0007]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0007]/items[at0008]" max="0" />
+      <Rule path="/protocol[at0004]" hide_on_form="true" />
+      <Rule path="/protocol[at0004]/items[at0005]" min="1" default="Electrophysiological study" name="Non-imaging analytical technique" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0004]/items[at0006]" name="Report details" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Item>
+  </definition>
+</template>

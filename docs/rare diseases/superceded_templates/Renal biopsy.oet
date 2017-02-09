@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>b3c62b2a-98ad-41c2-bd9d-c19ae33e1cd1</id>
+  <name>Renal biopsy</name>
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" max="1" name="Renal biopsy" hide_on_form="true">
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" />
+    <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0001]" name="C1q immunostain result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #1" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #1']/items[at0001]" name="C3 immunostain result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #1']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #1']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #1']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #1']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #2" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #2']/items[at0001]" name="Congo red result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #2']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #2']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #2']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #2']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #3" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #3']/items[at0001]" name="Electron dense deposit result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>mesangial</includedValues>
+        <includedValues>subendothelial</includedValues>
+        <includedValues>subepithelial</includedValues>
+        <includedValues>intramembranous</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #3']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #3']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #3']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #3']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #4" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #4']/items[at0001]" name="Glomerular basement membrane morphology result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>normal</includedValues>
+        <includedValues>thinned</includedValues>
+        <includedValues>abnormal</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #4']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #4']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #4']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #4']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #5" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #5']/items[at0001]" name="IgA immunostain result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #5']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #5']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #5']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #5']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #6" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #6']/items[at0001]" name="IgG immunostain result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #6']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #6']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #6']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #6']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #7" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #7']/items[at0001]" name="IgM immunostain result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #7']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #7']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #7']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #7']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #8" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #8']/items[at0001]" name="Podocyte foot process effacement result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Yes</includedValues>
+        <includedValues>No</includedValues>
+        <includedValues>Unknown</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #8']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #8']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #8']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #8']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #9" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #9']/items[at0001]" name="Tubular basement membrane morphology result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>normal</includedValues>
+        <includedValues>thinned</includedValues>
+        <includedValues>abnormal</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #9']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #9']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #9']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #9']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #10" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #10']/items[at0001]" name="Tubulointerstitial infiltrate result">
+      <constraint xsi:type="multipleConstraint">
+        <includedTypes>Text</includedTypes>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #10']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #10']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #10']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #10']/items[at0006]" max="0" />
+    <Rule path="/items[at0002]" max="1" hide_on_form="true" clone="true" name="Laboratory result #11" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #11']/items[at0001]" name="Protein deposition result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>amyloid</includedValues>
+        <includedValues>fibrin</includedValues>
+        <includedValues>immunotactoid</includedValues>
+        <includedValues>other</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/items[at0002 and name/value='Laboratory result #11']/items[at0003]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #11']/items[at0004]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #11']/items[at0005]" max="0" />
+    <Rule path="/items[at0002 and name/value='Laboratory result #11']/items[at0006]" max="0" />
+  </definition>
+</template>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>62dfbce3-7e01-4d49-a1dc-dd3bb090ef98</id>
+  <name>Cardiac drug challenge</name>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Cardiac drug challenge">
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0" concept_name="Cardiac drug challenge GEL" path="/items" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/protocol[at0008]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0" concept_name="Sodium channel blocker challenge GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0007]" name="Sodium channel blocker challenge">
+        <Rule path="/items[at0001]" min="1" default="Sodium channel blocker challenge" />
+        <Rule path="/items[at0002]" min="1" />
+        <Rule path="/items[at0005]" min="1" />
+        <Rule path="/items[at0006]" min="1" />
+        <Rule path="/items[at0009]" min="1" />
+        <Rule path="/items[at0010]" min="1" />
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0" concept_name="Epinephrine challenge GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0007]" name="Epinephrine challenge">
+        <Rule path="/items[at0001]" min="1" default="Epinephrine challenge" />
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0008]/items[at0009]" name="Report details" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Item>
+  </definition>
+</template>

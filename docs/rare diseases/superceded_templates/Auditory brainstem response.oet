@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>824fe553-30ed-4879-94ae-ce1b0b87dcd7</id>
+  <name>Auditory brainstem response</name>
+  <definition xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" name="Auditory brainstem response">
+    <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0" concept_name="Non-imaging diagnostic tests GEL" max="1" path="/items" name="Auditory brainstem response" hide_on_form="true">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" max="1" name="Auditory brainstem response result">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Normal</includedValues>
+          <includedValues>Abnormal</includedValues>
+          <includedValues>Abnormal with no evidence of peaks</includedValues>
+          <includedValues>Abnormal with early evidence of peaks (up to wave III):</includedValues>
+          <includedValues>Abnormal morphology but wave V present</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/events[at0002]/state[at0009]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/state[at0009]/items[at0010]" max="0" />
+      <Rule path="/protocol[at0006]/items[at0007]" min="1" default="Auditory brainstem response" name="Non-imaging analytical technique" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0006]/items[at0008]" name="Report details" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Filename of uploaded copy of report" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Item>
+  </definition>
+</template>

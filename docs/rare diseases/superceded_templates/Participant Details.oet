@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>602a9003-75e5-4c20-bbdb-6b9c9da3f979</id>
+  <name>Participant Details</name>
+  <definition xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0" concept_name="Participant GEL" max="1" name="Participant Details">
+    <Rule path="/data[at0001]" hide_on_form="true" />
+    <Rule path="/data[at0001]/items[at0002]" max="0" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Identifiable Person" hide_on_form="true">
+      <Rule path="/items[at0001]" max="1" name="Participant identifier" />
+      <Rule path="/items[at0001]" max="1" clone="true" name="NHS number" />
+      <Rule path="/items[at0001]" max="1" clone="true" name="CHI number" />
+      <Rule path="/items[at0001]" max="1" clone="true" name="Health and care number" />
+      <Rule path="/items[at0008]" min="1" />
+      <Rule path="/items[at0006]" max="0" />
+      <Rule path="/items[at0007]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_name_isa.v1" concept_name="Person name (ISA)" max="1" path="/items[at0002]" name="Person name" hide_on_form="true">
+        <Rule path="/items[at0004]" max="0" />
+        <Rule path="/items[at0001]" min="1" name="Surname" />
+        <Rule path="/items[at0002]" min="1" name="Forename" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0006]" max="0" />
+      </Items>
+    </Items>
+  </definition>
+</template>
