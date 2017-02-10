@@ -108,14 +108,6 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]/items[at0002]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14858.3</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.healthcare_provider_parent.v1]/items[at0002]">
     <items>
       <item>
@@ -1340,11 +1332,27 @@
       </item>
     </items>
   </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Clinical information']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/protocol[at0032]/items[openEHR-EHR-CLUSTER.healthcare_provider_parent.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12516.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Clinical information']/items[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/protocol[at0032]/items[openEHR-EHR-CLUSTER.healthcare_provider_parent.v1]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::14520.3</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases registration and consent">
     <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Participant">
       <Item xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0" concept_name="Participant GEL" max="1" path="/items" name="Participant information">
         <Rule path="/data[at0001]" hide_on_form="true" />
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_anonymised_parent.v1" concept_name="Anonymised person (PARENT)" max="1" path="/data[at0001]/items[at0005]" hide_on_form="true">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_anonymised_parent.v1" concept_name="Anonymised person (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Anonymised person" hide_on_form="true">
           <Rule path="/items[at0001]" min="1" name="Stated gender" />
           <Rule path="/items[at0002]" min="1" name="Phenotypic sex">
             <constraint xsi:type="textConstraint">
@@ -1380,7 +1388,7 @@
           </Rule>
           <Rule path="/items[at0020]" max="0" />
         </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" path="/data[at0001]/items[at0005]" hide_on_form="true">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Identifiable Person" hide_on_form="true">
           <Rule path="/items[at0001]" max="1" min="1" name="Family identifier" />
           <Rule path="/items[at0001]" max="1" clone="true" name="Local case identifier" />
           <Rule path="/items[at0001]" max="1" min="1" clone="true" name="Participant identifier" />
@@ -1412,18 +1420,11 @@
             <Rule path="/items[at0010]" max="0" />
           </Items>
         </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.healthcare_provider_parent.v1" concept_name="Healthcare provider (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Healthcare provider" hide_on_form="true">
-          <Rule path="/items[at0001]" max="0" />
-          <Rule path="/items[at0002]" name="Genomic Medicine Centre Id" />
-          <Rule path="/items[at0005]" max="0" />
-          <Rule path="/items[at0006]" max="0" />
-          <Rule path="/items[at0004]" max="1" name="Responsible consultant contact number" />
-        </Items>
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.proband_gel.v0" concept_name="Proband Details GEL" max="1" path="/data[at0001]/items[at0006]" name="Proband Details" />
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.metadata_relative_gel.v0" concept_name="Relative details GEL" max="1" path="/data[at0001]/items[at0007]" name="Relative details">
           <Rule path="/items[at0001]" min="1" />
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" max="1" path="/items[at0031]" name="Proband details" hide_on_form="true">
-            <Rule path="/items[at0001]" min="1" name="Proband NHS number" />
+            <Rule path="/items[at0001]" max="1" min="1" name="Proband NHS number" />
             <Rule path="/items[at0008]" min="1" name="Proband Date of Birth" />
             <Rule path="/items[at0006]" max="0" />
             <Rule path="/items[at0007]" max="0" />
@@ -1440,7 +1441,7 @@
       </Item>
     </Content>
     <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Consent">
-      <Item xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.consent_gel.v0" concept_name="Consent Details GEL" path="/items">
+      <Item xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.consent_gel.v0" concept_name="Consent Details GEL" max="1" path="/items" name="Consent Details">
         <Rule path="/data[at0001]" hide_on_form="true" />
         <Rule path="/data[at0001]/items[at0002]" min="1" />
         <Rule path="/data[at0001]/items[at0003]" min="1" />
@@ -1448,8 +1449,6 @@
         <Rule path="/data[at0001]/items[at0006]" max="0" />
         <Rule path="/data[at0001]/items[at0008]" min="1" />
         <Rule path="/data[at0001]/items[at0009]" min="1" />
-        <Rule path="/data[at0001]/items[at0011]" min="1" />
-        <Rule path="/data[at0001]/items[at0012]" min="1" />
         <Rule path="/data[at0001]/items[at0015]" max="0" />
         <Rule path="/data[at0001]/items[at0021]" max="0" />
         <Rule path="/data[at0001]/items[at0022]" max="0" />
@@ -1488,6 +1487,13 @@
               </constraint>
             </Rule>
           </Items>
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.healthcare_provider_parent.v1" concept_name="Healthcare provider (PARENT)" max="1" path="/protocol[at0032]/items[at0071]" name="Healthcare provider" hide_on_form="true">
+            <Rule path="/items[at0001]" name="Hospital of responsible consultant" />
+            <Rule path="/items[at0002]" max="0" />
+            <Rule path="/items[at0005]" max="0" />
+            <Rule path="/items[at0006]" max="0" />
+            <Rule path="/items[at0004]" max="1" name="Responsible consultant contact number" />
+          </Items>
         </Item>
       </Item>
     </Content>
@@ -1500,7 +1506,10 @@
       </Item>
     </Content>
     <Context>
+      <Rule path="/context/other_context[at0001]" hide_on_form="true" />
+      <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
       <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
+      <hide_on_form>true</hide_on_form>
     </Context>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
@@ -1527,9 +1536,6 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.address_isa.v1">
     <digest id="MD5-CAM-1.0.1">B57E4A1B668AA091230C201E1BE46884</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.healthcare_provider_parent.v1">
-    <digest id="MD5-CAM-1.0.1">DABDB6247145103B067D2DAF31B22D5E</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.proband_gel.v0">
     <digest id="MD5-CAM-1.0.1">1D53500B8806BB983630E4955FDA4CB0</digest>
   </integrity_checks>
@@ -1537,7 +1543,7 @@
     <digest id="MD5-CAM-1.0.1">6E57D6922A4205C3764CA2940578FAB1</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.consent_gel.v0">
-    <digest id="MD5-CAM-1.0.1">A36D4D708967B026F74E55523A5A5AF7</digest>
+    <digest id="MD5-CAM-1.0.1">16C28189CC4FB176E9B39C1A78A024F7</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">88AF7BC619F0DF958D2F00293756F398</digest>
@@ -1550,6 +1556,9 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.age_debra.v0">
     <digest id="MD5-CAM-1.0.1">414F91D3C87DCD4898C8F27DC98AE175</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.healthcare_provider_parent.v1">
+    <digest id="MD5-CAM-1.0.1">DABDB6247145103B067D2DAF31B22D5E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.family_gel.v0">
     <digest id="MD5-CAM-1.0.1">973815C26A2F0EC8CD9F62FE4B3A291B</digest>

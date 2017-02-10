@@ -21,12 +21,12 @@ description
 			copyright = <"">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"A36D4D708967B026F74E55523A5A5AF7">
+		["MD5-CAM-1.0.1"] = <"16C28189CC4FB176E9B39C1A78A024F7">
 	>
 
 definition
@@ -73,19 +73,10 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Consent question (rare diseases)
+					ELEMENT[at0011] occurrences matches {0..20} matches {	-- Consent question
 						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Consent response (rare diseases)
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0013, 	-- Yes
-									at0014]	-- No
-								}
+							DV_BOOLEAN matches {
+								value matches {True, False}
 							}
 						}
 					}
@@ -180,20 +171,9 @@ ontology
 					description = <"The name and version of the participant information sheet used.">
 				>
 				["at0011"] = <
-					text = <"Consent question (rare diseases)">
+					text = <"Consent question">
 					description = <"A particular question on the consent form.">
-				>
-				["at0012"] = <
-					text = <"Consent response (rare diseases)">
-					description = <"Yes or no response to a particular question on the consent form.">
-				>
-				["at0013"] = <
-					text = <"Yes">
-					description = <"The response is yes.">
-				>
-				["at0014"] = <
-					text = <"No">
-					description = <"The response is no.">
+					comment = <"Rename to the exact question at template or runtime.">
 				>
 				["at0015"] = <
 					text = <"Name and version of assent form (cancer)">
