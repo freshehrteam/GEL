@@ -244,6 +244,7 @@
     </Content>
     <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Growth parameters">
       <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.height.v1" concept_name="Height/Length" max="1" path="/items" name="Height">
+        <Rule path="/data[at0001]" hide_on_form="true" />
         <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
           <eventConstraint>
             <allowedType>PointInTime</allowedType>
@@ -263,6 +264,7 @@
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.measurement_type_gel.v0" concept_name="Measurement type GEL" max="1" path="/protocol[at0007]/items[at0011]" name="Measurement type" hide_on_form="true" />
       </Item>
       <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.body_weight.v1" concept_name="Body weight" max="1" path="/items" name="Weight">
+        <Rule path="/data[at0002]" hide_on_form="true" />
         <Rule path="/data[at0002]/events[at0003]" hide_on_form="true">
           <eventConstraint>
             <allowedType>PointInTime</allowedType>
@@ -348,9 +350,8 @@
         <Rule path="/data[at0001]/items[at0028]/items[at0059]">
           <constraint xsi:type="durationConstraint">
             <pattern>PW</pattern>
-            <minMagnitude>P0W</minMagnitude>
             <includesMaximum>false</includesMaximum>
-            <includesMinimum>true</includesMinimum>
+            <includesMinimum>false</includesMinimum>
           </constraint>
         </Rule>
         <Rule path="/data[at0001]/items[at0028]/items[at0038]" max="0" />
@@ -383,10 +384,11 @@
         <Rule path="/data[at0002]/events[at0003.1]/state[at0008]/items[at0025]" max="0" />
         <Rule path="/protocol[at0015]" hide_on_form="true" />
       </Item>
-      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.head_circumference.v0" concept_name="Head circumference" path="/items" hide_on_form="true">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.head_circumference.v0" concept_name="Head circumference" max="1" path="/items" name="Head circumference at birth" hide_on_form="true">
         <Rule path="/data[at0001]" hide_on_form="true" />
         <Rule path="/data[at0001]/events[at0010]" max="0" />
         <Rule path="/data[at0001]/events[at0011]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0011]/data[at0003]" hide_on_form="true" />
         <Rule path="/data[at0001]/events[at0011]/data[at0003]/items[at0004]" name="Birth OFC">
           <constraint xsi:type="quantityConstraint">
             <excludedUnits>[in_i]</excludedUnits>
@@ -407,17 +409,22 @@
     </Context>
   </definition>
   <view>
-    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Growth parameters']/items[openEHR-EHR-OBSERVATION.height.v1]/data[at0001]/events[at0002]/time">
-      <items id="VisibleInView">
-        <value>Date of measurement</value>
-      </items>
-    </constraints>
-    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Growth parameters']/items[openEHR-EHR-OBSERVATION.body_weight.v1]/data[at0002]/events[at0003]/time">
-      <items id="VisibleInView">
-        <value>Date of measurement</value>
-      </items>
-    </constraints>
     <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Growth parameters']/items[openEHR-EHR-OBSERVATION.head_circumference.v0]/data[at0001]/events[at0010]/time">
+      <items id="VisibleInView">
+        <value>Date of measurement</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Growth parameters']/items[openEHR-EHR-OBSERVATION.head_circumference.v0]/data[at0001]/origin">
+      <items id="VisibleInView">
+        <value>Date of measurement (RM)</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Growth parameters']/items[openEHR-EHR-OBSERVATION.body_weight.v1]/data[at0002]/origin">
+      <items id="VisibleInView">
+        <value>Date of measurement</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Growth parameters']/items[openEHR-EHR-OBSERVATION.height.v1]/data[at0001]/origin">
       <items id="VisibleInView">
         <value>Date of measurement</value>
       </items>

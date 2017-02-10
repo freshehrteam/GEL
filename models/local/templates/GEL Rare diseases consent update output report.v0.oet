@@ -159,8 +159,6 @@
       <Rule path="/data[at0001]/items[at0006]" max="0" />
       <Rule path="/data[at0001]/items[at0008]" min="1" />
       <Rule path="/data[at0001]/items[at0009]" min="1" />
-      <Rule path="/data[at0001]/items[at0011]" min="1" />
-      <Rule path="/data[at0001]/items[at0012]" min="1" />
       <Rule path="/data[at0001]/items[at0015]" max="0" />
       <Rule path="/data[at0001]/items[at0021]" max="0" />
       <Rule path="/data[at0001]/items[at0022]" max="0" />
@@ -188,6 +186,6 @@
     <digest id="MD5-CAM-1.0.1">05B27C76383002F3959B99CEEF20E1BA</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.consent_gel.v0">
-    <digest id="MD5-CAM-1.0.1">A36D4D708967B026F74E55523A5A5AF7</digest>
+    <digest id="MD5-CAM-1.0.1">16C28189CC4FB176E9B39C1A78A024F7</digest>
   </integrity_checks>
 </template>

@@ -104,7 +104,7 @@
     <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0" concept_name="Participant GEL" max="1" path="/content" name="Participant">
       <Rule path="/data[at0001]/items[at0002]" max="0" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Identifiable Person" hide_on_form="true">
-        <Rule path="/items[at0001]" min="1" name="Participant Identifier" />
+        <Rule path="/items[at0001]" max="1" min="1" name="Participant Identifier" />
         <Rule path="/items[at0001]" max="1" min="1" clone="true" name="NHS number" />
         <Rule path="/items[at0001]" max="1" clone="true" name="CHI number" />
         <Rule path="/items[at0001]" max="1" clone="true" name="Hospital number" />

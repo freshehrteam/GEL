@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Gustavo M Bacelar-Silva">
-		["organisation"] = <"Faculty of Medicine - University of Porto">
 		["email"] = <"mail@gustavobacelar.com">
+		["organisation"] = <"Faculty of Medicine - University of Porto">
 		["date"] = <"2012-06-05">
 	>
 	details = <
@@ -27,9 +27,12 @@ The CLUSTER.exclusion_exam archetype can be nested within the 'Measurement not d
 	lifecycle_state = <"in_development">
 	other_contributors = <"Ian McNicoll, freshEHR Informatics, UK ", "Heather Leslie, Ocean Informatics, Australia">
 	other_details = <
+		["MD5-CAM-1.0.1"] = <"E675488562B4442B6FDF45F9EAD2804A">
+		["original_publisher"] = <"openEHR Foundation">
 		["current_contact"] = <"Gustavo M Bacelar-Silva, mail@gustavobacelar.com">
+		["build_uid"] = <"757a9a08-08b7-48f3-b816-aaa568f80ba2">
+		["original_namespace"] = <"org.openehr">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["revision"] = <"0.0.1-alpha">
 		["references"] = <"IHE Eye Care Domain. General Eye Evaluation (GEE) [Internet]. IHE; 2012. Available from: http://www.ihe.net/Technical_Framework/upload/IHE_EyeCare_Supp_GEE_Rev1-1_TI_2012-06-29.pdf
 
 Royal College of Opthalmologists. Cataract National Dataset for Adults [Internet]. 2011. Available from: http://www.rcophth.ac.uk/page.asp?section=583&sectionTitle=Cataract+National+Data+Set+for+Adults
@@ -39,10 +42,7 @@ CfH, UK. Do Once & Share - Glaucoma [Internet]. [cited 2012 Sep 26]. Available f
 DICOM Supplement 30 [Internet]. [cited 2012 Sep 26]. Available from: http://medical.nema.org/
 
 Lamparter, J., & Hoffmann, E. M. (2009). Messung des Augeninnendrucks (Tonometrie) mit unterschiedlichen Verfahren. Der Ophthalmologe, 106(8), 676-682.">
-		["build_uid"] = <"757a9a08-08b7-48f3-b816-aaa568f80ba2">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["MD5-CAM-1.0.1"] = <"C12D09F82C18E6E9AF5C3C1E3C4B1B77">
+		["revision"] = <"0.0.1-alpha">
 		["custodian_namespace"] = <"org.openehr">
 		["custodian_organisation"] = <"openEHR Foundation">
 	>
@@ -52,7 +52,7 @@ definition
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+					POINT_EVENT[at0002] occurrences matches {0..*} matches {	-- Point-in-time
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
@@ -128,6 +128,19 @@ definition
 							}
 						}
 					}
+					INTERVAL_EVENT[at0081] occurrences matches {0..1} matches {	-- Highest recorded
+						math_function matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {[openehr::144]}
+							}
+						}
+						data matches {
+							use_node ITEM_TREE /data[at0001]/events[at0002]/data[at0003]	-- /data[Event Series]/events[Point-in-time]/data[Tree]
+						}
+						state matches {
+							use_node ITEM_TREE /data[at0001]/events[at0002]/state[at0007]	-- /data[Event Series]/events[Point-in-time]/state[Tree]
+						}
+					}
 				}
 			}
 		}
@@ -165,8 +178,6 @@ definition
 		}
 	}
 
-
-
 ontology
 	term_definitions = <
 		["en"] = <
@@ -180,7 +191,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Any event">
+					text = <"Point-in-time">
 					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
 				>
 				["at0003"] = <
@@ -279,6 +290,11 @@ ontology
 				["at0080"] = <
 					text = <"Multimedia">
 					description = <"Digital image, video or diagram representing the measurement of intraocular pressure.">
+				>
+				["at0081"] = <
+					text = <"Highest recorded">
+					description = <"Highest recorded
+">
 				>
 			>
 		>

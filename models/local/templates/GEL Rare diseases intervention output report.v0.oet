@@ -108,27 +108,11 @@
       </item>
     </items>
   </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Surgical procedure']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Primary procedure']/items[openEHR-EHR-ACTION.procedure.v1]/description[at0001]/items[at0005]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14954.1</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Surgical procedure']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Additional procedures']/items[openEHR-EHR-ACTION.procedure.v1]/description[at0001]/items[at0002]">
     <items>
       <item>
         <key>Notes.Authors Note</key>
         <value>GEL::12807.1 (SNOMED CT) and GEL::30861.1 (OPCS-4)</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Surgical procedure']/items[openEHR-EHR-SECTION.adhoc.v1 and name/value='Additional procedures']/items[openEHR-EHR-ACTION.procedure.v1]/description[at0001]/items[at0005]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14954.1</value>
       </item>
     </items>
   </annotations>
@@ -238,13 +222,13 @@
               <excludedValues>local::at0003</excludedValues>
               <excludedValues>local::at0004</excludedValues>
               <excludedValues>local::at0005</excludedValues>
-              <excludedValues>local::at0006</excludedValues>
               <excludedValues>local::at0007</excludedValues>
               <excludedValues>local::at0008</excludedValues>
               <excludedValues>local::at0009</excludedValues>
               <excludedValues>local::at0010</excludedValues>
               <excludedValues>local::at0011</excludedValues>
               <excludedValues>local::at0012</excludedValues>
+              <excludedValues>local::at0013</excludedValues>
               <excludedValues>local::at0014</excludedValues>
               <excludedValues>local::at0015</excludedValues>
               <excludedValues>local::at0016</excludedValues>
@@ -259,6 +243,10 @@
       </Item>
     </Content>
     <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Surgical procedure">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1" concept_name="Clinical Synopsis" max="1" path="/items" name="Comment">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" name="Surgical procedure comment" />
+      </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Primary procedure">
         <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.procedure.v1" concept_name="Procedure" max="1" path="/items" hide_on_form="true">
           <Rule path="/description[at0001]" hide_on_form="true" />
@@ -274,6 +262,7 @@
           <Rule path="/description[at0001]/items[at0061]" max="0" />
           <Rule path="/description[at0001]/items[at0067]" max="0" />
           <Rule path="/description[at0001]/items[at0014]" max="0" />
+          <Rule path="/description[at0001]/items[at0005]" max="0" />
           <Rule path="/protocol[at0053]" hide_on_form="true" />
           <Rule path="/protocol[at0053]/items[at0054]" max="0" />
           <Rule path="/protocol[at0053]/items[at0056]" max="0" />
@@ -294,6 +283,7 @@
           <Rule path="/description[at0001]/items[at0061]" max="0" />
           <Rule path="/description[at0001]/items[at0067]" max="0" />
           <Rule path="/description[at0001]/items[at0014]" max="0" />
+          <Rule path="/description[at0001]/items[at0005]" max="0" />
           <Rule path="/protocol[at0053]" hide_on_form="true" />
           <Rule path="/protocol[at0053]/items[at0054]" max="0" />
           <Rule path="/protocol[at0053]/items[at0056]" max="0" />
@@ -371,6 +361,9 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medication_course_summary.v0">
     <digest id="MD5-CAM-1.0.1">1E7D6F795F76E5D62071822152161AFE</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1">
+    <digest id="MD5-CAM-1.0.1">2D066E7C501C2DAEC625DEE2ECD81DF4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.procedure.v1">
     <digest id="MD5-CAM-1.0.1">B53DE4D15A4711977216BB098A7B3F5A</digest>

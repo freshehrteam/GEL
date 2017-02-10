@@ -21,12 +21,12 @@ description
 			copyright = <"">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"DA68842B66954AA4514BBABEF6DEA144">
+		["MD5-CAM-1.0.1"] = <"20446CC727ED8E27EE28FB6E3253808C">
 	>
 
 definition
@@ -34,7 +34,12 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Death Location
+					ELEMENT[at0016] occurrences matches {0..1} matches {	-- Date of death
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Death location
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -49,7 +54,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0009] occurrences matches {0..1} matches {	-- Significant
+					ELEMENT[at0009] occurrences matches {0..1} matches {	-- Significant condition not leading to death
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -59,7 +64,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Condition
+					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Significant condition leading to death
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -69,7 +74,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0013] occurrences matches {0..*} matches {	-- Diagnosis
+					ELEMENT[at0013] occurrences matches {0..*} matches {	-- Related diagnosis
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -102,7 +107,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Death Location">
+					text = <"Death location">
 					description = <"The location where death occurred.">
 				>
 				["at0003"] = <
@@ -130,7 +135,7 @@ ontology
 					description = <"The participant died in a location not specified by the other options.">
 				>
 				["at0009"] = <
-					text = <"Significant">
+					text = <"Significant condition not leading to death">
 					description = <"Significant condition not leading to death. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0010"] = <
@@ -138,7 +143,7 @@ ontology
 					description = <"Immediate cause of death. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0011"] = <
-					text = <"Condition">
+					text = <"Significant condition leading to death">
 					description = <"Condition leading to death. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0012"] = <
@@ -146,7 +151,7 @@ ontology
 					description = <"Underlying cause of death. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0013"] = <
-					text = <"Diagnosis">
+					text = <"Related diagnosis">
 					description = <"Any other relevant diagnosis. Coded according to the International Classification of Diseases (ICD) code of the condition leading to death as recorded on the death certificate.">
 				>
 				["at0014"] = <
@@ -157,6 +162,10 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0016"] = <
+					text = <"Date of death">
+					description = <"The date of death of the patient.">
 				>
 			>
 		>

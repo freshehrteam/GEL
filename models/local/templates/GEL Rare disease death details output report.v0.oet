@@ -120,7 +120,7 @@
     <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0" concept_name="Participant GEL" max="1" path="/content" name="Participant">
       <Rule path="/data[at0001]/items[at0002]" max="0" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v1" concept_name="Identifiable Person (PARENT)" max="1" path="/data[at0001]/items[at0005]" name="Identifiable Person" hide_on_form="true">
-        <Rule path="/items[at0001]" min="1" name="Participant Identifier" />
+        <Rule path="/items[at0001]" max="1" min="1" name="Participant Identifier" />
         <Rule path="/items[at0001]" max="1" min="1" clone="true" name="NHS number" />
         <Rule path="/items[at0001]" max="1" clone="true" name="CHI number" />
         <Rule path="/items[at0001]" max="1" clone="true" name="Hospital number" />
@@ -161,6 +161,6 @@
     <digest id="MD5-CAM-1.0.1">05B27C76383002F3959B99CEEF20E1BA</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0">
-    <digest id="MD5-CAM-1.0.1">DA68842B66954AA4514BBABEF6DEA144</digest>
+    <digest id="MD5-CAM-1.0.1">20446CC727ED8E27EE28FB6E3253808C</digest>
   </integrity_checks>
 </template>
