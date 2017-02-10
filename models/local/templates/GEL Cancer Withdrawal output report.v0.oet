@@ -60,6 +60,38 @@
       </item>
     </other_details>
   </description>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GL::12730</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0004]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12729</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0006]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12728</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0]/data[at0001]/items[at0009]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::12731</value>
+      </item>
+    </items>
+  </annotations>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Cancer withdrawal">
     <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0" concept_name="Participant GEL" max="1" path="/content" name="Participant Details">
       <Rule path="/data[at0001]" hide_on_form="true" />
@@ -84,6 +116,9 @@
     </Content>
     <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0" concept_name="Withdrawal GEL" max="1" path="/content" name="Withdrawal">
       <Rule path="/data[at0001]/items[at0010]" max="0" />
+      <Rule path="/data[at0001]/items[at0004]" min="1" />
+      <Rule path="/data[at0001]/items[at0006]" min="1" />
+      <Rule path="/data[at0001]/items[at0009]" min="1" />
     </Content>
     <Context>
       <Rule path="/context/other_context[at0001]" hide_on_form="true" />
