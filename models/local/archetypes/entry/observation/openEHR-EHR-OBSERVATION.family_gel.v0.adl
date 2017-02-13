@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"973815C26A2F0EC8CD9F62FE4B3A291B">
+		["MD5-CAM-1.0.1"] = <"680182CCF2BB059B521DB30CF0346FFA">
 	>
 
 definition
@@ -38,78 +38,11 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0046] occurrences matches {0..1} matches {	-- Mother's ethnic origin
+									ELEMENT[at0067] occurrences matches {0..1} matches {	-- Out of area recruitment
 										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0053, 	-- A: White: British
-													at0054, 	-- B: White: Irish
-													at0055, 	-- C: White: Any other White background
-													at0049, 	-- D: Mixed: White and Black Caribbean
-													at0050, 	-- E: Mixed: White and Black African
-													at0051, 	-- F: Mixed: White and Asian
-													at0052, 	-- G: Mixed: Any other mixed background
-													at0059, 	-- H: Asian or Asian British: Indian
-													at0060, 	-- J: Asian or Asian British: Pakistani
-													at0061, 	-- K: Asian or Asian British: Bangladeshi
-													at0056, 	-- L: Asian or Asian British: Any other Asian background
-													at0057, 	-- M: Black or Black British: Caribbean
-													at0058, 	-- N: Black or Black British: African
-													at0062, 	-- P: Black or Black British: Any other Black background
-													at0064, 	-- R: Other Ethnic Groups: Chinese
-													at0063, 	-- S: Other Ethnic Groups: Any other ethnic group
-													at0065, 	-- Z: not stated
-													at0066]	-- 99: unknown
-												}
+											DV_BOOLEAN matches {
+												value matches {True, False}
 											}
-										}
-									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Mother's ethnic origin other
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Mother's other relevant ancestry
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0047] occurrences matches {0..1} matches {	-- Father's ethnic origin
-										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0053, 	-- A: White: British
-													at0054, 	-- B: White: Irish
-													at0055, 	-- C: White: Any other White background
-													at0049, 	-- D: Mixed: White and Black Caribbean
-													at0050, 	-- E: Mixed: White and Black African
-													at0051, 	-- F: Mixed: White and Asian
-													at0052, 	-- G: Mixed: Any other mixed background
-													at0059, 	-- H: Asian or Asian British: Indian
-													at0060, 	-- J: Asian or Asian British: Pakistani
-													at0061, 	-- K: Asian or Asian British: Bangladeshi
-													at0056, 	-- L: Asian or Asian British: Any other Asian background
-													at0057, 	-- M: Black or Black British: Caribbean
-													at0058, 	-- N: Black or Black British: African
-													at0062, 	-- P: Black or Black British: Any other Black background
-													at0064, 	-- R: Other Ethnic Groups: Chinese
-													at0063, 	-- S: Other Ethnic Groups: Any other ethnic group
-													at0065, 	-- Z: not stated
-													at0066]	-- 99: unknown
-												}
-											}
-										}
-									}
-									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Father's ethnic origin other
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Father's other relevant ancestry
-										value matches {
-											DV_TEXT matches {*}
 										}
 									}
 									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Maternal family history of breast and/or ovarian cancer
@@ -160,11 +93,6 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0044] occurrences matches {0..*} matches {	-- Other relevant maternal family history
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
 									ELEMENT[at0026] occurrences matches {0..1} matches {	-- Paternal family history of breast and/or ovarian cancer
 										value matches {
 											DV_CODED_TEXT matches {
@@ -213,11 +141,6 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0045] occurrences matches {0..*} matches {	-- Other relevant paternal family history
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
 								}
 							}
 						}
@@ -256,22 +179,6 @@ ontology
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
-				>
-				["at0005"] = <
-					text = <"Mother's ethnic origin other">
-					description = <"Textual description of mother's ethnic origin if not matching one of the items on the pre-defined ethnic category list.">
-				>
-				["at0006"] = <
-					text = <"Mother's other relevant ancestry">
-					description = <"Textual description of any additional relevant ancestry of the mother which is pertinent to clinical finding.">
-				>
-				["at0008"] = <
-					text = <"Father's ethnic origin other">
-					description = <"Textual description of father's ethnic origin if not matching one of the items on the pre-defined ethnic category list.">
-				>
-				["at0009"] = <
-					text = <"Father's other relevant ancestry">
-					description = <"Textual description of any additional relevant ancestry of the father which is pertinent to clinical finding.">
 				>
 				["at0010"] = <
 					text = <"Maternal family history of breast and/or ovarian cancer">
@@ -409,93 +316,9 @@ ontology
 					text = <"Extension">
 					description = <"*">
 				>
-				["at0044"] = <
-					text = <"Other relevant maternal family history">
-					description = <"Textual description of other relevant maternal family history.">
-				>
-				["at0045"] = <
-					text = <"Other relevant paternal family history">
-					description = <"Textual description of other relevant paternal family history.">
-				>
-				["at0046"] = <
-					text = <"Mother's ethnic origin">
-					description = <"Mother's ethnic origin as per UK classification.">
-				>
-				["at0047"] = <
-					text = <"Father's ethnic origin">
-					description = <"Father's ethnic origin as per UK classification.">
-				>
-				["at0049"] = <
-					text = <"D: Mixed: White and Black Caribbean">
-					description = <"The ethnicity category is Mixed: White and Black Caribbean.">
-				>
-				["at0050"] = <
-					text = <"E: Mixed: White and Black African">
-					description = <"The ethnicity category is Mixed: White and Black African.">
-				>
-				["at0051"] = <
-					text = <"F: Mixed: White and Asian">
-					description = <"The ethnicity category is Mixed: White and Asian.">
-				>
-				["at0052"] = <
-					text = <"G: Mixed: Any other mixed background">
-					description = <"The ethnicity category is Mixed: Any other mixed background.">
-				>
-				["at0053"] = <
-					text = <"A: White: British">
-					description = <"The ethnicity category is White: British.">
-				>
-				["at0054"] = <
-					text = <"B: White: Irish">
-					description = <"The ethnicity category is White: Irish.">
-				>
-				["at0055"] = <
-					text = <"C: White: Any other White background">
-					description = <"The ethnicity category is White: Any other White background.">
-				>
-				["at0056"] = <
-					text = <"L: Asian or Asian British: Any other Asian background">
-					description = <"The ethnicity category is Asian or Asian British: Any other Asian background.">
-				>
-				["at0057"] = <
-					text = <"M: Black or Black British: Caribbean">
-					description = <"The ethnicity category is Black or Black British: Caribbean.">
-				>
-				["at0058"] = <
-					text = <"N: Black or Black British: African">
-					description = <"The ethnicity category is Black or Black British: African.">
-				>
-				["at0059"] = <
-					text = <"H: Asian or Asian British: Indian">
-					description = <"The ethnicity category is Asian or Asian British: Indian.">
-				>
-				["at0060"] = <
-					text = <"J: Asian or Asian British: Pakistani">
-					description = <"The ethnicity category is Asian or Asian British: Pakistani.">
-				>
-				["at0061"] = <
-					text = <"K: Asian or Asian British: Bangladeshi">
-					description = <"The ethnicity category is Asian or Asian British: Bangladeshi.">
-				>
-				["at0062"] = <
-					text = <"P: Black or Black British: Any other Black background">
-					description = <"The ethnicity category is Black or Black British: Any other Black background.">
-				>
-				["at0063"] = <
-					text = <"S: Other Ethnic Groups: Any other ethnic group">
-					description = <"The ethnicity category is Other Ethnic Groups: Any other ethnic group.">
-				>
-				["at0064"] = <
-					text = <"R: Other Ethnic Groups: Chinese">
-					description = <"The ethnicity category is Other Ethnic Groups: Chinese.">
-				>
-				["at0065"] = <
-					text = <"Z: not stated">
-					description = <"The ethnicity category is not stated.">
-				>
-				["at0066"] = <
-					text = <"99: unknown">
-					description = <"The ethnicity category is unknown.">
+				["at0067"] = <
+					text = <"Out of area recruitment">
+					description = <"Flag if a relative of the proband is recruited out of area.">
 				>
 			>
 		>
