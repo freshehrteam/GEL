@@ -1,0 +1,89 @@
+﻿archetype (adl_version=1.4; uid=ffd927a4-28fa-42e6-b1d1-c1c438c69977)
+	openEHR-EHR-CLUSTER.healthcare_professional_parent.v0
+
+concept
+	[at0000]	-- Healthcare professional (PARENT)
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics">
+		["email"] = <"ian@freshehr.com">
+		["date"] = <"2014-07-11">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details of a healthcare professional.">
+			use = <"">
+			misuse = <"">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"888E16B0F4F7A9A608DF03BB10D87F5C">
+		["build_uid"] = <"1dd80f9b-f788-43de-bb4c-907006e96e51">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Healthcare professional (PARENT)
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype CLUSTER[at0001] occurrences matches {0..1} matches {	-- Professional Name
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0002] occurrences matches {0..*} matches {	-- Professional Identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {	-- Provider Organisation
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0004] occurrences matches {0..*} matches {	-- Contact details
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Healthcare professional (PARENT)">
+					description = <"Details of a healthcare professional.">
+				>
+				["at0001"] = <
+					text = <"Professional Name">
+					description = <"The healthcare worker's professional name.">
+				>
+				["at0002"] = <
+					text = <"Professional Identifier">
+					description = <"The healthcare worker's profesional identifier.">
+				>
+				["at0003"] = <
+					text = <"Provider Organisation">
+					description = <"The healthcare worker's provider organisation.">
+				>
+				["at0004"] = <
+					text = <"Contact details">
+					description = <"Contact details for the heathcare worker.">
+				>
+			>
+		>
+	>
