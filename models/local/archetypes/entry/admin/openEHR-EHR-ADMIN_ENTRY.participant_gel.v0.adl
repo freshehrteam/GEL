@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=85d83e6c-f07e-46d9-9cf1-7d4dc903fce1)
 	openEHR-EHR-ADMIN_ENTRY.participant_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-27">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of participant details in the Genomics England datasets.">
 			use = <"Use to record participant details not available elsewhere in the context of the Genomics England datasets.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"4E978BB60C1444593B14C1DEA9A2FDD7">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"FDB2BAF12DC5E2F8E1821764577449B7">
+		["build_uid"] = <"c341cb09-2139-4da7-a42a-f247bcf861b1">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -38,29 +44,11 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Participant type
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0003, 	-- Proband
-									at0004]	-- Relative
-								}
-							}
-						}
-					}
-					allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {	-- Proband details
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.proband_gel(-[a-zA-Z0-9_]+)*\.v0/}
-					}
-					allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {	-- Relative details
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.metadata_relative_gel(-[a-zA-Z0-9_]+)*\.v0/}
-					}
 				}
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -74,29 +62,9 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0002"] = <
-					text = <"Participant type">
-					description = <"The type of participant as defined by the Genomics England dataset.">
-				>
-				["at0003"] = <
-					text = <"Proband">
-					description = <"The participant type is proband.">
-				>
-				["at0004"] = <
-					text = <"Relative">
-					description = <"The participant type is relative.">
-				>
 				["at0005"] = <
 					text = <"Participant details">
-					description = <"Participant details such as identifiers, names, ethnicity and contact details.">
-				>
-				["at0006"] = <
-					text = <"Proband details">
-					description = <"Proband details where the participant is the proband.">
-				>
-				["at0007"] = <
-					text = <"Relative details">
-					description = <"The relative details where the participant is a relative of the proband.">
+					description = <"Participant details such as identifiers, names and contact details.">
 				>
 			>
 		>

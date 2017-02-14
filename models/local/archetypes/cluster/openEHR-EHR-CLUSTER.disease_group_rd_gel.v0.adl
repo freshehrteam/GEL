@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=3c719738-6ca8-41af-93f0-d84f8821e8a8)
 	openEHR-EHR-CLUSTER.disease_group_rd_gel.v0
 
 concept
@@ -8,25 +8,31 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording of disease group and disease subgroup in the Genomics England Rare diseases dataset.">
-			use = <"Use to record disease group and subgroup according to the Model Catalogue in the Genomics England Rare diseases dataset. It is expected that the values for each of the two data points are populated from a local terminology reflecting the Model Catalogue https://gelmc.extge.co.uk/#/">
+			use = <"Use to record disease group and subgroup according to the Model Catalogue in the Genomics England Rare diseases dataset. It is expected that the values for each of the two data points are populated from a local terminology reflecting the Model Catalogue https://gelmc.extge.co.uk/#/.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"60802446BB811FAAEBF4C6D0167F7F79">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"BE9B85834043A2778B99A2DF28A597E7">
+		["build_uid"] = <"85952c30-8183-4243-842e-bc6481d7554a">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -44,6 +50,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
