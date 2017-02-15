@@ -152,90 +152,6 @@
                 <lower>0</lower>
                 <upper>1</upper>
               </existence>
-              <children xsi:type="C_COMPLEX_OBJECT">
-                <rm_type_name>ELEMENT</rm_type_name>
-                <occurrences>
-                  <lower_included>true</lower_included>
-                  <upper_included>true</upper_included>
-                  <lower_unbounded>false</lower_unbounded>
-                  <upper_unbounded>false</upper_unbounded>
-                  <lower>0</lower>
-                  <upper>1</upper>
-                </occurrences>
-                <node_id>at0002</node_id>
-                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                  <rm_attribute_name>value</rm_attribute_name>
-                  <existence>
-                    <lower_included>true</lower_included>
-                    <upper_included>true</upper_included>
-                    <lower_unbounded>false</lower_unbounded>
-                    <upper_unbounded>false</upper_unbounded>
-                    <lower>0</lower>
-                    <upper>1</upper>
-                  </existence>
-                  <children xsi:type="C_COMPLEX_OBJECT">
-                    <rm_type_name>DV_TEXT</rm_type_name>
-                    <occurrences>
-                      <lower_included>true</lower_included>
-                      <upper_included>true</upper_included>
-                      <lower_unbounded>false</lower_unbounded>
-                      <upper_unbounded>false</upper_unbounded>
-                      <lower>1</lower>
-                      <upper>1</upper>
-                    </occurrences>
-                    <node_id />
-                  </children>
-                </attributes>
-                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                  <rm_attribute_name>name</rm_attribute_name>
-                  <existence>
-                    <lower_included>true</lower_included>
-                    <upper_included>true</upper_included>
-                    <lower_unbounded>false</lower_unbounded>
-                    <upper_unbounded>false</upper_unbounded>
-                    <lower>1</lower>
-                    <upper>1</upper>
-                  </existence>
-                  <children xsi:type="C_COMPLEX_OBJECT">
-                    <rm_type_name>DV_TEXT</rm_type_name>
-                    <occurrences>
-                      <lower_included>true</lower_included>
-                      <upper_included>true</upper_included>
-                      <lower_unbounded>false</lower_unbounded>
-                      <upper_unbounded>false</upper_unbounded>
-                      <lower>1</lower>
-                      <upper>1</upper>
-                    </occurrences>
-                    <node_id />
-                    <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                      <rm_attribute_name>value</rm_attribute_name>
-                      <existence>
-                        <lower_included>true</lower_included>
-                        <upper_included>true</upper_included>
-                        <lower_unbounded>false</lower_unbounded>
-                        <upper_unbounded>false</upper_unbounded>
-                        <lower>1</lower>
-                        <upper>1</upper>
-                      </existence>
-                      <children xsi:type="C_PRIMITIVE_OBJECT">
-                        <rm_type_name>STRING</rm_type_name>
-                        <occurrences>
-                          <lower_included>true</lower_included>
-                          <upper_included>true</upper_included>
-                          <lower_unbounded>false</lower_unbounded>
-                          <upper_unbounded>false</upper_unbounded>
-                          <lower>1</lower>
-                          <upper>1</upper>
-                        </occurrences>
-                        <node_id />
-                        <item xsi:type="C_STRING">
-                          <list>Event reference</list>
-                        </item>
-                      </children>
-                    </attributes>
-                  </children>
-                </attributes>
-              </children>
               <children xsi:type="ARCHETYPE_SLOT">
                 <rm_type_name>CLUSTER</rm_type_name>
                 <occurrences>
@@ -988,7 +904,7 @@
                       </children>
                     </attributes>
                     <archetype_id>
-                      <value>openEHR-EHR-CLUSTER.person_name_isa.v1</value>
+                      <value>openEHR-EHR-CLUSTER.person_name_isa.v0</value>
                     </archetype_id>
                     <term_definitions code="at0000">
                       <items id="description">Personal name compliant with European ISA standard.</items>
@@ -1015,7 +931,7 @@
                     </term_definitions>
                     <term_definitions code="at0005">
                       <items id="comment">Note that patronymic names refer to a father's given name, not the family name inherited from the mother and father as is the case in countries such as Spain and Portugal. Again referring to the example of Miguel de Cervantes Saavedra's, the patronymic name element would be unused.</items>
-                      <items id="description">Patronymic names are important in some countries. Iceland does not have a concept of 'family name' in the way that many other European countries do, for example. Erik Magnusson and Erika Magnusdottir are siblings, both offspring of Mangnus, irrespective of his patronymic name. In Bulgaria and Russia, patronymic names are in every day usage, for example, the Sergeyevich in 'Mikhail Sergeyevich Gorbachev.'</items>
+                      <items id="description">Patronymic names are important in some countries. Iceland does not have a concept of 'family name' in the way that many other European countries do, for example. Erik Magnusson and Erika Magnusdottir are siblings, both offspring of Mangnus, irrespective of his patronymic name. In Bulgaria and Russia, patronymic names are in every day usage, for example, the Sergeyevich in 'Mikhail Sergeyevich Gorbachev'.</items>
                       <items id="text">Patronymic Name</items>
                     </term_definitions>
                     <term_definitions code="at0006">
@@ -1208,7 +1124,7 @@
                   </children>
                 </attributes>
                 <archetype_id>
-                  <value>openEHR-EHR-CLUSTER.person_identifiable_parent.v1</value>
+                  <value>openEHR-EHR-CLUSTER.person_identifiable_parent.v0</value>
                 </archetype_id>
                 <term_definitions code="at0000">
                   <items id="description">Identifiable details of a person compliant with European ISA standard.</items>
@@ -1246,64 +1162,6 @@
                   <items id="description">Other personal details.</items>
                   <items id="text">Other details</items>
                 </term_definitions>
-              </children>
-              <children xsi:type="ARCHETYPE_SLOT">
-                <rm_type_name>CLUSTER</rm_type_name>
-                <occurrences>
-                  <lower_included>true</lower_included>
-                  <lower_unbounded>false</lower_unbounded>
-                  <upper_unbounded>true</upper_unbounded>
-                  <lower>0</lower>
-                </occurrences>
-                <node_id>at0006</node_id>
-                <includes>
-                  <expression xsi:type="EXPR_BINARY_OPERATOR">
-                    <type>Boolean</type>
-                    <operator>2007</operator>
-                    <precedence_overridden>false</precedence_overridden>
-                    <left_operand xsi:type="EXPR_LEAF">
-                      <type>String</type>
-                      <item xsi:type="xsd:string">archetype_id/value</item>
-                      <reference_type>attribute</reference_type>
-                    </left_operand>
-                    <right_operand xsi:type="EXPR_LEAF">
-                      <type>C_STRING</type>
-                      <item xsi:type="C_STRING">
-                        <pattern>openEHR-EHR-CLUSTER\.proband_gel(-[a-zA-Z0-9_]+)*\.v0</pattern>
-                      </item>
-                      <reference_type>constraint</reference_type>
-                    </right_operand>
-                  </expression>
-                </includes>
-              </children>
-              <children xsi:type="ARCHETYPE_SLOT">
-                <rm_type_name>CLUSTER</rm_type_name>
-                <occurrences>
-                  <lower_included>true</lower_included>
-                  <lower_unbounded>false</lower_unbounded>
-                  <upper_unbounded>true</upper_unbounded>
-                  <lower>0</lower>
-                </occurrences>
-                <node_id>at0007</node_id>
-                <includes>
-                  <expression xsi:type="EXPR_BINARY_OPERATOR">
-                    <type>Boolean</type>
-                    <operator>2007</operator>
-                    <precedence_overridden>false</precedence_overridden>
-                    <left_operand xsi:type="EXPR_LEAF">
-                      <type>String</type>
-                      <item xsi:type="xsd:string">archetype_id/value</item>
-                      <reference_type>attribute</reference_type>
-                    </left_operand>
-                    <right_operand xsi:type="EXPR_LEAF">
-                      <type>C_STRING</type>
-                      <item xsi:type="C_STRING">
-                        <pattern>openEHR-EHR-CLUSTER\.metadata_relative_gel(-[a-zA-Z0-9_]+)*\.v0</pattern>
-                      </item>
-                      <reference_type>constraint</reference_type>
-                    </right_operand>
-                  </expression>
-                </includes>
               </children>
               <cardinality>
                 <is_ordered>false</is_ordered>
@@ -1378,29 +1236,9 @@
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
-        <term_definitions code="at0002">
-          <items id="description">The type of participant as defined by the Genomics England dataset.</items>
-          <items id="text">Participant type</items>
-        </term_definitions>
-        <term_definitions code="at0003">
-          <items id="description">The participant type is proband.</items>
-          <items id="text">Proband</items>
-        </term_definitions>
-        <term_definitions code="at0004">
-          <items id="description">The participant type is relative.</items>
-          <items id="text">Relative</items>
-        </term_definitions>
         <term_definitions code="at0005">
-          <items id="description">Participant details such as identifiers, names, ethnicity and contact details.</items>
+          <items id="description">Participant details such as identifiers, names and contact details.</items>
           <items id="text">Participant details</items>
-        </term_definitions>
-        <term_definitions code="at0006">
-          <items id="description">Proband details where the participant is the proband.</items>
-          <items id="text">Proband details</items>
-        </term_definitions>
-        <term_definitions code="at0007">
-          <items id="description">The relative details where the participant is a relative of the proband.</items>
-          <items id="text">Relative details</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -1967,9 +1805,6 @@
       <items id="text">Extension</items>
     </term_definitions>
   </definition>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]/items[at0002]">
-    <items id="Notes.Authors Note">GEL::14858.3</items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0002]">
     <items id="Notes.Authors Note">GEL::12777.1</items>
   </annotations>
@@ -1989,12 +1824,12 @@
     <items id="Notes.Authors Note">GEL::33515.1</items>
   </annotations>
   <view>
-    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.participant_gel.v0]/data[at0001]/items[openEHR-EHR-CLUSTER.person_identifiable_parent.v1]">
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.participant_gel.v0]/data[at0001]/items[openEHR-EHR-CLUSTER.person_identifiable_parent.v0]">
       <items id="pass_through">
         <value>true</value>
       </items>
     </constraints>
-    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.participant_gel.v0]/data[at0001]/items[openEHR-EHR-CLUSTER.person_identifiable_parent.v1]/items[openEHR-EHR-CLUSTER.person_name_isa.v1]">
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.participant_gel.v0]/data[at0001]/items[openEHR-EHR-CLUSTER.person_identifiable_parent.v0]/items[openEHR-EHR-CLUSTER.person_name_isa.v0]">
       <items id="pass_through">
         <value>true</value>
       </items>

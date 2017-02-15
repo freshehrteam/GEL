@@ -6,29 +6,18 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			author = <
+				["name"] = <"Mona Saleh">
+			>
+		>
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
 				["name"] = <"Jasmin Buck, Sebastian Garde, Thilo Schuler">
 				["organisation"] = <"University of Heidelberg, Central Queensland University, Ocean Informatics">
 			>
-		>
-		["zh-cn"] = <
-			language = <[ISO_639-1::zh-cn]>
-			author = <
-				["name"] = <"Lin Zhang">
-				["organisation"] = <"BIPH">
-				["email"] = <"linforest@163.com">
-			>
-			accreditation = <"What goes here?">
-		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			author = <
-				["name"] = <"Lars Bitsch-Larsen">
-				["organisation"] = <"Haukeland University Hospital, Bergen, Norway">
-			>
-			accreditation = <"MD, DEAA, specialist in anestesia and intensive care, Tropical medicin & MBA">
 		>
 		["es-cl"] = <
 			language = <[ISO_639-1::es-cl]>
@@ -44,18 +33,13 @@ language
 				["email"] = <"Shahla.foozonkhah@oceanInformatics.com">
 			>
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
 			author = <
-				["name"] = <"Mona Saleh">
+				["name"] = <"Lars Bitsch-Larsen">
+				["organisation"] = <"Haukeland University Hospital, Bergen, Norway">
 			>
-		>
-		["ru"] = <
-			language = <[ISO_639-1::ru]>
-			author = <
-				["name"] = <"Igor Lizunov">
-				["email"] = <"i.lizunov@infinnity.ru">
-			>
+			accreditation = <"MD, DEAA, specialist in anestesia and intensive care, Tropical medicin & MBA">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
@@ -74,12 +58,28 @@ language
 			>
 			accreditation = <"Medical Doctor,  Psychiatrist, Clinical Modeler, OpenEHR Director, Coordinator of  WG ehealth infostructure of brazilian e-health program">
 		>
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			author = <
+				["name"] = <"Igor Lizunov">
+				["email"] = <"i.lizunov@infinnity.ru">
+			>
+		>
+		["zh-cn"] = <
+			language = <[ISO_639-1::zh-cn]>
+			author = <
+				["name"] = <"Lin Zhang">
+				["organisation"] = <"BIPH">
+				["email"] = <"linforest@163.com">
+			>
+			accreditation = <"What goes here?">
+		>
 	>
 description
 	original_author = <
 		["name"] = <"Sam Heard">
-		["organisation"] = <"Ocean Informatics">
 		["email"] = <"sam.heard@oceaninformatics.com">
+		["organisation"] = <"Ocean Informatics">
 		["date"] = <"2004-05-18">
 	>
 	details = <
@@ -234,7 +234,7 @@ Apgar V.  The newborn (Apgar) scoring system.  Pediatr Clin North Am. 1966 Aug;1
 Whaley LF, Wong DL (1979).  Nursing Care of Infants and Children.  St. Louis, Toronto, London, The C.V. Mosby Company.
 
 http://en.wikipedia.org/wiki/Apgar_score">
-		["MD5-CAM-1.0.1"] = <"64776EEFF6F38F5C3799A0DA31545453">
+		["MD5-CAM-1.0.1"] = <"623156843D9F2E6D34653B935B2653B5">
 	>
 
 definition
@@ -346,19 +346,21 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_LIST[at0029] matches {	-- List
+			ITEM_TREE[at0029] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
 					ELEMENT[at0030] occurrences matches {0..1} matches {	-- Notes on measurement
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
+					allow_archetype CLUSTER[at0039] occurrences matches {0..*} matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", "LOINC">
@@ -478,7 +480,7 @@ ontology
 					description = <"Apgar score 5 minutes after birth.">
 				>
 				["at0029"] = <
-					text = <"List">
+					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0030"] = <
@@ -492,6 +494,11 @@ ontology
 				["at0037"] = <
 					text = <"Any event">
 					description = <"Apgar score at any additional time, as required.">
+				>
+				["at0039"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>
@@ -625,6 +632,10 @@ ontology
 					text = <"*Any event(en)">
 					description = <"*Apgar score at any additional time, as required.(en)">
 				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["de"] = <
@@ -756,6 +767,10 @@ ontology
 				["at0037"] = <
 					text = <"Beliebiges Ereignis">
 					description = <"Apgar-Score zu beliebigen Zeitpunkten, je nach Bedarf.">
+				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -889,6 +904,10 @@ ontology
 					text = <"هر رویداد">
 					description = <"نمره آپگار در هر زمان ممکن و در صورت نیاز">
 				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["ar-sy"] = <
@@ -1020,6 +1039,10 @@ ontology
 				["at0037"] = <
 					text = <"إحدى الوقائع">
 					description = <"حرز أبغار عند أي وقت إضافي, حسب الحاجة">
+				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -1153,6 +1176,10 @@ ontology
 					text = <"Любое время">
 					description = <"Оценка по Апгар в дополнительное время, если требуется.">
 				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["nl"] = <
@@ -1284,6 +1311,10 @@ ontology
 				["at0037"] = <
 					text = <"Any event">
 					description = <"Apgar score op elk toe te voegen tijdstip, indien nodig">
+				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -1417,6 +1448,10 @@ ontology
 					text = <"Qualquer evento">
 					description = <"Escore Apgar em qualquer tempo adicional, se requerido.">
 				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["zh-cn"] = <
@@ -1549,6 +1584,10 @@ ontology
 					text = <"任何事件">
 					description = <"所需要的任何额外时候的Apgar评分。">
 				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["nb"] = <
@@ -1680,6 +1719,10 @@ ontology
 				["at0037"] = <
 					text = <"Enhver hendelse">
 					description = <"Apgar score kan tilføyes når som helst etter behov.">
+				>
+				["at0039"] = <
+					text = <"*Cluster(en)">
+					description = <"**(en)">
 				>
 			>
 		>

@@ -22,7 +22,7 @@ description
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"071D4C011E89676ABAFC11C46E749A6C">
+		["MD5-CAM-1.0.1"] = <"3EF1D06D1B1ADFFBDE94445CB49EB278">
 	>
 
 definition
@@ -115,6 +115,10 @@ definition
 										value matches {
 											DV_TEXT matches {*}
 										}
+									}
+									allow_archetype CLUSTER[at0033] occurrences matches {0..*} matches {	-- Exertion level
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.level_of_exertion(-[a-zA-Z0-9_]+)*\.v1/}
 									}
 								}
 							}
@@ -272,6 +276,10 @@ ontology
 				["at0032"] = <
 					text = <"Abnormal unknown relevance">
 					description = <"The assessment of findings and clinical significance indicates an abnormality of unknown relevance to the patient's condition.">
+				>
+				["at0033"] = <
+					text = <"Exertion level">
+					description = <"Details about level of exertion at the time of the cardiac exercise test.">
 				>
 			>
 		>

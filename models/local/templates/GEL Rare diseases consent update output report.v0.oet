@@ -60,14 +60,6 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.participant_gel.v0]/data[at0001]/items[openEHR-EHR-CLUSTER.person_identifiable_parent.v0]/items[at0008]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::12505.1</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0002]">
     <items>
       <item>
@@ -176,7 +168,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">9854552E82A5B1A21A099C2CFBD7C931</digest>
+    <digest id="MD5-CAM-1.0.1">FDB2BAF12DC5E2F8E1821764577449B7</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v0">
     <digest id="MD5-CAM-1.0.1">9129BFFDA38C4ABB7BE5B41BD7580191</digest>
