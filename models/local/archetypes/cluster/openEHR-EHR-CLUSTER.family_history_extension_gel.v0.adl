@@ -28,7 +28,7 @@ It is intended that this cluster will eventually be replaced by an enhanced fami
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"E532D8860B25212AB8ADF5383011A7BE">
+		["MD5-CAM-1.0.1"] = <"4063352B290D70F192AC4E8FF9343E65">
 	>
 
 definition
@@ -122,6 +122,11 @@ definition
 				}
 			}
 			ELEMENT[at0029] occurrences matches {0..1} matches {	-- Paternal identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {	-- Family identifier
 				value matches {
 					DV_IDENTIFIER matches {*}
 				}
@@ -250,6 +255,10 @@ ontology
 				["at0029"] = <
 					text = <"Paternal identifier">
 					description = <"The father's identifier.">
+				>
+				["at0030"] = <
+					text = <"Family identifier">
+					description = <"The family identifier.">
 				>
 			>
 		>
