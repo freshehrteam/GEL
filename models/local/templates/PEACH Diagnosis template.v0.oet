@@ -66,11 +66,6 @@
       <Rule path="/data[at0001]/items[at0009]" max="0" />
       <Rule path="/data[at0001]/items[at0012]" max="0" />
       <Rule path="/data[at0001]/items[at0003]" max="0" />
-      <Rule path="/data[at0001]/items[at0005]">
-        <constraint xsi:type="multipleConstraint">
-          <includedTypes>Coded_text</includedTypes>
-        </constraint>
-      </Rule>
       <Rule path="/data[at0001]/items[at0072]" max="0" />
       <Rule path="/data[at0001]/items[at0030]" max="0" />
       <Rule path="/data[at0001]/items[at0073]" max="0" />
