@@ -61,7 +61,26 @@
     </other_details>
   </description>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases phenotype">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.phenotype_gel.v0" concept_name="Phenotype GEL" path="/content">
+      <Rule path="/data[at0001]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0006]" min="1" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0007]" min="1" />
+      <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]/items[at0012]" min="1" />
+      <Rule path="/protocol[at0042]" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]" hide_on_form="true">
+        <Rule path="/items[at0001]" max="0" />
+        <Rule path="/items[at0002]" name="Clinical assessment letter" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0003]" max="0" />
+        <Rule path="/items[at0004]" max="0" />
+      </Items>
+    </Content>
     <Context>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0" concept_name="Participant GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Participant">
+        <Rule path="/items[at0015]" min="1" />
+      </Items>
       <Rule path="/context/other_context[at0001]" hide_on_form="true" />
       <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
       <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
@@ -70,5 +89,14 @@
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
+    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.phenotype_gel.v0">
+    <digest id="MD5-CAM-1.0.1">27A3CC832D8A9F1BEB351B627E8ED322</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
+    <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>
   </integrity_checks>
 </template>
