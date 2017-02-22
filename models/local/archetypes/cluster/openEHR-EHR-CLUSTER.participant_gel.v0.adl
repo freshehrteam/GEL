@@ -10,13 +10,13 @@ description
 		["name"] = <"Hildegard Franke">
 		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["date"] = <"2017-01-12">
+		["date"] = <"2017-02-22">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the capture of participant details not available in other archetypes in the context of Genomics England datasets.">
-			use = <"">
+			use = <"This local cluster is intended to be used in the header of all composition relating to the Genomics England datasets and similar studies.">
 			misuse = <"">
 			copyright = <"">
 		>
@@ -24,42 +24,33 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"B71DE1A288401D0B670A10A759D0CDC0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"10F9F093E9FDF182345A5C72CC33E34E">
 	>
 
 definition
 	CLUSTER[at0000] matches {	-- Participant GEL
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Family Id
+			ELEMENT[at0015] occurrences matches {0..1} matches {	-- Participant identifier
 				value matches {
-					DV_TEXT matches {*}
+					DV_IDENTIFIER matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Karyotypic sex
+			ELEMENT[at0016] occurrences matches {0..1} matches {	-- Study identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[at0017] occurrences matches {0..1} matches {	-- Participant type
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0003, 	-- XY
-							at0004, 	-- XX
-							at0005, 	-- XO
-							at0006, 	-- XXY
-							at0007, 	-- XYY
-							at0008, 	-- XXX
-							at0009, 	-- XXYY
-							at0010, 	-- XXXY
-							at0011, 	-- XXXX
-							at0012, 	-- Other
-							at0013]	-- Unknown
+							at0018, 	-- Proband
+							at0019]	-- Relative
 						}
 					}
-				}
-			}
-			ELEMENT[at0014] occurrences matches {0..1} matches {	-- Local case identifier
-				value matches {
-					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -73,61 +64,25 @@ ontology
 					text = <"Participant GEL">
 					description = <"Local archetype to capture specific participant details not available elsewhere for Genomics England datasets.">
 				>
-				["at0001"] = <
-					text = <"Family Id">
-					description = <"Genomics England Family Identifier assigned to the proband and their relatives. This should be the Proband Participant ID.">
+				["at0015"] = <
+					text = <"Participant identifier">
+					description = <"The Genomics England participant identifier for the particular study and disease.">
 				>
-				["at0002"] = <
-					text = <"Karyotypic sex">
-					description = <"The participant's karyotypic sex.">
+				["at0016"] = <
+					text = <"Study identifier">
+					description = <"The study identifier used to identify a particular study, e.g. GEL.">
 				>
-				["at0003"] = <
-					text = <"XY">
-					description = <"The participant's karyotypic sex is XY.">
+				["at0017"] = <
+					text = <"Participant type">
+					description = <"The participant type for the study.">
 				>
-				["at0004"] = <
-					text = <"XX">
-					description = <"The participant's karyotypic sex is XX.">
+				["at0018"] = <
+					text = <"Proband">
+					description = <"The participant is the proband.">
 				>
-				["at0005"] = <
-					text = <"XO">
-					description = <"The participant's karyotypic sex is XO.">
-				>
-				["at0006"] = <
-					text = <"XXY">
-					description = <"The participant's karyotypic sex is XXY.">
-				>
-				["at0007"] = <
-					text = <"XYY">
-					description = <"The participant's karyotypic sex is XYY.">
-				>
-				["at0008"] = <
-					text = <"XXX">
-					description = <"The participant's karyotypic sex is XXX.">
-				>
-				["at0009"] = <
-					text = <"XXYY">
-					description = <"The participant's karyotypic sex is XXYY.">
-				>
-				["at0010"] = <
-					text = <"XXXY">
-					description = <"The participant's karyotypic sex is XXXY.">
-				>
-				["at0011"] = <
-					text = <"XXXX">
-					description = <"The participant's karyotypic sex is XXXX.">
-				>
-				["at0012"] = <
-					text = <"Other">
-					description = <"The participant's karyotypic sex is other.">
-				>
-				["at0013"] = <
-					text = <"Unknown">
-					description = <"The participant's karyotypic sex is unknown.">
-				>
-				["at0014"] = <
-					text = <"Local case identifier">
-					description = <"Optional case identifier or family number used locally, if different from family id.">
+				["at0019"] = <
+					text = <"Relative">
+					description = <"The participant is a relative of the proband.">
 				>
 			>
 		>
