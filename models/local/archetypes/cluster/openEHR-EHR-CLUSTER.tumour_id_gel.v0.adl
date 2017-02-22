@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-CLUSTER.tumour_id_gel.v0
 
 concept
-	[at0000]	-- Tumour id GEL
+	[at0000]	-- Tumour ID GEL
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -24,17 +24,17 @@ description
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"CC-BY-Sa 3.0">
-		["MD5-CAM-1.0.1"] = <"CF49982C3B453E820F76775A7F2E846B">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"EDB6D92EFDFD48054FFCD2AAE4488B82">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Tumour id GEL
+	CLUSTER[at0000] matches {	-- Tumour ID GEL
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..*} matches {	-- Tumour Id
+			ELEMENT[at0001] occurrences matches {0..*} matches {	-- Tumour identifier
 				value matches {
-					DV_TEXT matches {*}
+					DV_IDENTIFIER matches {*}
 				}
 			}
 		}
@@ -45,11 +45,11 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Tumour id GEL">
+					text = <"Tumour ID GEL">
 					description = <"Local cluster for the capture of the tumour Id in the Genomics England Cancer dataset.">
 				>
 				["at0001"] = <
-					text = <"Tumour Id">
+					text = <"Tumour identifier">
 					description = <"The identifier for the tumour.">
 				>
 			>
