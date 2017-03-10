@@ -92,7 +92,6 @@
         <Rule path="/items[at0080]" max="0" />
         <Rule path="/items[at0039]" max="0" />
         <Rule path="/items[at0046]" hide_on_form="true" />
-        <Rule path="/items[at0046]/items[at0001]" max="0" />
         <Rule path="/items[at0081]" max="0" />
       </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]">
@@ -127,6 +126,9 @@
         </Items>
       </Items>
     </Content>
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1" concept_name="Clinical Synopsis" max="1" path="/content" name="Patient comment">
+      <Rule path="/data[at0001]/items[at0002]" name="Comment" />
+    </Content>
     <Context>
       <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
       <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
@@ -159,5 +161,8 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.person_name.v1">
     <digest id="MD5-CAM-1.0.1">2D8CF370D3AEC6DDC6F9847963051B89</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1">
+    <digest id="MD5-CAM-1.0.1">2D066E7C501C2DAEC625DEE2ECD81DF4</digest>
   </integrity_checks>
 </template>
