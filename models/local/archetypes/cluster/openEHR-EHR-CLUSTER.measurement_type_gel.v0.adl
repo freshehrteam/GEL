@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=06d40361-6991-4a03-ad28-fcd613a81f99)
 	openEHR-EHR-CLUSTER.measurement_type_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-02-09">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of the type of measurement in the context of the General observations section in the Genomics England Rare diseases dataset.">
 			use = <"Use to record type of measurement (patient reported, measured or unknown) for general observations in the Genomics England Rare diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"8AE17C0A2F47E8D3199EE5789BD935B1">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"431B39D21CFEC35EA905E10326138479">
+		["build_uid"] = <"cacc9832-815e-45d8-a1af-05559f59ac01">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -46,6 +52,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

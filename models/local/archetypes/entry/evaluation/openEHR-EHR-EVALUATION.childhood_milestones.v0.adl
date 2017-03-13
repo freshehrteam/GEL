@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=2bbb7b43-d4b8-4027-bc89-22926ba82cd8)
 	openEHR-EHR-EVALUATION.childhood_milestones.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-02-14">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of childhood development milestones.">
 			use = <"Use to record the age at which development milestones occurred in children under the age of 5 years.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"30486A9B1FE90A7D9FBF2AD7EDA9C2AA">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"71E15D0C89D7F09600D1028DE3B21E66">
+		["build_uid"] = <"92f80234-7a3f-4617-9412-26b11276da18">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -45,6 +51,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

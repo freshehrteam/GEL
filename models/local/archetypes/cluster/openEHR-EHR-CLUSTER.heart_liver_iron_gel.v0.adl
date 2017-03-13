@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=353eb89f-2919-4c28-a5bc-bff8fd49bb12)
 	openEHR-EHR-CLUSTER.heart_liver_iron_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-24">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of imaging details for heart or liver iron measurements in the context of Genomics England datasets.">
 			use = <"Use to record details of heart or liver iron measurements as part of imaging examinations in the Genomics England datasets. This cluster is intended to be used inside an imaging examination observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"30F8B182627C89DC62EE2505F9ED88D1">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"C603D0980456602A264294A621CC2E22">
+		["build_uid"] = <"7f83215c-298d-4310-b5c4-a57b3f5522ca">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -99,6 +105,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

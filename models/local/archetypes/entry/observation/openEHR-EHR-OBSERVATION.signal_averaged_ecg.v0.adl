@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=9f0346ba-3ebd-428b-8d63-63aa0c2d05da)
 	openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of signal averaged ECG results.">
 			use = <"Use to capture and report signal averaged ECG results.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"27AE738FCC09043EE4FDC124DC68502E">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"6ED5AC92964EF138E8303C99B0067F84">
+		["build_uid"] = <"cf7a1e15-28ca-431f-be15-2b9341c6a454">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -38,7 +44,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0009] occurrences matches {0..1} matches {	-- fQRSd
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- FQRSd
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::128]>
@@ -125,6 +131,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -167,7 +174,7 @@ ontology
 					description = <"Record any issues or factors that may impact on the test or result.">
 				>
 				["at0009"] = <
-					text = <"fQRSd">
+					text = <"FQRSd">
 					description = <"The Filtered QRS duration in milliseconds.">
 				>
 				["at0010"] = <
@@ -176,7 +183,7 @@ ontology
 				>
 				["at0011"] = <
 					text = <"RMS">
-					description = <"Root mean square voltage of the last 40ms of the QRS">
+					description = <"Root mean square voltage of the last 40ms of the QRS.">
 				>
 				["at0012"] = <
 					text = <"Assessment">

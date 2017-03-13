@@ -1369,6 +1369,7 @@
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.heart_liver_iron_gel.v0" concept_name="Heart or liver iron measurement GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" name="Heart or liver iron measurement" hide_on_form="true" />
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.fetal_imaging_gel.v0" concept_name="Fetal imaging GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" name="Fetal imaging" hide_on_form="true" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0025]/items[at0045]" name="Patient Status" hide_on_form="true" />
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cardiac MRI">
@@ -1455,6 +1456,7 @@
             </Rule>
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.fetal_imaging_gel.v0" concept_name="Fetal imaging GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" name="Fetal imaging" hide_on_form="true" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0025]/items[at0045]" name="Patient Status" hide_on_form="true" />
         </Item>
       </Item>
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Doppler diastolic function assessment">
@@ -1539,6 +1541,7 @@
             </Rule>
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.fetal_imaging_gel.v0" concept_name="Fetal imaging GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" name="Fetal imaging" hide_on_form="true" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0025]/items[at0045]" name="Patient Status" hide_on_form="true" />
         </Item>
       </Item>
     </Content>
@@ -1578,36 +1581,36 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.imaging_exam_uk.v0">
-    <digest id="MD5-CAM-1.0.1">A1227DCEA270A42C6772EED3C0CAD2AA</digest>
+    <digest id="MD5-CAM-1.0.1">C5E318D6672FBEA3139C07D0F00C8DD4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.imaging_location_gel.v0">
-    <digest id="MD5-CAM-1.0.1">C2D29EEF00E2BAF3D40FF891525DEF7F</digest>
+    <digest id="MD5-CAM-1.0.1">C87D85DC0528DD26F1F4B16687AE788B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.fetal_imaging_gel.v0">
-    <digest id="MD5-CAM-1.0.1">2250847703B583689263FE2BDE46FA66</digest>
+    <digest id="MD5-CAM-1.0.1">8966706248297B6A11806A2F2B34555A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
     <digest id="MD5-CAM-1.0.1">4609D4C2AA596C22113E03DFFBB7737C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0">
-    <digest id="MD5-CAM-1.0.1">D0B96D5D971BF4B92B56E26A57C8C53A</digest>
+    <digest id="MD5-CAM-1.0.1">11EC92CBBFCE026E990A6B3A70925C1F</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.echocardiogram_gel.v0">
-    <digest id="MD5-CAM-1.0.1">78C851B6D906BAB01380DBD29CF5F266</digest>
+    <digest id="MD5-CAM-1.0.1">DCEC04C29418F9690EDDF83F9861F8E5</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.kidney_imaging_gel.v0">
-    <digest id="MD5-CAM-1.0.1">73511513E01EC2686DC4DA87E062A235</digest>
+    <digest id="MD5-CAM-1.0.1">DF020247584323109792D3969B8C5284</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.liver_imaging_gel.v0">
-    <digest id="MD5-CAM-1.0.1">BDFA11A497B69BCDF1C9A53BA4AE1FDC</digest>
+    <digest id="MD5-CAM-1.0.1">855A5AD1224A015038EA7D43E2E77790</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.heart_liver_iron_gel.v0">
-    <digest id="MD5-CAM-1.0.1">30F8B182627C89DC62EE2505F9ED88D1</digest>
+    <digest id="MD5-CAM-1.0.1">C603D0980456602A264294A621CC2E22</digest>
   </integrity_checks>
 </template>

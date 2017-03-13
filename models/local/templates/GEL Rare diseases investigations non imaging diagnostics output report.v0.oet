@@ -1315,7 +1315,7 @@
             <Rule path="/items[at0003]" max="0" />
             <Rule path="/items[at0004]" max="0" />
           </Items>
-          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0010]/items[at1056]" name="Analytical technique" hide_on_form="true">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0010]/items[at1056]" name="Analytical technique" hide_on_form="true">
             <Rule path="/items[at0001]" min="1" default="Heart observations" />
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0010]/items[at1056]" name="Patient Status" hide_on_form="true" />
@@ -1365,7 +1365,7 @@
             <Rule path="/items[at0003]" max="0" />
             <Rule path="/items[at0004]" max="0" />
           </Items>
-          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0029]/items[at0131]" name="Analytical technique" hide_on_form="true">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0029]/items[at0131]" name="Analytical technique" hide_on_form="true">
             <Rule path="/items[at0001]" min="1" default="Foreced vital capacity" />
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0029]/items[at0131]" name="Patient Status" hide_on_form="true" />
@@ -1789,7 +1789,7 @@
               <Rule path="/items[at0003]" max="0" />
               <Rule path="/items[at0004]" max="0" />
             </Items>
-            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0021]/items[at0022]" name="Analytical technique" hide_on_form="true">
+            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0021]/items[at0022]" name="Analytical technique" hide_on_form="true">
               <Rule path="/items[at0001]" min="1" default="Electroretinogram" />
             </Items>
             <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0021]/items[at0022]" name="Patient Status" hide_on_form="true" />
@@ -1851,7 +1851,7 @@
             <Rule path="/protocol[at0020]/items[at0022]" max="0" />
             <Rule path="/protocol[at0020]/items[at0092]" max="0" />
             <Rule path="/protocol[at0020]/items[at0117]" max="0" />
-            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0020]/items[at0025]" name="Analytical technique" hide_on_form="true">
+            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0020]/items[at0025]" name="Analytical technique" hide_on_form="true">
               <Rule path="/items[at0001]" min="1" default="Visual acuity" />
             </Items>
             <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0020]/items[at0140]" name="Report details" hide_on_form="true">
@@ -1887,7 +1887,7 @@
             <Rule path="/data[at0001]/events[at0134]/state[at0041]/items[at0042]" max="0" />
             <Rule path="/protocol[at0020]" hide_on_form="true" />
             <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.refraction_details.v1" concept_name="Refraction Details" max="1" path="/data[at0001]/events[at0134]/data[at0003]/items[at0053]/items[at0139]" hide_on_form="true" />
-            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0020]/items[at0025]" name="Analytical technique" hide_on_form="true">
+            <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0020]/items[at0025]" name="Analytical technique" hide_on_form="true">
               <Rule path="/items[at0001]" min="1" default="Refraction error" />
             </Items>
             <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" max="1" path="/protocol[at0020]/items[at0140]" name="Report details" hide_on_form="true">
@@ -1928,7 +1928,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
@@ -1940,10 +1940,10 @@
     <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0">
-    <digest id="MD5-CAM-1.0.1">E549903E7D14552B8C052E16C9172DC2</digest>
+    <digest id="MD5-CAM-1.0.1">4F94402371CC74C6C5653BFDEEAD8937</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0">
-    <digest id="MD5-CAM-1.0.1">D0B96D5D971BF4B92B56E26A57C8C53A</digest>
+    <digest id="MD5-CAM-1.0.1">11EC92CBBFCE026E990A6B3A70925C1F</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.pulmonary_function.v1">
     <digest id="MD5-CAM-1.0.1">35F8EBE46F4A16BD4555DCF5D81A7CD0</digest>
@@ -1952,13 +1952,13 @@
     <digest id="MD5-CAM-1.0.1">56D22B96C3FCE0A925FB767D9FA14B82</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.ecg_gel.v0">
-    <digest id="MD5-CAM-1.0.1">D1D101C347D7450EE6941DA294220AE1</digest>
+    <digest id="MD5-CAM-1.0.1">A785D2C76FAD0D4F137124F08C9862D3</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.sleep_test_gel.v0">
-    <digest id="MD5-CAM-1.0.1">20A24A6C75A1A58CE1E3BA1CF51A8E4A</digest>
+    <digest id="MD5-CAM-1.0.1">84E5701665D0006816E6DA4F8A1C82A4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0">
-    <digest id="MD5-CAM-1.0.1">032096002388B15846A6C2322820C11B</digest>
+    <digest id="MD5-CAM-1.0.1">90AC1844A631FC55BFA93D6D1D782237</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0">
     <digest id="MD5-CAM-1.0.1">C19A896074BE67B5C14B1814D9B27D1F</digest>
@@ -1967,28 +1967,28 @@
     <digest id="MD5-CAM-1.0.1">89A921CB36D0264E1A78378365E343E6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.holter_monitor.v0">
-    <digest id="MD5-CAM-1.0.1">74B4F9378D6BCEEB548AB8B43AD899FD</digest>
+    <digest id="MD5-CAM-1.0.1">B1A888F61C750A00D1601A3649D52098</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.signal_averaged_ecg.v0">
-    <digest id="MD5-CAM-1.0.1">27AE738FCC09043EE4FDC124DC68502E</digest>
+    <digest id="MD5-CAM-1.0.1">6ED5AC92964EF138E8303C99B0067F84</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0">
-    <digest id="MD5-CAM-1.0.1">3EF1D06D1B1ADFFBDE94445CB49EB278</digest>
+    <digest id="MD5-CAM-1.0.1">CA2E2E414A14A4A9755E5716253609A4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.electrophysiological_study_gel.v0">
-    <digest id="MD5-CAM-1.0.1">7FFD92A0D72193998C442025C87C4027</digest>
+    <digest id="MD5-CAM-1.0.1">BC329A8CBCE61A96448B0FAC2E2F7A8B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0">
-    <digest id="MD5-CAM-1.0.1">673A3B79FDA0A6B1EF521E2748F6B316</digest>
+    <digest id="MD5-CAM-1.0.1">97340D0CD2DC382E0B4C0B18840AA236</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0">
-    <digest id="MD5-CAM-1.0.1">3C5942D4F62DC5B8FB392B16D977AA57</digest>
+    <digest id="MD5-CAM-1.0.1">09E580039BA3D2FC972B4EEE19EB7CDC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.intraocular_pressure.v0">
     <digest id="MD5-CAM-1.0.1">E675488562B4442B6FDF45F9EAD2804A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.electroretinogram.v0">
-    <digest id="MD5-CAM-1.0.1">5BF3D363020053C0FED6BA2E3D09E920</digest>
+    <digest id="MD5-CAM-1.0.1">5C8FCA49B794FC4AC373E92BD3FA075C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.visual_acuity.v1">
     <digest id="MD5-CAM-1.0.1">E6D8FADFEC1C7CBCE67B3E5FAA1F0E19</digest>

@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=b913ca72-4bb7-4bed-844c-378df1302c3f)
 	openEHR-EHR-EVALUATION.death_details_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording of death details in the Genomics England cancer and rare diseases datasets.">
 			use = <"Use to record death details in the context of Genomics England cancer and rare diseases datasets.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"20446CC727ED8E27EE28FB6E3253808C">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"E4644725A4181532E08BD6BC2994B4BB">
+		["build_uid"] = <"513b4d90-e4d1-4f6d-8442-3a65d4b8f558">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -93,6 +99,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

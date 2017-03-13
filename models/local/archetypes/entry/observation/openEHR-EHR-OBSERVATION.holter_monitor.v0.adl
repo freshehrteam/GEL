@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=d62f3c72-982d-4bba-81db-bc92e5c36935)
 	openEHR-EHR-OBSERVATION.holter_monitor.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of the results of the Holter monitor test.">
 			use = <"">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"74B4F9378D6BCEEB548AB8B43AD899FD">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"B1A888F61C750A00D1601A3649D52098">
+		["build_uid"] = <"c7d518f0-4584-49f6-9f24-dc35285ee0f9">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -134,6 +140,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=09973e65-14f2-428e-8d27-fa9c14207e5d)
 	openEHR-EHR-OBSERVATION.cardiac_exercise_test.v0
 
 concept
@@ -7,7 +7,10 @@ language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Hildegard Franke">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2017-03-07">
 	>
 	details = <
 		["en"] = <
@@ -15,14 +18,21 @@ description
 			purpose = <"For the recording and reporting of details of a cardiac exercise test.">
 			use = <"">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"3EF1D06D1B1ADFFBDE94445CB49EB278">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"CA2E2E414A14A4A9755E5716253609A4">
+		["build_uid"] = <"5a8cb80b-9442-4008-b75c-bd6f6a983019">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -118,7 +128,7 @@ definition
 									}
 									allow_archetype CLUSTER[at0033] occurrences matches {0..*} matches {	-- Exertion level
 										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.level_of_exertion(-[a-zA-Z0-9_]+)*\.v1/}
+											archetype_id/value matches {/.*/}
 									}
 								}
 							}
@@ -143,6 +153,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -219,19 +230,19 @@ ontology
 				>
 				["at0018"] = <
 					text = <"Dynamic type1 ECG pattern">
-					description = <"Statement whether dynamic type 1 ECG pattern was observed. ">
+					description = <"Statement whether dynamic type 1 ECG pattern was observed.">
 				>
 				["at0019"] = <
 					text = <"Yes">
-					description = <"Dynamic type 1 ECG pattern was observed. ">
+					description = <"Dynamic type 1 ECG pattern was observed.">
 				>
 				["at0020"] = <
 					text = <"No">
-					description = <"Dynamic type 1 ECG pattern was not observed. ">
+					description = <"Dynamic type 1 ECG pattern was not observed.">
 				>
 				["at0021"] = <
 					text = <"Unknown">
-					description = <"It is not known whether dynamic type 1 ECG pattern was observed. ">
+					description = <"It is not known whether dynamic type 1 ECG pattern was observed.">
 				>
 				["at0022"] = <
 					text = <"Recovery QTc greater than 480ms">

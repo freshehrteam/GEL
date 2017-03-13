@@ -1,6 +1,6 @@
-﻿archetype (adl_version=1.4; uid=9122c39a-3817-426e-9ae4-d1f438b1d26b)
+﻿archetype (adl_version=1.4; uid=2459965e-992c-4ae0-b238-2566ef1ddb8d)
 	openEHR-EHR-EVALUATION.pregnancy_summary-gel.v0
-specialize
+specialise
 	openEHR-EHR-EVALUATION.pregnancy_summary.v0
 
 concept
@@ -8,15 +8,6 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
-		["es-co"] = <
-			language = <[ISO_639-1::es-co]>
-			author = <
-				["name"] = <"Francisco Ramirez ante">
-				["organisation"] = <"SITIS SAS">
-				["email"] = <"framirez74@gmail.com">
-			>
-			accreditation = <"Ingeniero de Sistemas">
-		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			author = <
@@ -26,12 +17,21 @@ language
 			>
 			accreditation = <"Hospital Alemão Oswaldo Cruz">
 		>
+		["es-co"] = <
+			language = <[ISO_639-1::es-co]>
+			author = <
+				["name"] = <"Francisco Ramirez ante">
+				["organisation"] = <"SITIS SAS">
+				["email"] = <"framirez74@gmail.com">
+			>
+			accreditation = <"Ingeniero de Sistemas">
+		>
 	>
 description
 	original_author = <
 		["name"] = <"Sam Heard">
-		["email"] = <"sam.heard@oceaninformatics.com">
 		["organisation"] = <"Ocean Informatics">
+		["email"] = <"sam.heard@oceaninformatics.com">
 		["date"] = <"2007-02-28">
 	>
 	details = <
@@ -59,7 +59,7 @@ Not to be used to record detailed information about a woman's Menstrual Cycle - 
 Not to be used to record detailed information about infant feeding - a separate archetype will be used.
 
 Not to be used to record a general menstrual history summary or diary - separate archetypes will be used.">
-			copyright = <"© openEHR Foundation, National E-Health Transition Authority">
+			copyright = <"© openEHR Foundation, National E-Health Transition Authority, Clinical Models UK">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -88,6 +88,7 @@ Não deve ser usado para gravar informações detalhadas sobre o ciclo menstrual
 Não deve ser usado para registrar informações detalhadas sobre a alimentação infantil - um arquétipo separado deverá ser utilizado.
 
 Não deve ser usado para registrar um resumo ou um diário da história menstrual (geral ou diária) - um arquétipo separado deverá ser utilizado.">
+			copyright = <"© openEHR Foundation, National E-Health Transition Authority, Clinical Models UK">
 		>
 		["es-co"] = <
 			language = <[ISO_639-1::es-co]>
@@ -113,16 +114,14 @@ No debe utilizarse para registrar información detallada acerca de la alimentaci
 
 No debe utilizarse para registrar un resumen general de la historia menstrual o un diario - se utilizarán arquetipos distintos.
 ">
+			copyright = <"© openEHR Foundation, National E-Health Transition Authority, Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Sheryl Alexander, NT Department of Health, Australia", "Rita Apelt, Department of Health,NT, Australia", "Stephen Chu, NEHTA, Australia", "Margaret Cotter, AMSANT, Australia", "Michelle Dowden, Miwatj Health Ngalkanbuy Health, Australia", "Tim Garden, NTG Department of Health, Australia", "Tanya Gardner, CAAC, Australia", "Sam Heard, Ocean Informatics, Australia (Editor)", "Bernadette Lack, Department of Health, Australia", "Heather Leslie, Ocean Informatics, Australia (Editor)", "Hugh Leslie, Ocean Informatics, Australia", "Chunlan Ma, Ocean Informatics, Australia", "Ian McNicoll, Ocean Informatics UK, United Kingdom", "Jeremy Oats, NT Health, Australia", "Steven Schatz, Department of Health (Northern Territory), Australia", "Rosalie Schultz, Anyinginyi Health Aboriginal Corporation, Australia", "Gary Sinclair, NT DoH, Australia", "Cherie Whitbread, Royal Darwin Hospital, Australia", "Jo Wright, NT Dept of Health, Australia (Editor)">
 	other_details = <
-		["revision"] = <"0.0.1-alpha">
-		["original_publisher"] = <"org.openehr">
-		["current_contact"] = <"Heather Leslie, Ocean Informatics<heather.leslie@oceaninformatics.com>">
-		["build_uid"] = <"6ca960a4-0724-4e17-80cf-b811f74c58a8">
-		["original_namespace"] = <"openEHR Foundation">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"Pregnancy Summary, Draft Archetype [Internet]. nehta, Australia, nehta Clinical Knowledge Manager [cited: 2016-02-21]. Available from: http://dcm.nehta.org.au/ckm/#showArchetype_1013.1.1013
 
 AIHW 2003. Perinatal National Minimum Data Set: National Health Data Dictionary, Version 12. National Health Data Dictionary. Cat. no. HWI 59. Canberra: AIHW.
@@ -130,9 +129,13 @@ AIHW 2003. Perinatal National Minimum Data Set: National Health Data Dictionary,
 Northern Territory Government, Department of Health. Pregnancy Health Record. HM424-12/06.
 
 Queensland Government, Department of Health. Pregnancy Health Record. SW071 - v1.00 - 06/2010.">
-		["MD5-CAM-1.0.1"] = <"C7145BBD0086A3E054CD6EB1744D9669">
-		["custodian_namespace"] = <"org.openehr">
-		["custodian_organisation"] = <"openEHR Foundation">
+		["current_contact"] = <"Heather Leslie, Ocean Informatics<heather.leslie@oceaninformatics.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"1A8A138127D19895FAF1A4FE6AE6A52E">
+		["build_uid"] = <"244a4de7-962e-404c-b3eb-3b009ca960f8">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -590,6 +593,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=0a795677-7712-4a19-86b2-8ec9d39e2a1e)
 	openEHR-EHR-CLUSTER.participant_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-02-22">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture of participant details not available in other archetypes in the context of Genomics England datasets.">
 			use = <"This local cluster is intended to be used in the header of all composition relating to the Genomics England datasets and similar studies.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"10F9F093E9FDF182345A5C72CC33E34E">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"C4E628BB6ADBA4F6337F58CF5322B4EE">
+		["build_uid"] = <"8df69d12-e38f-4223-bea6-47013455d903">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -55,6 +61,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
