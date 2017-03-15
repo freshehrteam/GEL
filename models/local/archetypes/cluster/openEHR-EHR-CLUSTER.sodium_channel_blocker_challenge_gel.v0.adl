@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=7a429677-3790-4489-be77-313328b2b658)
 	openEHR-EHR-CLUSTER.sodium_channel_blocker_challenge_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-24">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 This archetype is intended to be used in conjunction with the 'cardiac drug challenge' observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"C19A896074BE67B5C14B1814D9B27D1F">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"E4C8575CEA8430CF92A413F0447B4A6A">
+		["build_uid"] = <"3d72a9be-8477-4d80-aacc-9c272f53feaa">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -110,6 +116,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

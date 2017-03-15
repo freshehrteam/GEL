@@ -91,10 +91,10 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.phenotype_gel.v0">
-    <digest id="MD5-CAM-1.0.1">27A3CC832D8A9F1BEB351B627E8ED322</digest>
+    <digest id="MD5-CAM-1.0.1">F603C93A514F67A1D123D45A65711EAC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
     <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>

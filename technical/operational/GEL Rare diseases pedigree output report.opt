@@ -6781,7 +6781,8 @@ Note: More data elements will be needed in future to record detailed genetic mar
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0043">
-              <items id="description">*</items>
+              <items id="comment">e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.</items>
+              <items id="description">Additional information required to capture local context or to align with other reference models/formalisms.</items>
               <items id="text">Extension</items>
             </term_definitions>
             <term_definitions code="at0067">

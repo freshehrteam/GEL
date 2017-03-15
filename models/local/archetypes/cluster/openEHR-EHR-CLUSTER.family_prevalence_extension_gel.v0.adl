@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=fa7cfe05-c299-4dfd-94f1-28e43b581376)
 	openEHR-EHR-CLUSTER.family_prevalence_extension_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-02-13">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of additional family prevalance details not available elsewhere in the context of the Genomics England datasets.">
 			use = <"To record pattern, penetrance and group type as part of the pedigree data in the Genomics England datasets.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"0023F6F92AA8232F9867E3FEEAD780FF">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"52F530D5DC76031D8A1AD09448D28EBA">
+		["build_uid"] = <"2ba679ca-996a-4dd2-9120-b32ecbb541ef">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -75,6 +81,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

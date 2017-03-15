@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=7d14e926-541d-476c-bf7f-6d20453341ae)
 	openEHR-EHR-CLUSTER.family_history_extension_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-02-13">
 	>
 	details = <
@@ -18,17 +18,23 @@ description
 			purpose = <"For the recording and reporting of family history details not available elsewhere in the context of the Genomics England datasets.">
 			use = <"Use as part of the pedigree and registration data in the context of the Genomics England datasets. The cluster is intended to be used inside the family history evaluation archetype.
 
-It is intended that this cluster will eventually be replaced by an enhanced family history evaluation. ">
+It is intended that this cluster will eventually be replaced by an enhanced family history evaluation.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"4063352B290D70F192AC4E8FF9343E65">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"F82E86935D8EF3639BFE244A552311D2">
+		["build_uid"] = <"f2f3a4b7-ff44-4932-b151-fdc83ca9a8ec">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -133,6 +139,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

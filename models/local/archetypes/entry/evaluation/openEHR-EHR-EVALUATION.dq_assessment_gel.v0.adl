@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=0e133d46-7074-4305-8fad-abb653b59e2a)
 	openEHR-EHR-EVALUATION.dq_assessment_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-23">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For recording Development Quotient Assessment data as part of the Genomics England Rare Diseases dataset.">
 			use = <"To record the Development Quotient Assessment result and method in the Performance Measures section of the Genomics England Rare Diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"D10C45B755CC08CCEFFFB42C9C40FA2D">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"898B4D20B2D8BEFDAE63E08227EB442A">
+		["build_uid"] = <"2e8a8330-f24c-4754-84bd-c34b5ff5d01c">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -78,6 +84,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

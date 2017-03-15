@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=abf8c695-2a92-4346-905a-6a57f4b561b5)
 	openEHR-EHR-OBSERVATION.cmas_score.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-10-13">
 	>
 	details = <
@@ -18,15 +18,22 @@ description
 			purpose = <"To record the findings of the Childhood Myositis Assessment Scale for the assessment of muscle function in children with idiopathic inflammatory myopathies.">
 			use = <"To be used for the recording of findings obtained in the Childhood Myositis Assessment Scale.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"IMACS Form 05c: Childhood Myositis Assessment Scale (CMAS) Scoring Sheet, cited 13-Oct-2016 https://www.niehs.nih.gov/research/resources/assets/docs/cmas_508.pdf">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"E358AACCCD16BCE36743CFFEF79153A0">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"36091214657271E71BBCE039394AD494">
+		["build_uid"] = <"0003d27f-0970-4a56-9219-52a41f6e31a3">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -45,7 +52,7 @@ definition
 											2|[local::at0007], 	-- 10-29 sec
 											3|[local::at0008], 	-- 30-59 sec
 											4|[local::at0009], 	-- 60-119 sec
-											5|[local::at0010]  	-- more than 2 min
+											5|[local::at0010]  	-- More than 2 min
 										}
 									}
 									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Number of seconds head lift
@@ -69,7 +76,7 @@ definition
 											2|[local::at0019], 	-- 10-29 sec
 											3|[local::at0020], 	-- 30-59 sec
 											4|[local::at0021], 	-- 60-119 sec
-											5|[local::at0022]  	-- more than 2 min
+											5|[local::at0022]  	-- More than 2 min
 										}
 									}
 									ELEMENT[at0023] occurrences matches {0..1} matches {	-- Number of seconds leg lift
@@ -82,7 +89,7 @@ definition
 									ELEMENT[at0024] occurrences matches {0..1} matches {	-- 4.Supine to prone
 										value matches {
 											0|[local::at0025], 	-- Unable
-											1|[local::at0026], 	-- Fairly easily, but unable to free arm 
+											1|[local::at0026], 	-- Fairly easily, but unable to free arm
 											2|[local::at0027], 	-- Easily with difficulty freeing arm
 											3|[local::at0028]  	-- Easily
 										}
@@ -131,10 +138,10 @@ definition
 											1|[local::at0052], 	-- 1-9 sec
 											2|[local::at0053], 	-- 10-29 sec
 											3|[local::at0054], 	-- 30-59 sec
-											4|[local::at0055]  	-- more than 60 sec
+											4|[local::at0055]  	-- More than 60 sec
 										}
 									}
-									ELEMENT[at0056] occurrences matches {0..1} matches {	-- Number of seconds arm rais
+									ELEMENT[at0056] occurrences matches {0..1} matches {	-- Number of seconds arm raised
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|>=0|}
@@ -234,6 +241,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -279,7 +287,7 @@ ontology
 					description = <"The subject is able to lift his or her head for 60 to 119 seconds.">
 				>
 				["at0010"] = <
-					text = <"more than 2 min">
+					text = <"More than 2 min">
 					description = <"The subject is able to lift his or her head for more than 2 minutes.">
 				>
 				["at0011"] = <
@@ -327,7 +335,7 @@ ontology
 					description = <"The subject is able to lift his or her leg for 60 to 119 seconds.">
 				>
 				["at0022"] = <
-					text = <"more than 2 min">
+					text = <"More than 2 min">
 					description = <"The subject is able to lift his or her leg for more than 2 minutes.">
 				>
 				["at0023"] = <
@@ -343,7 +351,7 @@ ontology
 					description = <"The subject has difficulty even turning on one side, able to pull right arm under torso only slightly or not at all.">
 				>
 				["at0026"] = <
-					text = <"Fairly easily, but unable to free arm ">
+					text = <"Fairly easily, but unable to free arm">
 					description = <"The subject turns onto side faily easily, but cannot fully free right arm and is unable to fully assume a prone position.">
 				>
 				["at0027"] = <
@@ -448,11 +456,11 @@ ontology
 					description = <"The subject is able to maintain wrists above top of head for 30 to 59 seconds.">
 				>
 				["at0055"] = <
-					text = <"more than 60 sec">
+					text = <"More than 60 sec">
 					description = <"The subject is able to maintain wrists above top of head for more than 60 seconds.">
 				>
 				["at0056"] = <
-					text = <"Number of seconds arm rais">
+					text = <"Number of seconds arm raised">
 					description = <"The total number of seconds the subject is able to maintain wrists above top of head.">
 				>
 				["at0057"] = <

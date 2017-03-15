@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=39745200-e865-4675-b3fb-4853af82fa1c)
 	openEHR-EHR-OBSERVATION.phenotype_gel.v0
 
 concept
@@ -7,7 +7,10 @@ language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Hildegard Franke">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2017-03-14">
 	>
 	details = <
 		["en"] = <
@@ -15,14 +18,21 @@ description
 			purpose = <"For the recording and reporting of phenotype details as part of the Genomics England datasets.">
 			use = <"Use the capture the phenotype statement details and related information in the context of Genomics England datasets.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"27A3CC832D8A9F1BEB351B627E8ED322">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"F603C93A514F67A1D123D45A65711EAC">
+		["build_uid"] = <"0fc7d203-059a-4df4-992c-01820e05baf8">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -157,6 +167,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -280,11 +291,11 @@ ontology
 				>
 				["at0029"] = <
 					text = <"Neonatal onset">
-					description = <"Onset of signs or symptoms of disease within the first 28 days of life. ">
+					description = <"Onset of signs or symptoms of disease within the first 28 days of life.">
 				>
 				["at0030"] = <
 					text = <"Infantile onset">
-					description = <"Onset of signs or symptoms of disease between 28 days to one year of life. ">
+					description = <"Onset of signs or symptoms of disease between 28 days to one year of life.">
 				>
 				["at0031"] = <
 					text = <"Childhood onset">
@@ -292,7 +303,7 @@ ontology
 				>
 				["at0032"] = <
 					text = <"Juvenile onset">
-					description = <"Onset of signs or symptoms of disease between the age of 5 and 15 years. ">
+					description = <"Onset of signs or symptoms of disease between the age of 5 and 15 years.">
 				>
 				["at0033"] = <
 					text = <"Young adult onset">

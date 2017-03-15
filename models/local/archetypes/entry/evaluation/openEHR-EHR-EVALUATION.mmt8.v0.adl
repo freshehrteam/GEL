@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=14304f91-58ff-4cea-9696-a7f82f49a954)
 	openEHR-EHR-EVALUATION.mmt8.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-23">
 	>
 	details = <
@@ -18,16 +18,22 @@ description
 			purpose = <"For the recording of results of the MMT8 (Manual Muscle testing - 8 muscle groups) assessment.">
 			use = <"Use to record the gradings for manual muscle testing - 8 muscle groups.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"https://www.niehs.nih.gov/research/resources/assets/docs/mmt8_grading_and_testing_procedures_for_the_abbreviated_8_muscle_groups_508.pdf">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"56E35A2D6377104ED01713F2C62A25EA">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"6998DA2A14F82A71961365BC7E50C644">
+		["build_uid"] = <"abc40ee7-6e22-4f19-b889-a18c3c1272d2">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -173,6 +179,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
