@@ -1,0 +1,96 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.cancer_diagnosis_gel.v0
+
+concept
+	[at0000]	-- Cancer diagnosis GEL
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2017-03-23">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the capture and reporting of cancer diagnosis morphology, topography and recurrence indicator details in the context of Genomics England Cancer datasets.">
+			use = <"Use to record morphology, topography and recurrence indicator as part of a cancer diagnosis record in the Genomics England Cancer dataset. This cluster is intended to be used inside a Problem/Diagnosis archetype.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"CC-BY-SA 3.0">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["MD5-CAM-1.0.1"] = <"F2F7414B4CAF13AE21E0A4B10B36B9E2">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Cancer diagnosis GEL
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0013] occurrences matches {0..1} matches {	-- Recurrence indicator
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0014, 	-- YL
+							at0015, 	-- YD
+							at0016]	-- NN
+						}
+					}
+				}
+			}
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Morphology
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Topography
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cancer diagnosis GEL">
+					description = <"Local cluster to capture morphology, topography and recurrence indicators for cancer diagnosis in Genomics England Cancer datasets.">
+				>
+				["at0001"] = <
+					text = <"Morphology">
+					description = <"The morphology code for the diagnosed cancer as defined by ICDO3 or SNOMED CT or SNOMED RT. Terminology mappings should be used.">
+					comment = <"The SNOMED version should be captured as part of the code string.">
+				>
+				["at0002"] = <
+					text = <"Topography">
+					description = <"The topography code for the diagnosed cancer as defined by ICDO3 or SNOMED CT or SNOMED RT. Terminology mappings should be used.">
+					comment = <"The SNOMED version should be captured as part of the code string.">
+				>
+				["at0013"] = <
+					text = <"Recurrence indicator">
+					description = <"An indication of whether a diagnosis of recurrence has been recorded for which a new Cancer Care Plan is required.">
+				>
+				["at0014"] = <
+					text = <"YL">
+					description = <"Yes, including local recurrence.">
+				>
+				["at0015"] = <
+					text = <"YD">
+					description = <"Yes, not including local recurrence.">
+				>
+				["at0016"] = <
+					text = <"NN">
+					description = <"No, not recurrence.">
+				>
+			>
+		>
+	>
