@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>f694b1c2-1ec1-4299-bf32-3f952d25b569</id>
+  <name>GEL Cancer Prostate histopath draft</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0" concept_name="Laboratory test">
+    <Rule path="/data[at0001]/events[at0002]" max="1" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0073]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0075]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/state[at0112]/items[at0113]" max="0" />
+    <Rule path="/protocol[at0004]/items[at0068]" name="Service report identifier" />
+    <Rule path="/protocol[at0004]/items[at0094]" max="0" />
+    <Rule path="/protocol[at0004]/items[at0111]" max="0" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.specimen.v0" concept_name="Specimen" path="/data[at0001]/events[at0002]/data[at0003]/items[at0065]" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.histopathology_findings.v0" concept_name="Histopathology findings" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]">
+      <Rule path="/items[at0012]" max="0" />
+      <Rule path="/items[at0012]" max="1" clone="true" name="Macroscopic examination" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005]" max="1" name="Prostate gland" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005 and name/value='Prostate gland']/items[at0010]" max="0" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005 and name/value='Prostate gland']/items[at0014]" max="0" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005]" max="1" clone="true" name="Seminal vesicles" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005 and name/value='Seminal vesicles']/items[at0008]" max="0" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005 and name/value='Seminal vesicles']/items[at0010]" max="0" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005 and name/value='Seminal vesicles']/items[at0014]" max="0" />
+      <Rule path="/items[at0012 and name/value='Macroscopic examination']/items[at0005]" max="1" clone="true" name="Lymph nodes" />
+      <Rule path="/items[at0012]" max="1" clone="true" name="Microscopic examination" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.specimen.v0" concept_name="Specimen" path="/items[at0012 and name/value='Macroscopic examination']/items[at0005 and name/value='Prostate gland']/items[at0009]">
+        <Rule path="/items[at0029]" default="Prostate gland without seminal vesicles" />
+        <Rule path="/items[at0015]" max="0" />
+        <Rule path="/items[at0008]" max="0" />
+        <Rule path="/items[at0007]" max="0" />
+        <Rule path="/items[at0079]" max="0" />
+        <Rule path="/items[at0005]" max="0" />
+        <Rule path="/items[at0067]" max="0" />
+        <Rule path="/items[at0070]" max="0" />
+        <Rule path="/items[at0080]" max="0" />
+        <Rule path="/items[at0039]" max="0" />
+        <Rule path="/items[at0046]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.physical_properties.v0" concept_name="Physical properties of an object" path="/items[at0027]">
+          <Rule path="/items[at0036]" max="0" />
+          <Rule path="/items[at0020]">
+            <constraint xsi:type="quantityConstraint">
+              <includedUnits>gm</includedUnits>
+              <unitMagnitude>
+                <unit>gm</unit>
+                <minMagnitude>0</minMagnitude>
+                <includesMaximum>false</includesMaximum>
+                <includesMinimum>true</includesMinimum>
+              </unitMagnitude>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0023]" max="0" />
+          <Rule path="/items[at0038]" max="0" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.dimensions.v1" concept_name="Dimensions" path="/items[at0040]">
+            <Rule path="/items[at0001]" max="0" />
+            <Rule path="/items[at0002]">
+              <constraint xsi:type="quantityConstraint">
+                <excludedUnits>m</excludedUnits>
+                <excludedUnits>µm</excludedUnits>
+                <excludedUnits>in</excludedUnits>
+                <excludedUnits>yd</excludedUnits>
+                <excludedUnits>ft</excludedUnits>
+                <excludedUnits>cm</excludedUnits>
+                <unitMagnitude>
+                  <unit>mm</unit>
+                  <minMagnitude>0</minMagnitude>
+                  <includesMaximum>false</includesMaximum>
+                  <includesMinimum>true</includesMinimum>
+                </unitMagnitude>
+              </constraint>
+            </Rule>
+            <Rule path="/items[at0003]">
+              <constraint xsi:type="quantityConstraint">
+                <excludedUnits>m</excludedUnits>
+                <excludedUnits>µm</excludedUnits>
+                <excludedUnits>in</excludedUnits>
+                <excludedUnits>yd</excludedUnits>
+                <excludedUnits>ft</excludedUnits>
+                <excludedUnits>cm</excludedUnits>
+              </constraint>
+            </Rule>
+            <Rule path="/items[at0004]">
+              <constraint xsi:type="quantityConstraint">
+                <excludedUnits>m</excludedUnits>
+                <excludedUnits>µm</excludedUnits>
+                <excludedUnits>ft</excludedUnits>
+                <excludedUnits>in</excludedUnits>
+                <excludedUnits>cm</excludedUnits>
+                <unitMagnitude>
+                  <unit>mm</unit>
+                  <minMagnitude>0</minMagnitude>
+                  <includesMaximum>false</includesMaximum>
+                  <includesMinimum>true</includesMinimum>
+                </unitMagnitude>
+              </constraint>
+            </Rule>
+            <Rule path="/items[at0005]" max="0" />
+            <Rule path="/items[at0006]" max="0" />
+          </Items>
+        </Items>
+      </Items>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.microscopic_prostate_carcinoma.v0" concept_name="Microscopic findings - Prostate cancer" path="/items[at0012 and name/value='Microscopic examination']/items[at0005]/items[at0009]">
+        <Rule path="/items[at0278]" max="0" />
+      </Items>
+    </Items>
+  </definition>
+  <view>
+    <constraints path="[openEHR-EHR-OBSERVATION.laboratory_test.v0]/data[at0001]/events[at0002]/time">
+      <items id="VisibleInView">
+        <value>time</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-OBSERVATION.laboratory_test.v0]/data[at0001]/origin">
+      <items id="VisibleInView">
+        <value>Investigation result date</value>
+      </items>
+    </constraints>
+  </view>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0">
+    <digest id="MD5-CAM-1.0.1">64F4898018F4D87C7D8ADAF36558AAF7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.specimen.v0">
+    <digest id="MD5-CAM-1.0.1">328C511116FD83D7F25973284D8D9F60</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.histopathology_findings.v0">
+    <digest id="MD5-CAM-1.0.1">D7DCC6D1C83F0CB72B856DC5B530CD0F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.physical_properties.v0">
+    <digest id="MD5-CAM-1.0.1">F4DB0F6E476F695019C6DF3C8206CF36</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.dimensions.v1">
+    <digest id="MD5-CAM-1.0.1">DA94E90CFD171192D77E71B99CBB1577</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.microscopic_prostate_carcinoma.v0">
+    <digest id="MD5-CAM-1.0.1">92BECC08FAEC68F5ECB9D42C1261B3E1</digest>
+  </integrity_checks>
+</template>

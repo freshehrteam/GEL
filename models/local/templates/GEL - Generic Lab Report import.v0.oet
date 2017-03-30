@@ -102,7 +102,6 @@
           </constraint>
         </Rule>
         <Rule path="/items[at0002]/items[at0003]" max="1" />
-        <Rule path="/items[at0002]/items[at0004]" max="0" />
         <Rule path="/items[at0002]/items[at0006]" max="0" />
       </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.organisation.v1" concept_name="Organisation" max="1" path="/protocol[at0004]/items[at0017]" name="Responsible laboratory" hide_on_form="true">
@@ -151,7 +150,7 @@
     <digest id="MD5-CAM-1.0.1">328C511116FD83D7F25973284D8D9F60</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
-    <digest id="MD5-CAM-1.0.1">4609D4C2AA596C22113E03DFFBB7737C</digest>
+    <digest id="MD5-CAM-1.0.1">CEB460F240FB987B15C7C50655BC132D</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.organisation.v1">
     <digest id="MD5-CAM-1.0.1">B932A22934CC38489610A47273A86DA8</digest>
