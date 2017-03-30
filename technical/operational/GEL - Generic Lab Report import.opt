@@ -152,6 +152,41 @@
                 <lower>0</lower>
                 <upper>1</upper>
               </existence>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
+                  <lower>0</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0002</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_TEXT</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                  </children>
+                </attributes>
+              </children>
               <children xsi:type="ARCHETYPE_SLOT">
                 <rm_type_name>CLUSTER</rm_type_name>
                 <occurrences>
@@ -1272,6 +1307,41 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                                   <lower>0</lower>
                                   <upper>1</upper>
                                 </occurrences>
+                                <node_id>at0004</node_id>
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                  <rm_attribute_name>value</rm_attribute_name>
+                                  <existence>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>0</lower>
+                                    <upper>1</upper>
+                                  </existence>
+                                  <children xsi:type="C_COMPLEX_OBJECT">
+                                    <rm_type_name>DV_TEXT</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <upper_included>true</upper_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>false</upper_unbounded>
+                                      <lower>1</lower>
+                                      <upper>1</upper>
+                                    </occurrences>
+                                    <node_id />
+                                  </children>
+                                </attributes>
+                              </children>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>ELEMENT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>0</lower>
+                                  <upper>1</upper>
+                                </occurrences>
                                 <node_id>at0005</node_id>
                                 <attributes xsi:type="C_SINGLE_ATTRIBUTE">
                                   <rm_attribute_name>value</rm_attribute_name>
@@ -1328,6 +1398,35 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                                     </attributes>
                                   </children>
                                 </attributes>
+                              </children>
+                              <children xsi:type="ARCHETYPE_SLOT">
+                                <rm_type_name>CLUSTER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>true</upper_unbounded>
+                                  <lower>0</lower>
+                                </occurrences>
+                                <node_id>at0014</node_id>
+                                <includes>
+                                  <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                    <type>Boolean</type>
+                                    <operator>2007</operator>
+                                    <precedence_overridden>false</precedence_overridden>
+                                    <left_operand xsi:type="EXPR_LEAF">
+                                      <type>String</type>
+                                      <item xsi:type="xsd:string">archetype_id/value</item>
+                                      <reference_type>attribute</reference_type>
+                                    </left_operand>
+                                    <right_operand xsi:type="EXPR_LEAF">
+                                      <type>C_STRING</type>
+                                      <item xsi:type="C_STRING">
+                                        <pattern>.*</pattern>
+                                      </item>
+                                      <reference_type>constraint</reference_type>
+                                    </right_operand>
+                                  </expression>
+                                </includes>
                               </children>
                               <cardinality>
                                 <is_ordered>false</is_ordered>
@@ -1448,6 +1547,10 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                           <items id="description">Further details including the specimen for the panel or a further nested panel.</items>
                           <items id="text">Other detail</items>
                         </term_definitions>
+                        <term_definitions code="at0014">
+                          <items id="description">Further detail regarding an individual result.</items>
+                          <items id="text">Result detail</items>
+                        </term_definitions>
                       </children>
                       <children xsi:type="C_COMPLEX_OBJECT">
                         <rm_type_name>ELEMENT</rm_type_name>
@@ -1483,6 +1586,35 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                             <node_id />
                           </children>
                         </attributes>
+                      </children>
+                      <children xsi:type="ARCHETYPE_SLOT">
+                        <rm_type_name>CLUSTER</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>true</upper_unbounded>
+                          <lower>0</lower>
+                        </occurrences>
+                        <node_id>at0118</node_id>
+                        <includes>
+                          <expression xsi:type="EXPR_BINARY_OPERATOR">
+                            <type>Boolean</type>
+                            <operator>2007</operator>
+                            <precedence_overridden>false</precedence_overridden>
+                            <left_operand xsi:type="EXPR_LEAF">
+                              <type>String</type>
+                              <item xsi:type="xsd:string">archetype_id/value</item>
+                              <reference_type>attribute</reference_type>
+                            </left_operand>
+                            <right_operand xsi:type="EXPR_LEAF">
+                              <type>C_STRING</type>
+                              <item xsi:type="C_STRING">
+                                <pattern>openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1</pattern>
+                              </item>
+                              <reference_type>constraint</reference_type>
+                            </right_operand>
+                          </expression>
+                        </includes>
                       </children>
                       <cardinality>
                         <is_ordered>false</is_ordered>
@@ -2705,12 +2837,6 @@ healthcare provider, but may be collected directly by the patient or carer at ho
           <items id="fhirvalueset">reportnames</items>
           <items id="text">Test name</items>
         </term_definitions>
-        <term_definitions code="at0010">
-          <items id="comment">Multiple formats are allowed but they must be semantically equivalent.</items>
-          <items id="description">Rich text or other multimedia  representation of the entire result as issued by the diagnostic service.</items>
-          <items id="fhir_mapping">DiagnosticReport.presentedForm</items>
-          <items id="text">Test representation</items>
-        </term_definitions>
         <term_definitions code="at0017">
           <items id="description">Demographic details of the laboratory with responsibility for the test.</items>
           <items id="fhir_mapping">DiagnosticReport.performer</items>
@@ -2849,6 +2975,12 @@ healthcare provider, but may be collected directly by the patient or carer at ho
         <term_definitions code="at0117">
           <items id="description">Slot to allow extension to support localisation or alignment with other standards/ reference models.</items>
           <items id="text">Extension</items>
+        </term_definitions>
+        <term_definitions code="at0118">
+          <items id="comment">Multiple formats are allowed but they must be semantically equivalent.</items>
+          <items id="description">Rich text or other multimedia  representation of the entire result as issued by the diagnostic service.</items>
+          <items id="fhir_mapping">DiagnosticReport.presentedForm</items>
+          <items id="text">Test representation</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
