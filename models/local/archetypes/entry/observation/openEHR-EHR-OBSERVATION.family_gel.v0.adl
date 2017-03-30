@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=37f49613-6688-4afb-9bc0-0a6242c3a435)
 	openEHR-EHR-OBSERVATION.family_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-12-20">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording of family details in the Genomics England Rare diseases dataset.">
 			use = <"Use to record family details such as parents' ethnicity, family history of specific diseases and other relevant ancestry information as part of the Genomics England Rare diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"680182CCF2BB059B521DB30CF0346FFA">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"FA41BB4DC908137D13DD1D22DB5E840C">
+		["build_uid"] = <"47b325ee-8a32-42f8-b3d7-1395f7837e6e">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -159,6 +165,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -314,7 +321,8 @@ ontology
 				>
 				["at0043"] = <
 					text = <"Extension">
-					description = <"*">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 				["at0067"] = <
 					text = <"Out of area recruitment">

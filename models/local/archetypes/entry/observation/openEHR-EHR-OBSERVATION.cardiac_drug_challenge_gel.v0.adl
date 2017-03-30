@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=0dbb78fe-1a67-42a4-8643-0d69a8e57bea)
 	openEHR-EHR-OBSERVATION.cardiac_drug_challenge_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-24">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 The 'patient status' slot is intended to be filled with a local cluster archetype designed for this purpose. The archetype also contains a 'challenge details 'slot to enable the capture of particular challenge tests such as sodium channel blocker challenge or epinephrine challenge.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"032096002388B15846A6C2322820C11B">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"90AC1844A631FC55BFA93D6D1D782237">
+		["build_uid"] = <"37dc8c85-c8d0-45ff-8b16-70afb04c316b">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -92,6 +98,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

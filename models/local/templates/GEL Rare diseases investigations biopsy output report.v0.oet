@@ -399,7 +399,7 @@
             <Rule path="/items[at0002]/items[at0006]" max="0" />
           </Items>
         </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0004]/items[at0110]" name="Analysis type" hide_on_form="true">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0004]/items[at0110]" name="Analysis type" hide_on_form="true">
           <Rule path="/items[at0001]" name="Analysis type">
             <constraint xsi:type="textConstraint">
               <includedValues>Light Microscopy</includedValues>
@@ -585,7 +585,7 @@
             <Rule path="/items[at0002 and name/value='Protein deposition']/items[at0006]" max="0" />
           </Items>
         </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0004]/items[at0110]" name="Analysis type" hide_on_form="true">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0004]/items[at0110]" name="Analysis type" hide_on_form="true">
           <Rule path="/items[at0001]" name="Analysis type">
             <constraint xsi:type="textConstraint">
               <includedValues>Light Microscopy</includedValues>
@@ -671,7 +671,7 @@
             <Rule path="/items[at0002 and name/value='Laboratory result']/items[at0006]" max="0" />
           </Items>
         </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="analytical technique GEL" max="1" path="/protocol[at0004]/items[at0110]" name="Analysis type" hide_on_form="true">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0" concept_name="Analytical technique GEL" max="1" path="/protocol[at0004]/items[at0110]" name="Analysis type" hide_on_form="true">
           <Rule path="/items[at0001]" name="Analysis type">
             <constraint xsi:type="textConstraint">
               <includedValues>Light Microscopy</includedValues>
@@ -711,7 +711,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
@@ -720,15 +720,15 @@
     <digest id="MD5-CAM-1.0.1">64F4898018F4D87C7D8ADAF36558AAF7</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.histopathology_findings.v0">
-    <digest id="MD5-CAM-1.0.1">2F170E3AAD849CBC2B82ABE6CCE9C391</digest>
+    <digest id="MD5-CAM-1.0.1">F5408FC3E4BD84ED2B04A074072F5EA1</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
     <digest id="MD5-CAM-1.0.1">4609D4C2AA596C22113E03DFFBB7737C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.analytical_technique_gel.v0">
-    <digest id="MD5-CAM-1.0.1">E549903E7D14552B8C052E16C9172DC2</digest>
+    <digest id="MD5-CAM-1.0.1">4F94402371CC74C6C5653BFDEEAD8937</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0">
-    <digest id="MD5-CAM-1.0.1">D0B96D5D971BF4B92B56E26A57C8C53A</digest>
+    <digest id="MD5-CAM-1.0.1">11EC92CBBFCE026E990A6B3A70925C1F</digest>
   </integrity_checks>
 </template>

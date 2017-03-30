@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=d927b25c-6074-48f2-90cb-76cad5437682)
 	openEHR-EHR-OBSERVATION.beighton_score.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-10-12">
 	>
 	details = <
@@ -19,14 +19,21 @@ description
 			use = <"To be used to record a the Beighton hypermobility score as one of the criteria in diagnosing benign joint hypermobility syndrome.">
 			keywords = <"beighton", "hypermobility", "joint laxity", "BHJS">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"F5B729AA639C2B2518F1003C627C4E5A">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"285F96E506C9C4349CCE148658119238">
+		["build_uid"] = <"47bf82cf-256d-4958-96b2-f95ace7660e7">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -133,6 +140,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

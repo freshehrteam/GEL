@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=8452daf2-2ee1-4c86-9209-6122408f23eb)
 	openEHR-EHR-CLUSTER.birth_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-02-09">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of pregnancy and birth details not available in other archetypes in the context of the Genomics England Rare diseases dataset.">
 			use = <"Use to record pregnancy and birth details in the General Observations section in the Genomics England Rare diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"147CE1D5D6267349162CB966CB6C168B">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"3B416F7B2161A0B2B8526B8F8B26F88B">
+		["build_uid"] = <"da248382-47e5-4fe6-9300-69d2c8279bf7">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -50,6 +56,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

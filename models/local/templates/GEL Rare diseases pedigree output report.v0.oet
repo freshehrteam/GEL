@@ -1008,6 +1008,15 @@
           </Rule>
           <Rule path="/items[at0031 and name/value='Mother affected']/items[at0034]" default="1" hide_on_form="true" />
           <Rule path="/items[at0031 and name/value='Mother affected']/items[at0054]" default="1" hide_on_form="true" />
+          <Rule path="/items[at0031]" max="1" clone="true" name="Full sisters affected" />
+          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0032]" max="0" />
+          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0051]" max="0" />
+          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0033]">
+            <constraint xsi:type="textConstraint">
+              <excludedValues>local::at0043</excludedValues>
+              <excludedValues>local::at0052</excludedValues>
+            </constraint>
+          </Rule>
           <Rule path="/items[at0031]" max="1" clone="true" name="Father affected" />
           <Rule path="/items[at0031 and name/value='Father affected']/items[at0032]" max="0" />
           <Rule path="/items[at0031 and name/value='Father affected']/items[at0051]">
@@ -1029,15 +1038,6 @@
           <Rule path="/items[at0031 and name/value='Full brothers affected']/items[at0033]">
             <constraint xsi:type="textConstraint">
               <excludedValues>local::at0044</excludedValues>
-              <excludedValues>local::at0052</excludedValues>
-            </constraint>
-          </Rule>
-          <Rule path="/items[at0031]" max="1" clone="true" name="Full sisters affected" />
-          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0032]" max="0" />
-          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0051]" max="0" />
-          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0033]">
-            <constraint xsi:type="textConstraint">
-              <excludedValues>local::at0043</excludedValues>
               <excludedValues>local::at0052</excludedValues>
             </constraint>
           </Rule>
@@ -1113,7 +1113,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
@@ -1122,7 +1122,7 @@
     <digest id="MD5-CAM-1.0.1">9C5F2B93C53BFD0F2D9D5F9020883DAB</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.family_history_extension_gel.v0">
-    <digest id="MD5-CAM-1.0.1">4063352B290D70F192AC4E8FF9343E65</digest>
+    <digest id="MD5-CAM-1.0.1">F82E86935D8EF3639BFE244A552311D2</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
     <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>
@@ -1131,7 +1131,7 @@
     <digest id="MD5-CAM-1.0.1">41FC32007E462D6568DDC50C6F5CC30C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.family_prevalence_extension_gel.v0">
-    <digest id="MD5-CAM-1.0.1">0023F6F92AA8232F9867E3FEEAD780FF</digest>
+    <digest id="MD5-CAM-1.0.1">52F530D5DC76031D8A1AD09448D28EBA</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.person_identifiable_parent.v0">
     <digest id="MD5-CAM-1.0.1">9129BFFDA38C4ABB7BE5B41BD7580191</digest>
@@ -1140,6 +1140,6 @@
     <digest id="MD5-CAM-1.0.1">D20CCDC47F4E9C7C5D6043DB1149EC8C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.family_gel.v0">
-    <digest id="MD5-CAM-1.0.1">680182CCF2BB059B521DB30CF0346FFA</digest>
+    <digest id="MD5-CAM-1.0.1">FA41BB4DC908137D13DD1D22DB5E840C</digest>
   </integrity_checks>
 </template>

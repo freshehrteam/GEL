@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=da7997be-478f-4aad-bbe6-5081a7d7ea45)
 	openEHR-EHR-CLUSTER.imaging_location_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-24">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of imaging region and system as part of the Genomics England datasets.">
 			use = <"Use to record region and system of imaging examinations in the Genomics England datasets. This local cluster archetype is intended to be plugged into the anatomical location slot of the imaging examination observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"C2D29EEF00E2BAF3D40FF891525DEF7F">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"C87D85DC0528DD26F1F4B16687AE788B">
+		["build_uid"] = <"82e272bd-c3d2-4d5f-9b95-fc125e4a9d80">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -79,6 +85,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

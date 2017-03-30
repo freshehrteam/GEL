@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=cdc67220-2696-41a0-940e-009f78a9e477)
 	openEHR-EHR-CLUSTER.patient_status_gel.v0
 
 concept
@@ -8,26 +8,31 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-23">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For recording patient status information for a variety of dataset items in the Genomics England Rare Diseases dataset.">
-			use = <"To record patient status information (presenting=Taken at patient presentation, diagnostic=Taken at the point of diagnosis), baseline=Representing a baseline measurement, most abnormal=Representing the most abnormal measurement and unknown=Status unknown) for different dataset items in the Rare Diseases dataset.
-">
+			use = <"To record patient status information (presenting=Taken at patient presentation, diagnostic=Taken at the point of diagnosis), baseline=Representing a baseline measurement, most abnormal=Representing the most abnormal measurement and unknown=Status unknown) for different dataset items in the Rare Diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"D0B96D5D971BF4B92B56E26A57C8C53A">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"11EC92CBBFCE026E990A6B3A70925C1F">
+		["build_uid"] = <"271cc7c1-63df-411b-baef-194cc8ef6fbc">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -49,6 +54,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

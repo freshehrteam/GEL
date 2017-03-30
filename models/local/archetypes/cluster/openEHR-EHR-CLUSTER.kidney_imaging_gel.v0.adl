@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=43cda8e8-7ca0-4134-907a-9511f73a390b)
 	openEHR-EHR-CLUSTER.kidney_imaging_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-24">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of kidney imaging result details in the context of the Genomics England datasets.">
 			use = <"Use to record kidney imaging result details as part of the Genomics England datasets. This local cluster is intended to be used inside an imaging examination observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"73511513E01EC2686DC4DA87E062A235">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"DF020247584323109792D3969B8C5284">
+		["build_uid"] = <"ab31f478-1734-4ac2-ad30-c8e4292a9bd1">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -86,6 +92,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

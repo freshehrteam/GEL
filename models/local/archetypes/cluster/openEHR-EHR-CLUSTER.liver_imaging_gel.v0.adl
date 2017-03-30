@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=f3dc2775-eb9c-4517-b3ca-f1c18573f615)
 	openEHR-EHR-CLUSTER.liver_imaging_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-24">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of liver imaging details in the context of Genomics England datasets.">
 			use = <"Use to record liver imaging result details as part of the Genomics England datasets. This local cluster archetype is intended to be used inside an imaging examination observaton archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"BDFA11A497B69BCDF1C9A53BA4AE1FDC">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"855A5AD1224A015038EA7D43E2E77790">
+		["build_uid"] = <"310d4111-31e0-4c4f-81d8-f7f1b1102cbb">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -60,6 +66,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

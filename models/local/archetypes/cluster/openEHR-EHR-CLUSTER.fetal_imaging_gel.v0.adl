@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=391ad6d7-14f2-49d4-ae58-d00c8e36d110)
 	openEHR-EHR-CLUSTER.fetal_imaging_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-24">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of a descriptive classification of imaging on fetal body structures in the context of the Genomics England datasets.">
 			use = <"Use to record a descriptive classification of imaging on fetal body structures within an imaging examination in the Genomics England datasets. This local cluster is intended to be used inside an imaging examination observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"2250847703B583689263FE2BDE46FA66">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"8966706248297B6A11806A2F2B34555A">
+		["build_uid"] = <"2fdf2030-c5c6-43af-a979-0bc656d2166c">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -39,6 +45,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

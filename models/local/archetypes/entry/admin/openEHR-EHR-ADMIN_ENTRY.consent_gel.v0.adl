@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=010ed47b-b07f-4431-a7c2-b804aa531135)
 	openEHR-EHR-ADMIN_ENTRY.consent_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-12-20">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of consent details for Genomics England Rare diseases and cancer datasets.">
 			use = <"Use to record and report consent details, such as the date, the name and version of the consent / assent form, the person taking consent and a particular consent question and answer, participant information sheets and any other consent materials, as part of the Genomics England Rare diseases and cancer datasets.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"16C28189CC4FB176E9B39C1A78A024F7">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"6CA81632005EAC7BE24136717E918C44">
+		["build_uid"] = <"39e9189f-dbd9-44a9-8ae3-0c99a140d68a">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -129,6 +135,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

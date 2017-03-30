@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=cc362638-ca43-4782-a935-b8b0006da2df)
 	openEHR-EHR-OBSERVATION.chaq.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-10-26">
 	>
 	details = <
@@ -18,20 +18,26 @@ description
 			purpose = <"For the recording of details of the Childhood Health Assessment Questionnaire used to assess how a child's arthritis affects his or her ability to function in daily life.">
 			use = <"To record the details of the Childhood Health Assessment Questionnaire used in Rare Diseases management settings to assess how a child's arthritis affects his or her ability to function in daily life.
 
-The questionnaire is completed by parents or carers of the child, and it is intended that the person completing the questionnaire checks the one response which best describes the child's usual activities (averaged over an entire day) OVER THE PAST WEEK. It is also intended that only those difficulties or limitations are noted which are due to illness. If most children at the child's age are not expected to do a certain activity, the responder should mark it as \"Not Applicable\". For example, if the child has difficulty in doing a certain activity or is unable to do it because he/she is too young but not because he/she is RESTRICTED BY ILLNESS, the activity should be marked as \"NOT Applicable\".
-">
+The questionnaire is completed by parents or carers of the child, and it is intended that the person completing the questionnaire checks the one response which best describes the child's usual activities (averaged over an entire day) OVER THE PAST WEEK. It is also intended that only those difficulties or limitations are noted which are due to illness. If most children at the child's age are not expected to do a certain activity, the responder should mark it as \"Not Applicable\". For example, if the child has difficulty in doing a certain activity or is unable to do it because he/she is too young but not because he/she is RESTRICTED BY ILLNESS, the activity should be marked as \"NOT Applicable\".">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"0">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"Childhood Health Assessment Questionnaire cited 26-Oct-2016 https://www.niehs.nih.gov/research/resources/assets/docs/chaq_instructions_508.pdf
 
 Childhood Health Assessment Questionnaire cited 26-Oct-2016 http://www.badbir.org/Website%20data/Ethical%20Approval/Amendment8/12.%20CHAQ%20form.pdf">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"43866712705A35B8DD5AAF47510FB94B">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"CCB533AE2CCAA434FD265FA57013935C">
+		["build_uid"] = <"83c5c54b-9836-4b80-b355-67123d9411a1">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -525,7 +531,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0205] occurrences matches {0..*} matches {	-- Devices used 
+									ELEMENT[at0205] occurrences matches {0..*} matches {	-- Devices used
 										value matches {
 											DV_CODED_TEXT matches {
 												defining_code matches {
@@ -639,6 +645,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -958,7 +965,7 @@ ontology
 				>
 				["at0078"] = <
 					text = <"Wheelchair">
-					description = <"The child usually uses a wheelchair,">
+					description = <"The child usually uses a wheelchair.">
 				>
 				["at0079"] = <
 					text = <"Dressing aids">
@@ -1218,7 +1225,7 @@ ontology
 				>
 				["at0143"] = <
 					text = <"Grip">
-					description = <"*">
+					description = <"Assessment of the child's ability to perform functions related to gripping.">
 				>
 				["at0144"] = <
 					text = <"Write or scribble">
@@ -1465,7 +1472,7 @@ ontology
 					description = <"The question is not applicable.">
 				>
 				["at0205"] = <
-					text = <"Devices used ">
+					text = <"Devices used">
 					description = <"Statement about the aids or devices usually used by the child for hygiene, reach, grip and activities.">
 				>
 				["at0206"] = <

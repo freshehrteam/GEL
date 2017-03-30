@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=f352948f-0850-471d-adc9-62572bb7c5dd)
 	openEHR-EHR-EVALUATION.piq_assessment_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-23">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For recording Performance Intelligence Quotient Assessment data as part of the Genomics England Rare Diseases dataset.">
 			use = <"To record the Performance Intelligence Quotient Assessment result and method in the Performance Measures section of the Genomics England Rare Diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"C90BA07ACC5B5A3B7A1E1A33201ADAA7">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"EDB0035DA8D5D9943A0D5DA1EA62B6B1">
+		["build_uid"] = <"998881f4-4ced-4de2-9818-c6c41c7aa92b">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -65,6 +71,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

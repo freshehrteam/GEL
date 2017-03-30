@@ -1797,7 +1797,7 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                     </archetype_id>
                     <term_definitions code="at0000">
                       <items id="description">Local cluster to capture analytical technique for Genomics England datasets.</items>
-                      <items id="text">analytical technique GEL</items>
+                      <items id="text">Analytical technique GEL</items>
                     </term_definitions>
                     <term_definitions code="at0001">
                       <items id="description">Description of analytical technique.</items>

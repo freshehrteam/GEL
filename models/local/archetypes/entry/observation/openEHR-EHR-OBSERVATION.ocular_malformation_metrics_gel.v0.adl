@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=5ed99315-7409-405e-ba02-2a23d865a1a3)
 	openEHR-EHR-OBSERVATION.ocular_malformation_metrics_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-08-17">
 	>
 	details = <
@@ -19,14 +19,21 @@ description
 			use = <"Use to record ocular malformation metrics in each eye.">
 			keywords = <"ocular", "malformation", "corneal", "keratometry", "gonioscopy">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"3C5942D4F62DC5B8FB392B16D977AA57">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"09E580039BA3D2FC972B4EEE19EB7CDC">
+		["build_uid"] = <"b2ceffb4-8456-412f-a1c8-bd075def11a7">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -106,7 +113,7 @@ definition
 											DV_CODED_TEXT matches {
 												defining_code matches {
 													[local::
-													at0016, 	-- Normal 
+													at0016, 	-- Normal
 													at0017, 	-- Abnormal relevant
 													at0018, 	-- Abnormal unknown relevance
 													at0019]	-- Unknown
@@ -162,6 +169,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -215,7 +223,7 @@ ontology
 					description = <"Statement about the result of the gonioscopy examination.">
 				>
 				["at0016"] = <
-					text = <"Normal ">
+					text = <"Normal">
 					description = <"The gonioscopy result is normal.">
 				>
 				["at0017"] = <

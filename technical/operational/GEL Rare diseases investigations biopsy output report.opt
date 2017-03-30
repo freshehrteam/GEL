@@ -873,35 +873,6 @@
                                         <lower>1</lower>
                                         <upper>1</upper>
                                       </existence>
-                                      <children xsi:type="ARCHETYPE_SLOT">
-                                        <rm_type_name>CLUSTER</rm_type_name>
-                                        <occurrences>
-                                          <lower_included>true</lower_included>
-                                          <lower_unbounded>false</lower_unbounded>
-                                          <upper_unbounded>true</upper_unbounded>
-                                          <lower>0</lower>
-                                        </occurrences>
-                                        <node_id>at0007</node_id>
-                                        <includes>
-                                          <expression xsi:type="EXPR_BINARY_OPERATOR">
-                                            <type>Boolean</type>
-                                            <operator>2007</operator>
-                                            <precedence_overridden>false</precedence_overridden>
-                                            <left_operand xsi:type="EXPR_LEAF">
-                                              <type>String</type>
-                                              <item xsi:type="xsd:string">archetype_id/value</item>
-                                              <reference_type>attribute</reference_type>
-                                            </left_operand>
-                                            <right_operand xsi:type="EXPR_LEAF">
-                                              <type>C_STRING</type>
-                                              <item xsi:type="C_STRING">
-                                                <pattern>openEHR-EHR-CLUSTER\.specimen(-[a-zA-Z0-9_]+)*\.v0</pattern>
-                                              </item>
-                                              <reference_type>constraint</reference_type>
-                                            </right_operand>
-                                          </expression>
-                                        </includes>
-                                      </children>
                                       <children xsi:type="C_ARCHETYPE_ROOT">
                                         <rm_type_name>CLUSTER</rm_type_name>
                                         <occurrences>
@@ -1250,6 +1221,35 @@
                                       </cardinality>
                                     </attributes>
                                   </children>
+                                  <children xsi:type="ARCHETYPE_SLOT">
+                                    <rm_type_name>CLUSTER</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>true</upper_unbounded>
+                                      <lower>0</lower>
+                                    </occurrences>
+                                    <node_id>at0015</node_id>
+                                    <includes>
+                                      <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                        <type>Boolean</type>
+                                        <operator>2007</operator>
+                                        <precedence_overridden>false</precedence_overridden>
+                                        <left_operand xsi:type="EXPR_LEAF">
+                                          <type>String</type>
+                                          <item xsi:type="xsd:string">archetype_id/value</item>
+                                          <reference_type>attribute</reference_type>
+                                        </left_operand>
+                                        <right_operand xsi:type="EXPR_LEAF">
+                                          <type>C_STRING</type>
+                                          <item xsi:type="C_STRING">
+                                            <pattern>.*</pattern>
+                                          </item>
+                                          <reference_type>constraint</reference_type>
+                                        </right_operand>
+                                      </expression>
+                                    </includes>
+                                  </children>
                                   <cardinality>
                                     <is_ordered>false</is_ordered>
                                     <is_unique>false</is_unique>
@@ -1261,6 +1261,35 @@
                                     </interval>
                                   </cardinality>
                                 </attributes>
+                              </children>
+                              <children xsi:type="ARCHETYPE_SLOT">
+                                <rm_type_name>CLUSTER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>true</upper_unbounded>
+                                  <lower>0</lower>
+                                </occurrences>
+                                <node_id>at0007</node_id>
+                                <includes>
+                                  <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                    <type>Boolean</type>
+                                    <operator>2007</operator>
+                                    <precedence_overridden>false</precedence_overridden>
+                                    <left_operand xsi:type="EXPR_LEAF">
+                                      <type>String</type>
+                                      <item xsi:type="xsd:string">archetype_id/value</item>
+                                      <reference_type>attribute</reference_type>
+                                    </left_operand>
+                                    <right_operand xsi:type="EXPR_LEAF">
+                                      <type>C_STRING</type>
+                                      <item xsi:type="C_STRING">
+                                        <pattern>openEHR-EHR-CLUSTER\.specimen(-[a-zA-Z0-9_]+)*\.v0</pattern>
+                                      </item>
+                                      <reference_type>constraint</reference_type>
+                                    </right_operand>
+                                  </expression>
+                                </includes>
                               </children>
                               <cardinality>
                                 <is_ordered>false</is_ordered>
@@ -1282,19 +1311,19 @@
                             </term_definitions>
                             <term_definitions code="at0001">
                               <items id="description">Findings related to tissue examined intra-operatively.</items>
-                              <items id="text">Intra-operative findings</items>
+                              <items id="text">Intra-operative examination</items>
                             </term_definitions>
                             <term_definitions code="at0002">
                               <items id="description">Findings recorded on examination of a gross specimen.</items>
-                              <items id="text">Macroscopic findings</items>
+                              <items id="text">Macroscopic examination</items>
                             </term_definitions>
                             <term_definitions code="at0003">
                               <items id="description">Findings recorded after microsopic examination.</items>
-                              <items id="text">Microscopic findings</items>
+                              <items id="text">Microscopic examination</items>
                             </term_definitions>
                             <term_definitions code="at0004">
                               <items id="description">General histopathology findings.</items>
-                              <items id="text">Histopathology  findings</items>
+                              <items id="text">Histopathology examination</items>
                             </term_definitions>
                             <term_definitions code="at0005">
                               <items id="description">Details of an individual histopathology finding, often related to a specific anatomical location or specimen.</items>
@@ -1305,7 +1334,7 @@
                               <items id="text">Tissue available</items>
                             </term_definitions>
                             <term_definitions code="at0007">
-                              <items id="description">Details of specimen(s) realted to this finding.</items>
+                              <items id="description">Details of specimen(s) related to this examination.</items>
                               <items id="text">Specimen detail</items>
                             </term_definitions>
                             <term_definitions code="at0008">
@@ -1326,12 +1355,16 @@
                             </term_definitions>
                             <term_definitions code="at0012">
                               <items id="description">A group of findings within the histopathology examination. The Runtime name constraint allows identification of the type of histopathology examination performed.</items>
-                              <items id="text">Histopathology findings</items>
+                              <items id="text">Histopathology examination</items>
                             </term_definitions>
                             <term_definitions code="at0014">
                               <items id="comment">Multiple formats are allowed but they must be semantically equivalent.</items>
                               <items id="description">Rich text or other multimedia representation of this particular result as issued by the diagnostic service.</items>
                               <items id="text">Test representation</items>
+                            </term_definitions>
+                            <term_definitions code="at0015">
+                              <items id="description">Details of specimen related to this finding.</items>
+                              <items id="text">Specimen detail</items>
                             </term_definitions>
                           </children>
                           <children xsi:type="C_COMPLEX_OBJECT">
@@ -1809,7 +1842,7 @@
                     </archetype_id>
                     <term_definitions code="at0000">
                       <items id="description">Local cluster to capture analytical technique for Genomics England datasets.</items>
-                      <items id="text">analytical technique GEL</items>
+                      <items id="text">Analytical technique GEL</items>
                     </term_definitions>
                     <term_definitions code="at0001">
                       <items id="description">Description of analytical technique.</items>
@@ -2601,35 +2634,6 @@
                                         <lower>1</lower>
                                         <upper>1</upper>
                                       </existence>
-                                      <children xsi:type="ARCHETYPE_SLOT">
-                                        <rm_type_name>CLUSTER</rm_type_name>
-                                        <occurrences>
-                                          <lower_included>true</lower_included>
-                                          <lower_unbounded>false</lower_unbounded>
-                                          <upper_unbounded>true</upper_unbounded>
-                                          <lower>0</lower>
-                                        </occurrences>
-                                        <node_id>at0007</node_id>
-                                        <includes>
-                                          <expression xsi:type="EXPR_BINARY_OPERATOR">
-                                            <type>Boolean</type>
-                                            <operator>2007</operator>
-                                            <precedence_overridden>false</precedence_overridden>
-                                            <left_operand xsi:type="EXPR_LEAF">
-                                              <type>String</type>
-                                              <item xsi:type="xsd:string">archetype_id/value</item>
-                                              <reference_type>attribute</reference_type>
-                                            </left_operand>
-                                            <right_operand xsi:type="EXPR_LEAF">
-                                              <type>C_STRING</type>
-                                              <item xsi:type="C_STRING">
-                                                <pattern>openEHR-EHR-CLUSTER\.specimen(-[a-zA-Z0-9_]+)*\.v0</pattern>
-                                              </item>
-                                              <reference_type>constraint</reference_type>
-                                            </right_operand>
-                                          </expression>
-                                        </includes>
-                                      </children>
                                       <children xsi:type="C_ARCHETYPE_ROOT">
                                         <rm_type_name>CLUSTER</rm_type_name>
                                         <occurrences>
@@ -4845,6 +4849,35 @@
                                       </cardinality>
                                     </attributes>
                                   </children>
+                                  <children xsi:type="ARCHETYPE_SLOT">
+                                    <rm_type_name>CLUSTER</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>true</upper_unbounded>
+                                      <lower>0</lower>
+                                    </occurrences>
+                                    <node_id>at0015</node_id>
+                                    <includes>
+                                      <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                        <type>Boolean</type>
+                                        <operator>2007</operator>
+                                        <precedence_overridden>false</precedence_overridden>
+                                        <left_operand xsi:type="EXPR_LEAF">
+                                          <type>String</type>
+                                          <item xsi:type="xsd:string">archetype_id/value</item>
+                                          <reference_type>attribute</reference_type>
+                                        </left_operand>
+                                        <right_operand xsi:type="EXPR_LEAF">
+                                          <type>C_STRING</type>
+                                          <item xsi:type="C_STRING">
+                                            <pattern>.*</pattern>
+                                          </item>
+                                          <reference_type>constraint</reference_type>
+                                        </right_operand>
+                                      </expression>
+                                    </includes>
+                                  </children>
                                   <cardinality>
                                     <is_ordered>false</is_ordered>
                                     <is_unique>false</is_unique>
@@ -4856,6 +4889,35 @@
                                     </interval>
                                   </cardinality>
                                 </attributes>
+                              </children>
+                              <children xsi:type="ARCHETYPE_SLOT">
+                                <rm_type_name>CLUSTER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>true</upper_unbounded>
+                                  <lower>0</lower>
+                                </occurrences>
+                                <node_id>at0007</node_id>
+                                <includes>
+                                  <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                    <type>Boolean</type>
+                                    <operator>2007</operator>
+                                    <precedence_overridden>false</precedence_overridden>
+                                    <left_operand xsi:type="EXPR_LEAF">
+                                      <type>String</type>
+                                      <item xsi:type="xsd:string">archetype_id/value</item>
+                                      <reference_type>attribute</reference_type>
+                                    </left_operand>
+                                    <right_operand xsi:type="EXPR_LEAF">
+                                      <type>C_STRING</type>
+                                      <item xsi:type="C_STRING">
+                                        <pattern>openEHR-EHR-CLUSTER\.specimen(-[a-zA-Z0-9_]+)*\.v0</pattern>
+                                      </item>
+                                      <reference_type>constraint</reference_type>
+                                    </right_operand>
+                                  </expression>
+                                </includes>
                               </children>
                               <cardinality>
                                 <is_ordered>false</is_ordered>
@@ -4877,19 +4939,19 @@
                             </term_definitions>
                             <term_definitions code="at0001">
                               <items id="description">Findings related to tissue examined intra-operatively.</items>
-                              <items id="text">Intra-operative findings</items>
+                              <items id="text">Intra-operative examination</items>
                             </term_definitions>
                             <term_definitions code="at0002">
                               <items id="description">Findings recorded on examination of a gross specimen.</items>
-                              <items id="text">Macroscopic findings</items>
+                              <items id="text">Macroscopic examination</items>
                             </term_definitions>
                             <term_definitions code="at0003">
                               <items id="description">Findings recorded after microsopic examination.</items>
-                              <items id="text">Microscopic findings</items>
+                              <items id="text">Microscopic examination</items>
                             </term_definitions>
                             <term_definitions code="at0004">
                               <items id="description">General histopathology findings.</items>
-                              <items id="text">Histopathology  findings</items>
+                              <items id="text">Histopathology examination</items>
                             </term_definitions>
                             <term_definitions code="at0005">
                               <items id="description">Details of an individual histopathology finding, often related to a specific anatomical location or specimen.</items>
@@ -4900,7 +4962,7 @@
                               <items id="text">Tissue available</items>
                             </term_definitions>
                             <term_definitions code="at0007">
-                              <items id="description">Details of specimen(s) realted to this finding.</items>
+                              <items id="description">Details of specimen(s) related to this examination.</items>
                               <items id="text">Specimen detail</items>
                             </term_definitions>
                             <term_definitions code="at0008">
@@ -4921,12 +4983,16 @@
                             </term_definitions>
                             <term_definitions code="at0012">
                               <items id="description">A group of findings within the histopathology examination. The Runtime name constraint allows identification of the type of histopathology examination performed.</items>
-                              <items id="text">Histopathology findings</items>
+                              <items id="text">Histopathology examination</items>
                             </term_definitions>
                             <term_definitions code="at0014">
                               <items id="comment">Multiple formats are allowed but they must be semantically equivalent.</items>
                               <items id="description">Rich text or other multimedia representation of this particular result as issued by the diagnostic service.</items>
                               <items id="text">Test representation</items>
+                            </term_definitions>
+                            <term_definitions code="at0015">
+                              <items id="description">Details of specimen related to this finding.</items>
+                              <items id="text">Specimen detail</items>
                             </term_definitions>
                           </children>
                           <children xsi:type="C_COMPLEX_OBJECT">
@@ -5514,7 +5580,7 @@
                     </archetype_id>
                     <term_definitions code="at0000">
                       <items id="description">Local cluster to capture analytical technique for Genomics England datasets.</items>
-                      <items id="text">analytical technique GEL</items>
+                      <items id="text">Analytical technique GEL</items>
                     </term_definitions>
                     <term_definitions code="at0001">
                       <items id="description">Description of analytical technique.</items>
@@ -6306,35 +6372,6 @@
                                         <lower>1</lower>
                                         <upper>1</upper>
                                       </existence>
-                                      <children xsi:type="ARCHETYPE_SLOT">
-                                        <rm_type_name>CLUSTER</rm_type_name>
-                                        <occurrences>
-                                          <lower_included>true</lower_included>
-                                          <lower_unbounded>false</lower_unbounded>
-                                          <upper_unbounded>true</upper_unbounded>
-                                          <lower>0</lower>
-                                        </occurrences>
-                                        <node_id>at0007</node_id>
-                                        <includes>
-                                          <expression xsi:type="EXPR_BINARY_OPERATOR">
-                                            <type>Boolean</type>
-                                            <operator>2007</operator>
-                                            <precedence_overridden>false</precedence_overridden>
-                                            <left_operand xsi:type="EXPR_LEAF">
-                                              <type>String</type>
-                                              <item xsi:type="xsd:string">archetype_id/value</item>
-                                              <reference_type>attribute</reference_type>
-                                            </left_operand>
-                                            <right_operand xsi:type="EXPR_LEAF">
-                                              <type>C_STRING</type>
-                                              <item xsi:type="C_STRING">
-                                                <pattern>openEHR-EHR-CLUSTER\.specimen(-[a-zA-Z0-9_]+)*\.v0</pattern>
-                                              </item>
-                                              <reference_type>constraint</reference_type>
-                                            </right_operand>
-                                          </expression>
-                                        </includes>
-                                      </children>
                                       <children xsi:type="C_ARCHETYPE_ROOT">
                                         <rm_type_name>CLUSTER</rm_type_name>
                                         <occurrences>
@@ -7001,6 +7038,35 @@
                                       </cardinality>
                                     </attributes>
                                   </children>
+                                  <children xsi:type="ARCHETYPE_SLOT">
+                                    <rm_type_name>CLUSTER</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>true</upper_unbounded>
+                                      <lower>0</lower>
+                                    </occurrences>
+                                    <node_id>at0015</node_id>
+                                    <includes>
+                                      <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                        <type>Boolean</type>
+                                        <operator>2007</operator>
+                                        <precedence_overridden>false</precedence_overridden>
+                                        <left_operand xsi:type="EXPR_LEAF">
+                                          <type>String</type>
+                                          <item xsi:type="xsd:string">archetype_id/value</item>
+                                          <reference_type>attribute</reference_type>
+                                        </left_operand>
+                                        <right_operand xsi:type="EXPR_LEAF">
+                                          <type>C_STRING</type>
+                                          <item xsi:type="C_STRING">
+                                            <pattern>.*</pattern>
+                                          </item>
+                                          <reference_type>constraint</reference_type>
+                                        </right_operand>
+                                      </expression>
+                                    </includes>
+                                  </children>
                                   <cardinality>
                                     <is_ordered>false</is_ordered>
                                     <is_unique>false</is_unique>
@@ -7012,6 +7078,35 @@
                                     </interval>
                                   </cardinality>
                                 </attributes>
+                              </children>
+                              <children xsi:type="ARCHETYPE_SLOT">
+                                <rm_type_name>CLUSTER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>true</upper_unbounded>
+                                  <lower>0</lower>
+                                </occurrences>
+                                <node_id>at0007</node_id>
+                                <includes>
+                                  <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                    <type>Boolean</type>
+                                    <operator>2007</operator>
+                                    <precedence_overridden>false</precedence_overridden>
+                                    <left_operand xsi:type="EXPR_LEAF">
+                                      <type>String</type>
+                                      <item xsi:type="xsd:string">archetype_id/value</item>
+                                      <reference_type>attribute</reference_type>
+                                    </left_operand>
+                                    <right_operand xsi:type="EXPR_LEAF">
+                                      <type>C_STRING</type>
+                                      <item xsi:type="C_STRING">
+                                        <pattern>openEHR-EHR-CLUSTER\.specimen(-[a-zA-Z0-9_]+)*\.v0</pattern>
+                                      </item>
+                                      <reference_type>constraint</reference_type>
+                                    </right_operand>
+                                  </expression>
+                                </includes>
                               </children>
                               <cardinality>
                                 <is_ordered>false</is_ordered>
@@ -7033,19 +7128,19 @@
                             </term_definitions>
                             <term_definitions code="at0001">
                               <items id="description">Findings related to tissue examined intra-operatively.</items>
-                              <items id="text">Intra-operative findings</items>
+                              <items id="text">Intra-operative examination</items>
                             </term_definitions>
                             <term_definitions code="at0002">
                               <items id="description">Findings recorded on examination of a gross specimen.</items>
-                              <items id="text">Macroscopic findings</items>
+                              <items id="text">Macroscopic examination</items>
                             </term_definitions>
                             <term_definitions code="at0003">
                               <items id="description">Findings recorded after microsopic examination.</items>
-                              <items id="text">Microscopic findings</items>
+                              <items id="text">Microscopic examination</items>
                             </term_definitions>
                             <term_definitions code="at0004">
                               <items id="description">General histopathology findings.</items>
-                              <items id="text">Histopathology  findings</items>
+                              <items id="text">Histopathology examination</items>
                             </term_definitions>
                             <term_definitions code="at0005">
                               <items id="description">Details of an individual histopathology finding, often related to a specific anatomical location or specimen.</items>
@@ -7056,7 +7151,7 @@
                               <items id="text">Tissue available</items>
                             </term_definitions>
                             <term_definitions code="at0007">
-                              <items id="description">Details of specimen(s) realted to this finding.</items>
+                              <items id="description">Details of specimen(s) related to this examination.</items>
                               <items id="text">Specimen detail</items>
                             </term_definitions>
                             <term_definitions code="at0008">
@@ -7077,12 +7172,16 @@
                             </term_definitions>
                             <term_definitions code="at0012">
                               <items id="description">A group of findings within the histopathology examination. The Runtime name constraint allows identification of the type of histopathology examination performed.</items>
-                              <items id="text">Histopathology findings</items>
+                              <items id="text">Histopathology examination</items>
                             </term_definitions>
                             <term_definitions code="at0014">
                               <items id="comment">Multiple formats are allowed but they must be semantically equivalent.</items>
                               <items id="description">Rich text or other multimedia representation of this particular result as issued by the diagnostic service.</items>
                               <items id="text">Test representation</items>
+                            </term_definitions>
+                            <term_definitions code="at0015">
+                              <items id="description">Details of specimen related to this finding.</items>
+                              <items id="text">Specimen detail</items>
                             </term_definitions>
                           </children>
                           <children xsi:type="C_COMPLEX_OBJECT">
@@ -7560,7 +7659,7 @@
                     </archetype_id>
                     <term_definitions code="at0000">
                       <items id="description">Local cluster to capture analytical technique for Genomics England datasets.</items>
-                      <items id="text">analytical technique GEL</items>
+                      <items id="text">Analytical technique GEL</items>
                     </term_definitions>
                     <term_definitions code="at0001">
                       <items id="description">Description of analytical technique.</items>

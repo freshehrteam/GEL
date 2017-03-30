@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=cc191f78-3726-44c9-9d31-39c383306b01)
 	openEHR-EHR-EVALUATION.inas_count.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-23">
 	>
 	details = <
@@ -19,16 +19,22 @@ description
 			use = <"INAS provides structured information on non-ataxia signs in ataxia patients. INAS consists of 30 items, each of which is related to one of the following 16 signs or syndromes: areflexia, hyperreflexia, extensor plantar response, spasticity, paresis, amyotrophy, fasciculations, myoclonus, rigidity, chorea, dystonia, resting tremor, sensory symptoms, brainstem oculomotor signs (horizontal and vertical ophthalmoparesis, slowing of saccades), urinary dysfunction and cognitive impairment. 
 For a semiquantitative assessement of non-ataxia signs, the number of non-ataxia signs is counted yielding the INAS count, a dimensionless value with a range from 0 to 16. To determine the INAS count, only the presence or absence of one of the 16 signs is considered. A sign is recorded as present if at least one item related to this sign is positive.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"Ataxia Study Group cited 23-Nov-2016 http://www.ataxia-study-group.net/html/asg">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"346D1C3E98183D3C8C5F84134B374EA4">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"60862EA48BCC425ECB80296CA14F0B0C">
+		["build_uid"] = <"86673b1a-34c6-4a6a-9aa4-4abc75ca1be3">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -158,6 +164,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

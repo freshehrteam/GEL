@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=7bfd20cc-d39b-48a6-b954-19de9b6a1d0f)
 	openEHR-EHR-CLUSTER.epinephrine_challenge_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 This archetype is intended to be used in conjunction with the 'cardiac drug challenge' observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"89A921CB36D0264E1A78378365E343E6">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"EBF2875A1AB20314FF5F150912511867">
+		["build_uid"] = <"c5880dcf-e3d2-4797-9b2b-6747f4ec6d53">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -106,6 +112,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

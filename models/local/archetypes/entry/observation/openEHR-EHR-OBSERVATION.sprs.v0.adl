@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=a5559514-e8ca-491f-a2a4-651f22f69327)
 	openEHR-EHR-OBSERVATION.sprs.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-14">
 	>
 	details = <
@@ -21,18 +21,24 @@ description
 The clinical Spastic Paraplegia Rating Scale (SPRS) measures disease severity and progression.">
 			keywords = <"SPRS", "spastic", "paraplegia", "rating scale">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"The Spastic Paraplegia Rating Scale (SPRS) Data Supplement  cited 15-Nov-2016 http://www.neurology.org/content/67/3/430/suppl/DC1
 
 Rating Scale devised for HSP cited 15-Nov-2016  http://www.hspersunite.org.au/rating-scale-devised-for-hsp/">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"CF73A08F9CB2E359D8860AFE8EC33A4A">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"A9677FDB074CECBC141B1F01209AA3B2">
+		["build_uid"] = <"5a61358e-fbf7-4f8a-8b52-69479b034031">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -231,6 +237,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -320,7 +327,7 @@ ontology
 				>
 				["at0020"] = <
 					text = <"Severely reduced">
-					description = <"The subject's maximum gait speed is severely reduced (more than or equal 20 seconds for 10 metres). ">
+					description = <"The subject's maximum gait speed is severely reduced (more than or equal 20 seconds for 10 metres).">
 				>
 				["at0021"] = <
 					text = <"Unable">
@@ -525,7 +532,7 @@ ontology
 				>
 				["at0070"] = <
 					text = <"12. Pain due to SP related symptoms">
-					description = <"Assessment of pain due to spastic paraplegia related symptoms. ">
+					description = <"Assessment of pain due to spastic paraplegia related symptoms.">
 				>
 				["at0071"] = <
 					text = <"None">
@@ -597,7 +604,7 @@ ontology
 				>
 				["at0088"] = <
 					text = <"Visual loss (c.c. less than 0.8)">
-					description = <"The subject suffers from visual loss (c.c. less than 0.8)">
+					description = <"The subject suffers from visual loss (c.c. less than 0.8).">
 				>
 				["at0089"] = <
 					text = <"Cataract">

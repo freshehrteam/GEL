@@ -133,7 +133,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>
@@ -145,6 +145,6 @@
     <digest id="MD5-CAM-1.0.1">9D5CA3810481F48FDD07834E204F4E00</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.eligibility_gel.v0">
-    <digest id="MD5-CAM-1.0.1">05C2B9485484D873CD5919FAE75E2A62</digest>
+    <digest id="MD5-CAM-1.0.1">A96D81CC3867B1DEF830BDFE84C0F1F0</digest>
   </integrity_checks>
 </template>

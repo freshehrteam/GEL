@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=6593b79a-a9ee-4bf4-95bc-9ac7cc342f74)
 	openEHR-EHR-OBSERVATION.imaging_exam_uk.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Grahame Grieve">
-		["email"] = <"grahame@healthintersections.com.au">
 		["organisation"] = <"Health Intersections Pty Ltd">
+		["email"] = <"grahame@healthintersections.com.au">
 		["date"] = <"2011-02-07">
 	>
 	details = <
@@ -28,12 +28,14 @@ Will normally be reported back to the requesting clinician as one component with
 Not to be used to record details about any parallel procedure undertaken. Use the specific procedure-related archetypes, for example ACTION.procedure.
 
 Not to be used to record details about medications administered during the imaging test. Use specific medication-related archetypes, for example ACTION.medication.">
-			copyright = <"© openEHR Foundation">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"CommitteeDraft">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Sharmila Biswas, Australia", "Eric Browne", "David Cartwright, Queensland Health, Australia", "Stephen Chu, NEHTA, Australia (Editor)", "Matthew Cordell, NEHTA, Australia", "Andre de Wolf, NeHTA, Australia", "David Evans, Queensland Health, Australia", "Jacquie Garton-Smith, Royal Perth Hospital and DoHWA, Australia", "Grahame Grieve, Health Intersections Pyty Ltd, Australia (Editor)", "Mary Kelaher, NEHTA, Australia", "Diane Kirkham, NEHTA, Australia", "Robert L'egan, NEHTA, Australia", "Heather Leslie, Ocean Informatics, Australia (Editor)", "Mike Martyn, The Hobart Anaesthetic Group, Australia", "Ian McNicoll, Ocean Informatics UK, United Kingdom", "Chris Mitchell, RACGP, Australia", "Stewart Morrison, NEHTA, Australia", "Michael Osborne, Mater Health Services, Australia", "Ning Pan", "Chris Pearce, Melbourne East GP Network, Australia", "Jodie Pycroft, Adelaide Northern Division of General Practice Ltd, Australia", "Cathy Richardson, NEHTA, Australia", "Stephen Royce, NEHTA, Australia", "Eleanor Royle", "Don Stewart", "Michael Thompson, Queensland Health, Australia", "Gordon Tomes, Australian Institute of Health and Welfare, Australia", "Richard Townley-O'Neill, NEHTA, Australia">
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"IHE.net Technical Frameworks - Radiology [Internet]. [date unknown];[cited 2011 Jan 2 ] Available from: http://www.ihe.net/Technical_Framework/index.cfm#radiology
 
 RSNA.org: Radiology Reporting [Internet]. [date unknown];[cited 2011 Jan 2 ] Available from: http://www.rsna.org/Informatics/radreports.cfm
@@ -43,7 +45,12 @@ Radiology Written Report Guideline Project (Draft Consultation); December 2010.
 Diagnostic Imaging data specifications; NEHTA, version 1.0, 2007 Jun 29.
 
 Imaging examination result, draft archetype, NEHTA Clinical Knowledge Manager [Internet]. London: NEHTA. Authored: 11 Feb 2007. Available at: http://dcm.nehta.org.au/ckm/#showArchetype_1013.1.943_6 (accessed 16 Sep 2013).">
-		["MD5-CAM-1.0.1"] = <"A1227DCEA270A42C6772EED3C0CAD2AA">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"C5E318D6672FBEA3139C07D0F00C8DD4">
+		["build_uid"] = <"4db8715f-c1ae-4ecb-9519-47b9d944949a">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -266,6 +273,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -424,7 +432,7 @@ ontology
 				>
 				["at0043"] = <
 					text = <"Result details">
-					description = <"*">
+					description = <"Slot for detailed structured description of the imaging result.">
 				>
 				["at0044"] = <
 					text = <"Submodality">

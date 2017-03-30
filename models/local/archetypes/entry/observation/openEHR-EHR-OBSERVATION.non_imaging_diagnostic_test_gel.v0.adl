@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=20f418f8-b8e8-4414-a118-604042919904)
 	openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 Can be used to record colour plate test, electro-oculogram, dark adaptation test, auditory brainstem response and otoacustic emissions test.">
 			misuse = <"Do no use for any non-imaging diagnostic tests which have their own specific archetypes.">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"673A3B79FDA0A6B1EF521E2748F6B316">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"97340D0CD2DC382E0B4C0B18840AA236">
+		["build_uid"] = <"d3830609-4479-4fc7-8897-478cee01d088">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -101,6 +107,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

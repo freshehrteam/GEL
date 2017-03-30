@@ -60,22 +60,6 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medication']/items[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0]/items[at0002]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14961.1</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medication']/items[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0113]/items[openEHR-EHR-CLUSTER.medication_course_summary.v0]/items[at0002 and name/value='Date discontinued']">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::12803.1</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Medication']/items[openEHR-EHR-INSTRUCTION.medication_order.v0]/activities[at0001]/description[at0002]/items[at0070]">
     <items>
       <item>
@@ -194,8 +178,7 @@
         <Rule path="/activities[at0001]/description[at0002]/items[at0167]" max="0" />
         <Rule path="/protocol[at0005]" hide_on_form="true" />
         <Rule path="/protocol[at0005]/items[at0004]" max="0" />
-        <Rule path="/protocol[at0005]/items[at0135]" max="0" />
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_course_summary.v0" concept_name="Medication course summary" path="/activities[at0001]/description[at0002]/items[at0113]/items[at0112]" hide_on_form="true">
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_order_summary.v0" concept_name="Medication course summary" path="/activities[at0001]/description[at0002]/items[at0113]/items[at0112]">
           <Rule path="/items[at0001]" max="0" />
           <Rule path="/items[at0002]" max="1">
             <nameConstraint>
@@ -328,21 +311,21 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0">
-    <digest id="MD5-CAM-1.0.1">6B5A7E7C137E9AC00A52EE9481BEC73E</digest>
+    <digest id="MD5-CAM-1.0.1">19D1E1493016506BDD01007D007C650E</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medication_course_summary.v0">
-    <digest id="MD5-CAM-1.0.1">1E7D6F795F76E5D62071822152161AFE</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medication_order_summary.v0">
+    <digest id="MD5-CAM-1.0.1">5F5752AC66418C0A633D91D05EE0B355</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1">
     <digest id="MD5-CAM-1.0.1">2D066E7C501C2DAEC625DEE2ECD81DF4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.procedure.v1">
-    <digest id="MD5-CAM-1.0.1">B53DE4D15A4711977216BB098A7B3F5A</digest>
+    <digest id="MD5-CAM-1.0.1">E0355FF9C044E77B4506BA522AC80967</digest>
   </integrity_checks>
 </template>

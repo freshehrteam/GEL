@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=0a5990ed-1ab0-458d-986f-df36c7e8fe79)
 	openEHR-EHR-CLUSTER.ecg_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-11-24">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording of additional ECG data as part of the Genomics England Rare Diseases dataset.">
 			use = <"Use to record additional ECG details for the Genomics England Rare Diseases dataset. This cluster archetype is intended to be used in conjunction with the ECG observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"D1D101C347D7450EE6941DA294220AE1">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"A785D2C76FAD0D4F137124F08C9862D3">
+		["build_uid"] = <"14b65367-eeb6-4489-ae93-3fb575d09ed3">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -104,6 +110,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

@@ -719,7 +719,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
-    <digest id="MD5-CAM-1.0.1">10F9F093E9FDF182345A5C72CC33E34E</digest>
+    <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
@@ -746,7 +746,7 @@
     <digest id="MD5-CAM-1.0.1">623156843D9F2E6D34653B935B2653B5</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.non_imaging_diagnostic_test_gel.v0">
-    <digest id="MD5-CAM-1.0.1">673A3B79FDA0A6B1EF521E2748F6B316</digest>
+    <digest id="MD5-CAM-1.0.1">97340D0CD2DC382E0B4C0B18840AA236</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v0">
     <digest id="MD5-CAM-1.0.1">E629756190AAC0AC71991FACBE761729</digest>

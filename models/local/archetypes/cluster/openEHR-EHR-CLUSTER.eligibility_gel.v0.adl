@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=bd0c031a-4773-46ce-9369-9d5f442f7f49)
 	openEHR-EHR-CLUSTER.eligibility_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2016-12-20">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the purpose of recording eligibility details in the context of the Genomics England Rare diseases dataset.">
 			use = <"Use to record eligibility status and eligibility statement version for the Genomics England Rare diseases dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"05C2B9485484D873CD5919FAE75E2A62">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"A96D81CC3867B1DEF830BDFE84C0F1F0">
+		["build_uid"] = <"28dc9ca4-1233-4163-b6ec-30253738cab5">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -46,6 +52,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

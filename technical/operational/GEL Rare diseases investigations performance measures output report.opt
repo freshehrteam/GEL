@@ -2711,7 +2711,7 @@
                   <items id="text">Crutches</items>
                 </term_definitions>
                 <term_definitions code="at0078">
-                  <items id="description">The child usually uses a wheelchair,</items>
+                  <items id="description">The child usually uses a wheelchair.</items>
                   <items id="text">Wheelchair</items>
                 </term_definitions>
                 <term_definitions code="at0079">
@@ -2971,7 +2971,7 @@
                   <items id="text">Not applicable</items>
                 </term_definitions>
                 <term_definitions code="at0143">
-                  <items id="description">*</items>
+                  <items id="description">Assessment of the child's ability to perform functions related to gripping.</items>
                   <items id="text">Grip</items>
                 </term_definitions>
                 <term_definitions code="at0144">
@@ -4188,7 +4188,7 @@
                 </term_definitions>
                 <term_definitions code="at0010">
                   <items id="description">The subject is able to lift his or her head for more than 2 minutes.</items>
-                  <items id="text">more than 2 min</items>
+                  <items id="text">More than 2 min</items>
                 </term_definitions>
                 <term_definitions code="at0011">
                   <items id="description">The total number of seconds the subject is able to lift his or her head.</items>
@@ -4236,7 +4236,7 @@
                 </term_definitions>
                 <term_definitions code="at0022">
                   <items id="description">The subject is able to lift his or her leg for more than 2 minutes.</items>
-                  <items id="text">more than 2 min</items>
+                  <items id="text">More than 2 min</items>
                 </term_definitions>
                 <term_definitions code="at0023">
                   <items id="description">The total number of seconds the subject is able to lift his or her leg.</items>
@@ -4357,11 +4357,11 @@
                 </term_definitions>
                 <term_definitions code="at0055">
                   <items id="description">The subject is able to maintain wrists above top of head for more than 60 seconds.</items>
-                  <items id="text">more than 60 sec</items>
+                  <items id="text">More than 60 sec</items>
                 </term_definitions>
                 <term_definitions code="at0056">
                   <items id="description">The total number of seconds the subject is able to maintain wrists above top of head.</items>
-                  <items id="text">Number of seconds arm rais</items>
+                  <items id="text">Number of seconds arm raised</items>
                 </term_definitions>
                 <term_definitions code="at0057">
                   <items id="description">Assessment of the subject's ability to go from a standing position to a sitting position on the floor.</items>
@@ -6368,119 +6368,6 @@
                                   </children>
                                 </attributes>
                               </children>
-                              <children xsi:type="C_COMPLEX_OBJECT">
-                                <rm_type_name>ELEMENT</rm_type_name>
-                                <occurrences>
-                                  <lower_included>true</lower_included>
-                                  <upper_included>true</upper_included>
-                                  <lower_unbounded>false</lower_unbounded>
-                                  <upper_unbounded>false</upper_unbounded>
-                                  <lower>0</lower>
-                                  <upper>1</upper>
-                                </occurrences>
-                                <node_id>at0101</node_id>
-                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                  <rm_attribute_name>value</rm_attribute_name>
-                                  <existence>
-                                    <lower_included>true</lower_included>
-                                    <upper_included>true</upper_included>
-                                    <lower_unbounded>false</lower_unbounded>
-                                    <upper_unbounded>false</upper_unbounded>
-                                    <lower>0</lower>
-                                    <upper>1</upper>
-                                  </existence>
-                                  <children xsi:type="C_COMPLEX_OBJECT">
-                                    <rm_type_name>DV_TEXT</rm_type_name>
-                                    <occurrences>
-                                      <lower_included>true</lower_included>
-                                      <upper_included>true</upper_included>
-                                      <lower_unbounded>false</lower_unbounded>
-                                      <upper_unbounded>false</upper_unbounded>
-                                      <lower>1</lower>
-                                      <upper>1</upper>
-                                    </occurrences>
-                                    <node_id />
-                                    <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                      <rm_attribute_name>value</rm_attribute_name>
-                                      <existence>
-                                        <lower_included>true</lower_included>
-                                        <upper_included>true</upper_included>
-                                        <lower_unbounded>false</lower_unbounded>
-                                        <upper_unbounded>false</upper_unbounded>
-                                        <lower>1</lower>
-                                        <upper>1</upper>
-                                      </existence>
-                                      <children xsi:type="C_PRIMITIVE_OBJECT">
-                                        <rm_type_name>STRING</rm_type_name>
-                                        <occurrences>
-                                          <lower_included>true</lower_included>
-                                          <upper_included>true</upper_included>
-                                          <lower_unbounded>false</lower_unbounded>
-                                          <upper_unbounded>false</upper_unbounded>
-                                          <lower>1</lower>
-                                          <upper>1</upper>
-                                        </occurrences>
-                                        <node_id />
-                                        <item xsi:type="C_STRING">
-                                          <list>Normal</list>
-                                          <list>Unknown</list>
-                                          <list>Abnormal relevant</list>
-                                          <list>Abnormal unknown relevance</list>
-                                        </item>
-                                      </children>
-                                    </attributes>
-                                  </children>
-                                </attributes>
-                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                  <rm_attribute_name>name</rm_attribute_name>
-                                  <existence>
-                                    <lower_included>true</lower_included>
-                                    <upper_included>true</upper_included>
-                                    <lower_unbounded>false</lower_unbounded>
-                                    <upper_unbounded>false</upper_unbounded>
-                                    <lower>1</lower>
-                                    <upper>1</upper>
-                                  </existence>
-                                  <children xsi:type="C_COMPLEX_OBJECT">
-                                    <rm_type_name>DV_TEXT</rm_type_name>
-                                    <occurrences>
-                                      <lower_included>true</lower_included>
-                                      <upper_included>true</upper_included>
-                                      <lower_unbounded>false</lower_unbounded>
-                                      <upper_unbounded>false</upper_unbounded>
-                                      <lower>1</lower>
-                                      <upper>1</upper>
-                                    </occurrences>
-                                    <node_id />
-                                    <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                                      <rm_attribute_name>value</rm_attribute_name>
-                                      <existence>
-                                        <lower_included>true</lower_included>
-                                        <upper_included>true</upper_included>
-                                        <lower_unbounded>false</lower_unbounded>
-                                        <upper_unbounded>false</upper_unbounded>
-                                        <lower>1</lower>
-                                        <upper>1</upper>
-                                      </existence>
-                                      <children xsi:type="C_PRIMITIVE_OBJECT">
-                                        <rm_type_name>STRING</rm_type_name>
-                                        <occurrences>
-                                          <lower_included>true</lower_included>
-                                          <upper_included>true</upper_included>
-                                          <lower_unbounded>false</lower_unbounded>
-                                          <upper_unbounded>false</upper_unbounded>
-                                          <lower>1</lower>
-                                          <upper>1</upper>
-                                        </occurrences>
-                                        <node_id />
-                                        <item xsi:type="C_STRING">
-                                          <list>Assessment</list>
-                                        </item>
-                                      </children>
-                                    </attributes>
-                                  </children>
-                                </attributes>
-                              </children>
                               <cardinality>
                                 <is_ordered>false</is_ordered>
                                 <is_unique>false</is_unique>
@@ -7366,10 +7253,6 @@ of one arm.</items>
                 <term_definitions code="at0100">
                   <items id="description">Record any issues or factors that may impact on the use of the scale and the overall score.</items>
                   <items id="text">Confounding factors</items>
-                </term_definitions>
-                <term_definitions code="at0101">
-                  <items id="description">Narrative interpretation of assessment.</items>
-                  <items id="text">Clinical interpretation</items>
                 </term_definitions>
               </children>
               <children xsi:type="C_ARCHETYPE_ROOT">
@@ -9160,7 +9043,7 @@ of one arm.</items>
                   <items id="text">Moderately reduced</items>
                 </term_definitions>
                 <term_definitions code="at0020">
-                  <items id="description">The subject's maximum gait speed is severely reduced (more than or equal 20 seconds for 10 metres). </items>
+                  <items id="description">The subject's maximum gait speed is severely reduced (more than or equal 20 seconds for 10 metres).</items>
                   <items id="text">Severely reduced</items>
                 </term_definitions>
                 <term_definitions code="at0021">
@@ -9365,7 +9248,7 @@ of one arm.</items>
                   <items id="text">Fixed more than two joints</items>
                 </term_definitions>
                 <term_definitions code="at0070">
-                  <items id="description">Assessment of pain due to spastic paraplegia related symptoms. </items>
+                  <items id="description">Assessment of pain due to spastic paraplegia related symptoms.</items>
                   <items id="text">12. Pain due to SP related symptoms</items>
                 </term_definitions>
                 <term_definitions code="at0071">
@@ -9437,7 +9320,7 @@ of one arm.</items>
                   <items id="text">Epilepsy</items>
                 </term_definitions>
                 <term_definitions code="at0088">
-                  <items id="description">The subject suffers from visual loss (c.c. less than 0.8)</items>
+                  <items id="description">The subject suffers from visual loss (c.c. less than 0.8).</items>
                   <items id="text">Visual loss (c.c. less than 0.8)</items>
                 </term_definitions>
                 <term_definitions code="at0089">

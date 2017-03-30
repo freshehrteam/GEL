@@ -1442,11 +1442,11 @@
           <items id="text">Fetal onset</items>
         </term_definitions>
         <term_definitions code="at0029">
-          <items id="description">Onset of signs or symptoms of disease within the first 28 days of life. </items>
+          <items id="description">Onset of signs or symptoms of disease within the first 28 days of life.</items>
           <items id="text">Neonatal onset</items>
         </term_definitions>
         <term_definitions code="at0030">
-          <items id="description">Onset of signs or symptoms of disease between 28 days to one year of life. </items>
+          <items id="description">Onset of signs or symptoms of disease between 28 days to one year of life.</items>
           <items id="text">Infantile onset</items>
         </term_definitions>
         <term_definitions code="at0031">
@@ -1454,7 +1454,7 @@
           <items id="text">Childhood onset</items>
         </term_definitions>
         <term_definitions code="at0032">
-          <items id="description">Onset of signs or symptoms of disease between the age of 5 and 15 years. </items>
+          <items id="description">Onset of signs or symptoms of disease between the age of 5 and 15 years.</items>
           <items id="text">Juvenile onset</items>
         </term_definitions>
         <term_definitions code="at0033">
