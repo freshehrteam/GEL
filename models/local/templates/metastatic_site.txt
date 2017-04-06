@@ -1,0 +1,10 @@
+02 Brain
+03 Liver
+04 Lung
+06 Multiple metastatic sites
+07 Unknown metastatic site
+08 Skin
+09 Distant lymph nodes
+10 Bone (excluding Bone Marrow)
+11 Bone marrow
+99 Other metastatic site

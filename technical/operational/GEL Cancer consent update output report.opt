@@ -33,12 +33,12 @@
     </details>
   </description>
   <uid>
-    <value>695c3981-06e1-41fa-a994-e1abfbd141bd</value>
+    <value>40063b33-7087-4b00-ab16-188de02c575b</value>
   </uid>
   <template_id>
-    <value>GEL Cancer Withdrawal output report.v0</value>
+    <value>GEL Cancer consent update output report.v0</value>
   </template_id>
-  <concept>GEL Cancer Withdrawal output report.v0</concept>
+  <concept>GEL Cancer consent update output report.v0</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -389,7 +389,7 @@
             </occurrences>
             <node_id />
             <item xsi:type="C_STRING">
-              <list>GEL Cancer withdrawal</list>
+              <list>GEL Consent update</list>
             </item>
           </children>
         </attributes>
@@ -454,10 +454,107 @@
                   <upper_included>true</upper_included>
                   <lower_unbounded>false</lower_unbounded>
                   <upper_unbounded>false</upper_unbounded>
+                  <lower>1</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0003</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_TEXT</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
+                  <lower>1</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0005</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_BOOLEAN</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                    <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                      <rm_attribute_name>value</rm_attribute_name>
+                      <existence>
+                        <lower_included>true</lower_included>
+                        <upper_included>true</upper_included>
+                        <lower_unbounded>false</lower_unbounded>
+                        <upper_unbounded>false</upper_unbounded>
+                        <lower>1</lower>
+                        <upper>1</upper>
+                      </existence>
+                      <children xsi:type="C_PRIMITIVE_OBJECT">
+                        <rm_type_name>BOOLEAN</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
+                          <lower>1</lower>
+                          <upper>1</upper>
+                        </occurrences>
+                        <node_id />
+                        <item xsi:type="C_BOOLEAN">
+                          <true_valid>true</true_valid>
+                          <false_valid>true</false_valid>
+                        </item>
+                      </children>
+                    </attributes>
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
                   <lower>0</lower>
                   <upper>1</upper>
                 </occurrences>
-                <node_id>at0002</node_id>
+                <node_id>at0007</node_id>
                 <attributes xsi:type="C_SINGLE_ATTRIBUTE">
                   <rm_attribute_name>value</rm_attribute_name>
                   <existence>
@@ -492,7 +589,145 @@
                   <lower>1</lower>
                   <upper>1</upper>
                 </occurrences>
-                <node_id>at0004</node_id>
+                <node_id>at0008</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_TEXT</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
+                  <lower>0</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0009</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_TEXT</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
+                  <lower>0</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0015</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_TEXT</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
+                  <lower>0</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0021</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_TEXT</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>true</upper_unbounded>
+                  <lower>0</lower>
+                </occurrences>
+                <node_id>at0023</node_id>
                 <attributes xsi:type="C_SINGLE_ATTRIBUTE">
                   <rm_attribute_name>value</rm_attribute_name>
                   <existence>
@@ -527,7 +762,69 @@
                   <lower>1</lower>
                   <upper>1</upper>
                 </occurrences>
-                <node_id>at0006</node_id>
+                <node_id>at0024</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                  <rm_attribute_name>value</rm_attribute_name>
+                  <existence>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                  </existence>
+                  <children xsi:type="C_COMPLEX_OBJECT">
+                    <rm_type_name>DV_BOOLEAN</rm_type_name>
+                    <occurrences>
+                      <lower_included>true</lower_included>
+                      <upper_included>true</upper_included>
+                      <lower_unbounded>false</lower_unbounded>
+                      <upper_unbounded>false</upper_unbounded>
+                      <lower>1</lower>
+                      <upper>1</upper>
+                    </occurrences>
+                    <node_id />
+                    <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                      <rm_attribute_name>value</rm_attribute_name>
+                      <existence>
+                        <lower_included>true</lower_included>
+                        <upper_included>true</upper_included>
+                        <lower_unbounded>false</lower_unbounded>
+                        <upper_unbounded>false</upper_unbounded>
+                        <lower>1</lower>
+                        <upper>1</upper>
+                      </existence>
+                      <children xsi:type="C_PRIMITIVE_OBJECT">
+                        <rm_type_name>BOOLEAN</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
+                          <lower>1</lower>
+                          <upper>1</upper>
+                        </occurrences>
+                        <node_id />
+                        <item xsi:type="C_BOOLEAN">
+                          <true_valid>true</true_valid>
+                          <false_valid>true</false_valid>
+                        </item>
+                      </children>
+                    </attributes>
+                  </children>
+                </attributes>
+              </children>
+              <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>ELEMENT</rm_type_name>
+                <occurrences>
+                  <lower_included>true</lower_included>
+                  <upper_included>true</upper_included>
+                  <lower_unbounded>false</lower_unbounded>
+                  <upper_unbounded>false</upper_unbounded>
+                  <lower>0</lower>
+                  <upper>1</upper>
+                </occurrences>
+                <node_id>at0025</node_id>
                 <attributes xsi:type="C_SINGLE_ATTRIBUTE">
                   <rm_attribute_name>value</rm_attribute_name>
                   <existence>
@@ -573,45 +870,11 @@
                         <terminology_id>
                           <value>local</value>
                         </terminology_id>
-                        <code_list>at0007</code_list>
-                        <code_list>at0008</code_list>
+                        <code_list>at0026</code_list>
+                        <code_list>at0027</code_list>
+                        <code_list>at0028</code_list>
                       </children>
                     </attributes>
-                  </children>
-                </attributes>
-              </children>
-              <children xsi:type="C_COMPLEX_OBJECT">
-                <rm_type_name>ELEMENT</rm_type_name>
-                <occurrences>
-                  <lower_included>true</lower_included>
-                  <upper_included>true</upper_included>
-                  <lower_unbounded>false</lower_unbounded>
-                  <upper_unbounded>false</upper_unbounded>
-                  <lower>1</lower>
-                  <upper>1</upper>
-                </occurrences>
-                <node_id>at0009</node_id>
-                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
-                  <rm_attribute_name>value</rm_attribute_name>
-                  <existence>
-                    <lower_included>true</lower_included>
-                    <upper_included>true</upper_included>
-                    <lower_unbounded>false</lower_unbounded>
-                    <upper_unbounded>false</upper_unbounded>
-                    <lower>0</lower>
-                    <upper>1</upper>
-                  </existence>
-                  <children xsi:type="C_COMPLEX_OBJECT">
-                    <rm_type_name>DV_TEXT</rm_type_name>
-                    <occurrences>
-                      <lower_included>true</lower_included>
-                      <upper_included>true</upper_included>
-                      <lower_unbounded>false</lower_unbounded>
-                      <upper_unbounded>false</upper_unbounded>
-                      <lower>1</lower>
-                      <upper>1</upper>
-                    </occurrences>
-                    <node_id />
                   </children>
                 </attributes>
               </children>
@@ -623,7 +886,7 @@
                   <upper_unbounded>true</upper_unbounded>
                   <lower>0</lower>
                 </occurrences>
-                <node_id>at0011</node_id>
+                <node_id>at0029</node_id>
                 <includes>
                   <expression xsi:type="EXPR_BINARY_OPERATOR">
                     <type>Boolean</type>
@@ -700,52 +963,93 @@
                 </occurrences>
                 <node_id />
                 <item xsi:type="C_STRING">
-                  <list>Withdrawal</list>
+                  <list>Consent Details</list>
                 </item>
               </children>
             </attributes>
           </children>
         </attributes>
         <archetype_id>
-          <value>openEHR-EHR-ADMIN_ENTRY.withdrawal_gel.v0</value>
+          <value>openEHR-EHR-ADMIN_ENTRY.consent_gel.v0</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">Local archetype to capture details of withdrawal from Genomics England participation for both cancer and rare diseases datasets.</items>
-          <items id="text">Withdrawal GEL</items>
+          <items id="description">Consent details for Genomics England Rare diseases and cancer datasets.</items>
+          <items id="text">Consent Details GEL</items>
         </term_definitions>
         <term_definitions code="at0001">
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">Filename of uploaded copy of scanned withdrawal form pdf.</items>
-          <items id="text">Withdrawal form</items>
+          <items id="description">The date when the consent was given.</items>
+          <items id="text">Date of consent</items>
         </term_definitions>
-        <term_definitions code="at0004">
-          <items id="description">Name and version of the withdrawal form used.</items>
-          <items id="text">Name and version of withdrawal form</items>
+        <term_definitions code="at0003">
+          <items id="description">The name and version of the consent form used.</items>
+          <items id="text">Name and version of consent form</items>
+        </term_definitions>
+        <term_definitions code="at0005">
+          <items id="description">Statement whether consent was given.</items>
+          <items id="text">Consent given?</items>
         </term_definitions>
         <term_definitions code="at0006">
-          <items id="description">Type of withdrawal requested.</items>
-          <items id="text">Withdrawal option</items>
+          <items id="description">The uploaded PDF copy of the consent form.</items>
+          <items id="text">Copy of consent form</items>
         </term_definitions>
         <term_definitions code="at0007">
-          <items id="description">Option 2 withdrawal with no further use of data.</items>
-          <items id="text">Full withdrawal</items>
+          <items id="description">The filename of the uploaded PDF copy of the consent form.</items>
+          <items id="text">Filename of consent form</items>
         </term_definitions>
         <term_definitions code="at0008">
-          <items id="description">Option 1 withdrawal with no further contact.</items>
-          <items id="text">Partial withdrawal</items>
+          <items id="description">The full name of the person taking the consent.</items>
+          <items id="text">Person taking consent</items>
         </term_definitions>
         <term_definitions code="at0009">
-          <items id="description">Full name of person reporting withdrawal.</items>
-          <items id="text">Person reporting withdrawal</items>
-        </term_definitions>
-        <term_definitions code="at0010">
-          <items id="description">Date of withdrawal of consent.</items>
-          <items id="text">Date of withdrawal</items>
+          <items id="description">The name and version of the participant information sheet used.</items>
+          <items id="text">Name and version of participant information sheet</items>
         </term_definitions>
         <term_definitions code="at0011">
+          <items id="comment">Rename to the exact question at template or runtime.</items>
+          <items id="description">A particular question on the consent form.</items>
+          <items id="text">Consent question</items>
+        </term_definitions>
+        <term_definitions code="at0015">
+          <items id="description">The name and version of the assent form used.</items>
+          <items id="text">Name and version of assent form (cancer)</items>
+        </term_definitions>
+        <term_definitions code="at0021">
+          <items id="description">The filename of the uploaded PDF copy of the assentform.</items>
+          <items id="text">Filename of assent form</items>
+        </term_definitions>
+        <term_definitions code="at0022">
+          <items id="description">The uploaded PDF copy of the assent form.</items>
+          <items id="text">Copy of assent form</items>
+        </term_definitions>
+        <term_definitions code="at0023">
+          <items id="description">Additional consent materials used.</items>
+          <items id="text">Additional consent materials (cancer)</items>
+        </term_definitions>
+        <term_definitions code="at0024">
+          <items id="description">Health-related additional findings: Does the participant want these looked for and fed back to their clinical team?</items>
+          <items id="text">Health related additional findings (cancer)</items>
+        </term_definitions>
+        <term_definitions code="at0025">
+          <items id="description">Reproductive additional findings: Does the participant want these looked for and fed back to their clinical team?</items>
+          <items id="text">Reproductive additional findings (cancer)</items>
+        </term_definitions>
+        <term_definitions code="at0026">
+          <items id="description">The participant wants reproductive additional findings looked for and fed back to clinical team.</items>
+          <items id="text">Yes</items>
+        </term_definitions>
+        <term_definitions code="at0027">
+          <items id="description">The participant does not want reproductive additional findings looked for and fed back to clinical team.</items>
+          <items id="text">No</items>
+        </term_definitions>
+        <term_definitions code="at0028">
+          <items id="description">The question about reproductive additional findings is not relevant to the participant.</items>
+          <items id="text">Not relevant</items>
+        </term_definitions>
+        <term_definitions code="at0029">
           <items id="comment">e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.</items>
           <items id="description">Additional information required to capture local context or to align with other reference models/formalisms.</items>
           <items id="text">Extension</items>
@@ -766,7 +1070,7 @@
       <value>openEHR-EHR-COMPOSITION.report.v1</value>
     </archetype_id>
     <template_id>
-      <value>GEL Cancer Withdrawal output report.v0</value>
+      <value>GEL Cancer consent update output report.v0</value>
     </template_id>
     <term_definitions code="at0000">
       <items id="description">Document to communicate information to others, commonly in response to a request from another party.</items>
@@ -791,6 +1095,16 @@
     </term_definitions>
   </definition>
   <view>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]">
+      <items id="pass_through">
+        <value>true</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]/items[openEHR-EHR-CLUSTER.participant_gel.v0]">
+      <items id="pass_through">
+        <value>true</value>
+      </items>
+    </constraints>
     <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/context/other_context[at0001]">
       <items id="pass_through">
         <value>true</value>

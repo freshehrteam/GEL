@@ -15,8 +15,8 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For the capture and reporting of cancer diagnosis morphology, topography and recurrence indicator details in the context of Genomics England Cancer datasets.">
-			use = <"Use to record morphology, topography and recurrence indicator as part of a cancer diagnosis record in the Genomics England Cancer dataset. This cluster is intended to be used inside a Problem/Diagnosis archetype.">
+			purpose = <"For the capture and reporting of cancer diagnosis specific details not available elsewhere in the context of Genomics England Cancer datasets.">
+			use = <"Use to record metastatic site, tumour laterality, morphology, topography and recurrence indicator as part of a cancer diagnosis record in the Genomics England Cancer dataset. This cluster is intended to be used inside a Problem/Diagnosis archetype.">
 			misuse = <"">
 			copyright = <"">
 		>
@@ -26,7 +26,7 @@ description
 	other_details = <
 		["licence"] = <"CC-BY-SA 3.0">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"F2F7414B4CAF13AE21E0A4B10B36B9E2">
+		["MD5-CAM-1.0.1"] = <"2656C3E9785A4E8E96D3E93C36C90945">
 	>
 
 definition
@@ -54,6 +54,40 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			ELEMENT[at0017] occurrences matches {0..1} matches {	-- Metastatic site
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0018, 	-- 02 Brain
+							at0019, 	-- 03 Liver
+							at0020, 	-- 04 Lung
+							at0021, 	-- 06 Multiple metastatic sites
+							at0022, 	-- 07 Unknown metastatic site
+							at0023, 	-- 08 Skin
+							at0024, 	-- 09 Distant lymph nodes
+							at0025, 	-- 10 Bone (excluding Bone Marrow)
+							at0026, 	-- 11 Bone marrow
+							at0027]	-- 99 Other metastatic site
+						}
+					}
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {	-- Tumour laterality
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029, 	-- Bilateral
+							at0030, 	-- Right
+							at0031, 	-- Left
+							at0032, 	-- Midline
+							at0033, 	-- Not known
+							at0034]	-- Not applicable
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -63,7 +97,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Cancer diagnosis GEL">
-					description = <"Local cluster to capture morphology, topography and recurrence indicators for cancer diagnosis in Genomics England Cancer datasets.">
+					description = <"Local cluster to capture specific details (not available elsewhere) for cancer diagnosis in Genomics England Cancer datasets.">
 				>
 				["at0001"] = <
 					text = <"Morphology">
@@ -90,6 +124,78 @@ ontology
 				["at0016"] = <
 					text = <"NN">
 					description = <"No, not recurrence.">
+				>
+				["at0017"] = <
+					text = <"Metastatic site">
+					description = <"The site of the metastatic disease, if any, at diagnosis.">
+				>
+				["at0018"] = <
+					text = <"02 Brain">
+					description = <"Metastatic disease is located in the brain.">
+				>
+				["at0019"] = <
+					text = <"03 Liver">
+					description = <"Metastatic disease is located in the liver.">
+				>
+				["at0020"] = <
+					text = <"04 Lung">
+					description = <"Metastatic disease is located in the lung.">
+				>
+				["at0021"] = <
+					text = <"06 Multiple metastatic sites">
+					description = <"Metastatic disease is located in multiple sites.">
+				>
+				["at0022"] = <
+					text = <"07 Unknown metastatic site">
+					description = <"The site of metastatic disease is unknown.">
+				>
+				["at0023"] = <
+					text = <"08 Skin">
+					description = <"Metastatic disease is located in the skin.">
+				>
+				["at0024"] = <
+					text = <"09 Distant lymph nodes">
+					description = <"Metastatic disease is located in distant lymph nodes.">
+				>
+				["at0025"] = <
+					text = <"10 Bone (excluding Bone Marrow)">
+					description = <"Metastatic disease is located in the bone excluding bone marrow.">
+				>
+				["at0026"] = <
+					text = <"11 Bone marrow">
+					description = <"Metastatic disease is located in the bone marrow.">
+				>
+				["at0027"] = <
+					text = <"99 Other metastatic site">
+					description = <"Metastatic disease is located in another site.">
+				>
+				["at0028"] = <
+					text = <"Tumour laterality">
+					description = <"Tumour laterality identifies the side of the body for a tumour relating to paired organs within a PATIENT based on the evidence from a pathological examination.">
+				>
+				["at0029"] = <
+					text = <"Bilateral">
+					description = <"The tumour is situated on both sides of the body.">
+				>
+				["at0030"] = <
+					text = <"Right">
+					description = <"The tumour is situated on the right side of the body.">
+				>
+				["at0031"] = <
+					text = <"Left">
+					description = <"The tumour is situated on the left side of the body.">
+				>
+				["at0032"] = <
+					text = <"Midline">
+					description = <"The tumour is situated midline.">
+				>
+				["at0033"] = <
+					text = <"Not known">
+					description = <"Tumour laterality is unknown.">
+				>
+				["at0034"] = <
+					text = <"Not applicable">
+					description = <"Tumour laterality is not applicable.">
 				>
 			>
 		>
