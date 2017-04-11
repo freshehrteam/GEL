@@ -15,17 +15,19 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record prostate cancer pathology details aligned with GEL Cancer dataset.">
-			use = <"">
+			purpose = <"To record prostate cancer pathology details aligned with Genomics England Cancer dataset.">
+			use = <"Use to record prostate cancer pathology details in the context of the Genomics England Cancer dataset where these details are not captured elsewhere.
+
+This cluster is intended to be used inside a Laboratory test observation.">
 			misuse = <"">
 			copyright = <"">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["MD5-CAM-1.0.1"] = <"DEDB2247AD2A6BA2A83A4C0645C61295">
+		["MD5-CAM-1.0.1"] = <"65269E94B7B2B80C8B29097B0C4B5023">
 	>
 
 definition
@@ -90,7 +92,7 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Perineural invasion">
-					description = <"Is there perineural invasion (invasion into perineurium of nerve bundles - PNI)">
+					description = <"Is there perineural invasion (invasion into perineurium of nerve bundles - PNI).">
 				>
 				["at0002"] = <
 					text = <"Seminal vesicles invasion">
@@ -106,43 +108,43 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Yes">
-					description = <"">
+					description = <"Pathology shows perineural invasion.">
 				>
 				["at0007"] = <
 					text = <"No">
-					description = <"">
+					description = <"Pathology does not show perineural invasion.">
 				>
 				["at0008"] = <
 					text = <"Not Assessable">
-					description = <"">
+					description = <"The presence or absence of perineural invasion is not assessable.">
 				>
 				["at0009"] = <
 					text = <"Not Known">
-					description = <"">
+					description = <"It is not known whether perineural invasion is present or not.">
 				>
 				["at0010"] = <
 					text = <"Yes">
-					description = <"">
+					description = <"The tumour is confined to the prostate.">
 				>
 				["at0011"] = <
 					text = <"No">
-					description = <"">
+					description = <"The tumour is not confined to the prostate.">
 				>
 				["at0012"] = <
 					text = <"Not applicable">
-					description = <"">
+					description = <"This question is not applicable, e.g. because prostatectomy was not performed.">
 				>
 				["at0013"] = <
 					text = <"Yes">
-					description = <"">
+					description = <"There is invasion into seminal vesicles.">
 				>
 				["at0014"] = <
 					text = <"No">
-					description = <"">
+					description = <"There is no invasion into seminal vesicles.">
 				>
 				["at0015"] = <
 					text = <"Not applicable">
-					description = <"">
+					description = <"This question is not applicable, e.g. because prostatectomy was not performed.">
 				>
 			>
 		>
