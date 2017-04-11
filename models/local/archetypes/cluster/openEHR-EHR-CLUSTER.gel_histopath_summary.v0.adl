@@ -1,0 +1,289 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.gel_histopath_summary.v0
+
+concept
+	[at0000]	-- Gel histopathology summary
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"????">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"???">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"NotSet">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"DE004F8750A2C2AF4F1B395341C8CEE7">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Gel histopathology summary
+		items cardinality matches {1..*; unordered} matches {
+			CLUSTER[at0001] occurrences matches {0..1} matches {	-- Nodal involvement
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Number of nodes positive
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Number of nodes examined
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|>0|}
+							}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Size of largest tumor in node
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"mm">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+					}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {	-- Excision margin
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0006, 	-- Excision margins are clear (distance from margin not stated)
+							at0007, 	-- Excision margins are clear (tumour >5mm from the margin)
+							at0008, 	-- Excision margins are clear (tumour >1mm but less than or equal to 5mm from the margin
+							at0009, 	-- Tumour is less than or equal to 1mm from excision margin, but does not reach margin
+							at0010, 	-- Tumour reaches excision margin
+							at0011, 	-- Uncertain
+							at0012, 	-- Margin not involved =>1mm
+							at0013, 	-- Margin not involved   <1m
+							at0014, 	-- Margin not involved 1-5mm
+							at0015, 	-- 5mm
+							at0016, 	-- Not applicable
+							at0017]	-- Not known
+						}
+					}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {	-- Tumour type
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0024, 	-- Primary
+							at0025, 	-- Recurrence_of_primary_tumour
+							at0026, 	-- Metastaticrecurrence
+							at0027]	-- Metastases
+						}
+					}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {	-- Pre-operative therapy
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0021, 	-- yes
+							at0022, 	-- no
+							at0023]	-- unknown
+						}
+					}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {	-- Tumour size
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+								magnitude = <|>=0.0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {	-- Cancer vascular or lymphatic invasion
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029, 	-- No - vascular/lymphatic invasion not present
+							at0030, 	-- Yes - vascular/lymphatic invasion present
+							at0031, 	-- Vascular invasion only present
+							at0032, 	-- Lymphatic invasion only present
+							at0033, 	-- Both lymphatic and vascular invasion present
+							at0034, 	-- Uncertain whether vascular/lymphatic invasion is present or not
+							at0035, 	-- Cannot be assessed
+							at0036]	-- Not Known
+						}
+					}
+				}
+			}
+			ELEMENT[at0037] occurrences matches {0..1} matches {	-- Pre-invasive elements
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"en", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Gel histopathology summary">
+					description = <"To record details of a GEL histopathology summary.">
+				>
+				["at0001"] = <
+					text = <"Nodal involvement">
+				>
+				["at0002"] = <
+					text = <"Number of nodes positive">
+					description = <"The number of local and regional nodes reported as being positive for the presence of Tumour metastases (in this specimen report only).">
+				>
+				["at0003"] = <
+					text = <"Number of nodes examined">
+					description = <"Number of nodes examined, where applicable.">
+				>
+				["at0004"] = <
+					text = <"Size of largest tumor in node">
+					description = <"Maximum dimension of the largest tumour in mm on the histopathology report.">
+				>
+				["at0005"] = <
+					text = <"Excision margin">
+				>
+				["at0006"] = <
+					text = <"Excision margins are clear (distance from margin not stated)">
+					description = <"Excision margins are clear (distance from margin not stated)">
+				>
+				["at0007"] = <
+					text = <"Excision margins are clear (tumour >5mm from the margin)">
+					description = <"Excision margins are clear (tumour >5mm from the margin)">
+				>
+				["at0008"] = <
+					text = <"Excision margins are clear (tumour >1mm but less than or equal to 5mm from the margin">
+					description = <"Excision margins are clear (tumour >1mm but less than or equal to 5mm from the margin">
+				>
+				["at0009"] = <
+					text = <"Tumour is less than or equal to 1mm from excision margin, but does not reach margin">
+					description = <"Tumour is less than or equal to 1mm from excision margin, but does not reach margin">
+				>
+				["at0010"] = <
+					text = <"Tumour reaches excision margin">
+					description = <"Tumour reaches excision margin">
+				>
+				["at0011"] = <
+					text = <"Uncertain">
+				>
+				["at0012"] = <
+					text = <"Margin not involved =>1mm">
+					description = <"Margin not involved =>1mm">
+				>
+				["at0013"] = <
+					text = <"Margin not involved   <1m">
+					description = <"Margin not involved   <1m">
+				>
+				["at0014"] = <
+					text = <"Margin not involved 1-5mm">
+					description = <"Margin not involved 1-5mm">
+				>
+				["at0015"] = <
+					text = <"5mm">
+					description = <"5mm">
+				>
+				["at0016"] = <
+					text = <"Not applicable">
+				>
+				["at0017"] = <
+					text = <"Not known">
+				>
+				["at0018"] = <
+					text = <"Tumour size">
+					description = <"Maximum dimension of the largest tumour in mm on the histopathology report.">
+				>
+				["at0019"] = <
+					text = <"Pre-operative therapy">
+				>
+				["at0020"] = <
+					text = <"Tumour type">
+				>
+				["at0021"] = <
+					text = <"yes">
+				>
+				["at0022"] = <
+					text = <"no">
+				>
+				["at0023"] = <
+					text = <"unknown">
+				>
+				["at0024"] = <
+					text = <"Primary">
+					description = <"Primary; source of cancer tumour sample">
+				>
+				["at0025"] = <
+					text = <"Recurrence_of_primary_tumour">
+				>
+				["at0026"] = <
+					text = <"Metastaticrecurrence">
+				>
+				["at0027"] = <
+					text = <"Metastases">
+				>
+				["at0028"] = <
+					text = <"Cancer vascular or lymphatic invasion">
+					description = <"An indication of the presence or absence of unequivocal tumour in lymphatic and/or vascular spaces.">
+				>
+				["at0029"] = <
+					text = <"No - vascular/lymphatic invasion not present">
+					description = <"Yes - vascular/lymphatic invasion present">
+				>
+				["at0030"] = <
+					text = <"Yes - vascular/lymphatic invasion present">
+					description = <"Yes - vascular/lymphatic invasion present">
+				>
+				["at0031"] = <
+					text = <"Vascular invasion only present">
+					description = <"Vascular invasion only present">
+				>
+				["at0032"] = <
+					text = <"Lymphatic invasion only present">
+					description = <"Lymphatic invasion only present">
+				>
+				["at0033"] = <
+					text = <"Both lymphatic and vascular invasion present">
+					description = <"Both lymphatic and vascular invasion present">
+				>
+				["at0034"] = <
+					text = <"Uncertain whether vascular/lymphatic invasion is present or not">
+					description = <"Uncertain whether vascular/lymphatic invasion is present or not">
+				>
+				["at0035"] = <
+					text = <"Cannot be assessed">
+					description = <"Cannot be assessed">
+				>
+				["at0036"] = <
+					text = <"Not Known">
+					description = <"Not Known">
+				>
+				["at0037"] = <
+					text = <"Pre-invasive elements">
+					description = <"Description of atypia or in situ disease, if present.">
+				>
+			>
+		>
+	>
