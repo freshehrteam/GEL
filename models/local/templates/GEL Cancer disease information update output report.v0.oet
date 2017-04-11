@@ -88,7 +88,7 @@
       <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" max="0" />
       <Rule path="/protocol[at0007]" hide_on_form="true" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.disease_information_cancer_gel.v0" concept_name="Disease Information Cancer GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Disease Information Cancer" hide_on_form="true" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour id GEL" max="1" path="/protocol[at0007]/items[at0008]" name="Tumour ID" hide_on_form="true">
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour ID GEL" max="1" path="/protocol[at0007]/items[at0008]" name="Tumour ID" hide_on_form="true">
         <Rule path="/items[at0001]" min="1" />
       </Items>
     </Content>

@@ -74,27 +74,6 @@
       <Rule path="/data[at0001]/items[at0069]" max="0" />
       <Rule path="/protocol[at0032]" hide_on_form="true" />
       <Rule path="/protocol[at0032]/items[at0070]" max="0" />
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.anatomical_location.v1" concept_name="Anatomical location" max="1" path="/data[at0001]/items[at0039]" name="Metastatic site" hide_on_form="true">
-        <Rule path="/items[at0001]" name="Metastatic site">
-          <constraint xsi:type="textConstraint">
-            <includedValues>02 Brain</includedValues>
-            <includedValues>03 Liver</includedValues>
-            <includedValues>04 Lung</includedValues>
-            <includedValues>06 Multiple metastatic sites</includedValues>
-            <includedValues>07 Unknown metastatic site</includedValues>
-            <includedValues>08 Skin</includedValues>
-            <includedValues>09 Distant lymph nodes</includedValues>
-            <includedValues>10 Bone (excluding Bone Marrow)</includedValues>
-            <includedValues>11 Bone marrow</includedValues>
-            <includedValues>99 Other metastatic site</includedValues>
-          </constraint>
-        </Rule>
-        <Rule path="/items[at0065]" max="0" />
-        <Rule path="/items[at0002]" max="0" />
-        <Rule path="/items[at0064]" max="0" />
-        <Rule path="/items[at0055]" max="0" />
-        <Rule path="/items[at0023]" max="0" />
-      </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour ID GEL" max="1" path="/data[at0001]/items[at0043]" name="Tumour ID" hide_on_form="true" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.clinical_evidence.v1" concept_name="Clinical evidence" max="1" path="/data[at0001]/items[at0043]" hide_on_form="true">
         <Rule path="/items[at0003]" min="1" name="Base of diagnosis">
@@ -117,6 +96,33 @@
         <Rule path="/items[at0023]" max="0" />
       </Items>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.cancer_diagnosis_gel.v0" concept_name="Cancer diagnosis GEL" max="1" path="/data[at0001]/items[at0043]" name="Cancer diagnosis" hide_on_form="true" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tnm_stage_clinical.v0" concept_name="TNM stage - clinical" max="1" path="/data[at0001]/items[at0043]" name="Integrated TNM">
+        <Rule path="/items[at0001]" name="Integrated T" />
+        <Rule path="/items[at0002]" name="Integrated N" />
+        <Rule path="/items[at0003]" name="Integrated M" />
+        <Rule path="/items[at0005]" name="Grading at diagnosis">
+          <constraint xsi:type="textConstraint">
+            <includedValues>GX Grade of differentiation is not appropriate or cannot be assessed</includedValues>
+            <includedValues>G1 Well differentiated</includedValues>
+            <includedValues>G2 Moderately differentiated</includedValues>
+            <includedValues>G3 Poorly differentiated</includedValues>
+            <includedValues>G4 Undifferentiated / anaplastic</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/items[at0004]" max="0" />
+        <Rule path="/items[at0011]" max="0" />
+        <Rule path="/items[at0012]" max="0" />
+        <Rule path="/items[at0014]" max="0" />
+        <Rule path="/items[at0006]" max="0" />
+        <Rule path="/items[at0007]" name="Integrated Stage grouping" />
+        <Rule path="/items[at0008]" max="0" />
+        <Rule path="/items[at0009]" max="0" />
+        <Rule path="/items[at0010]" max="0" />
+        <Rule path="/items[at0015]" max="0" />
+        <Rule path="/items[at0016]" max="0" />
+        <Rule path="/items[at0013]" max="0" />
+        <Rule path="/items[at0017]" name="Integrated TNM Edition" />
+      </Items>
     </Content>
     <Context>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0" concept_name="Participant GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Participant" hide_on_form="true">
@@ -137,9 +143,6 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
-    <digest id="MD5-CAM-1.0.1">910D849C4514BA7DB4D5812F30AF63D6</digest>
-  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0">
     <digest id="MD5-CAM-1.0.1">EDB6D92EFDFD48054FFCD2AAE4488B82</digest>
   </integrity_checks>
@@ -147,6 +150,9 @@
     <digest id="MD5-CAM-1.0.1">52198AD4C599F2623F6AED6D982654E1</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cancer_diagnosis_gel.v0">
-    <digest id="MD5-CAM-1.0.1">F2F7414B4CAF13AE21E0A4B10B36B9E2</digest>
+    <digest id="MD5-CAM-1.0.1">2656C3E9785A4E8E96D3E93C36C90945</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tnm_stage_clinical.v0">
+    <digest id="MD5-CAM-1.0.1">79F227E401FA72D5C779748F9C04CBEA</digest>
   </integrity_checks>
 </template>
