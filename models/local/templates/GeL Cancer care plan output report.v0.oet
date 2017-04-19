@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
   <id>9058f086-4d9a-43bd-a6f0-4e7eb1e9bba8</id>
-  <name>GeL Cancer care plan output report.v0</name>
+  <name>GEL Cancer care plan output report.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>

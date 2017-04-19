@@ -38,7 +38,7 @@
   <template_id>
     <value>GeL Cancer care plan output report.v0</value>
   </template_id>
-  <concept>GeL Cancer care plan output report.v0</concept>
+  <concept>GEL Cancer care plan output report.v0</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
