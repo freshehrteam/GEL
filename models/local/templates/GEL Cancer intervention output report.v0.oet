@@ -60,7 +60,7 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report">
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Cancer interventions report">
     <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Surgery and other procedures">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Main procedure">
         <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.procedure.v1" concept_name="Procedure" max="1" path="/items" hide_on_form="true">
@@ -81,7 +81,7 @@
           <Rule path="/protocol[at0053]" hide_on_form="true" />
           <Rule path="/protocol[at0053]/items[at0054]" max="0" />
           <Rule path="/protocol[at0053]/items[at0056]" max="0" />
-          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.asa_status.v1" concept_name="ASA Physical Status Classification" path="/description[at0001]/items[at0003]" hide_on_form="true">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.asa_status.v0" concept_name="ASA Physical Status Classification" path="/description[at0001]/items[at0003]">
             <Rule path="/items[at0014]" max="0" />
           </Items>
         </Item>
@@ -124,24 +124,23 @@
         <Rule path="/protocol[at0032]" hide_on_form="true" />
         <Rule path="/protocol[at0032]/items[at0070]" max="0" />
       </Item>
-      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0" concept_name="Medication order" path="/items">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v1" concept_name="Medication order" path="/items">
         <Rule path="/activities[at0001]" hide_on_form="true" />
         <Rule path="/activities[at0001]/description[at0002]" hide_on_form="true" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0070]" name="Treatment regime" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0070]" max="1" name="Treatment regime" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0091]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0092]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0094]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0009]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0047]" max="0" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0109]" max="0" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0055]" max="0" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0135]" max="0" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0056]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0173]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0174]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0062]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0044]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0105]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0107]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0018]" max="0" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0148]" max="1" min="1" name="Treatment intent">
+        <Rule path="/activities[at0001]/description[at0002]/items[at0148]" min="1" name="Treatment intent">
           <constraint xsi:type="textConstraint">
             <includedValues>D: Disease Modification</includedValues>
             <includedValues>P: Palliative</includedValues>
@@ -152,7 +151,6 @@
         </Rule>
         <Rule path="/activities[at0001]/description[at0002]/items[at0113]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0129]" max="0" />
-        <Rule path="/activities[at0001]/description[at0002]/items[at0133]" max="0" />
         <Rule path="/activities[at0001]/description[at0002]/items[at0167]" max="0" />
         <Rule path="/protocol[at0005]" hide_on_form="true" />
         <Rule path="/protocol[at0005]/items[at0004]" max="0" />
@@ -222,12 +220,17 @@
         <value>Main specialty code</value>
       </items>
     </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Systemic anti-cancer therapy']/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/provider">
+      <items id="VisibleInView">
+        <value>Main speciality code</value>
+      </items>
+    </constraints>
   </view>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0">
-    <digest id="MD5-CAM-1.0.1">EDB6D92EFDFD48054FFCD2AAE4488B82</digest>
+    <digest id="MD5-CAM-1.0.1">A3A885984BB3A9B99C735BF1588A04AC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
     <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
@@ -236,19 +239,19 @@
     <digest id="MD5-CAM-1.0.1">833221C23E2B25AD3CB9B0B78EE33740</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.procedure.v1">
-    <digest id="MD5-CAM-1.0.1">E0355FF9C044E77B4506BA522AC80967</digest>
+    <digest id="MD5-CAM-1.0.1">86D25446947F2D5D3BA1FDE7AED5F1F8</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.asa_status.v1">
-    <digest id="MD5-CAM-1.0.1">76575A6A3B720EDD812A00380EC8810B</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.asa_status.v0">
+    <digest id="MD5-CAM-1.0.1">E22029993B840B52760ABBC106BFCEAF</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v0">
-    <digest id="MD5-CAM-1.0.1">19D1E1493016506BDD01007D007C650E</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v1">
+    <digest id="MD5-CAM-1.0.1">A654F83CB5B198AE991092F53472F7CB</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.radiotherapy_detail_gel.v0">
-    <digest id="MD5-CAM-1.0.1">57F4466572EA03F10CB65888AD522DE1</digest>
+    <digest id="MD5-CAM-1.0.1">07931DA4C3B5A782E449ED514C56F5BB</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
     <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>

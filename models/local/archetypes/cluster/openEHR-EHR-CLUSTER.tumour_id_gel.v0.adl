@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=e25d9823-3816-4f21-afe0-bf87acf25294)
 	openEHR-EHR-CLUSTER.tumour_id_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture of the tumour Id used in a variety of places in the Genomics England cancer dataset.">
 			use = <"">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-Sa 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"EDB6D92EFDFD48054FFCD2AAE4488B82">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"A3A885984BB3A9B99C735BF1588A04AC">
+		["build_uid"] = <"7633a388-1fcd-4fad-ab34-67a256678980">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -39,6 +45,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

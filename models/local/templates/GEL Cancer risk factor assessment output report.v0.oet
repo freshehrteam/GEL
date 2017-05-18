@@ -121,41 +121,23 @@
         <Rule path="/protocol[at0021]/items[at0072]" max="0" />
         <Rule path="/protocol[at0021]/items[at0022]" max="0" />
       </Item>
-      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v0" concept_name="Alcohol use summary" path="/items">
-        <Rule path="/data[at0001]/items[at0089]" max="0" />
-        <Rule path="/data[at0001]/items[at0043]" max="0" />
-        <Rule path="/data[at0001]/items[at0015]" max="0" />
-        <Rule path="/data[at0001]/items[at0080]" max="0" />
-        <Rule path="/data[at0001]/items[at0097]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]" hide_on_form="true" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0052]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0053]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]" hide_on_form="true" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0081]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0013]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0082]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0030]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0023]" name="Alcohol consumption">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v1" concept_name="Alcohol Use Summary" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" max="0" />
+        <Rule path="/data[at0001]/items[at0024]">
           <constraint xsi:type="quantityConstraint">
-            <excludedUnits>1/d</excludedUnits>
+            <includedUnits>{QUALIFIED REAL/TIME}</includedUnits>
           </constraint>
         </Rule>
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0065]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0025]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0064]/items[at0087]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0014]" max="0" />
-        <Rule path="/data[at0001]/items[at0029]/items[at0069]" max="0" />
+        <Rule path="/data[at0001]/items[at0025]" max="0" />
+        <Rule path="/data[at0001]/items[at0027]" max="0" />
+        <Rule path="/data[at0001]/items[at0026]" max="0" />
+        <Rule path="/data[at0001]/items[at0015]" max="0" />
         <Rule path="/data[at0001]/items[at0016]" max="0" />
         <Rule path="/data[at0001]/items[at0019]" max="0" />
         <Rule path="/protocol[at0021]" hide_on_form="true" />
-        <Rule path="/protocol[at0021]/items[at0071]" max="0" />
-        <Rule path="/protocol[at0021]/items[at0085]" max="0" />
-        <Rule path="/protocol[at0021]/items[at0075]" max="0" />
-        <Rule path="/protocol[at0021]/items[at0076]" max="0" />
-        <Rule path="/protocol[at0021]/items[at0079]" max="0" />
-        <Rule path="/protocol[at0021]/items[at0103]" max="0" />
-        <Rule path="/protocol[at0021]/items[at0104]" max="0" />
         <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+        <Rule path="/protocol[at0021]/items[at0033]" max="0" />
       </Item>
       <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.height.v1" concept_name="Height/Length" path="/items">
         <Rule path="/data[at0001]" hide_on_form="true" />
@@ -218,8 +200,8 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1">
     <digest id="MD5-CAM-1.0.1">1DE50594541F685A320C1FC666097C1E</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v0">
-    <digest id="MD5-CAM-1.0.1">E629756190AAC0AC71991FACBE761729</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v1">
+    <digest id="MD5-CAM-1.0.1">B380D590E3A1AA1FFEDD68F7B061FAB4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.height.v1">
     <digest id="MD5-CAM-1.0.1">A4240F6ED2E696597510DB5385D3E4B4</digest>

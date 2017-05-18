@@ -119,6 +119,6 @@
     <digest id="MD5-CAM-1.0.1">D99FDDA78E05025ED49B9F7502795394</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0">
-    <digest id="MD5-CAM-1.0.1">EDB6D92EFDFD48054FFCD2AAE4488B82</digest>
+    <digest id="MD5-CAM-1.0.1">A3A885984BB3A9B99C735BF1588A04AC</digest>
   </integrity_checks>
 </template>

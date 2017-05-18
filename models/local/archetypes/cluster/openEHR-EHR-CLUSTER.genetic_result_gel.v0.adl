@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=e85bccdf-e38e-47f5-9065-81dbb968472e)
 	openEHR-EHR-CLUSTER.genetic_result_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Ian McNicoll">
-		["email"] = <"ian@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics UK">
+		["email"] = <"ian@freshehr.com">
 		["date"] = <"2017-04-02">
 	>
 	details = <
@@ -18,14 +18,21 @@ description
 			purpose = <"To record additional details for a GEL Genetic Result.">
 			use = <"Use in conjunction with the CLUSTER laboratory_result_panel which would carry the Test Result field.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"GEL Cancer Dataset 3.1.2">
-		["MD5-CAM-1.0.1"] = <"50078C128E74A0534B23ED12C638FEA2">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"88426F9E3C65501C458954C62DE09402">
+		["build_uid"] = <"b0989e0c-8486-4c4a-b3c5-73ed8a4aae91">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -62,7 +69,7 @@ definition
 							at0032, 	-- Copy number analysis
 							at0033, 	-- Other SNV analysis e.g. OLA
 							at0034, 	-- Targeted copy number analysis e.g. MLPA/qPCR
-							at0035, 	-- aCGH
+							at0035, 	-- ACGH
 							at0036, 	-- SNP array
 							at0037, 	-- Karyotype
 							at0038, 	-- FISH
@@ -75,7 +82,7 @@ definition
 							at0045, 	-- Single Gene Sequencing
 							at0046, 	-- Gene Panel
 							at0047, 	-- IHC
-							at0048, 	-- Translocation eg qPCR/sequencing/FISH/IHC
+							at0048, 	-- Translocation eg. qPCR/sequencing/FISH/IHC
 							at0049]	-- Other
 						}
 					}
@@ -99,6 +106,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -109,7 +117,7 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Genetic laboratory">
-					description = <"The type of genetic laboratory">
+					description = <"The type of genetic laboratory.">
 				>
 				["at0002"] = <
 					text = <"Research laboratory">
@@ -125,7 +133,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Scope qualifiers">
-					description = <"If whole locus or coding sequence of gene not covered, give details of regions covered, e.g. ‘exons 3 and 8’">
+					description = <"If whole locus or coding sequence of gene not covered, give details of regions covered, e.g. ‘exons 3 and 8’.">
 				>
 				["at0006"] = <
 					text = <"Method of test">
@@ -133,7 +141,7 @@ ontology
 				>
 				["at0027"] = <
 					text = <"Abnormal molecular result">
-					description = <"Record the details of the abnormal genotype using Genomic Coordinates">
+					description = <"Record the details of the abnormal genotype using Genomic Coordinates.">
 				>
 				["at0028"] = <
 					text = <"Genome build">
@@ -145,83 +153,83 @@ ontology
 				>
 				["at0030"] = <
 					text = <"Sequencing">
-					description = <"*">
+					description = <"The test method is Sequencing.">
 				>
 				["at0031"] = <
 					text = <"Sequencing and targeted copy number analysis">
-					description = <"*">
+					description = <"The test method is Sequencing and targeted copy number analysis.">
 				>
 				["at0032"] = <
 					text = <"Copy number analysis">
-					description = <"*">
+					description = <"The test method is Copy number analysis.">
 				>
 				["at0033"] = <
 					text = <"Other SNV analysis e.g. OLA">
-					description = <"*">
+					description = <"The test method is Other single-nucleotide variant (SNV) analysis e.g. Oligonucleotide ligation assay (OLA).">
 				>
 				["at0034"] = <
 					text = <"Targeted copy number analysis e.g. MLPA/qPCR">
-					description = <"*">
+					description = <"The test method is Targeted copy number analysis e.g. MLPA (Multiplex Ligation-dependent Probe Amplification) /quantitative polymerase chain reaction (qPCR).">
 				>
 				["at0035"] = <
-					text = <"aCGH">
-					description = <"*">
+					text = <"ACGH">
+					description = <"The test method is Microarray Comparative Genomic Hybridisation (aCGH).">
 				>
 				["at0036"] = <
 					text = <"SNP array">
-					description = <"*">
+					description = <"The test method is Single nucleotide polymorphism (SNP) array.">
 				>
 				["at0037"] = <
 					text = <"Karyotype">
-					description = <"*">
+					description = <"The test method is Karyotype.">
 				>
 				["at0038"] = <
 					text = <"FISH">
-					description = <"*">
+					description = <"The test method is Fluorescence in situ hybridization (FISH).">
 				>
 				["at0039"] = <
 					text = <"Methylation testing">
-					description = <"*">
+					description = <"The test method is Methylation testing.">
 				>
 				["at0040"] = <
 					text = <"Microsatellite analysis">
-					description = <"*">
+					description = <"The test method is Microsatellite analysis.">
 				>
 				["at0041"] = <
 					text = <"Fanconi (MMC/DEB) breakage testing">
-					description = <"*">
+					description = <"The test method is Fanconi (MMC-Mitomycin C / Diepoxybutane-DEB) breakage testing.">
 				>
 				["at0042"] = <
 					text = <"Radiation hypersensitivity (AT)">
-					description = <"*">
+					description = <"The test method is radiation hypersensitivity (AT).">
 				>
 				["at0043"] = <
 					text = <"UV hypersensitivity">
-					description = <"*">
+					description = <"The test method is UV hypersensitivity.">
 				>
 				["at0044"] = <
 					text = <"Unscheduled DNA synthesis">
-					description = <"*">
+					description = <"The test method is unscheduled DNA synthesis.">
 				>
 				["at0045"] = <
 					text = <"Single Gene Sequencing">
-					description = <"*">
+					description = <"The test method is Single Gene Sequencing.">
 				>
 				["at0046"] = <
 					text = <"Gene Panel">
-					description = <"*">
+					description = <"The test method is Gene Panel.">
 				>
 				["at0047"] = <
 					text = <"IHC">
-					description = <"*">
+					description = <"The test method is Immunohistochemistry (IHC).">
 				>
 				["at0048"] = <
-					text = <"Translocation eg qPCR/sequencing/FISH/IHC">
-					description = <"*">
+					text = <"Translocation eg. qPCR/sequencing/FISH/IHC">
+					description = <"The test method is Translocation eg. qPCR/sequencing/FISH/IHC.">
 				>
 				["at0049"] = <
 					text = <"Other">
-					description = <"*">
+					description = <"The test method is Other.">
 				>
 			>
 		>

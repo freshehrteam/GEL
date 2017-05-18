@@ -144,13 +144,13 @@
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0">
-    <digest id="MD5-CAM-1.0.1">EDB6D92EFDFD48054FFCD2AAE4488B82</digest>
+    <digest id="MD5-CAM-1.0.1">A3A885984BB3A9B99C735BF1588A04AC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.clinical_evidence.v1">
     <digest id="MD5-CAM-1.0.1">52198AD4C599F2623F6AED6D982654E1</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cancer_diagnosis_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B74960FE20BC7C8EC8C0A2EA9B52475F</digest>
+    <digest id="MD5-CAM-1.0.1">224A986E05282545D614FF0C23F44F03</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tnm_stage_clinical.v0">
     <digest id="MD5-CAM-1.0.1">79F227E401FA72D5C779748F9C04CBEA</digest>

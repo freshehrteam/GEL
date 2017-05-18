@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=865c537f-3706-4ad0-a759-a7671e8fb44d)
 	openEHR-EHR-CLUSTER.radiotherapy_detail_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-03-16">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the recording and reporting of radiotherapy details as part of Genomics England cancer dataset.">
 			use = <"To record radiotherapy details in the context of Genomics England cancer dataset interventions. This archetype is intended to be used inside a procedure archetype to enable more details to be captured.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"57F4466572EA03F10CB65888AD522DE1">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"07931DA4C3B5A782E449ED514C56F5BB">
+		["build_uid"] = <"6974622c-6bd1-4d92-96e5-fd9c9ebfb18b">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -84,6 +90,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

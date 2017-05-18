@@ -1,0 +1,5 @@
+D: Disease Modification
+P: Palliative
+A: Adjuvant
+C: Curative
+N: Neoadjuvant

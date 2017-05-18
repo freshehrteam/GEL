@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=01d16123-2b47-450a-8379-b4b271c32c7a)
 	openEHR-EHR-CLUSTER.prostate_cancer_pathology_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Ian McNicoll">
-		["email"] = <"ian@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics UK">
+		["email"] = <"ian@freshehr.com">
 		["date"] = <"2017-04-10">
 	>
 	details = <
@@ -20,14 +20,20 @@ description
 
 This cluster is intended to be used inside a Laboratory test observation.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["MD5-CAM-1.0.1"] = <"65269E94B7B2B80C8B29097B0C4B5023">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"BB14C537DF81296490905A1BBC30BF95">
+		["build_uid"] = <"a0530aad-f406-4469-b223-b13608ad9cb6">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -81,6 +87,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

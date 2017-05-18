@@ -141,7 +141,7 @@
     <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0">
-    <digest id="MD5-CAM-1.0.1">EDB6D92EFDFD48054FFCD2AAE4488B82</digest>
+    <digest id="MD5-CAM-1.0.1">A3A885984BB3A9B99C735BF1588A04AC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
     <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
@@ -150,7 +150,7 @@
     <digest id="MD5-CAM-1.0.1">C181B6C9E379899299B8FB6559E37388</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.care_plan_performance_status_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B1FEF3C226B4880AD23435DF5D5879E3</digest>
+    <digest id="MD5-CAM-1.0.1">AFB4E1A17EDA6CA290E2C57C060C5C52</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>

@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=1ab534bd-310e-4eac-b934-d9f2d797ed4e)
 	openEHR-EHR-CLUSTER.anatomical_side_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-04-11">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 This cluster is intended to be used inside an observation archetype, such as imaging examination result.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"CC-BY-SA 3.0">
-		["MD5-CAM-1.0.1"] = <"C8DCB41F419B6DDF05951BF06EA41F9E">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"63170E06D1E7041196ED82A64C024777">
+		["build_uid"] = <"0cce03b4-cf4b-4620-b8ca-f23f800f3df9">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -51,6 +57,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -78,7 +85,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Bilateral">
-					description = <"The observation or examination was performed on both sides of the body,">
+					description = <"The observation or examination was performed on both sides of the body.">
 				>
 				["at0006"] = <
 					text = <"Not applicable">

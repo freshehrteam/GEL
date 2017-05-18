@@ -184,7 +184,7 @@
           <Rule path="/items[at0046]/items[at0001]" name="Local sample Id" />
           <Rule path="/items[at0081]" max="0" />
         </Items>
-        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.gel_histopath_summary.v0" concept_name="Gel histopathology summary" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]" name="Histopathology summary" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.gel_histopath_summary.v0" concept_name="GEL histopathology summary" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]" name="Histopathology summary" />
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.gleason_score.v0" concept_name="Gleason Score" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]">
           <Rule path="/items[at0197]" max="0" />
         </Items>
@@ -501,39 +501,39 @@
     <digest id="MD5-CAM-1.0.1">910D849C4514BA7DB4D5812F30AF63D6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.anatomical_side_gel.v0">
-    <digest id="MD5-CAM-1.0.1">C8DCB41F419B6DDF05951BF06EA41F9E</digest>
+    <digest id="MD5-CAM-1.0.1">63170E06D1E7041196ED82A64C024777</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
     <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0">
-    <digest id="MD5-CAM-1.0.1">EDB6D92EFDFD48054FFCD2AAE4488B82</digest>
+    <digest id="MD5-CAM-1.0.1">A3A885984BB3A9B99C735BF1588A04AC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0">
-    <digest id="MD5-CAM-1.0.1">8836B3692492B166166A37FF72ED9A98</digest>
+    <digest id="MD5-CAM-1.0.1">E414D31FEE9894952C6115D9D735D7FE</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.specimen.v0">
     <digest id="MD5-CAM-1.0.1">328C511116FD83D7F25973284D8D9F60</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.gel_histopath_summary.v0">
-    <digest id="MD5-CAM-1.0.1">DE004F8750A2C2AF4F1B395341C8CEE7</digest>
+    <digest id="MD5-CAM-1.0.1">ACE13A08BA401FBB3438B0E3C1FBB9C0</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.gleason_score.v0">
-    <digest id="MD5-CAM-1.0.1">182F00999D269315F38A5D207E619654</digest>
+    <digest id="MD5-CAM-1.0.1">F561BC0D245364912E50D6D2425DB4F3</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tnm_stage_pathological.v0">
     <digest id="MD5-CAM-1.0.1">CB606048F1E8B7B39DC1C1F8CCEEDD97</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.prostate_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">65269E94B7B2B80C8B29097B0C4B5023</digest>
+    <digest id="MD5-CAM-1.0.1">BB14C537DF81296490905A1BBC30BF95</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cancer_diagnosis_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B74960FE20BC7C8EC8C0A2EA9B52475F</digest>
+    <digest id="MD5-CAM-1.0.1">224A986E05282545D614FF0C23F44F03</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
     <digest id="MD5-CAM-1.0.1">CEB460F240FB987B15C7C50655BC132D</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.genetic_result_gel.v0">
-    <digest id="MD5-CAM-1.0.1">50078C128E74A0534B23ED12C638FEA2</digest>
+    <digest id="MD5-CAM-1.0.1">88426F9E3C65501C458954C62DE09402</digest>
   </integrity_checks>
 </template>

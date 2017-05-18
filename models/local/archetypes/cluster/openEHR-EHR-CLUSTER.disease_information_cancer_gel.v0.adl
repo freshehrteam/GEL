@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=0e86ef5a-1ab4-40f6-b740-837bdf825008)
 	openEHR-EHR-CLUSTER.disease_information_cancer_gel.v0
 
 concept
@@ -8,25 +8,31 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-01-11">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording of disease type and disease subtype in the Genomics England Cancer dataset.">
-			use = <"Use to record disease type and subtype according to the Model Catalogue in the Genomics England cancer dataset. It is expected that the values for each of the two data points are populated from a local terminology reflecting the Model Catalogue https://gelmc.extge.co.uk/#/">
+			use = <"Use to record disease type and subtype according to the Model Catalogue in the Genomics England cancer dataset. It is expected that the values for each of the two data points are populated from a local terminology reflecting the Model Catalogue https://gelmc.extge.co.uk/#/.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"CC-BY-SA 3.0">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"2F411EFCB50A02541A0D9F6D4F1153A4">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"3CB4ACED4309D5E687FEC5D2AC759D86">
+		["build_uid"] = <"9e5a5934-cf48-4d05-81e0-505f5b3db155">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -69,7 +75,7 @@ definition
 							at0023, 	-- (ALL) Acute lymphoblastic leukaemia
 							at0024, 	-- (AML) Acute myeloid Leukaemia
 							at0025, 	-- Chronic lymphocytic leukaemia
-							at0026, 	-- Acinar cell carcinoma
+							at0026, 	-- Adnar cell carcinoma
 							at0027, 	-- Acral lentiginous
 							at0028, 	-- Adamantinoma of bone
 							at0029, 	-- Adenocarcinoma
@@ -255,7 +261,7 @@ definition
 							at0209, 	-- Teratoma (mature)
 							at0210, 	-- Teratoma differentiated
 							at0211, 	-- Teratoma undifferentiated
-							at0212, 	-- teratoma with malignant transformation
+							at0212, 	-- Teratoma with malignant transformation
 							at0213, 	-- Transitional cell carcinoma
 							at0214, 	-- Tubular / cribform
 							at0215, 	-- Undifferentiated carcinoma
@@ -272,6 +278,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -291,883 +298,883 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Adult glioma">
-					description = <"Adult Glioma">
+					description = <"Adult Glioma.">
 				>
 				["at0004"] = <
 					text = <"Bladder">
-					description = <"Bladder">
+					description = <"Bladder.">
 				>
 				["at0005"] = <
 					text = <"Breast">
-					description = <"Breast">
+					description = <"Breast.">
 				>
 				["at0006"] = <
 					text = <"Carcinoma of Unknown Primary">
-					description = <"Carcinoma of Unknown Primary">
+					description = <"Carcinoma of Unknown Primary.">
 				>
 				["at0007"] = <
 					text = <"Childhood">
-					description = <"Childhood">
+					description = <"Childhood.">
 				>
 				["at0008"] = <
 					text = <"Colorectal">
-					description = <"Colorectal">
+					description = <"Colorectal.">
 				>
 				["at0009"] = <
 					text = <"Endometrial carcinoma">
-					description = <"Endometrial Carcinoma">
+					description = <"Endometrial Carcinoma.">
 				>
 				["at0010"] = <
 					text = <"Haematology oncology">
-					description = <"Haematology Oncology">
+					description = <"Haematology Oncology.">
 				>
 				["at0011"] = <
 					text = <"Hepatopancreatobiliary">
-					description = <"Hepatopancreatobiliary">
+					description = <"Hepatopancreatobiliary.">
 				>
 				["at0012"] = <
 					text = <"Lung">
-					description = <"Lung">
+					description = <"Lung.">
 				>
 				["at0013"] = <
 					text = <"Malignant melanoma">
-					description = <"Malignant Melanoma">
+					description = <"Malignant Melanoma.">
 				>
 				["at0014"] = <
 					text = <"Nasopharyngeal">
-					description = <"Nasopharyngeal">
+					description = <"Nasopharyngeal.">
 				>
 				["at0015"] = <
 					text = <"Oral oropharyngeal">
-					description = <"Oral or Oropharyngeal">
+					description = <"Oral or Oropharyngeal.">
 				>
 				["at0016"] = <
 					text = <"Ovarian">
-					description = <"Ovarian">
+					description = <"Ovarian.">
 				>
 				["at0017"] = <
 					text = <"Prostate">
-					description = <"Prostate">
+					description = <"Prostate.">
 				>
 				["at0018"] = <
 					text = <"Renal">
-					description = <"Renal">
+					description = <"Renal.">
 				>
 				["at0019"] = <
 					text = <"Sarcoma">
-					description = <"Sarcoma">
+					description = <"Sarcoma.">
 				>
 				["at0020"] = <
 					text = <"Sinonasal">
-					description = <"Sinonasal">
+					description = <"Sinonasal.">
 				>
 				["at0021"] = <
 					text = <"Testicular germ cell tumours">
-					description = <"Testicular Germ Cell Tumours">
+					description = <"Testicular Germ Cell Tumours.">
 				>
 				["at0022"] = <
 					text = <"Upper gastrointestinal">
-					description = <"Upper Gastrointestinal">
+					description = <"Upper Gastrointestinal.">
 				>
 				["at0023"] = <
 					text = <"(ALL) Acute lymphoblastic leukaemia">
-					description = <"*">
+					description = <"(ALL) Acute lymphoblastic leukaemia.">
 				>
 				["at0024"] = <
 					text = <"(AML) Acute myeloid Leukaemia">
-					description = <"*">
+					description = <"(AML) Acute myeloid Leukaemia.">
 				>
 				["at0025"] = <
 					text = <"Chronic lymphocytic leukaemia">
-					description = <"*">
+					description = <"Chronic lymphocytic leukaemia.">
 				>
 				["at0026"] = <
-					text = <"Acinar cell carcinoma">
-					description = <"*">
+					text = <"Adnar cell carcinoma">
+					description = <"Adnar cell carcinoma.">
 				>
 				["at0027"] = <
 					text = <"Acral lentiginous">
-					description = <"*">
+					description = <"Acral lentiginous.">
 				>
 				["at0028"] = <
 					text = <"Adamantinoma of bone">
-					description = <"*">
+					description = <"Adamantinoma of bone.">
 				>
 				["at0029"] = <
 					text = <"Adenocarcinoma">
-					description = <"*">
+					description = <"Adenocarcinoma.">
 				>
 				["at0030"] = <
 					text = <"Adenoid cystic carcinoma">
-					description = <"*">
+					description = <"Adenoid cystic carcinoma.">
 				>
 				["at0031"] = <
 					text = <"Alveolar soft part sarcoma">
-					description = <"*">
+					description = <"Alveolar soft part sarcoma.">
 				>
 				["at0032"] = <
 					text = <"Anaplastic astrocytoma">
-					description = <"*">
+					description = <"Anaplastic astrocytoma.">
 				>
 				["at0033"] = <
 					text = <"Anaplastic ependymoma">
-					description = <"*">
+					description = <"Anaplastic ependymoma.">
 				>
 				["at0034"] = <
 					text = <"Anaplastic ganglioglioma">
-					description = <"*">
+					description = <"Anaplastic ganglioglioma.">
 				>
 				["at0035"] = <
 					text = <"Anaplastic oligodendroglioma">
-					description = <"*">
+					description = <"Anaplastic oligodendroglioma.">
 				>
 				["at0036"] = <
 					text = <"Anaplastic oligoastrocytoma">
-					description = <"*">
+					description = <"Anaplastic oligoastrocytoma.">
 				>
 				["at0037"] = <
 					text = <"Angiomatoid fibrous histiocytoma">
-					description = <"*">
+					description = <"Angiomatoid fibrous histiocytoma.">
 				>
 				["at0038"] = <
 					text = <"Angiosarcoma">
-					description = <"*">
+					description = <"Angiosarcoma.">
 				>
 				["at0039"] = <
 					text = <"Anorectal mucosal melanoma">
-					description = <"*">
+					description = <"Anorectal mucosal melanoma.">
 				>
 				["at0040"] = <
 					text = <"Atypical teratoid rhabdoid tumours">
-					description = <"*">
+					description = <"Atypical teratoid rhabdoid tumours.">
 				>
 				["at0041"] = <
 					text = <"Betel nut-induced oral cancer">
-					description = <"*">
+					description = <"Betel nut-induced oral cancer.">
 				>
 				["at0042"] = <
 					text = <"Biliary adenocarcinoma">
-					description = <"*">
+					description = <"Biliary adenocarcinoma.">
 				>
 				["at0043"] = <
 					text = <"Biliary adenosquamous carcinoma">
-					description = <"*">
+					description = <"Biliary adenosquamous carcinoma.">
 				>
 				["at0044"] = <
 					text = <"Biliary squamous cell carcinoma">
-					description = <"*">
+					description = <"Biliary squamous cell carcinoma.">
 				>
 				["at0045"] = <
 					text = <"Burkitt lymphoma">
-					description = <"*">
+					description = <"Burkitt lymphoma.">
 				>
 				["at0046"] = <
 					text = <"Cancer not confirmed (pathology indeterminate)">
-					description = <"*">
+					description = <"Cancer not confirmed (pathology indeterminate).">
 				>
 				["at0047"] = <
 					text = <"Pathology indeterminate – cancer NOS (non-carcinoma, lymphoma , sarcoma etc)">
-					description = <"*">
+					description = <"Pathology indeterminate – cancer NOS (non-carcinoma, lymphoma , sarcoma etc).">
 				>
 				["at0048"] = <
 					text = <"Pathology indeterminate – carcinoma  NOS (Not otherwise specified)">
-					description = <"*">
+					description = <"Pathology indeterminate – carcinoma  NOS (Not otherwise specified).">
 				>
 				["at0049"] = <
 					text = <"Carcinosarcoma">
-					description = <"*">
+					description = <"Carcinosarcoma.">
 				>
 				["at0050"] = <
 					text = <"Central neurocytoma">
-					description = <"*">
+					description = <"Central neurocytoma.">
 				>
 				["at0051"] = <
 					text = <"Childhood other">
-					description = <"*">
+					description = <"Childhood other.">
 				>
 				["at0052"] = <
 					text = <"Cholangiocarcinoma">
-					description = <"*">
+					description = <"Cholangiocarcinoma.">
 				>
 				["at0053"] = <
 					text = <"Chordoma">
-					description = <"*">
+					description = <"Chordoma.">
 				>
 				["at0054"] = <
 					text = <"Choriocarcinoma">
-					description = <"*">
+					description = <"Choriocarcinoma.">
 				>
 				["at0055"] = <
 					text = <"Chromophobe">
-					description = <"*">
+					description = <"Chromophobe.">
 				>
 				["at0056"] = <
 					text = <"Chronic myeloid leukaemia">
-					description = <"*">
+					description = <"Chronic myeloid leukaemia.">
 				>
 				["at0057"] = <
 					text = <"Classical seminoma">
-					description = <"*">
+					description = <"Classical seminoma.">
 				>
 				["at0058"] = <
 					text = <"Clear cell">
-					description = <"*">
+					description = <"Clear cell.">
 				>
 				["at0059"] = <
 					text = <"Clear cell adenocarcinoma">
-					description = <"*">
+					description = <"Clear cell adenocarcinoma.">
 				>
 				["at0060"] = <
 					text = <"CNS primitive neuroectodermal tumors">
-					description = <"*">
+					description = <"CNS primitive neuroectodermal tumors.">
 				>
 				["at0061"] = <
 					text = <"Collecting duct">
-					description = <"*">
+					description = <"Collecting duct.">
 				>
 				["at0062"] = <
 					text = <"Combined HCC-cholangiocarcinoma">
-					description = <"*">
+					description = <"Combined HCC-cholangiocarcinoma.">
 				>
 				["at0063"] = <
 					text = <"Conjunctival melanoma">
-					description = <"*">
+					description = <"Conjunctival melanoma.">
 				>
 				["at0064"] = <
 					text = <"Conventional chondrosarcoma">
-					description = <"*">
+					description = <"Conventional chondrosarcoma.">
 				>
 				["at0065"] = <
 					text = <"Dedifferentiated chondrosarcoma">
-					description = <"*">
+					description = <"Dedifferentiated chondrosarcoma.">
 				>
 				["at0066"] = <
 					text = <"Dedifferentiated liposarcoma">
-					description = <"*">
+					description = <"Dedifferentiated liposarcoma.">
 				>
 				["at0067"] = <
 					text = <"Dermal sarcoma">
-					description = <"*">
+					description = <"Dermal sarcoma.">
 				>
 				["at0068"] = <
 					text = <"Desmoplastic melanoma">
-					description = <"*">
+					description = <"Desmoplastic melanoma.">
 				>
 				["at0069"] = <
 					text = <"Desmoplastic round cell sarcoma">
-					description = <"*">
+					description = <"Desmoplastic round cell sarcoma.">
 				>
 				["at0070"] = <
 					text = <"Diffuse astrocytoma">
-					description = <"*">
+					description = <"Diffuse astrocytoma.">
 				>
 				["at0071"] = <
 					text = <"Diffuse large B-cell lymphoma">
-					description = <"*">
+					description = <"Diffuse large B-cell lymphoma.">
 				>
 				["at0072"] = <
 					text = <"Ductal">
-					description = <"*">
+					description = <"Ductal.">
 				>
 				["at0073"] = <
 					text = <"Dysgerminomas">
-					description = <"*">
+					description = <"Dysgerminomas.">
 				>
 				["at0074"] = <
 					text = <"Embryonal carcinoma">
-					description = <"*">
+					description = <"Embryonal carcinoma.">
 				>
 				["at0075"] = <
 					text = <"Embryonal tumour with multilayered rosettes">
-					description = <"*">
+					description = <"Embryonal tumour with multilayered rosettes.">
 				>
 				["at0076"] = <
 					text = <"Endodermal sinus">
-					description = <"*">
+					description = <"Endodermal sinus.">
 				>
 				["at0077"] = <
 					text = <"Endometrioid adenocarcinoma">
-					description = <"*">
+					description = <"Endometrioid adenocarcinoma.">
 				>
 				["at0078"] = <
 					text = <"Ependymoma">
-					description = <"*">
+					description = <"Ependymoma.">
 				>
 				["at0079"] = <
 					text = <"Epithelioid angiosarcoma">
-					description = <"*">
+					description = <"Epithelioid angiosarcoma.">
 				>
 				["at0080"] = <
 					text = <"Extracranial rhabdoid tumour">
-					description = <"*">
+					description = <"Extracranial rhabdoid tumour.">
 				>
 				["at0081"] = <
 					text = <"Extraskeletal chondrosarcoma">
-					description = <"*">
+					description = <"Extraskeletal chondrosarcoma.">
 				>
 				["at0082"] = <
 					text = <"Extraskeletal chordoma">
-					description = <"*">
+					description = <"Extraskeletal chordoma.">
 				>
 				["at0083"] = <
 					text = <"Extraventricular neurocytoma">
-					description = <"*">
+					description = <"Extraventricular neurocytoma.">
 				>
 				["at0084"] = <
 					text = <"Fibrillary astrocytoma">
-					description = <"*">
+					description = <"Fibrillary astrocytoma.">
 				>
 				["at0085"] = <
 					text = <"Fibrolamellar HCC">
-					description = <"*">
+					description = <"Fibrolamellar HCC.">
 				>
 				["at0086"] = <
 					text = <"Gangliocytoma">
-					description = <"*">
+					description = <"Gangliocytoma.">
 				>
 				["at0087"] = <
 					text = <"Ganglioglioma">
-					description = <"*">
+					description = <"Ganglioglioma.">
 				>
 				["at0088"] = <
 					text = <"Gastric adenocarcinoma">
-					description = <"*">
+					description = <"Gastric adenocarcinoma.">
 				>
 				["at0089"] = <
 					text = <"Gastric carcinoma with lymphoid stroma">
-					description = <"*">
+					description = <"Gastric carcinoma with lymphoid stroma.">
 				>
 				["at0090"] = <
 					text = <"Gemistocytic astrocytoma">
-					description = <"*">
+					description = <"Gemistocytic astrocytoma.">
 				>
 				["at0091"] = <
 					text = <"Genital mucosal melanoma">
-					description = <"*">
+					description = <"Genital mucosal melanoma.">
 				>
 				["at0092"] = <
 					text = <"Germ cell tumour">
-					description = <"*">
+					description = <"Germ cell tumour.">
 				>
 				["at0093"] = <
 					text = <"Germinoma">
-					description = <"*">
+					description = <"Germinoma.">
 				>
 				["at0094"] = <
 					text = <"Giant cell glioblastoma">
-					description = <"*">
+					description = <"Giant cell glioblastoma.">
 				>
 				["at0095"] = <
 					text = <"Glioblastoma">
-					description = <"*">
+					description = <"Glioblastoma.">
 				>
 				["at0096"] = <
 					text = <"Gliomatosis cerebri">
-					description = <"*">
+					description = <"Gliomatosis cerebri.">
 				>
 				["at0097"] = <
 					text = <"Gliosarcoma">
-					description = <"*">
+					description = <"Gliosarcoma.">
 				>
 				["at0098"] = <
 					text = <"Gnathic bone">
-					description = <"*">
+					description = <"Gnathic bone.">
 				>
 				["at0099"] = <
 					text = <"Granulosa cell tumour">
-					description = <"*">
+					description = <"Granulosa cell tumour.">
 				>
 				["at0100"] = <
 					text = <"Granulosa theca">
-					description = <"*">
+					description = <"Granulosa theca.">
 				>
 				["at0101"] = <
 					text = <"Haematological malignancy unclassified">
-					description = <"*">
+					description = <"Haematological malignancy unclassified.">
 				>
 				["at0102"] = <
 					text = <"HCC acinar">
-					description = <"*">
+					description = <"HCC acinar.">
 				>
 				["at0103"] = <
 					text = <"HCC compact">
-					description = <"*">
+					description = <"HCC compact.">
 				>
 				["at0104"] = <
 					text = <"HCC trabecular">
-					description = <"*">
+					description = <"HCC trabecular.">
 				>
 				["at0105"] = <
 					text = <"Hepatocellular carcinoma">
-					description = <"*">
+					description = <"Hepatocellular carcinoma.">
 				>
 				["at0106"] = <
 					text = <"Hepatoid adenocarcinoma">
-					description = <"*">
+					description = <"Hepatoid adenocarcinoma.">
 				>
 				["at0107"] = <
 					text = <"High grade endometrial stromal sarcoma">
-					description = <"*">
+					description = <"High grade endometrial stromal sarcoma.">
 				>
 				["at0108"] = <
 					text = <"High grade lymphoma NOS">
-					description = <"*">
+					description = <"High grade lymphoma NOS.">
 				>
 				["at0109"] = <
 					text = <"High grade serous carcinoma">
-					description = <"*">
+					description = <"High grade serous carcinoma.">
 				>
 				["at0110"] = <
 					text = <"HPV negative oropharyngeal cancer">
-					description = <"*">
+					description = <"HPV negative oropharyngeal cancer.">
 				>
 				["at0111"] = <
 					text = <"HPV positive oropharyngeal cancer">
-					description = <"*">
+					description = <"HPV positive oropharyngeal cancer.">
 				>
 				["at0112"] = <
 					text = <"Intimal sarcoma">
-					description = <"*">
+					description = <"Intimal sarcoma.">
 				>
 				["at0113"] = <
 					text = <"Inverted papilloma">
-					description = <"*">
+					description = <"Inverted papilloma.">
 				>
 				["at0114"] = <
 					text = <"IPMN with invasive carcinoma">
-					description = <"*">
+					description = <"IPMN with invasive carcinoma.">
 				>
 				["at0115"] = <
 					text = <"Large cell">
-					description = <"*">
+					description = <"Large cell.">
 				>
 				["at0116"] = <
 					text = <"Leiomyosarcoma from all sites">
-					description = <"*">
+					description = <"Leiomyosarcoma from all sites.">
 				>
 				["at0117"] = <
 					text = <"Lentigo maligna">
-					description = <"*">
+					description = <"Lentigo maligna.">
 				>
 				["at0118"] = <
 					text = <"Leydig cell tumour">
-					description = <"*">
+					description = <"Leydig cell tumour.">
 				>
 				["at0119"] = <
 					text = <"Lobular">
-					description = <"*">
+					description = <"Lobular.">
 				>
 				["at0120"] = <
 					text = <"Low grade endometrial stromal sarcoma'">
-					description = <"*">
+					description = <"Low grade endometrial stromal sarcoma'.">
 				>
 				["at0121"] = <
 					text = <"Low grade fibromyxoid sarcoma">
-					description = <"*">
+					description = <"Low grade fibromyxoid sarcoma.">
 				>
 				["at0122"] = <
 					text = <"Low grade serous adenocarcinoma">
-					description = <"*">
+					description = <"Low grade serous adenocarcinoma.">
 				>
 				["at0123"] = <
 					text = <"Lymphoepithelioma-like HCC">
-					description = <"*">
+					description = <"Lymphoepithelioma-like HCC.">
 				>
 				["at0124"] = <
 					text = <"Malignant peripheral nerve sheath tumour">
-					description = <"*">
+					description = <"Malignant peripheral nerve sheath tumour.">
 				>
 				["at0125"] = <
 					text = <"Malignant rhabdoid tumour">
-					description = <"*">
+					description = <"Malignant rhabdoid tumour.">
 				>
 				["at0126"] = <
 					text = <"MCN with invasive carcinoma">
-					description = <"*">
+					description = <"MCN with invasive carcinoma.">
 				>
 				["at0127"] = <
 					text = <"Mediastinal B-cell lymphoma">
-					description = <"*">
+					description = <"Mediastinal B-cell lymphoma.">
 				>
 				["at0128"] = <
 					text = <"Medullary">
-					description = <"*">
+					description = <"Medullary.">
 				>
 				["at0129"] = <
 					text = <"Medulloblastoma (CLA)">
-					description = <"*">
+					description = <"Medulloblastoma (CLA).">
 				>
 				["at0130"] = <
 					text = <"Medulloblastoma (DN)">
-					description = <"*">
+					description = <"Medulloblastoma (DN).">
 				>
 				["at0131"] = <
 					text = <"Medulloblastoma (LCA)">
-					description = <"*">
+					description = <"Medulloblastoma (LCA).">
 				>
 				["at0132"] = <
 					text = <"Medulloblastoma (MBEN)">
-					description = <"*">
+					description = <"Medulloblastoma (MBEN).">
 				>
 				["at0133"] = <
 					text = <"Medulloblastoma (medullomyoblastoma)">
-					description = <"*">
+					description = <"Medulloblastoma (medullomyoblastoma).">
 				>
 				["at0134"] = <
 					text = <"Medulloblastoma (melanotic)">
-					description = <"*">
+					description = <"Medulloblastoma (melanotic).">
 				>
 				["at0135"] = <
 					text = <"Medulloblastoma (NOS)">
-					description = <"*">
+					description = <"Medulloblastoma (NOS).">
 				>
 				["at0136"] = <
 					text = <"Melanoma">
-					description = <"*">
+					description = <"Melanoma.">
 				>
 				["at0137"] = <
 					text = <"Mesenchymal">
-					description = <"*">
+					description = <"Mesenchymal.">
 				>
 				["at0138"] = <
 					text = <"Mesothelioma">
-					description = <"*">
+					description = <"Mesothelioma.">
 				>
 				["at0139"] = <
 					text = <"Mixed germ cell tumour">
-					description = <"*">
+					description = <"Mixed germ cell tumour.">
 				>
 				["at0140"] = <
 					text = <"Mixed tumour type">
-					description = <"*">
+					description = <"Mixed tumour type.">
 				>
 				["at0141"] = <
 					text = <"Mucinous carcinoma">
-					description = <"*">
+					description = <"Mucinous carcinoma.">
 				>
 				["at0142"] = <
 					text = <"Multiple myeloma">
-					description = <"*">
+					description = <"Multiple myeloma.">
 				>
 				["at0143"] = <
 					text = <"Myelodysplastic syndrome (high risk)">
-					description = <"*">
+					description = <"Myelodysplastic syndrome (high risk).">
 				>
 				["at0144"] = <
 					text = <"Myoepithelioma / Malignant myoepithelioma">
-					description = <"*">
+					description = <"Myoepithelioma / Malignant myoepithelioma.">
 				>
 				["at0145"] = <
 					text = <"Myxofibrosarcoma">
-					description = <"*">
+					description = <"Myxofibrosarcoma.">
 				>
 				["at0146"] = <
 					text = <"Myxoid liposarcoma">
-					description = <"*">
+					description = <"Myxoid liposarcoma.">
 				>
 				["at0147"] = <
 					text = <"Myxoinflammatory fibroblastic sarcoma">
-					description = <"*">
+					description = <"Myxoinflammatory fibroblastic sarcoma.">
 				>
 				["at0148"] = <
 					text = <"Myxopapillary ependymoma">
-					description = <"*">
+					description = <"Myxopapillary ependymoma.">
 				>
 				["at0149"] = <
 					text = <"Nasopharyngeal carcinoma Type I">
-					description = <"*">
+					description = <"Nasopharyngeal carcinoma Type I.">
 				>
 				["at0150"] = <
 					text = <"Nasopharyngeal carcinoma Type II">
-					description = <"*">
+					description = <"Nasopharyngeal carcinoma Type II.">
 				>
 				["at0151"] = <
 					text = <"Nasopharyngeal carcinoma Type III">
-					description = <"*">
+					description = <"Nasopharyngeal carcinoma Type III.">
 				>
 				["at0152"] = <
 					text = <"Neuroblastoma (INPC)">
-					description = <"*">
+					description = <"Neuroblastoma (INPC).">
 				>
 				["at0153"] = <
 					text = <"Neuroblastoma (NOS)">
-					description = <"*">
+					description = <"Neuroblastoma (NOS).">
 				>
 				["at0154"] = <
 					text = <"Neuroendocrine">
-					description = <"*">
+					description = <"Neuroendocrine.">
 				>
 				["at0155"] = <
 					text = <"Neuroendocrine carcinoma">
-					description = <"*">
+					description = <"Neuroendocrine carcinoma.">
 				>
 				["at0156"] = <
 					text = <"Nodular">
-					description = <"*">
+					description = <"Nodular.">
 				>
 				["at0157"] = <
 					text = <"Non specified renal carcinoma">
-					description = <"*">
+					description = <"Non specified renal carcinoma.">
 				>
 				["at0158"] = <
 					text = <"Not available">
-					description = <"*">
+					description = <"Not available.">
 				>
 				["at0159"] = <
 					text = <"Oligoastrocytoma">
-					description = <"*">
+					description = <"Oligoastrocytoma.">
 				>
 				["at0160"] = <
 					text = <"Oligodendroglioma">
-					description = <"*">
+					description = <"Oligodendroglioma.">
 				>
 				["at0161"] = <
 					text = <"Oncocytic">
-					description = <"*">
+					description = <"Oncocytic.">
 				>
 				["at0162"] = <
 					text = <"Orbital">
-					description = <"*">
+					description = <"Orbital.">
 				>
 				["at0163"] = <
 					text = <"Oromucosal melanoma">
-					description = <"*">
+					description = <"Oromucosal melanoma.">
 				>
 				["at0164"] = <
 					text = <"Ossifying fibromyxoid tumour">
-					description = <"*">
+					description = <"Ossifying fibromyxoid tumour.">
 				>
 				["at0165"] = <
 					text = <"Other">
-					description = <"*">
+					description = <"Other.">
 				>
 				["at0166"] = <
 					text = <"Paediatric malignant glioma">
-					description = <"*">
+					description = <"Paediatric malignant glioma.">
 				>
 				["at0167"] = <
 					text = <"Pancreatic adenocarcinoma">
-					description = <"*">
+					description = <"Pancreatic adenocarcinoma.">
 				>
 				["at0168"] = <
 					text = <"Pancreatic adenosquamous carcinoma">
-					description = <"*">
+					description = <"Pancreatic adenosquamous carcinoma.">
 				>
 				["at0169"] = <
 					text = <"Pancreatic neuroendocrine carcinoma">
-					description = <"*">
+					description = <"Pancreatic neuroendocrine carcinoma.">
 				>
 				["at0170"] = <
 					text = <"Papillary">
-					description = <"*">
+					description = <"Papillary.">
 				>
 				["at0171"] = <
 					text = <"Papillary tumour of the pineal region">
-					description = <"*">
+					description = <"Papillary tumour of the pineal region.">
 				>
 				["at0172"] = <
 					text = <"Papillary Type 1">
-					description = <"*">
+					description = <"Papillary Type 1.">
 				>
 				["at0173"] = <
 					text = <"Papillary Type 2">
-					description = <"*">
+					description = <"Papillary Type 2.">
 				>
 				["at0174"] = <
 					text = <"Pilocytic astrocytoma">
-					description = <"*">
+					description = <"Pilocytic astrocytoma.">
 				>
 				["at0175"] = <
 					text = <"Pilomyxoid astrocytoma">
-					description = <"*">
+					description = <"Pilomyxoid astrocytoma.">
 				>
 				["at0176"] = <
 					text = <"Pineal tumour of intermediate differentiation">
-					description = <"*">
+					description = <"Pineal tumour of intermediate differentiation.">
 				>
 				["at0177"] = <
 					text = <"Pineoblastoma">
-					description = <"*">
+					description = <"Pineoblastoma.">
 				>
 				["at0178"] = <
 					text = <"Pineocytoma">
-					description = <"*">
+					description = <"Pineocytoma.">
 				>
 				["at0179"] = <
 					text = <"Pleomorphic sarcoma">
-					description = <"*">
+					description = <"Pleomorphic sarcoma.">
 				>
 				["at0180"] = <
 					text = <"Pleomorphic xanthoastrocytoma">
-					description = <"*">
+					description = <"Pleomorphic xanthoastrocytoma.">
 				>
 				["at0181"] = <
 					text = <"Poorly cohesive including signet ring cell type">
-					description = <"*">
+					description = <"Poorly cohesive including signet ring cell type.">
 				>
 				["at0182"] = <
 					text = <"Primary CNS">
-					description = <"*">
+					description = <"Primary CNS.">
 				>
 				["at0183"] = <
 					text = <"Primary conventional osteosarcoma">
-					description = <"*">
+					description = <"Primary conventional osteosarcoma.">
 				>
 				["at0184"] = <
 					text = <"Primitive neuroectodermal tumour">
-					description = <"*">
+					description = <"Primitive neuroectodermal tumour.">
 				>
 				["at0185"] = <
 					text = <"Protoplasmic astrocytoma">
-					description = <"*">
+					description = <"Protoplasmic astrocytoma.">
 				>
 				["at0186"] = <
 					text = <"Pseudomyogenic haemangioemdothelioma">
-					description = <"*">
+					description = <"Pseudomyogenic haemangioemdothelioma.">
 				>
 				["at0187"] = <
 					text = <"Rare sarcoma entities">
-					description = <"*">
+					description = <"Rare sarcoma entities.">
 				>
 				["at0188"] = <
 					text = <"Rhabdomyosarcoma">
-					description = <"*">
+					description = <"Rhabdomyosarcoma.">
 				>
 				["at0189"] = <
 					text = <"Sarcoma NOS">
-					description = <"*">
+					description = <"Sarcoma NOS.">
 				>
 				["at0190"] = <
 					text = <"Sarcomatoid carcinoma">
-					description = <"*">
+					description = <"Sarcomatoid carcinoma.">
 				>
 				["at0191"] = <
 					text = <"Sarcomatoid HCC">
-					description = <"*">
+					description = <"Sarcomatoid HCC.">
 				>
 				["at0192"] = <
 					text = <"Schirrous HCC">
-					description = <"*">
+					description = <"Schirrous HCC.">
 				>
 				["at0193"] = <
 					text = <"Sclerosing epithelioid fibrosarcoma">
-					description = <"*">
+					description = <"Sclerosing epithelioid fibrosarcoma.">
 				>
 				["at0194"] = <
 					text = <"Serous carcinoma">
-					description = <"*">
+					description = <"Serous carcinoma.">
 				>
 				["at0195"] = <
 					text = <"Serous cystadenocarcinoma">
-					description = <"*">
+					description = <"Serous cystadenocarcinoma.">
 				>
 				["at0196"] = <
 					text = <"Sertoli cell tumour">
-					description = <"*">
+					description = <"Sertoli cell tumour.">
 				>
 				["at0197"] = <
 					text = <"Sertoli-Leydig">
-					description = <"*">
+					description = <"Sertoli-Leydig.">
 				>
 				["at0198"] = <
 					text = <"Small cell">
-					description = <"*">
+					description = <"Small cell.">
 				>
 				["at0199"] = <
 					text = <"Small cell carcinoma (including hypercalcaemic type)">
-					description = <"*">
+					description = <"Small cell carcinoma (including hypercalcaemic type).">
 				>
 				["at0200"] = <
 					text = <"Spermatocytic Seminoma">
-					description = <"*">
+					description = <"Spermatocytic Seminoma.">
 				>
 				["at0201"] = <
 					text = <"Spitz">
-					description = <"*">
+					description = <"Spitz.">
 				>
 				["at0202"] = <
 					text = <"Squamous cell">
-					description = <"*">
+					description = <"Squamous cell.">
 				>
 				["at0203"] = <
 					text = <"Stromal tumour">
-					description = <"*">
+					description = <"Stromal tumour.">
 				>
 				["at0204"] = <
 					text = <"Subependymal giant cell astrocytoma">
-					description = <"*">
+					description = <"Subependymal giant cell astrocytoma.">
 				>
 				["at0205"] = <
 					text = <"Subependymoma">
-					description = <"*">
+					description = <"Subependymoma.">
 				>
 				["at0206"] = <
 					text = <"Superficial spreading">
-					description = <"*">
+					description = <"Superficial spreading.">
 				>
 				["at0207"] = <
 					text = <"Synovial sarcoma - monophasic and biphasic">
-					description = <"*">
+					description = <"Synovial sarcoma - monophasic and biphasic.">
 				>
 				["at0208"] = <
 					text = <"Teratoma (immature)">
-					description = <"*">
+					description = <"Teratoma (immature).">
 				>
 				["at0209"] = <
 					text = <"Teratoma (mature)">
-					description = <"*">
+					description = <"Teratoma (mature).">
 				>
 				["at0210"] = <
 					text = <"Teratoma differentiated">
-					description = <"*">
+					description = <"Teratoma differentiated.">
 				>
 				["at0211"] = <
 					text = <"Teratoma undifferentiated">
-					description = <"*">
+					description = <"Teratoma undifferentiated.">
 				>
 				["at0212"] = <
-					text = <"teratoma with malignant transformation">
-					description = <"*">
+					text = <"Teratoma with malignant transformation">
+					description = <"Teratoma with malignant transformation.">
 				>
 				["at0213"] = <
 					text = <"Transitional cell carcinoma">
-					description = <"*">
+					description = <"Transitional cell carcinoma.">
 				>
 				["at0214"] = <
 					text = <"Tubular / cribform">
-					description = <"*">
+					description = <"Tubular / cribform.">
 				>
 				["at0215"] = <
 					text = <"Undifferentiated carcinoma">
-					description = <"*">
+					description = <"Undifferentiated carcinoma.">
 				>
 				["at0216"] = <
 					text = <"Undifferentiated HCC">
-					description = <"*">
+					description = <"Undifferentiated HCC.">
 				>
 				["at0217"] = <
 					text = <"Undifferentiated uterine sarcoma">
-					description = <"*">
+					description = <"Undifferentiated uterine sarcoma.">
 				>
 				["at0218"] = <
 					text = <"Unknown">
-					description = <"*">
+					description = <"Unknown.">
 				>
 				["at0219"] = <
 					text = <"Urothelial (in situ)">
-					description = <"*">
+					description = <"Urothelial (in situ).">
 				>
 				["at0220"] = <
 					text = <"Urothelial (invasive)">
-					description = <"*">
+					description = <"Urothelial (invasive).">
 				>
 				["at0221"] = <
 					text = <"Uveal melanoma">
-					description = <"*">
+					description = <"Uveal melanoma.">
 				>
 				["at0222"] = <
 					text = <"Yolk sac tumour">
-					description = <"*">
+					description = <"Yolk sac tumour.">
 				>
 			>
 		>
