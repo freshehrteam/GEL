@@ -152,8 +152,8 @@
         <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_order_summary.v0" concept_name="Medication course summary" path="/activities[at0001]/description[at0002]/items[at0166]" hide_on_form="true">
           <Rule path="/items[at0001]" max="0" />
           <Rule path="/items[at0002]" max="0" />
-          <Rule path="/items[at0002]" max="1" clone="true" name="Date first authorised" />
           <Rule path="/items[at0002]" max="1" clone="true" name="Date discontinued" />
+          <Rule path="/items[at0002]" max="1" clone="true" name="Date first authorised" />
         </Items>
       </Item>
     </Content>
@@ -215,6 +215,7 @@
           <Rule path="/description[at0001]/items[at0058]" max="0" />
           <Rule path="/description[at0001]/items[at0063]" max="0" />
           <Rule path="/description[at0001]/items[at0048]" max="0" />
+          <Rule path="/description[at0001]/items[at0069]" max="0" />
           <Rule path="/description[at0001]/items[at0006]" max="0" />
           <Rule path="/description[at0001]/items[at0066]" name="Start date" />
           <Rule path="/description[at0001]/items[at0060]" name="End date" />
@@ -236,6 +237,7 @@
           <Rule path="/description[at0001]/items[at0058]" max="0" />
           <Rule path="/description[at0001]/items[at0063]" max="0" />
           <Rule path="/description[at0001]/items[at0048]" max="0" />
+          <Rule path="/description[at0001]/items[at0069]" max="0" />
           <Rule path="/description[at0001]/items[at0006]" max="0" />
           <Rule path="/description[at0001]/items[at0066]" name="Start date" />
           <Rule path="/description[at0001]/items[at0060]" name="End date" />

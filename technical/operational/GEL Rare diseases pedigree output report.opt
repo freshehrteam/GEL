@@ -4305,7 +4305,7 @@ Note: More data elements will be needed in future to record detailed genetic mar
                         <lower>1</lower>
                         <upper>1</upper>
                       </existence>
-                      <children xsi:type="ARCHETYPE_SLOT">
+                      <children xsi:type="C_ARCHETYPE_ROOT">
                         <rm_type_name>CLUSTER</rm_type_name>
                         <occurrences>
                           <lower_included>true</lower_included>
@@ -4313,26 +4313,266 @@ Note: More data elements will be needed in future to record detailed genetic mar
                           <upper_unbounded>true</upper_unbounded>
                           <lower>0</lower>
                         </occurrences>
-                        <node_id>at0048</node_id>
-                        <includes>
-                          <expression xsi:type="EXPR_BINARY_OPERATOR">
-                            <type>Boolean</type>
-                            <operator>2007</operator>
-                            <precedence_overridden>false</precedence_overridden>
-                            <left_operand xsi:type="EXPR_LEAF">
-                              <type>String</type>
-                              <item xsi:type="xsd:string">archetype_id/value</item>
-                              <reference_type>attribute</reference_type>
-                            </left_operand>
-                            <right_operand xsi:type="EXPR_LEAF">
-                              <type>C_STRING</type>
-                              <item xsi:type="C_STRING">
-                                <pattern>openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1</pattern>
-                              </item>
-                              <reference_type>constraint</reference_type>
-                            </right_operand>
-                          </expression>
-                        </includes>
+                        <node_id>at0000</node_id>
+                        <attributes xsi:type="C_MULTIPLE_ATTRIBUTE">
+                          <rm_attribute_name>items</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>1</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>ELEMENT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>0</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id>at0003</node_id>
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>value</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>DV_TEXT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                  <rm_attribute_name>value</rm_attribute_name>
+                                  <existence>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>1</lower>
+                                    <upper>1</upper>
+                                  </existence>
+                                  <children xsi:type="C_PRIMITIVE_OBJECT">
+                                    <rm_type_name>STRING</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <upper_included>true</upper_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>false</upper_unbounded>
+                                      <lower>1</lower>
+                                      <upper>1</upper>
+                                    </occurrences>
+                                    <node_id />
+                                    <item xsi:type="C_STRING">
+                                      <list>D Mixed: White and Black Caribbean</list>
+                                      <list>E Mixed: White and Black African</list>
+                                      <list>F Mixed: White and Asian</list>
+                                      <list>G Mixed: Any other mixed background</list>
+                                      <list>A White: British</list>
+                                      <list>B White: Irish</list>
+                                      <list>C White: Any other White background</list>
+                                      <list>L Asian or Asian British: Any other Asian background</list>
+                                      <list>M Black or Black British: Caribbean</list>
+                                      <list>N Black or Black British: African</list>
+                                      <list>H Asian or Asian British: Indian</list>
+                                      <list>J Asian or Asian British: Pakistani</list>
+                                      <list>K Asian or Asian British: Bangladeshi</list>
+                                      <list>P Black or Black British: Any other Black background</list>
+                                      <list>S Other Ethnic Groups: Any other ethnic group</list>
+                                      <list>R Other Ethnic Groups: Chinese</list>
+                                      <list>Z Not stated</list>
+                                      <list>99 Not known</list>
+                                    </item>
+                                  </children>
+                                </attributes>
+                              </children>
+                            </attributes>
+                          </children>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>ELEMENT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>0</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id>at0004</node_id>
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>value</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>DV_TEXT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                              </children>
+                            </attributes>
+                          </children>
+                          <cardinality>
+                            <is_ordered>false</is_ordered>
+                            <is_unique>false</is_unique>
+                            <interval>
+                              <lower_included>true</lower_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>true</upper_unbounded>
+                              <lower>1</lower>
+                            </interval>
+                          </cardinality>
+                        </attributes>
+                        <archetype_id>
+                          <value>openEHR-EHR-CLUSTER.family_history_extension_gel.v0</value>
+                        </archetype_id>
+                        <term_definitions code="at0000">
+                          <items id="description">Additional family history details for Genomics England datasets.</items>
+                          <items id="text">Family history extension GEL</items>
+                        </term_definitions>
+                        <term_definitions code="at0001">
+                          <items id="description">The subject's karyotypic sex.</items>
+                          <items id="text">Karyotypic sex</items>
+                        </term_definitions>
+                        <term_definitions code="at0002">
+                          <items id="description">The subject's race group.</items>
+                          <items id="text">Race group</items>
+                        </term_definitions>
+                        <term_definitions code="at0003">
+                          <items id="description">The subject's ethnic origin.</items>
+                          <items id="text">Ethnicity</items>
+                        </term_definitions>
+                        <term_definitions code="at0004">
+                          <items id="description">Any other relevant ancestry of the subject.</items>
+                          <items id="text">Other relevant ancestry</items>
+                        </term_definitions>
+                        <term_definitions code="at0006">
+                          <items id="description">The subject's life status.</items>
+                          <items id="text">Life status</items>
+                        </term_definitions>
+                        <term_definitions code="at0007">
+                          <items id="description">The subject's status is alive.</items>
+                          <items id="text">Alive</items>
+                        </term_definitions>
+                        <term_definitions code="at0008">
+                          <items id="description">The subject's status is aborted.</items>
+                          <items id="text">Aborted</items>
+                        </term_definitions>
+                        <term_definitions code="at0009">
+                          <items id="description">The subject's status is deceased.</items>
+                          <items id="text">Deceased</items>
+                        </term_definitions>
+                        <term_definitions code="at0010">
+                          <items id="description">The subject's status is unborn.</items>
+                          <items id="text">Unborn</items>
+                        </term_definitions>
+                        <term_definitions code="at0011">
+                          <items id="description">The subject's status is stillborn.</items>
+                          <items id="text">Stillborn</items>
+                        </term_definitions>
+                        <term_definitions code="at0012">
+                          <items id="description">The subject's status is miscarriage.</items>
+                          <items id="text">Miscarriage</items>
+                        </term_definitions>
+                        <term_definitions code="at0013">
+                          <items id="description">Statement whether the subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Consanguity</items>
+                        </term_definitions>
+                        <term_definitions code="at0014">
+                          <items id="description">The subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Yes</items>
+                        </term_definitions>
+                        <term_definitions code="at0015">
+                          <items id="description">The subject is not the product of a consanguinous relationship.</items>
+                          <items id="text">No</items>
+                        </term_definitions>
+                        <term_definitions code="at0016">
+                          <items id="description">It is possible that the subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Possible</items>
+                        </term_definitions>
+                        <term_definitions code="at0017">
+                          <items id="description">It is not known whether the subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Unknown</items>
+                        </term_definitions>
+                        <term_definitions code="at0018">
+                          <items id="description">For twins, statement whether the subject is a monozygotic twin.</items>
+                          <items id="text">Monozygotic</items>
+                        </term_definitions>
+                        <term_definitions code="at0019">
+                          <items id="description">The subject is a monozygotic twin.</items>
+                          <items id="text">Yes</items>
+                        </term_definitions>
+                        <term_definitions code="at0020">
+                          <items id="description">The subject is not a monozygotic twin.</items>
+                          <items id="text">No</items>
+                        </term_definitions>
+                        <term_definitions code="at0021">
+                          <items id="description">It is not known whether the subject is a monozygotic twin.</items>
+                          <items id="text">Unknown</items>
+                        </term_definitions>
+                        <term_definitions code="at0022">
+                          <items id="comment">Default is not_adopted. Adopted in means adopted into the family Adopted out means child belonged to the family and was adopted out.</items>
+                          <items id="description">Statement about the adopted status of the subject.</items>
+                          <items id="text">Adopted status</items>
+                        </term_definitions>
+                        <term_definitions code="at0023">
+                          <items id="description">The subject is not adopted.</items>
+                          <items id="text">Not adopted</items>
+                        </term_definitions>
+                        <term_definitions code="at0024">
+                          <items id="description">The subject is adopted into the family.</items>
+                          <items id="text">Adopted in</items>
+                        </term_definitions>
+                        <term_definitions code="at0025">
+                          <items id="description">The subject is adopted out of the family.</items>
+                          <items id="text">Adopted out</items>
+                        </term_definitions>
+                        <term_definitions code="at0026">
+                          <items id="comment">Each twin group is numbered, i.e. all members of a group of multiparous births receive the same number.</items>
+                          <items id="description">Integer to identify twin group.</items>
+                          <items id="text">Twin group</items>
+                        </term_definitions>
+                        <term_definitions code="at0027">
+                          <items id="description">The participant's identifier.</items>
+                          <items id="text">Individual identifier</items>
+                        </term_definitions>
+                        <term_definitions code="at0028">
+                          <items id="description">The mother's identifier.</items>
+                          <items id="text">Maternal identifier</items>
+                        </term_definitions>
+                        <term_definitions code="at0029">
+                          <items id="description">The father's identifier.</items>
+                          <items id="text">Paternal identifier</items>
+                        </term_definitions>
+                        <term_definitions code="at0030">
+                          <items id="description">The family identifier.</items>
+                          <items id="text">Family identifier</items>
+                        </term_definitions>
                       </children>
                       <children xsi:type="C_COMPLEX_OBJECT">
                         <rm_type_name>ELEMENT</rm_type_name>
@@ -4517,34 +4757,325 @@ Note: More data elements will be needed in future to record detailed genetic mar
                         <lower>1</lower>
                         <upper>1</upper>
                       </existence>
-                      <children xsi:type="ARCHETYPE_SLOT">
+                      <children xsi:type="C_ARCHETYPE_ROOT">
                         <rm_type_name>CLUSTER</rm_type_name>
                         <occurrences>
                           <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
                           <lower_unbounded>false</lower_unbounded>
-                          <upper_unbounded>true</upper_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
                           <lower>0</lower>
+                          <upper>1</upper>
                         </occurrences>
-                        <node_id>at0048</node_id>
-                        <includes>
-                          <expression xsi:type="EXPR_BINARY_OPERATOR">
-                            <type>Boolean</type>
-                            <operator>2007</operator>
-                            <precedence_overridden>false</precedence_overridden>
-                            <left_operand xsi:type="EXPR_LEAF">
-                              <type>String</type>
-                              <item xsi:type="xsd:string">archetype_id/value</item>
-                              <reference_type>attribute</reference_type>
-                            </left_operand>
-                            <right_operand xsi:type="EXPR_LEAF">
-                              <type>C_STRING</type>
-                              <item xsi:type="C_STRING">
-                                <pattern>openEHR-EHR-CLUSTER\.person_name(-[a-zA-Z0-9_]+)*\.v1</pattern>
-                              </item>
-                              <reference_type>constraint</reference_type>
-                            </right_operand>
-                          </expression>
-                        </includes>
+                        <node_id>at0000</node_id>
+                        <attributes xsi:type="C_MULTIPLE_ATTRIBUTE">
+                          <rm_attribute_name>items</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>1</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>ELEMENT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>0</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id>at0003</node_id>
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>value</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>DV_TEXT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                  <rm_attribute_name>value</rm_attribute_name>
+                                  <existence>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>1</lower>
+                                    <upper>1</upper>
+                                  </existence>
+                                  <children xsi:type="C_PRIMITIVE_OBJECT">
+                                    <rm_type_name>STRING</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <upper_included>true</upper_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>false</upper_unbounded>
+                                      <lower>1</lower>
+                                      <upper>1</upper>
+                                    </occurrences>
+                                    <node_id />
+                                    <item xsi:type="C_STRING">
+                                      <list>D Mixed: White and Black Caribbean</list>
+                                      <list>E Mixed: White and Black African</list>
+                                      <list>F Mixed: White and Asian</list>
+                                      <list>G Mixed: Any other mixed background</list>
+                                      <list>A White: British</list>
+                                      <list>B White: Irish</list>
+                                      <list>C White: Any other White background</list>
+                                      <list>L Asian or Asian British: Any other Asian background</list>
+                                      <list>M Black or Black British: Caribbean</list>
+                                      <list>N Black or Black British: African</list>
+                                      <list>H Asian or Asian British: Indian</list>
+                                      <list>J Asian or Asian British: Pakistani</list>
+                                      <list>K Asian or Asian British: Bangladeshi</list>
+                                      <list>P Black or Black British: Any other Black background</list>
+                                      <list>S Other Ethnic Groups: Any other ethnic group</list>
+                                      <list>R Other Ethnic Groups: Chinese</list>
+                                      <list>Z Not stated</list>
+                                      <list>99 Not known</list>
+                                    </item>
+                                  </children>
+                                </attributes>
+                              </children>
+                            </attributes>
+                          </children>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>ELEMENT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>0</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id>at0004</node_id>
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>value</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>DV_TEXT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                              </children>
+                            </attributes>
+                          </children>
+                          <cardinality>
+                            <is_ordered>false</is_ordered>
+                            <is_unique>false</is_unique>
+                            <interval>
+                              <lower_included>true</lower_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>true</upper_unbounded>
+                              <lower>1</lower>
+                            </interval>
+                          </cardinality>
+                        </attributes>
+                        <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                          <rm_attribute_name>name</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>1</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>DV_TEXT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>1</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id />
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>value</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>1</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_PRIMITIVE_OBJECT">
+                                <rm_type_name>STRING</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <item xsi:type="C_STRING">
+                                  <list>Family history extension GEL #1</list>
+                                </item>
+                              </children>
+                            </attributes>
+                          </children>
+                        </attributes>
+                        <archetype_id>
+                          <value>openEHR-EHR-CLUSTER.family_history_extension_gel.v0</value>
+                        </archetype_id>
+                        <term_definitions code="at0000">
+                          <items id="description">Additional family history details for Genomics England datasets.</items>
+                          <items id="text">Family history extension GEL</items>
+                        </term_definitions>
+                        <term_definitions code="at0001">
+                          <items id="description">The subject's karyotypic sex.</items>
+                          <items id="text">Karyotypic sex</items>
+                        </term_definitions>
+                        <term_definitions code="at0002">
+                          <items id="description">The subject's race group.</items>
+                          <items id="text">Race group</items>
+                        </term_definitions>
+                        <term_definitions code="at0003">
+                          <items id="description">The subject's ethnic origin.</items>
+                          <items id="text">Ethnicity</items>
+                        </term_definitions>
+                        <term_definitions code="at0004">
+                          <items id="description">Any other relevant ancestry of the subject.</items>
+                          <items id="text">Other relevant ancestry</items>
+                        </term_definitions>
+                        <term_definitions code="at0006">
+                          <items id="description">The subject's life status.</items>
+                          <items id="text">Life status</items>
+                        </term_definitions>
+                        <term_definitions code="at0007">
+                          <items id="description">The subject's status is alive.</items>
+                          <items id="text">Alive</items>
+                        </term_definitions>
+                        <term_definitions code="at0008">
+                          <items id="description">The subject's status is aborted.</items>
+                          <items id="text">Aborted</items>
+                        </term_definitions>
+                        <term_definitions code="at0009">
+                          <items id="description">The subject's status is deceased.</items>
+                          <items id="text">Deceased</items>
+                        </term_definitions>
+                        <term_definitions code="at0010">
+                          <items id="description">The subject's status is unborn.</items>
+                          <items id="text">Unborn</items>
+                        </term_definitions>
+                        <term_definitions code="at0011">
+                          <items id="description">The subject's status is stillborn.</items>
+                          <items id="text">Stillborn</items>
+                        </term_definitions>
+                        <term_definitions code="at0012">
+                          <items id="description">The subject's status is miscarriage.</items>
+                          <items id="text">Miscarriage</items>
+                        </term_definitions>
+                        <term_definitions code="at0013">
+                          <items id="description">Statement whether the subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Consanguity</items>
+                        </term_definitions>
+                        <term_definitions code="at0014">
+                          <items id="description">The subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Yes</items>
+                        </term_definitions>
+                        <term_definitions code="at0015">
+                          <items id="description">The subject is not the product of a consanguinous relationship.</items>
+                          <items id="text">No</items>
+                        </term_definitions>
+                        <term_definitions code="at0016">
+                          <items id="description">It is possible that the subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Possible</items>
+                        </term_definitions>
+                        <term_definitions code="at0017">
+                          <items id="description">It is not known whether the subject is the product of a consanguinous relationship.</items>
+                          <items id="text">Unknown</items>
+                        </term_definitions>
+                        <term_definitions code="at0018">
+                          <items id="description">For twins, statement whether the subject is a monozygotic twin.</items>
+                          <items id="text">Monozygotic</items>
+                        </term_definitions>
+                        <term_definitions code="at0019">
+                          <items id="description">The subject is a monozygotic twin.</items>
+                          <items id="text">Yes</items>
+                        </term_definitions>
+                        <term_definitions code="at0020">
+                          <items id="description">The subject is not a monozygotic twin.</items>
+                          <items id="text">No</items>
+                        </term_definitions>
+                        <term_definitions code="at0021">
+                          <items id="description">It is not known whether the subject is a monozygotic twin.</items>
+                          <items id="text">Unknown</items>
+                        </term_definitions>
+                        <term_definitions code="at0022">
+                          <items id="comment">Default is not_adopted. Adopted in means adopted into the family Adopted out means child belonged to the family and was adopted out.</items>
+                          <items id="description">Statement about the adopted status of the subject.</items>
+                          <items id="text">Adopted status</items>
+                        </term_definitions>
+                        <term_definitions code="at0023">
+                          <items id="description">The subject is not adopted.</items>
+                          <items id="text">Not adopted</items>
+                        </term_definitions>
+                        <term_definitions code="at0024">
+                          <items id="description">The subject is adopted into the family.</items>
+                          <items id="text">Adopted in</items>
+                        </term_definitions>
+                        <term_definitions code="at0025">
+                          <items id="description">The subject is adopted out of the family.</items>
+                          <items id="text">Adopted out</items>
+                        </term_definitions>
+                        <term_definitions code="at0026">
+                          <items id="comment">Each twin group is numbered, i.e. all members of a group of multiparous births receive the same number.</items>
+                          <items id="description">Integer to identify twin group.</items>
+                          <items id="text">Twin group</items>
+                        </term_definitions>
+                        <term_definitions code="at0027">
+                          <items id="description">The participant's identifier.</items>
+                          <items id="text">Individual identifier</items>
+                        </term_definitions>
+                        <term_definitions code="at0028">
+                          <items id="description">The mother's identifier.</items>
+                          <items id="text">Maternal identifier</items>
+                        </term_definitions>
+                        <term_definitions code="at0029">
+                          <items id="description">The father's identifier.</items>
+                          <items id="text">Paternal identifier</items>
+                        </term_definitions>
+                        <term_definitions code="at0030">
+                          <items id="description">The family identifier.</items>
+                          <items id="text">Family identifier</items>
+                        </term_definitions>
                       </children>
                       <children xsi:type="C_COMPLEX_OBJECT">
                         <rm_type_name>ELEMENT</rm_type_name>
@@ -7354,7 +7885,17 @@ Note: More data elements will be needed in future to record detailed genetic mar
         <value>true</value>
       </items>
     </constraints>
-    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Family']/items[openEHR-EHR-EVALUATION.family_history.v2]/data[at0001]/items[at0003 and name/value='Proband']/items[openEHR-EHR-CLUSTER.family_history_extension_gel.v0]">
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Family']/items[openEHR-EHR-EVALUATION.family_history.v2]/data[at0001]/items[at0003 and name/value='Proband']/items[openEHR-EHR-CLUSTER.family_history_extension_gel.v0 and name/value='Family history extension']">
+      <items id="pass_through">
+        <value>true</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Family']/items[openEHR-EHR-EVALUATION.family_history.v2]/data[at0001]/items[at0003 and name/value='Other relevant maternal family history']/items[openEHR-EHR-CLUSTER.family_history_extension_gel.v0]">
+      <items id="pass_through">
+        <value>true</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='Family']/items[openEHR-EHR-EVALUATION.family_history.v2]/data[at0001]/items[at0003 and name/value='Other relevant paternal family history']/items[openEHR-EHR-CLUSTER.family_history_extension_gel.v0 and name/value='Family history extension GEL #1']">
       <items id="pass_through">
         <value>true</value>
       </items>

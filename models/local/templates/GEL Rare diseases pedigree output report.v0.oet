@@ -1008,15 +1008,6 @@
           </Rule>
           <Rule path="/items[at0031 and name/value='Mother affected']/items[at0034]" default="1" hide_on_form="true" />
           <Rule path="/items[at0031 and name/value='Mother affected']/items[at0054]" default="1" hide_on_form="true" />
-          <Rule path="/items[at0031]" max="1" clone="true" name="Full sisters affected" />
-          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0032]" max="0" />
-          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0051]" max="0" />
-          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0033]">
-            <constraint xsi:type="textConstraint">
-              <excludedValues>local::at0043</excludedValues>
-              <excludedValues>local::at0052</excludedValues>
-            </constraint>
-          </Rule>
           <Rule path="/items[at0031]" max="1" clone="true" name="Father affected" />
           <Rule path="/items[at0031 and name/value='Father affected']/items[at0032]" max="0" />
           <Rule path="/items[at0031 and name/value='Father affected']/items[at0051]">
@@ -1038,6 +1029,15 @@
           <Rule path="/items[at0031 and name/value='Full brothers affected']/items[at0033]">
             <constraint xsi:type="textConstraint">
               <excludedValues>local::at0044</excludedValues>
+              <excludedValues>local::at0052</excludedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0031]" max="1" clone="true" name="Full sisters affected" />
+          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0032]" max="0" />
+          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0051]" max="0" />
+          <Rule path="/items[at0031 and name/value='Full sisters affected']/items[at0033]">
+            <constraint xsi:type="textConstraint">
+              <excludedValues>local::at0043</excludedValues>
               <excludedValues>local::at0052</excludedValues>
             </constraint>
           </Rule>
@@ -1069,6 +1069,76 @@
           </Rule>
           <Rule path="/items[at0004]" max="0" />
           <Rule path="/items[at0006]" max="0" />
+          <Rule path="/items[at0018]" max="0" />
+          <Rule path="/items[at0022]" max="0" />
+          <Rule path="/items[at0026]" max="0" />
+          <Rule path="/items[at0027]" max="0" />
+          <Rule path="/items[at0028]" max="0" />
+          <Rule path="/items[at0029]" max="0" />
+          <Rule path="/items[at0030]" max="0" />
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.family_history_extension_gel.v0" concept_name="Family history extension GEL" path="/data[at0001]/items[at0003 and name/value='Other relevant maternal family history']/items[at0048]" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" max="0" />
+          <Rule path="/items[at0003]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>D Mixed: White and Black Caribbean</includedValues>
+              <includedValues>E Mixed: White and Black African</includedValues>
+              <includedValues>F Mixed: White and Asian</includedValues>
+              <includedValues>G Mixed: Any other mixed background</includedValues>
+              <includedValues>A White: British</includedValues>
+              <includedValues>B White: Irish</includedValues>
+              <includedValues>C White: Any other White background</includedValues>
+              <includedValues>L Asian or Asian British: Any other Asian background</includedValues>
+              <includedValues>M Black or Black British: Caribbean</includedValues>
+              <includedValues>N Black or Black British: African</includedValues>
+              <includedValues>H Asian or Asian British: Indian</includedValues>
+              <includedValues>J Asian or Asian British: Pakistani</includedValues>
+              <includedValues>K Asian or Asian British: Bangladeshi</includedValues>
+              <includedValues>P Black or Black British: Any other Black background</includedValues>
+              <includedValues>S Other Ethnic Groups: Any other ethnic group</includedValues>
+              <includedValues>R Other Ethnic Groups: Chinese</includedValues>
+              <includedValues>Z Not stated</includedValues>
+              <includedValues>99 Not known</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0006]" max="0" />
+          <Rule path="/items[at0013]" max="0" />
+          <Rule path="/items[at0018]" max="0" />
+          <Rule path="/items[at0022]" max="0" />
+          <Rule path="/items[at0026]" max="0" />
+          <Rule path="/items[at0027]" max="0" />
+          <Rule path="/items[at0028]" max="0" />
+          <Rule path="/items[at0029]" max="0" />
+          <Rule path="/items[at0030]" max="0" />
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.family_history_extension_gel.v0" concept_name="Family history extension GEL" max="1" path="/data[at0001]/items[at0003 and name/value='Other relevant paternal family history']/items[at0048]" name="Family history extension GEL #1" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0002]" max="0" />
+          <Rule path="/items[at0003]">
+            <constraint xsi:type="textConstraint">
+              <includedValues>D Mixed: White and Black Caribbean</includedValues>
+              <includedValues>E Mixed: White and Black African</includedValues>
+              <includedValues>F Mixed: White and Asian</includedValues>
+              <includedValues>G Mixed: Any other mixed background</includedValues>
+              <includedValues>A White: British</includedValues>
+              <includedValues>B White: Irish</includedValues>
+              <includedValues>C White: Any other White background</includedValues>
+              <includedValues>L Asian or Asian British: Any other Asian background</includedValues>
+              <includedValues>M Black or Black British: Caribbean</includedValues>
+              <includedValues>N Black or Black British: African</includedValues>
+              <includedValues>H Asian or Asian British: Indian</includedValues>
+              <includedValues>J Asian or Asian British: Pakistani</includedValues>
+              <includedValues>K Asian or Asian British: Bangladeshi</includedValues>
+              <includedValues>P Black or Black British: Any other Black background</includedValues>
+              <includedValues>S Other Ethnic Groups: Any other ethnic group</includedValues>
+              <includedValues>R Other Ethnic Groups: Chinese</includedValues>
+              <includedValues>Z Not stated</includedValues>
+              <includedValues>99 Not known</includedValues>
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0006]" max="0" />
+          <Rule path="/items[at0013]" max="0" />
           <Rule path="/items[at0018]" max="0" />
           <Rule path="/items[at0022]" max="0" />
           <Rule path="/items[at0026]" max="0" />
