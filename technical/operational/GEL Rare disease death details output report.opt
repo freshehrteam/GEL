@@ -1032,24 +1032,6 @@
       <items id="text">Extension</items>
     </term_definitions>
   </definition>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0002]">
-    <items id="Notes.Authors Note">GEL::12777.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0009]">
-    <items id="Notes.Authors Note">GEL::12781.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0010]">
-    <items id="Notes.Authors Note">GEL::12778.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0011]">
-    <items id="Notes.Authors Note">GEL::12780.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0012]">
-    <items id="Notes.Authors Note">GEL::12779.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]/items[at0013]">
-    <items id="Notes.Authors Note">GEL::33515.1</items>
-  </annotations>
   <view>
     <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.death_details_gel.v0]/data[at0001]">
       <items id="pass_through">

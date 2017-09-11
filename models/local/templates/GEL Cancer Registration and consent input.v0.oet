@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>11c01dd5-e2f5-40bb-a6dd-9972e766f77e</id>
-  <name>GEL Cancer Registration and consent output report.v0</name>
+  <id>18251a81-7bb6-47c3-ba74-fa9755367f65</id>
+  <name>GEL Cancer Registration and consent input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>

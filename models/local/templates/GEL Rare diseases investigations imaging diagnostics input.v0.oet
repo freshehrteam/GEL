@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>81bbe1af-8891-4943-93fc-60b4251596ee</id>
-  <name>GEL Rare diseases investigations diagnostic imaging output report.v0</name>
+  <id>2b174479-d0d7-4f58-9648-7e02b639fc93</id>
+  <name>GEL Rare diseases investigations imaging diagnostics input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
@@ -939,17 +939,16 @@
             <Rule path="/items[at0002]" min="1" />
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.fetal_imaging_gel.v0" concept_name="Fetal imaging GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" name="Fetal imaging" hide_on_form="true" />
-          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0" concept_name="Laboratory test panel" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" hide_on_form="true">
-            <Rule path="/items[at0002]" hide_on_form="true" />
-            <Rule path="/items[at0002]/items[at0001]">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.imaging_result.v0" concept_name="Imaging result" path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" hide_on_form="true">
+            <Rule path="/items[at0001]" hide_on_form="true" />
+            <Rule path="/items[at0001]/items[at0002]">
               <constraint xsi:type="multipleConstraint">
                 <includedTypes>Text</includedTypes>
               </constraint>
             </Rule>
-            <Rule path="/items[at0002]/items[at0003]" max="0" />
-            <Rule path="/items[at0002]/items[at0004]" max="0" />
-            <Rule path="/items[at0002]/items[at0005]" max="0" />
-            <Rule path="/items[at0002]/items[at0006]" max="0" />
+            <Rule path="/items[at0001]/items[at0003]" max="0" />
+            <Rule path="/items[at0001]/items[at0004]" max="0" />
+            <Rule path="/items[at0001]/items[at0011]" max="0" />
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0" concept_name="Patient Status GEL" max="1" path="/protocol[at0025]/items[at0045]" name="Patient Status" hide_on_form="true" />
         </Item>
@@ -1595,8 +1594,8 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.fetal_imaging_gel.v0">
     <digest id="MD5-CAM-1.0.1">8966706248297B6A11806A2F2B34555A</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
-    <digest id="MD5-CAM-1.0.1">4609D4C2AA596C22113E03DFFBB7737C</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.imaging_result.v0">
+    <digest id="MD5-CAM-1.0.1">CD1E60DAABD8A26562BF95F3A4D0F23A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.patient_status_gel.v0">
     <digest id="MD5-CAM-1.0.1">11EC92CBBFCE026E990A6B3A70925C1F</digest>

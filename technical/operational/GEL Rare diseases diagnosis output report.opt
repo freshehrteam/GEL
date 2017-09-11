@@ -1465,18 +1465,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
       <items id="text">Extension</items>
     </term_definitions>
   </definition>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0002]">
-    <items id="Notes.Authors Note">GEL::12582.1 and GEL::31155.1 and GEL::31153.1 and GEL::29827.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.disease_group_rd_gel.v0]/items[at0001]">
-    <items id="Notes.Authors Note">GEL::12580.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.disease_group_rd_gel.v0]/items[at0002]">
-    <items id="Notes.Authors Note">GEL::12581.1</items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[openEHR-EHR-CLUSTER.age_debra.v0]/items[at0001]">
-    <items id="Notes.Authors Note">GEL::12583.3</items>
-  </annotations>
   <view>
     <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-EVALUATION.problem_diagnosis.v1]">
       <items id="pass_through">

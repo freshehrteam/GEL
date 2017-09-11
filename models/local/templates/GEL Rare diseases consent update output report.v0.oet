@@ -60,62 +60,6 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0002]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14535.1</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0003]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14543.2</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0005]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::12545.2</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0007]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::12546.2</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0008]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::12547.3</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0009]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::12544.4</value>
-      </item>
-    </items>
-  </annotations>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0011]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14546.2</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0012]">
     <items>
       <item>

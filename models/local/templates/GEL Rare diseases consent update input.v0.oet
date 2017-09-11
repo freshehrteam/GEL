@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>d0113575-25cf-436c-b327-29645e5650b4</id>
-  <name>GEL Rare diseases death details output report.v0</name>
+  <id>5ab68142-d514-46e0-9b70-beb0d786006c</id>
+  <name>GEL Rare diseases consent update input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
@@ -60,10 +60,29 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases death details">
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0" concept_name="Death details GEL" max="1" path="/content" name="Death details">
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-ADMIN_ENTRY.consent_gel.v0]/data[at0001]/items[at0012]">
+    <items>
+      <item>
+        <key>Notes.Authors Note</key>
+        <value>GEL::14549.3</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases consent update">
+    <Content xsi:type="ADMIN_ENTRY" archetype_id="openEHR-EHR-ADMIN_ENTRY.consent_gel.v0" concept_name="Consent Details GEL" max="1" path="/content" name="Consent Details">
       <Rule path="/data[at0001]" hide_on_form="true" />
-      <Rule path="/protocol[at0014]" hide_on_form="true" />
+      <Rule path="/data[at0001]/items[at0002]" min="1" />
+      <Rule path="/data[at0001]/items[at0003]" min="1" />
+      <Rule path="/data[at0001]/items[at0005]" min="1" />
+      <Rule path="/data[at0001]/items[at0006]" max="0" />
+      <Rule path="/data[at0001]/items[at0008]" min="1" />
+      <Rule path="/data[at0001]/items[at0009]" min="1" />
+      <Rule path="/data[at0001]/items[at0015]" max="0" />
+      <Rule path="/data[at0001]/items[at0021]" max="0" />
+      <Rule path="/data[at0001]/items[at0022]" max="0" />
+      <Rule path="/data[at0001]/items[at0023]" max="0" />
+      <Rule path="/data[at0001]/items[at0024]" max="0" />
+      <Rule path="/data[at0001]/items[at0025]" max="0" />
     </Content>
     <Context>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0" concept_name="Participant GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Participant">
@@ -81,7 +100,7 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
     <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0">
-    <digest id="MD5-CAM-1.0.1">E4644725A4181532E08BD6BC2994B4BB</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ADMIN_ENTRY.consent_gel.v0">
+    <digest id="MD5-CAM-1.0.1">6CA81632005EAC7BE24136717E918C44</digest>
   </integrity_checks>
 </template>

@@ -33,12 +33,12 @@
     </details>
   </description>
   <uid>
-    <value>af3d18e1-cf68-4328-905f-a207d62501d8</value>
+    <value>18c5778c-65cd-4bf6-ad17-d41abc9cb803</value>
   </uid>
   <template_id>
-    <value>GEL Rare diseases investigations biopsy output report.v0</value>
+    <value>GEL Rare diseases investigations biopsy input.v0</value>
   </template_id>
-  <concept>GEL Rare diseases investigations biopsy output report.v0</concept>
+  <concept>GEL Rare diseases investigations biopsy input.v0</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -8493,7 +8493,7 @@
       <value>openEHR-EHR-COMPOSITION.report.v1</value>
     </archetype_id>
     <template_id>
-      <value>GEL Rare diseases investigations biopsy output report.v0</value>
+      <value>GEL Rare diseases investigations biopsy input.v0</value>
     </template_id>
     <term_definitions code="at0000">
       <items id="description">Document to communicate information to others, commonly in response to a request from another party.</items>

@@ -33,12 +33,12 @@
     </details>
   </description>
   <uid>
-    <value>fea3bf83-03d9-4626-9b6a-df2ce7431aea</value>
+    <value>37b8d5a1-99a9-48d4-b88b-5fefc27f548e</value>
   </uid>
   <template_id>
-    <value>GEL Rare diseases intervention output report.v0</value>
+    <value>GEL Rare diseases intervention input.v0</value>
   </template_id>
-  <concept>GEL Rare diseases intervention output report.v0</concept>
+  <concept>GEL Rare diseases intervention input.v0</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -1134,7 +1134,7 @@
                                     </occurrences>
                                     <node_id />
                                     <item xsi:type="C_STRING">
-                                      <list>Date first authorised</list>
+                                      <list>Date discontinued</list>
                                     </item>
                                   </children>
                                 </attributes>
@@ -1262,7 +1262,7 @@
                                     </occurrences>
                                     <node_id />
                                     <item xsi:type="C_STRING">
-                                      <list>Date discontinued</list>
+                                      <list>Date first authorised</list>
                                     </item>
                                   </children>
                                 </attributes>
@@ -9434,7 +9434,7 @@ The goal or target dose might be recorded here or more commonly as part of a lin
       <value>openEHR-EHR-COMPOSITION.report.v1</value>
     </archetype_id>
     <template_id>
-      <value>GEL Rare diseases intervention output report.v0</value>
+      <value>GEL Rare diseases intervention input.v0</value>
     </template_id>
     <term_definitions code="at0000">
       <items id="description">Document to communicate information to others, commonly in response to a request from another party.</items>

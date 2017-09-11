@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>d0113575-25cf-436c-b327-29645e5650b4</id>
-  <name>GEL Rare diseases death details output report.v0</name>
+  <id>843a4b06-9281-4e2d-8fb5-6ddc3407e2e9</id>
+  <name>GEL Rare diseases death details input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>

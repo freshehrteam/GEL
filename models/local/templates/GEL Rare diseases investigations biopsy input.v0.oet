@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>af3d18e1-cf68-4328-905f-a207d62501d8</id>
-  <name>GEL Rare diseases investigations biopsy output report.v0</name>
+  <id>18c5778c-65cd-4bf6-ad17-d41abc9cb803</id>
+  <name>GEL Rare diseases investigations biopsy input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>

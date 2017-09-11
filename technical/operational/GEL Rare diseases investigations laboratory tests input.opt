@@ -33,12 +33,12 @@
     </details>
   </description>
   <uid>
-    <value>d3b8c263-d058-4a1d-9242-3ee43d66a6bc</value>
+    <value>4c75e3c6-0956-4a01-a5d9-bb23d61a9d0e</value>
   </uid>
   <template_id>
-    <value>GEL Rare diseases investigations laboratory tests output report.v0</value>
+    <value>GEL Rare diseases investigations laboratory tests input.v0</value>
   </template_id>
-  <concept>GEL Rare diseases investigations laboratory tests output report.v0</concept>
+  <concept>GEL Rare diseases investigations laboratory tests input.v0</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -2462,7 +2462,7 @@ healthcare provider, but may be collected directly by the patient or carer at ho
       <value>openEHR-EHR-COMPOSITION.report.v1</value>
     </archetype_id>
     <template_id>
-      <value>GEL Rare diseases investigations laboratory tests output report.v0</value>
+      <value>GEL Rare diseases investigations laboratory tests input.v0</value>
     </template_id>
     <term_definitions code="at0000">
       <items id="description">Document to communicate information to others, commonly in response to a request from another party.</items>

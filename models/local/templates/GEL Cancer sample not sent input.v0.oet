@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>d0113575-25cf-436c-b327-29645e5650b4</id>
-  <name>GEL Rare diseases death details output report.v0</name>
+  <id>4c7362cd-d8f3-4dd5-8acc-2d05b73f088d</id>
+  <name>GEL Cancer sample not sent input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
@@ -60,14 +60,30 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Rare diseases death details">
-    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0" concept_name="Death details GEL" max="1" path="/content" name="Death details">
-      <Rule path="/data[at0001]" hide_on_form="true" />
-      <Rule path="/protocol[at0014]" hide_on_form="true" />
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Cancer sample not sent">
+    <Content xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.exclusion.v1" concept_name="Exclusion statement" path="/content" hide_on_form="true">
+      <Rule path="/data[at0001]/items[at0002]" max="1" name="Reason sample not sent">
+        <constraint xsi:type="textConstraint">
+          <includedValues>Tumour sample not taken</includedValues>
+          <includedValues>Tumour type not eligible</includedValues>
+          <includedValues>Poorly cellular tumour (Less than 40 percent neoplastic cells)</includedValues>
+          <includedValues>Insufficient tumour post neoadjuvant chemotherapy</includedValues>
+          <includedValues>Insufficient DNA</includedValues>
+          <includedValues>No Cancer Diagnosed</includedValues>
+          <includedValues>FFPE not optimally fixed</includedValues>
+          <includedValues>FFPE not optimally processed</includedValues>
+          <includedValues>High necrosis (over 20 percent)</includedValues>
+          <includedValues>Other</includedValues>
+        </constraint>
+      </Rule>
+      <Rule path="/data[at0001]/items[at0003]" max="0" />
+      <Rule path="/data[at0001]/items[at0007]" max="0" />
+      <Rule path="/protocol[at0006]" hide_on_form="true" />
+      <Rule path="/protocol[at0006]/items[at0004]" max="0" />
     </Content>
     <Context>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0" concept_name="Participant GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Participant">
-        <Rule path="/items[at0015]" min="1" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0" concept_name="Participant GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Participant" hide_on_form="true">
+        <Rule path="/items[at0017]" max="0" />
       </Items>
       <Rule path="/context/other_context[at0001]" hide_on_form="true" />
       <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
@@ -81,7 +97,7 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0">
     <digest id="MD5-CAM-1.0.1">C4E628BB6ADBA4F6337F58CF5322B4EE</digest>
   </integrity_checks>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.death_details_gel.v0">
-    <digest id="MD5-CAM-1.0.1">E4644725A4181532E08BD6BC2994B4BB</digest>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.exclusion.v1">
+    <digest id="MD5-CAM-1.0.1">F1C3965D6D6E69533D6EA02F9EB4B08A</digest>
   </integrity_checks>
 </template>
