@@ -1,0 +1,73 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.sarcomatoid_change.v0
+
+concept
+	[at0000]	-- Sarcomatoid change
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Hildegard Franke">
+		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["date"] = <"2017-09-26">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the capture and reporting of sarcomatoid change as a grading method for renal cell carcinoma.">
+			use = <"Use to record sarcomatoid change as a grading method for renal cell carcinoma.
+
+This cluster archetype is intended to be used in the Test findings slot in a laboratory test result observation archetype.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["MD5-CAM-1.0.1"] = <"FED19464F1BA66A6CC9FFDB9E7FAB218">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Sarcomatoid change
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Sarcomatoid change
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002, 	-- Present
+							at0003]	-- Absent
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sarcomatoid change">
+					description = <"Sarcomatoid change for renal cell carcinoma.">
+				>
+				["at0001"] = <
+					text = <"Sarcomatoid change">
+					description = <"Statement about presence or absence of sarcomatoid change in renal cell carcinoma.">
+				>
+				["at0002"] = <
+					text = <"Present">
+					description = <"Sarcomatoid change is deemed to be present.">
+				>
+				["at0003"] = <
+					text = <"Absent">
+					description = <"Sarcomatoid change is deemed to be absent.">
+				>
+			>
+		>
+	>

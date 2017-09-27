@@ -1,0 +1,43 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.dukes_stage.v0
+
+concept
+	[at0000]	-- Dukes stage
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the capture and reporting of Dukes staging for colorectal cancer.">
+			use = <"Use to record Dukes stage in colorectal cancer.
+
+This cluster archetype is intended to be used in the Test findings slot in a laboratory test result observation archetype or in the Specific details slot in a Problem/Diagnosis evaluation archetype.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["MD5-CAM-1.0.1"] = <"98ADC7BC031853C0D0F7E499D13369CF">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Dukes stage">
+					description = <"Dukes staging for colorectal cancer.">
+				>
+			>
+		>
+	>
