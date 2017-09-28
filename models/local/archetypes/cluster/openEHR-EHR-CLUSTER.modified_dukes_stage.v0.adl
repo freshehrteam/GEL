@@ -2,7 +2,7 @@
 	openEHR-EHR-CLUSTER.modified_dukes_stage.v0
 
 concept
-	[at0000]	-- Dukes stage
+	[at0000]	-- Modified Dukes stage
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -23,13 +23,13 @@ This cluster archetype is intended to be used in the Test findings slot in a lab
 	lifecycle_state = <"Initial">
 	other_contributors = <>
 	other_details = <
-		["references"] = <"http://www.datadictionary.nhs.uk/data_dictionary/attributes/m/mi/modified_dukes_stage_de.asp?shownav=1  cited 27-Sep-2017">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"F57F136BAEA4EB250BC9C777A702E556">
+		["references"] = <"http://www.datadictionary.nhs.uk/data_dictionary/attributes/m/mi/modified_dukes_stage_de.asp?shownav=1  cited 27-Sep-2017">
+		["MD5-CAM-1.0.1"] = <"D20166D6E142775D1B57480B88BC532D">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Dukes stage
+	CLUSTER[at0000] matches {	-- Modified Dukes stage
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Modified Dukes stage
 				value matches {
@@ -54,8 +54,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Dukes stage">
-					description = <"Dukes staging for colorectal cancer.">
+					text = <"Modified Dukes stage">
+					description = <"Modified Dukes staging for colorectal cancer.">
 				>
 				["at0001"] = <
 					text = <"Modified Dukes stage">
