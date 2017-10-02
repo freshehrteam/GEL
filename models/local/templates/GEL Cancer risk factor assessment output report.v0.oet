@@ -60,14 +60,6 @@
       </item>
     </other_details>
   </description>
-  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='General risk factors']/items[openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1]/data[at0001]/items[at0043]">
-    <items>
-      <item>
-        <key>Notes.Authors Note</key>
-        <value>GEL::14446</value>
-      </item>
-    </items>
-  </annotations>
   <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1 and name/value='General risk factors']/items[openEHR-EHR-OBSERVATION.height.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0004]">
     <items>
       <item>

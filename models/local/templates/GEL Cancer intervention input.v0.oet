@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>e6e69b4d-04b9-4c29-b50f-fc2e7443c516</id>
+  <id>a383b557-f3cc-44d6-a2ea-be86bc540fcf</id>
   <name>GEL Cancer intervention input.v0</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
@@ -60,7 +60,7 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Cancer interventions">
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Cancer interventions report">
     <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Surgery and other procedures">
       <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Main procedure">
         <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.procedure.v1" concept_name="Procedure" max="1" path="/items" hide_on_form="true">
@@ -105,6 +105,29 @@
           <Rule path="/protocol[at0053]" hide_on_form="true" />
           <Rule path="/protocol[at0053]/items[at0054]" max="0" />
           <Rule path="/protocol[at0053]/items[at0056]" max="0" />
+        </Item>
+      </Item>
+      <Item xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/items" name="Cancer-specific surgery">
+        <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.procedure.v1" concept_name="Procedure" path="/items">
+          <Rule path="/description[at0001]" hide_on_form="true" />
+          <Rule path="/description[at0001]/items[at0002]" default="CNS surgery" />
+          <Rule path="/description[at0001]/items[at0049]" max="0" />
+          <Rule path="/description[at0001]/items[at0065]" max="0" />
+          <Rule path="/description[at0001]/items[at0058]" max="0" />
+          <Rule path="/description[at0001]/items[at0063]" max="0" />
+          <Rule path="/description[at0001]/items[at0048]" max="0" />
+          <Rule path="/description[at0001]/items[at0069]" max="0" />
+          <Rule path="/description[at0001]/items[at0006]" max="0" />
+          <Rule path="/description[at0001]/items[at0066]" max="0" />
+          <Rule path="/description[at0001]/items[at0060]" max="0" />
+          <Rule path="/description[at0001]/items[at0061]" max="0" />
+          <Rule path="/description[at0001]/items[at0067]" max="0" />
+          <Rule path="/description[at0001]/items[at0014]" max="0" />
+          <Rule path="/description[at0001]/items[at0005]" max="0" />
+          <Rule path="/protocol[at0053]" hide_on_form="true" />
+          <Rule path="/protocol[at0053]/items[at0054]" max="0" />
+          <Rule path="/protocol[at0053]/items[at0056]" max="0" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.cns_surgery_gel.v0" concept_name="CNS surgery GEL" path="/description[at0001]/items[at0003]" />
         </Item>
       </Item>
     </Content>
@@ -198,6 +221,36 @@
         </Items>
       </Item>
     </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Ad hoc heading" max="1" path="/content" name="Cancer-specific treatments">
+      <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.procedure.v1" concept_name="Procedure" path="/items">
+        <Rule path="/description[at0001]" hide_on_form="true" />
+        <Rule path="/description[at0001]/items[at0002]" default="Cancer-specific treatment" hide_on_form="true" />
+        <Rule path="/description[at0001]/items[at0049]" max="0" />
+        <Rule path="/description[at0001]/items[at0065]" max="0" />
+        <Rule path="/description[at0001]/items[at0058]" max="0" />
+        <Rule path="/description[at0001]/items[at0063]" max="0" />
+        <Rule path="/description[at0001]/items[at0048]" max="0" />
+        <Rule path="/description[at0001]/items[at0069]" max="0" />
+        <Rule path="/description[at0001]/items[at0006]" max="0" />
+        <Rule path="/description[at0001]/items[at0066]" max="0" />
+        <Rule path="/description[at0001]/items[at0060]" max="0" />
+        <Rule path="/description[at0001]/items[at0061]" max="0" />
+        <Rule path="/description[at0001]/items[at0067]" max="0" />
+        <Rule path="/description[at0001]/items[at0014]" max="0" />
+        <Rule path="/description[at0001]/items[at0005]" max="0" />
+        <Rule path="/protocol[at0053]" hide_on_form="true" />
+        <Rule path="/protocol[at0053]/items[at0054]" max="0" />
+        <Rule path="/protocol[at0053]/items[at0056]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.cancer_specific_treatment_gel.v0" concept_name="Cancer specific treatment GEL" max="1" path="/description[at0001]/items[at0003]" name="Cancer specific treatment">
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.upper_gi_staging_gel.v0" concept_name="Upper GI staging GEL" path="/items[at0010]/items[at0016]" hide_on_form="true">
+            <Rule path="/items[at0003]" max="0" />
+            <Rule path="/items[at0007]" max="0" />
+            <Rule path="/items[at0008]" max="0" />
+          </Items>
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour ID GEL" max="1" path="/protocol[at0053]/items[at0064]" name="Tumour ID" />
+      </Item>
+    </Content>
     <Context>
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour ID GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Tumour ID" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.participant_gel.v0" concept_name="Participant GEL" max="1" path="/context/other_context[at0001]/items[at0006]" name="Participant">
@@ -244,6 +297,9 @@
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.asa_status.v0">
     <digest id="MD5-CAM-1.0.1">E22029993B840B52760ABBC106BFCEAF</digest>
   </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cns_surgery_gel.v0">
+    <digest id="MD5-CAM-1.0.1">2F5958BEDE2EBDCDF7B9ED6D8A736024</digest>
+  </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>
   </integrity_checks>
@@ -255,5 +311,11 @@
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1">
     <digest id="MD5-CAM-1.0.1">626AFF94BCD3048F45914AD130D54262</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cancer_specific_treatment_gel.v0">
+    <digest id="MD5-CAM-1.0.1">52F26F7864246C0C46302C8554991699</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.upper_gi_staging_gel.v0">
+    <digest id="MD5-CAM-1.0.1">6F984880346D3B41541B1AF99B794B56</digest>
   </integrity_checks>
 </template>
