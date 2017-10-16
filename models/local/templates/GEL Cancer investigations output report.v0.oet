@@ -209,7 +209,22 @@
           <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
           <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0073]" max="0" />
           <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0075]" max="0" />
-          <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0077]" max="0" />
+          <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0077]" name="Pathology investigation type">
+            <constraint xsi:type="textConstraint">
+              <includedValues>CY Cytology</includedValues>
+              <includedValues>BU Biopsy NOS</includedValues>
+              <includedValues>EX Excision</includedValues>
+              <includedValues>PE Partial Excision</includedValues>
+              <includedValues>RE Radical Excision</includedValues>
+              <includedValues>FE Further Excision</includedValues>
+              <includedValues>CU Curettage</includedValues>
+              <includedValues>SB Shave Biopsy</includedValues>
+              <includedValues>PB Punch Biopsy</includedValues>
+              <includedValues>IB Incisional Biopsy</includedValues>
+              <includedValues>BM Bone Marrow Aspirate</includedValues>
+              <includedValues>99 Uncertain/other</includedValues>
+            </constraint>
+          </Rule>
           <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0100]" max="0" />
           <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" max="0" />
           <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0098]" max="1" name="Primary diagnosis" />
@@ -237,7 +252,15 @@
           </Items>
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.gel_histopath_summary.v0" concept_name="GEL histopathology summary" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]" name="Histopathology summary" />
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tnm_stage_pathological.v0" concept_name="TNM stage - pathological" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]">
-            <Rule path="/items[at0005]" max="0" />
+            <Rule path="/items[at0005]" name="Grade of differentiation">
+              <constraint xsi:type="textConstraint">
+                <includedValues>G4 Undifferentiated or anaplastic</includedValues>
+                <includedValues>G3 Poorly differentiated</includedValues>
+                <includedValues>G2 Moderately differentiated</includedValues>
+                <includedValues>G1 Well differentiated</includedValues>
+                <includedValues>GX Grade of differentiation is not appropriate or cannot be assessed</includedValues>
+              </constraint>
+            </Rule>
             <Rule path="/items[at0004]" max="0" />
             <Rule path="/items[at0011]" max="0" />
             <Rule path="/items[at0012]" max="0" />

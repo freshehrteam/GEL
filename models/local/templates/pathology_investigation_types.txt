@@ -1,0 +1,12 @@
+CY Cytology
+BU Biopsy NOS
+EX Excision
+PE Partial Excision
+RE Radical Excision
+FE Further Excision
+CU Curettage
+SB Shave Biopsy
+PB Punch Biopsy
+IB Incisional Biopsy
+BM Bone Marrow Aspirate
+99 Uncertain/other

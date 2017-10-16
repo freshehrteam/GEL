@@ -1,0 +1,5 @@
+G4 Undifferentiated or anaplastic
+G3 Poorly differentiated
+G2 Moderately differentiated
+G1 Well differentiated
+GX Grade of differentiation is not appropriate or cannot be assessed
