@@ -10574,6 +10574,101 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                                       </children>
                                     </attributes>
                                   </children>
+                                  <children xsi:type="C_COMPLEX_OBJECT">
+                                    <rm_type_name>ELEMENT</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <upper_included>true</upper_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>false</upper_unbounded>
+                                      <lower>0</lower>
+                                      <upper>1</upper>
+                                    </occurrences>
+                                    <node_id>at0183</node_id>
+                                    <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                      <rm_attribute_name>value</rm_attribute_name>
+                                      <existence>
+                                        <lower_included>true</lower_included>
+                                        <upper_included>true</upper_included>
+                                        <lower_unbounded>false</lower_unbounded>
+                                        <upper_unbounded>false</upper_unbounded>
+                                        <lower>0</lower>
+                                        <upper>1</upper>
+                                      </existence>
+                                      <children xsi:type="C_DV_ORDINAL">
+                                        <rm_type_name>DV_ORDINAL</rm_type_name>
+                                        <occurrences>
+                                          <lower_included>true</lower_included>
+                                          <upper_included>true</upper_included>
+                                          <lower_unbounded>false</lower_unbounded>
+                                          <upper_unbounded>false</upper_unbounded>
+                                          <lower>1</lower>
+                                          <upper>1</upper>
+                                        </occurrences>
+                                        <node_id />
+                                        <list>
+                                          <value>1</value>
+                                          <symbol>
+                                            <value />
+                                            <defining_code>
+                                              <terminology_id>
+                                                <value>local</value>
+                                              </terminology_id>
+                                              <code_string>at0260</code_string>
+                                            </defining_code>
+                                          </symbol>
+                                        </list>
+                                        <list>
+                                          <value>2</value>
+                                          <symbol>
+                                            <value />
+                                            <defining_code>
+                                              <terminology_id>
+                                                <value>local</value>
+                                              </terminology_id>
+                                              <code_string>at0261</code_string>
+                                            </defining_code>
+                                          </symbol>
+                                        </list>
+                                        <list>
+                                          <value>3</value>
+                                          <symbol>
+                                            <value />
+                                            <defining_code>
+                                              <terminology_id>
+                                                <value>local</value>
+                                              </terminology_id>
+                                              <code_string>at0262</code_string>
+                                            </defining_code>
+                                          </symbol>
+                                        </list>
+                                        <list>
+                                          <value>4</value>
+                                          <symbol>
+                                            <value />
+                                            <defining_code>
+                                              <terminology_id>
+                                                <value>local</value>
+                                              </terminology_id>
+                                              <code_string>at0263</code_string>
+                                            </defining_code>
+                                          </symbol>
+                                        </list>
+                                        <list>
+                                          <value>5</value>
+                                          <symbol>
+                                            <value />
+                                            <defining_code>
+                                              <terminology_id>
+                                                <value>local</value>
+                                              </terminology_id>
+                                              <code_string>at0264</code_string>
+                                            </defining_code>
+                                          </symbol>
+                                        </list>
+                                      </children>
+                                    </attributes>
+                                  </children>
                                   <cardinality>
                                     <is_ordered>false</is_ordered>
                                     <is_unique>false</is_unique>
@@ -22596,6 +22691,119 @@ healthcare provider, but may be collected directly by the patient or carer at ho
                               <items id="description">The test method is Other.</items>
                               <items id="text">Other</items>
                             </term_definitions>
+                          </children>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>ELEMENT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>0</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id>at0057</node_id>
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>value</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>DV_TEXT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                  <rm_attribute_name>value</rm_attribute_name>
+                                  <existence>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>1</lower>
+                                    <upper>1</upper>
+                                  </existence>
+                                  <children xsi:type="C_PRIMITIVE_OBJECT">
+                                    <rm_type_name>STRING</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <upper_included>true</upper_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>false</upper_unbounded>
+                                      <lower>1</lower>
+                                      <upper>1</upper>
+                                    </occurrences>
+                                    <node_id />
+                                    <item xsi:type="C_STRING">
+                                      <list>Normal (negative)</list>
+                                      <list>Fail</list>
+                                      <list>Pathogenic abnormality detected</list>
+                                      <list>Variant of unknown significance detected</list>
+                                    </item>
+                                  </children>
+                                </attributes>
+                              </children>
+                            </attributes>
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>name</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>1</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>DV_TEXT</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                  <rm_attribute_name>value</rm_attribute_name>
+                                  <existence>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>1</lower>
+                                    <upper>1</upper>
+                                  </existence>
+                                  <children xsi:type="C_PRIMITIVE_OBJECT">
+                                    <rm_type_name>STRING</rm_type_name>
+                                    <occurrences>
+                                      <lower_included>true</lower_included>
+                                      <upper_included>true</upper_included>
+                                      <lower_unbounded>false</lower_unbounded>
+                                      <upper_unbounded>false</upper_unbounded>
+                                      <lower>1</lower>
+                                      <upper>1</upper>
+                                    </occurrences>
+                                    <node_id />
+                                    <item xsi:type="C_STRING">
+                                      <list>Test result</list>
+                                    </item>
+                                  </children>
+                                </attributes>
+                              </children>
+                            </attributes>
                           </children>
                           <children xsi:type="C_ARCHETYPE_ROOT">
                             <rm_type_name>CLUSTER</rm_type_name>

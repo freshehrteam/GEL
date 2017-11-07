@@ -349,7 +349,6 @@
           <Rule path="/protocol[at0004]/items[at0094]" max="0" />
           <Rule path="/protocol[at0004]/items[at0111]" max="0" />
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.gleason_score.v0" concept_name="Gleason Score" path="/data[at0001]/events[at0002]/data[at0003]/items[at0097]">
-            <Rule path="/items[at0183]" max="0" />
             <Rule path="/items[at0197]" max="0" />
             <Rule path="/items[at0265]" max="0" />
           </Items>
@@ -549,7 +548,14 @@
         <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0075]" max="0" />
         <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0077]" max="0" />
         <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0100]" max="0" />
-        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" max="0" />
+        <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0057]" name="Test result">
+          <constraint xsi:type="textConstraint">
+            <includedValues>Normal (negative)</includedValues>
+            <includedValues>Fail</includedValues>
+            <includedValues>Pathogenic abnormality detected</includedValues>
+            <includedValues>Variant of unknown significance detected</includedValues>
+          </constraint>
+        </Rule>
         <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0098]" max="0" />
         <Rule path="/data[at0001]/events[at0002]/state[at0112]" hide_on_form="true" />
         <Rule path="/data[at0001]/events[at0002]/state[at0112]/items[at0113]" max="0" />
