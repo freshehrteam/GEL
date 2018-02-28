@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=609c596d-084b-483a-9663-ada4593171aa)
 	openEHR-EHR-CLUSTER.cns_surgery_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-27">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 This cluster archetype is intended to be used in the Procedure details slot of the procedure action archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"2F5958BEDE2EBDCDF7B9ED6D8A736024">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"8CEDD49A85309FA840FF5B77452D3840">
+		["build_uid"] = <"7d77e0c4-4eb6-4d12-a16c-8fe0b4431d2c">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -109,6 +115,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

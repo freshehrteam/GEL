@@ -207,27 +207,27 @@
     <digest id="MD5-CAM-1.0.1">79F227E401FA72D5C779748F9C04CBEA</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.inrg_staging.v0">
-    <digest id="MD5-CAM-1.0.1">673BEFF7608CA676CC62A7FA0FB181B2</digest>
+    <digest id="MD5-CAM-1.0.1">29F94F1A803E1BA077871A624C8EE574</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.modified_dukes_stage.v0">
-    <digest id="MD5-CAM-1.0.1">D20166D6E142775D1B57480B88BC532D</digest>
+    <digest id="MD5-CAM-1.0.1">572492671A23A89E13896750FF4E9073</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.figo_grade.v0">
-    <digest id="MD5-CAM-1.0.1">1A09CCEF0286CD6DD1C851E75EBFBDB3</digest>
+    <digest id="MD5-CAM-1.0.1">00A1D4C4F6B4D5F54E3C8C1711AB9F00</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.upper_gi_staging_gel.v0">
-    <digest id="MD5-CAM-1.0.1">6F984880346D3B41541B1AF99B794B56</digest>
+    <digest id="MD5-CAM-1.0.1">0F5E07B19C49EE8BAA384F720AF96D54</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.bclc_stage.v0">
-    <digest id="MD5-CAM-1.0.1">C4F4C22EB5C91F199C170D3A7B2EE6E0</digest>
+    <digest id="MD5-CAM-1.0.1">E52BE762BE49997E647EF6520B86AD4B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.child_pugh_score.v0">
-    <digest id="MD5-CAM-1.0.1">0DFF1F150A443AE2E9CC698D7F7EF4CD</digest>
+    <digest id="MD5-CAM-1.0.1">372ACDD039069AA2EE5AF733FBEAAEFB</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.testicular_staging_gel.v0">
-    <digest id="MD5-CAM-1.0.1">46A00FFDEF94B968D37C23D7271C7137</digest>
+    <digest id="MD5-CAM-1.0.1">DD11811DF8A66B9DB65E8214D2C3F87C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.colorectal_diagnosis_gel.v0">
-    <digest id="MD5-CAM-1.0.1">29A8F08D4B88E64621131CA4369448EF</digest>
+    <digest id="MD5-CAM-1.0.1">70250F94500409D77DA1989656E47109</digest>
   </integrity_checks>
 </template>

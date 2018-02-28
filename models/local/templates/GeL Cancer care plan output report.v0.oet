@@ -154,7 +154,7 @@
     <digest id="MD5-CAM-1.0.1">AFB4E1A17EDA6CA290E2C57C060C5C52</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cancer_care_plan_gel.v0">
-    <digest id="MD5-CAM-1.0.1">2AF0CC0B68958CA18F75ABA03E479D14</digest>
+    <digest id="MD5-CAM-1.0.1">AB2A13D1CF81524530101AF9830EFC8E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
     <digest id="MD5-CAM-1.0.1">6110E221A71B0A223ACDF7184471D1C8</digest>

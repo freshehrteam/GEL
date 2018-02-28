@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=d0e10579-afeb-40bc-9dd6-c47a355a057b)
 	openEHR-EHR-CLUSTER.cancer_care_plan_gel.v0
 
 concept
@@ -20,15 +20,21 @@ description
 
 This cluster archetype is intended to be used in the Specific details slot of an evaluation or instruction archetype, such as problem/diagnosis or service request.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
+		["revision"] = <"0.0.1-alpha">
+		["original_publisher"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["build_uid"] = <"b9dac024-55dc-40c8-a79e-c09f0a410db4">
+		["original_namespace"] = <"uk.org.clinicalmodels">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"2AF0CC0B68958CA18F75ABA03E479D14">
+		["MD5-CAM-1.0.1"] = <"AB2A13D1CF81524530101AF9830EFC8E">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["custodian_organisation"] = <"UK Clinical Models">
 	>
 
 definition
@@ -98,15 +104,15 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Y Yes">
-					description = <"Yes">
+					description = <"Yes.">
 				>
 				["at0006"] = <
 					text = <"N No">
-					description = <"No">
+					description = <"No.">
 				>
 				["at0007"] = <
 					text = <"9 Not known">
-					description = <"Not known">
+					description = <"Not known.">
 				>
 			>
 		>

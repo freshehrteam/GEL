@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=a4aee71c-815a-4339-a376-08b5ba38d4ee)
 	openEHR-EHR-CLUSTER.figo_grade.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-14">
 	>
 	details = <
@@ -20,16 +20,22 @@ description
 
 This cluster archetype is intended to be used in the Test findings slot in a laboratory test observation.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"http://www.pathologyoutlines.com/topic/uterusendometrialcarc.html cited 14-Sep-2017.">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"1A09CCEF0286CD6DD1C851E75EBFBDB3">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"00A1D4C4F6B4D5F54E3C8C1711AB9F00">
+		["build_uid"] = <"4d26dee3-019c-4b67-8b90-8125b2286be0">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -55,6 +61,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -65,7 +72,7 @@ ontology
 				>
 				["at0001"] = <
 					text = <"FIGO grade">
-					description = <"*">
+					description = <"Details of FIGO grade.">
 				>
 				["at0002"] = <
 					text = <"FIGO 1">
