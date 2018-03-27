@@ -264,30 +264,30 @@
     <digest id="MD5-CAM-1.0.1">00796FC78634E1F9B128CBDEE62B825D</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.ovarian_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">94900926BC12358B03A3FCEC4E9C18EF</digest>
+    <digest id="MD5-CAM-1.0.1">D3634DEAF93C92676D70B4265C989B57</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.female_cancer_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">66EEDEB158084F08945044BAE9FCAA95</digest>
+    <digest id="MD5-CAM-1.0.1">981BB81EDDF73D7C0214757E5055E127</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.breast_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B33786C801CE9CE0D67E05E870EB00D6</digest>
+    <digest id="MD5-CAM-1.0.1">7CB3B131356CC90D4F84548F8A35E2F1</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.glioma_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">5E3029E43DAEBA44288A5A13A4029B9F</digest>
+    <digest id="MD5-CAM-1.0.1">EDD6AF839F6084EFC2939AB1AC0BABCC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.endometrial_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">39B8FF27667CDC3BC31201DF4BA09650</digest>
+    <digest id="MD5-CAM-1.0.1">B43CD815312CE15E2BA98702F10DC620</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.renal_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B0E6B8276ECAB2EFDBC62493ABA0A020</digest>
+    <digest id="MD5-CAM-1.0.1">1EB227344DF9CE8436334562B65BDC0D</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.melanoma_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">78C6651718CDF97A1BF096FE483EE1D8</digest>
+    <digest id="MD5-CAM-1.0.1">9DFE3077F5945AF957118A40D10E0F36</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.testicular_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">053751A58A2B09347B45CBC965C1572F</digest>
+    <digest id="MD5-CAM-1.0.1">27EAC7B96A6549883D81006523F7EDC7</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.hpb_risk_gel.v0">
-    <digest id="MD5-CAM-1.0.1">84C34952ABBC3B591BFE26E109AA25F1</digest>
+    <digest id="MD5-CAM-1.0.1">8C10A12AC90A0E384CD88E14F97742DE</digest>
   </integrity_checks>
 </template>

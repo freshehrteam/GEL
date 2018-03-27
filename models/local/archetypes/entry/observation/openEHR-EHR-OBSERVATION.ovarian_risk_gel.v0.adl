@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=55732ac9-e175-43b9-9730-531e9c12cb1d)
 	openEHR-EHR-OBSERVATION.ovarian_risk_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-14">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of ovarian cancer risk factors in the context of the GEL cancer dataset.">
 			use = <"Use to record ovarian cancer risk factors as part of the GEL cancer dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"94900926BC12358B03A3FCEC4E9C18EF">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"D3634DEAF93C92676D70B4265C989B57">
+		["build_uid"] = <"da4a2da4-8001-42aa-8ae9-c5c901413e60">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -108,6 +114,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

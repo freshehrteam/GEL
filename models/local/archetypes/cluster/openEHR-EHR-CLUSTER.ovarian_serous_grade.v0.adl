@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=b03219e3-c7ba-48d1-bbff-5815e6022267)
 	openEHR-EHR-CLUSTER.ovarian_serous_grade.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-26">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 This archetype in intended to be used in the Test findings slot in a laboratory test result observation archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"06372BDAEEA5435E579751414AC2D936">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"26F0BA6078A48C0FA40933177C2590E2">
+		["build_uid"] = <"b5d15e1c-d134-483b-8ee1-df0cf5211cf8">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -47,6 +53,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

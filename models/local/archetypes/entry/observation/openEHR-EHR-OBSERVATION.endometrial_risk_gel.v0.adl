@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=8097a0d9-403f-40ff-9cad-cfd80b7e32c6)
 	openEHR-EHR-OBSERVATION.endometrial_risk_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-14">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of endometrial cancer risk factors in the context of the GEL cancer dataset.">
 			use = <"Use to record endometrial cancer risk factors as part of the GEL cancer dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"39B8FF27667CDC3BC31201DF4BA09650">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"B43CD815312CE15E2BA98702F10DC620">
+		["build_uid"] = <"bec3d6aa-ea40-40f8-b1f9-88ad1970fa77">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -67,6 +73,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=be68ce99-a750-44f7-bff7-34a4e4c4ac74)
 	openEHR-EHR-OBSERVATION.hpb_risk_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-14">
 	>
 	details = <
@@ -18,15 +18,21 @@ description
 			purpose = <"For the capture and reporting of liver, pancreatic and biliary cancer risk factors in the context of GEL cancer datasets.">
 			use = <"Use to record hepato-pancreato-biliary cancer risk factors as part of GEL cancer datasets.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"84C34952ABBC3B591BFE26E109AA25F1">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"8C10A12AC90A0E384CD88E14F97742DE">
+		["build_uid"] = <"1d917c22-7997-46d7-87ea-037430982116">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -58,7 +64,7 @@ definition
 													[local::
 													at0012, 	-- None
 													at0013, 	-- Previous
-													at0014, 	-- Current  
+													at0014, 	-- Current
 													at0015]	-- Unknown
 												}
 											}
@@ -89,6 +95,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
@@ -152,7 +159,7 @@ ontology
 					description = <"The subject has previously had Hepatitis C infection.">
 				>
 				["at0014"] = <
-					text = <"Current  ">
+					text = <"Current">
 					description = <"The subject currently has Hepatitis C infection.">
 				>
 				["at0015"] = <

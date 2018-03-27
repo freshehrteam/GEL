@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4; uid=aa128bc4-5da9-4e32-bf3d-4a2e0841939d)
+﻿archetype (adl_version=1.4; uid=bc4333c0-159c-46bf-9c24-8eebbd6eb661)
 	openEHR-EHR-OBSERVATION.laboratory_test.v0
 
 concept
@@ -38,6 +38,30 @@ description
 		["date"] = <"2015-07-20">
 	>
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere funn og tolkning av laboratorieanalyser utført på vev og kroppsvæsker. Dette er typisk utført i et laboratorie, men kan også være gjort i andre miljøer, som for eksempel ved pasientnære analyser.">
+			use = <"Brukes for å lagre ethvert svar fra en laboratorieanalyse, inkludert svaret fra en analyse utført på prøvemateriale som er tatt som del av en prosedyre eller operasjon.
+
+Multianalysepakker kan bli representert ved å bruke templater eller spesialiserte arketyper.
+
+Mer komplekse analyser som histopatologi eller mikrobiologi bør, når det kreves mer strukturert innhold, bli representert ved å bruke spesialiserte arketyper.
+
+Laboratoriesvar-arketypen har i høy grad samsvar med HL7 FHIR-ressursen \"Diagnostic Report\".
+
+Blir normalt rapportert tilbake til rekvirerende kliniker som del av en overordnet COMPOSITION-basert rapport.">
+			keywords = <"lab", "patologi", "biokjemi", "hematologi", "mikrobiologi", "immunologi", "laboratorie", "anatomisk", "kjemisk", "klinisk", "immunopatologi", "cytologi", "histopatologi", "prøve", "biopsi", "preparat", "rettsmedisinsk", "genetisk">
+			misuse = <"Skal ikke brukes for svar på analyser som ikke er fra laboratorier, som bildediagnostiske undersøkelser, EKG eller tester av respirasjonsfunksjon.
+
+Skal ikke brukes for å fremstille en hel oppsummert rapport. Denne laboratorieanalysesvar-arketypen fremstiller bare ett av mange resultatsett som vanligvis blir sett i et kolonne i en kumulativ svarrapport.
+
+Skal ikke brukes for å lagre en obduksjonsrapport, selv om prøver av noen prøvematerialer som blir tatt i en obduksjon kan bli representert i denne arketypen. 
+
+Denne arketypen er passende for å representere generelle analyseresultat, men er ikke ment å dekke fullstendige oversiktsrapporter. For disse er det nødvendig å bruke spesialiserte arketyper i tillegg.
+
+Denne arketypen har blitt laget for å støtte biomedisinske analyser, og er muligens ikke tilstrekkelig for andre typer analyser.">
+			copyright = <"© Clinical Models UK">
+		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
 			purpose = <"لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات. 
@@ -47,7 +71,7 @@ description
 يتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.">
 			keywords = <"المعمل - المختبر", "الباثولوجيا - المرضية", "الكيمياء الحيوية", "الدمويات", "الميكروبيولوجيا", "المناعيات - علم المناعة">
 			misuse = <"قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.">
-			copyright = <"© openEHR Foundation">
+			copyright = <"© Clinical Models UK">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -71,29 +95,7 @@ Not to be used to record an Autopsy report, although tests on some specimens tha
 This archetype is suitable for representation of general pathology test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.
 
 This archetype has been designed to support clinical pathology and may not be appropriate for other kinds of pathology use.">
-		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere funn og tolkning av laboratorieanalyser utført på vev og kroppsvæsker. Dette er typisk utført i et laboratorie, men kan også være gjort i andre miljøer, som for eksempel ved pasientnære analyser.">
-			use = <"Brukes for å lagre ethvert svar fra en laboratorieanalyse, inkludert svaret fra en analyse utført på prøvemateriale som er tatt som del av en prosedyre eller operasjon.
-
-Multianalysepakker kan bli representert ved å bruke templater eller spesialiserte arketyper.
-
-Mer komplekse analyser som histopatologi eller mikrobiologi bør, når det kreves mer strukturert innhold, bli representert ved å bruke spesialiserte arketyper.
-
-Laboratoriesvar-arketypen har i høy grad samsvar med HL7 FHIR-ressursen \"Diagnostic Report\".
-
-Blir normalt rapportert tilbake til rekvirerende kliniker som del av en overordnet COMPOSITION-basert rapport.">
-			keywords = <"lab", "patologi", "biokjemi", "hematologi", "mikrobiologi", "immunologi", "laboratorie", "anatomisk", "kjemisk", "klinisk", "immunopatologi", "cytologi", "histopatologi", "prøve", "biopsi", "preparat", "rettsmedisinsk", "genetisk">
-			misuse = <"Skal ikke brukes for svar på analyser som ikke er fra laboratorier, som bildediagnostiske undersøkelser, EKG eller tester av respirasjonsfunksjon.
-
-Skal ikke brukes for å fremstille en hel oppsummert rapport. Denne laboratorieanalysesvar-arketypen fremstiller bare ett av mange resultatsett som vanligvis blir sett i et kolonne i en kumulativ svarrapport.
-
-Skal ikke brukes for å lagre en obduksjonsrapport, selv om prøver av noen prøvematerialer som blir tatt i en obduksjon kan bli representert i denne arketypen. 
-
-Denne arketypen er passende for å representere generelle analyseresultat, men er ikke ment å dekke fullstendige oversiktsrapporter. For disse er det nødvendig å bruke spesialiserte arketyper i tillegg.
-
-Denne arketypen har blitt laget for å støtte biomedisinske analyser, og er muligens ikke tilstrekkelig for andre typer analyser.">
+			copyright = <"© Clinical Models UK">
 		>
 		["zh-cn"] = <
 			language = <[ISO_639-1::zh-cn]>
@@ -117,13 +119,14 @@ Denne arketypen har blitt laget for å støtte biomedisinske analyser, og er mul
 此原始型适合于表达一般性的病理学检验结果，但并未打算涵盖完整的提要式报告。对于此类报告，则需要采用额外的特化性原始型来表达相应的数据。
 
 此原始型在设计上已经支持临床病理学，但可能并不适合于其他种类的病理学用途。">
+			copyright = <"© Clinical Models UK">
 		>
 	>
 	lifecycle_state = <"in_development">
 	other_contributors = <"Vebjørn Arntzen, Oslo universitetssykehus, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Sharmila Biswas, Dr Sharmila Biswas GP, Australia", "Johan Bjerner, Fürst AS, Norway", "Doug Chesher, PaLMS, Australia", "Stephen Chu, NEHTA, Australia (Editor)", "Matthew Cordell, NEHTA, Australia", "Andre de Wolf, NeHTA, Australia", "Gail Easterbrook, Flinders Medical Centre, Australia", "David Evans, Queensland Health, Australia", "Shahla Foozonkhah, Ocean Informatics, Australia", "Heath Frankel, Ocean Informatics, Australia", "Grahame Grieve, Health Intersections Pyty Ltd, Australia (Editor)", "Sam Heard, Ocean Informatics, Australia", "Anca Heyd, DIPS AS, Norway", "Mary Kelaher, NEHTA, Australia", "Michael Legg, Michael Legg & associates, Australia", "Heather Leslie, Ocean Health Systems, Australia (openEHR Editor)", "Jan-Arne Ludvigsen, DIPS AS, Norway", "Ole Martin Sand, DIPS AS, Norway", "Mike Martyn, The Hobart Anaesthetic Group, Australia", "Andrew McIntyre, Medical-Objects, Australia", "David McKillop, NEHTA, Australia", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Chris Mitchell, RACGP, Australia", "Stewart Morrison, NEHTA, Australia", "Bjørn Næss, DIPS AS, Norway", "Michael Osborne, Mater Health Services, Australia", "David Rowed, VAMC Clinic, Australia (Editor)", "Mona Saleh (Translator)", "Kyle Shore, Charm Health, Australia", "Sveinung Sørbye, UNN HF, Norway", "Michael Thompson, Queensland Health, Australia", "Gordon Tomes, Australian Institute of Health and Welfare, Australia", "John Tore Valand, Helse Bergen HF, Norway", "Richard Townley-O'Neill, NEHTA, Australia", "Torleif Trydal, Fürst AS, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"Based on NEHTA 'Pathology Test' archetype. Available from: http://dcm.nehta.org.au/ckm/OKM.html#showarchetype_1013.1.839_8
 
 Pathology (Data Specifications) Version 1.0 [Internet]. Sydney, Australia: National E-Health Transition Authority; 2007 May 29 [cited 2011 Jul 11]; Available at http://www.nehta.gov.au/component/docman/doc_download/962-pathology-v10.
@@ -131,11 +134,11 @@ Pathology (Data Specifications) Version 1.0 [Internet]. Sydney, Australia: Natio
 Laboratory Technical Framework, Volume 3: Content, Revision 3.0 [Internet]. USA: IHE International; 2011 May 19; [cited 2011 Jul 11]. Available from: http://www.ihe.net/Technical_Framework/index.cfm#laboratory
 
 Hl7 FHIR Diagnostic Report resource: HL7 fhir; Available from http://www.hl7.org/implement/standards/fhir/diagnosticreport.html">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"E414D31FEE9894952C6115D9D735D7FE">
-		["build_uid"] = <"1a8016c8-04fe-413d-a846-c2f04c79ccc5">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"28DA00B027F05A19CAC484D4036452ED">
+		["build_uid"] = <"a8f26dfb-506e-406d-befe-b2673aa59e36">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -291,6 +294,7 @@ definition
 			}
 		}
 	}
+
 
 
 

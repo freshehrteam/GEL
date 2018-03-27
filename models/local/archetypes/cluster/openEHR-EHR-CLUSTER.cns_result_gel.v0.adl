@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=931efb64-bc65-4d86-9de7-379b0430b863)
 	openEHR-EHR-CLUSTER.cns_result_gel.v0
 
 concept
@@ -7,7 +7,10 @@ language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Hildegard Franke">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2018-03-06">
 	>
 	details = <
 		["en"] = <
@@ -17,14 +20,21 @@ description
 
 This cluster archetype is intended to be used in the Imaging result slot of an Imaging examination result observation.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"892BFFB4D8AAC19E84FF0DAA368483D9">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"0AC45F840CA069DE2E76F4F91EF0DBBF">
+		["build_uid"] = <"63cbfe80-2f88-4ef6-8497-1f62cecb5d07">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -141,6 +151,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

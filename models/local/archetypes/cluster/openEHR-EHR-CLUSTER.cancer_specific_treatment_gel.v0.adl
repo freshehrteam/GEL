@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=1bfc1e05-6811-46c9-bd13-6fcec3df4bed)
 	openEHR-EHR-CLUSTER.cancer_specific_treatment_gel.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-27">
 	>
 	details = <
@@ -20,15 +20,21 @@ description
 
 This cluster archetype is intended to be used in the Procedure details slot of a procedure action archetype.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"52F26F7864246C0C46302C8554991699">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"58FDBACE18F12ED48A56E19CA8851106">
+		["build_uid"] = <"4ba271a1-c105-4bc1-a47c-c2f57b1abba1">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -86,6 +92,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -132,7 +139,7 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Other upper GI cancer treatment">
-					description = <"*">
+					description = <"Details of other upper GI cancer treatment.">
 				>
 				["at0011"] = <
 					text = <"Ablative therapy type">

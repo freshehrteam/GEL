@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>2b17a81c-34f9-4310-ab40-837e517d3aec</id>
+  <name>GEL - Data request Summary.v1</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="GEL Data request summary">
+    <Content xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.request.v0" concept_name="Service request" path="/content">
+      <Rule path="/activities[at0001]/description[at0009]/items[at0148]" default="GEL CDR Data Request" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0135]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0062]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0064]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0065]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0068]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0040]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0145]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0144]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0147]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0076]" max="0" />
+      <Rule path="/activities[at0001]/description[at0009]/items[at0078]" max="0" />
+      <Rule path="/protocol[at0008]/items[at0011]" max="0" />
+      <Rule path="/protocol[at0008]/items[at0127]" max="0" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.information_request_details_gel.v0" concept_name="GEL information request details" path="/activities[at0001]/description[at0009]/items[at0132]" />
+    </Content>
+    <Content xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.service.v0" concept_name="Service" path="/content">
+      <Rule path="/description[at0001]/items[at0014]" default="GEL CDR Data Request" />
+      <Rule path="/description[at0001]/items[at0013]" max="0" />
+      <Rule path="/description[at0001]/items[at0025]" max="0" />
+      <Rule path="/description[at0001]/items[at0021]" max="0" />
+      <Rule path="/description[at0001]/items[at0012]" max="0" />
+      <Rule path="/protocol[at0015]/items[at0018]" max="0" />
+    </Content>
+    <Context>
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.individual_professional.v1" concept_name="Individual professional demographics (UK)" path="/context/other_context[at0001]/items[at0006]" />
+      <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
+      <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
+    </Context>
+  </definition>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
+    <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.individual_professional.v1">
+    <digest id="MD5-CAM-1.0.1">D8FF4CD54F4850A1A914AAEBA3A6FEDF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.request.v0">
+    <digest id="MD5-CAM-1.0.1">C181B6C9E379899299B8FB6559E37388</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.information_request_details_gel.v0">
+    <digest id="MD5-CAM-1.0.1">F53A881A7F26CCC4AAB79D8B749EC3C7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.service.v0">
+    <digest id="MD5-CAM-1.0.1">06C589DF719D7EBD5F6ED1AA617CBDB9</digest>
+  </integrity_checks>
+</template>

@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=752e2a21-e1cd-4f4d-8c5c-144176f6dcb4)
 	openEHR-EHR-CLUSTER.leibovich.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-09-26">
 	>
 	details = <
@@ -18,16 +18,22 @@ description
 			purpose = <"For the capture and reporting of the Leibovich score for metastatic renal cell carcinoma.">
 			use = <"Use to record the Leibovich score for metastatic renal cell carcinoma.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"https://www.baus.org.uk/_userfiles/pages/files/professionals/surg/TJW-Kidney-Cancer.pdf cited 26-Sep-2017.">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"27CE29E7C0EABB9F47CB16CE443F2205">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"1ED4988FD09D50B02A638371267FF05E">
+		["build_uid"] = <"e15e99b8-69dd-4831-959e-c9d40e3d5860">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -87,6 +93,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

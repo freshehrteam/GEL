@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=42187c67-2750-4f1f-9202-0841022be6f0)
 	openEHR-EHR-OBSERVATION.glioma_risk_gel.v0
 
 concept
@@ -7,7 +7,10 @@ language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Hildegard Franke">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2018-03-06">
 	>
 	details = <
 		["en"] = <
@@ -15,14 +18,21 @@ description
 			purpose = <"For the capture and reporting of glioma risk factors in the context of the GEL cancer dataset.">
 			use = <"Use to record glioma risk factors as part of the GEL cancer dataset.">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"5E3029E43DAEBA44288A5A13A4029B9F">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"EDD6AF839F6084EFC2939AB1AC0BABCC">
+		["build_uid"] = <"1de7d691-c654-4ec9-b36f-bcc5508e95fa">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -65,6 +75,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

@@ -724,13 +724,13 @@
     <digest id="MD5-CAM-1.0.1">A3A885984BB3A9B99C735BF1588A04AC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.mammogram_gel.v0">
-    <digest id="MD5-CAM-1.0.1">84692B33C96669BA7A05BFA7B1ED26B5</digest>
+    <digest id="MD5-CAM-1.0.1">4B087AA7A3FB69524591AC42E79CE59C</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cns_result_gel.v0">
-    <digest id="MD5-CAM-1.0.1">892BFFB4D8AAC19E84FF0DAA368483D9</digest>
+    <digest id="MD5-CAM-1.0.1">0AC45F840CA069DE2E76F4F91EF0DBBF</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.laboratory_test.v0">
-    <digest id="MD5-CAM-1.0.1">E414D31FEE9894952C6115D9D735D7FE</digest>
+    <digest id="MD5-CAM-1.0.1">28DA00B027F05A19CAC484D4036452ED</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.specimen.v0">
     <digest id="MD5-CAM-1.0.1">328C511116FD83D7F25973284D8D9F60</digest>
@@ -745,88 +745,88 @@
     <digest id="MD5-CAM-1.0.1">224A986E05282545D614FF0C23F44F03</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.colorectal_tm_gel.v0">
-    <digest id="MD5-CAM-1.0.1">EC044AAD85EE60AAE748D7CBEED956AD</digest>
+    <digest id="MD5-CAM-1.0.1">F386D30232650DAC1F8D13080403F922</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.ovarian_tm_gel.v0">
-    <digest id="MD5-CAM-1.0.1">3C666415FA289CD3BDA7758CAED2568E</digest>
+    <digest id="MD5-CAM-1.0.1">09942726BA87CE05C2BFBDDA2C30B3B9</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.lung_tm_gel.v0">
-    <digest id="MD5-CAM-1.0.1">54A27CFDFE8F5BCB5551E0ABE782DD76</digest>
+    <digest id="MD5-CAM-1.0.1">5244D524B6CA668EC746BB7CDF63C29F</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.childhood_tm_gel.v0">
-    <digest id="MD5-CAM-1.0.1">387DC195C8DCC6D3DC09BF3031F2B331</digest>
+    <digest id="MD5-CAM-1.0.1">CAEBAFA3A4C83B421A866DCA4537BBAF</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.gleason_score.v0">
     <digest id="MD5-CAM-1.0.1">F561BC0D245364912E50D6D2425DB4F3</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.fuhrman.v0">
-    <digest id="MD5-CAM-1.0.1">5B2FC2B5B7617CAB9BA5DFAC0E40B082</digest>
+    <digest id="MD5-CAM-1.0.1">EE29607FAABB1EFB32E8CC833CD335F3</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.figo_grade.v0">
-    <digest id="MD5-CAM-1.0.1">1A09CCEF0286CD6DD1C851E75EBFBDB3</digest>
+    <digest id="MD5-CAM-1.0.1">00A1D4C4F6B4D5F54E3C8C1711AB9F00</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.invasive_grade_breast.v0">
-    <digest id="MD5-CAM-1.0.1">B51C1FF81E9832729BCD7D6E5D3363A3</digest>
+    <digest id="MD5-CAM-1.0.1">5C1B352D2ABCA0EA286F8724F5FD868E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.dcis_grade.v0">
-    <digest id="MD5-CAM-1.0.1">12B6288A18FDBD1453710F542BA802B1</digest>
+    <digest id="MD5-CAM-1.0.1">57BFF41A7AF33EF01E9A0E2DD97FD4E0</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.serum_tm.v0">
-    <digest id="MD5-CAM-1.0.1">42917071D51A7CF74CBDFADB94F14821</digest>
+    <digest id="MD5-CAM-1.0.1">1B266D68DCBF52C17E9C851811E57A03</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.who_cns_tm.v0">
-    <digest id="MD5-CAM-1.0.1">0CD4D801F5360820CFB8B27099CDEA9F</digest>
+    <digest id="MD5-CAM-1.0.1">2361E78B5599EFFF7F7DF8635F8C870A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.glioma_who2007.v0">
-    <digest id="MD5-CAM-1.0.1">40A65E03A82765F577B532EF24393466</digest>
+    <digest id="MD5-CAM-1.0.1">6FBAF8331EB973FBCE5F29006BD49CF4</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.sarcomatoid_change.v0">
-    <digest id="MD5-CAM-1.0.1">FED19464F1BA66A6CC9FFDB9E7FAB218</digest>
+    <digest id="MD5-CAM-1.0.1">4CC7EE244AF5DF0112CA92A8DA4649E6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.tumour_grade_sarcoma.v0">
-    <digest id="MD5-CAM-1.0.1">1C861E1A75D1A37DC93FD0ED975BBB7D</digest>
+    <digest id="MD5-CAM-1.0.1">CC700925132D4317CA7918EB23B8EA8B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.leibovich.v0">
-    <digest id="MD5-CAM-1.0.1">27CE29E7C0EABB9F47CB16CE443F2205</digest>
+    <digest id="MD5-CAM-1.0.1">1ED4988FD09D50B02A638371267FF05E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.ovarian_serous_grade.v0">
-    <digest id="MD5-CAM-1.0.1">06372BDAEEA5435E579751414AC2D936</digest>
+    <digest id="MD5-CAM-1.0.1">26F0BA6078A48C0FA40933177C2590E2</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.urology_grade.v0">
-    <digest id="MD5-CAM-1.0.1">CCD01367061C12E00974C31392295186</digest>
+    <digest id="MD5-CAM-1.0.1">2F7FEE8E655E255802A87309AF4D941A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.bladder_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">F3A31534C0A186D37768698FF6499F4D</digest>
+    <digest id="MD5-CAM-1.0.1">76C5927B7F84965B9B34727E4C9A7347</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.breast_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">3FC9CDCA321F6805E897C5B772D8060C</digest>
+    <digest id="MD5-CAM-1.0.1">9E2AA5B73B477C5E2F0FF76344F3578B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.er_allred_score.v0">
-    <digest id="MD5-CAM-1.0.1">1BB6EE4F74F9D19473E88996947D5D70</digest>
+    <digest id="MD5-CAM-1.0.1">253FA4CA4C1036818E10B875B7988713</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.pr_allred_score.v0">
-    <digest id="MD5-CAM-1.0.1">4E1853D9CE17AA71E8AC0F51536F4E53</digest>
+    <digest id="MD5-CAM-1.0.1">0B7874CFEB5F5EC40B7EE819C4B483B2</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.cns_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">176C0B404B5B2F9D833E685EBD97F0D9</digest>
+    <digest id="MD5-CAM-1.0.1">00C27FEF89606ADC0213529B73AD8664</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.endometrial_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">ABF1289C690A68FF958798FDA1C37756</digest>
+    <digest id="MD5-CAM-1.0.1">31775F83B4A721D14765C955483F0766</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.gynae_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">30EB77C39655969BBAC7728513A3CE73</digest>
+    <digest id="MD5-CAM-1.0.1">B2D3FB7B7FDAC9A2D8D498F5B36D998B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.kidney_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">40B05861C054F1BCCF7F25D7872E0C33</digest>
+    <digest id="MD5-CAM-1.0.1">B1DDD558AB26500390E1EF545885D76A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.lung_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">9BEF7668FE0A5AD749125F846F2BF987</digest>
+    <digest id="MD5-CAM-1.0.1">510D08FBC0862DD2A0DB17BCBAD8ECCC</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.prostate_cancer_pathology_gel.v0">
     <digest id="MD5-CAM-1.0.1">BB14C537DF81296490905A1BBC30BF95</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.testes_cancer_pathology_gel.v0">
-    <digest id="MD5-CAM-1.0.1">B73C5FE808D4108DA1B44DBF57E1D44C</digest>
+    <digest id="MD5-CAM-1.0.1">145356B4C5DD6CBAD8556D0637B27F87</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.laboratory_test_panel.v0">
     <digest id="MD5-CAM-1.0.1">CEB460F240FB987B15C7C50655BC132D</digest>
