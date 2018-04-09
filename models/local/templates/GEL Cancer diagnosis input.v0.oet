@@ -73,7 +73,7 @@
       <Rule path="/data[at0001]/items[at0073]" max="0" />
       <Rule path="/data[at0001]/items[at0069]" max="0" />
       <Rule path="/protocol[at0032]" hide_on_form="true" />
-      <Rule path="/protocol[at0032]/items[at0070]" max="0" />
+      <Rule path="/protocol[at0032]/items[at0070]" name="Event date" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour ID GEL" max="1" path="/data[at0001]/items[at0043]" name="Tumour ID" hide_on_form="true" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.clinical_evidence.v1" concept_name="Clinical evidence" max="1" path="/data[at0001]/items[at0043]" hide_on_form="true">
         <Rule path="/items[at0003]" min="1" name="Base of diagnosis">
