@@ -2190,7 +2190,7 @@
                   <value>openEHR-EHR-CLUSTER.inrg_staging.v0</value>
                 </archetype_id>
                 <term_definitions code="at0000">
-                  <items id="description">Integrated Neuroblastoma Risk Group staging system. </items>
+                  <items id="description">Integrated Neuroblastoma Risk Group staging system.</items>
                   <items id="text">INRG staging</items>
                 </term_definitions>
                 <term_definitions code="at0001">
@@ -2198,19 +2198,19 @@
                   <items id="text">INRG stage</items>
                 </term_definitions>
                 <term_definitions code="at0002">
-                  <items id="description">Stage L1: The Tumour is located only in the area where it started; no IDRFs are found on imaging scans, such as CT or MR</items>
+                  <items id="description">Stage L1: The Tumour is located only in the area where it started; no IDRFs are found on imaging scans, such as CT or MR.</items>
                   <items id="text">L1</items>
                 </term_definitions>
                 <term_definitions code="at0003">
-                  <items id="description">Stage L2: The tumour has not spread beyond the area where it started and the nearby tissue; IDRFs are found on imaging scans, such as CT or MR</items>
+                  <items id="description">Stage L2: The tumour has not spread beyond the area where it started and the nearby tissue; IDRFs are found on imaging scans, such as CT or MR.</items>
                   <items id="text">L2</items>
                 </term_definitions>
                 <term_definitions code="at0004">
-                  <items id="description">Stage M: The tumour has spread to other parts of the body (except stage MS, see below)</items>
+                  <items id="description">Stage M: The tumour has spread to other parts of the body (except stage MS, see below).</items>
                   <items id="text">M</items>
                 </term_definitions>
                 <term_definitions code="at0005">
-                  <items id="description">Stage MS: The tumour has spread to only the skin, liver, and/or bone marrow (less than 10% marrow involvement) in patients less than 18 months</items>
+                  <items id="description">Stage MS: The tumour has spread to only the skin, liver, and/or bone marrow (less than 10% marrow involvement) in patients less than 18 months.</items>
                   <items id="text">MS</items>
                 </term_definitions>
               </children>
@@ -2791,8 +2791,23 @@
                               <value>local</value>
                             </terminology_id>
                             <code_list>at0002</code_list>
+                            <code_list>at0007</code_list>
+                            <code_list>at0008</code_list>
+                            <code_list>at0009</code_list>
+                            <code_list>at0010</code_list>
+                            <code_list>at0011</code_list>
                             <code_list>at0003</code_list>
+                            <code_list>at0012</code_list>
+                            <code_list>at0013</code_list>
                             <code_list>at0004</code_list>
+                            <code_list>at0014</code_list>
+                            <code_list>at0015</code_list>
+                            <code_list>at0016</code_list>
+                            <code_list>at0017</code_list>
+                            <code_list>at0018</code_list>
+                            <code_list>at0006</code_list>
+                            <code_list>at0019</code_list>
+                            <code_list>at0020</code_list>
                           </children>
                         </attributes>
                       </children>
@@ -2901,24 +2916,84 @@
                   <items id="text">FIGO grade</items>
                 </term_definitions>
                 <term_definitions code="at0001">
-                  <items id="description">*</items>
+                  <items id="description">Details of FIGO grade.</items>
                   <items id="text">FIGO grade</items>
                 </term_definitions>
                 <term_definitions code="at0002">
-                  <items id="description">Predominant glandular growth and &lt; 5% nonsquamous solid component; glandular architecture is identified by the presence of patent lumina within the gland, relatively preserved polarity of the epithelium and absent to mild epithelial stratification.</items>
-                  <items id="text">FIGO 1</items>
+                  <items id="description">FIGO Stage I.</items>
+                  <items id="text">i</items>
                 </term_definitions>
                 <term_definitions code="at0003">
-                  <items id="description">6-50 percent nonsquamous solid component.</items>
-                  <items id="text">FIGO 2</items>
+                  <items id="description">FIGO Stage II.</items>
+                  <items id="text">ii</items>
                 </term_definitions>
                 <term_definitions code="at0004">
-                  <items id="description">More than 50 percent nonsquamous solid component.</items>
-                  <items id="text">FIGO 3</items>
+                  <items id="description">FIGO Stage III.</items>
+                  <items id="text">iii</items>
                 </term_definitions>
                 <term_definitions code="at0005">
                   <items id="description">Version of FIGO classification used.</items>
                   <items id="text">FIGO version</items>
+                </term_definitions>
+                <term_definitions code="at0006">
+                  <items id="description">FIGO Stage IV.</items>
+                  <items id="text">iv</items>
+                </term_definitions>
+                <term_definitions code="at0007">
+                  <items id="description">FIGO Stage IA.</items>
+                  <items id="text">ia</items>
+                </term_definitions>
+                <term_definitions code="at0008">
+                  <items id="description">FIGO Stage IB.</items>
+                  <items id="text">ib</items>
+                </term_definitions>
+                <term_definitions code="at0009">
+                  <items id="description">FIGO Stage IC1.</items>
+                  <items id="text">ic1</items>
+                </term_definitions>
+                <term_definitions code="at0010">
+                  <items id="description">FIGO Stage IC2.</items>
+                  <items id="text">ic2</items>
+                </term_definitions>
+                <term_definitions code="at0011">
+                  <items id="description">FIGO Stage IC3.</items>
+                  <items id="text">ic3</items>
+                </term_definitions>
+                <term_definitions code="at0012">
+                  <items id="description">FIGO Stage IIA.</items>
+                  <items id="text">iia</items>
+                </term_definitions>
+                <term_definitions code="at0013">
+                  <items id="description">FIGO Stage IIB.</items>
+                  <items id="text">iib</items>
+                </term_definitions>
+                <term_definitions code="at0014">
+                  <items id="description">FIGO Stage IIIA1(i).</items>
+                  <items id="text">iiia1_i</items>
+                </term_definitions>
+                <term_definitions code="at0015">
+                  <items id="description">FIGO Stage IIIA1(ii).</items>
+                  <items id="text">iiia1_ii</items>
+                </term_definitions>
+                <term_definitions code="at0016">
+                  <items id="description">FIGO Stage IIIA2.</items>
+                  <items id="text">iiia2</items>
+                </term_definitions>
+                <term_definitions code="at0017">
+                  <items id="description">FIGO Stage IIIB.</items>
+                  <items id="text">iiib</items>
+                </term_definitions>
+                <term_definitions code="at0018">
+                  <items id="description">FIGO Stage IIIC.</items>
+                  <items id="text">iiic</items>
+                </term_definitions>
+                <term_definitions code="at0019">
+                  <items id="description">FIGO Stage IVA.</items>
+                  <items id="text">iva</items>
+                </term_definitions>
+                <term_definitions code="at0020">
+                  <items id="description">FIGO Stage IVB.</items>
+                  <items id="text">ivb</items>
                 </term_definitions>
               </children>
               <children xsi:type="C_ARCHETYPE_ROOT">
@@ -3628,7 +3703,7 @@
                   <items id="text">Portal invasion</items>
                 </term_definitions>
                 <term_definitions code="at0004">
-                  <items id="description">Findings indicate that portal invasion is present,</items>
+                  <items id="description">Findings indicate that portal invasion is present.</items>
                   <items id="text">Y Present</items>
                 </term_definitions>
                 <term_definitions code="at0005">
@@ -3980,51 +4055,51 @@
                   <items id="text">Stage grouping testicular</items>
                 </term_definitions>
                 <term_definitions code="at0002">
-                  <items id="description">Stage 1</items>
+                  <items id="description">Stage 1.</items>
                   <items id="text">1</items>
                 </term_definitions>
                 <term_definitions code="at0003">
-                  <items id="description">Stage 1S</items>
+                  <items id="description">Stage 1S.</items>
                   <items id="text">1S</items>
                 </term_definitions>
                 <term_definitions code="at0004">
-                  <items id="description">Stage 1M</items>
+                  <items id="description">Stage 1M.</items>
                   <items id="text">1M</items>
                 </term_definitions>
                 <term_definitions code="at0005">
-                  <items id="description">Stage 2A</items>
+                  <items id="description">Stage 2A.</items>
                   <items id="text">2A</items>
                 </term_definitions>
                 <term_definitions code="at0006">
-                  <items id="description">Stage 2B</items>
+                  <items id="description">Stage 2B.</items>
                   <items id="text">2B</items>
                 </term_definitions>
                 <term_definitions code="at0007">
-                  <items id="description">Stage 2C</items>
+                  <items id="description">Stage 2C.</items>
                   <items id="text">2C</items>
                 </term_definitions>
                 <term_definitions code="at0008">
-                  <items id="description">Stage 3A</items>
+                  <items id="description">Stage 3A.</items>
                   <items id="text">3A</items>
                 </term_definitions>
                 <term_definitions code="at0009">
-                  <items id="description">Stage 3B</items>
+                  <items id="description">Stage 3B.</items>
                   <items id="text">3B</items>
                 </term_definitions>
                 <term_definitions code="at0010">
-                  <items id="description">Stage 3C</items>
+                  <items id="description">Stage 3C.</items>
                   <items id="text">3C</items>
                 </term_definitions>
                 <term_definitions code="at0011">
-                  <items id="description">Stage 4A</items>
+                  <items id="description">Stage 4A.</items>
                   <items id="text">4A</items>
                 </term_definitions>
                 <term_definitions code="at0012">
-                  <items id="description">Stage 4B</items>
+                  <items id="description">Stage 4B.</items>
                   <items id="text">4B</items>
                 </term_definitions>
                 <term_definitions code="at0013">
-                  <items id="description">Stage 4C</items>
+                  <items id="description">Stage 4C.</items>
                   <items id="text">4C</items>
                 </term_definitions>
                 <term_definitions code="at0014">
