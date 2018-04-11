@@ -212,7 +212,7 @@
     <digest id="MD5-CAM-1.0.1">572492671A23A89E13896750FF4E9073</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.figo_grade.v0">
-    <digest id="MD5-CAM-1.0.1">010657E72010C77B7DF17B2761C27F99</digest>
+    <digest id="MD5-CAM-1.0.1">1DB98DF4D42C95BC70C4035CCF0A1E2D</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.upper_gi_staging_gel.v0">
     <digest id="MD5-CAM-1.0.1">0F5E07B19C49EE8BAA384F720AF96D54</digest>

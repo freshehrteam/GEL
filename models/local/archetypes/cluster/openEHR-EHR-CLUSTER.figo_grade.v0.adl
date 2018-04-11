@@ -26,14 +26,14 @@ This cluster archetype is intended to be used in the Test findings slot in a lab
 	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
-		["revision"] = <"0.0.1-alpha">
+		["MD5-CAM-1.0.1"] = <"1DB98DF4D42C95BC70C4035CCF0A1E2D">
 		["original_publisher"] = <"UK Clinical Models">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["build_uid"] = <"4d26dee3-019c-4b67-8b90-8125b2286be0">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["references"] = <"http://www.pathologyoutlines.com/topic/uterusendometrialcarc.html cited 14-Sep-2017.">
-		["MD5-CAM-1.0.1"] = <"010657E72010C77B7DF17B2761C27F99">
+		["revision"] = <"0.0.1-alpha">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
 		["custodian_organisation"] = <"UK Clinical Models">
 	>
@@ -56,11 +56,14 @@ definition
 							at0012, 	-- iia
 							at0013, 	-- iib
 							at0004, 	-- iii
+							at0021, 	-- iiia
 							at0014, 	-- iiia1_i
 							at0015, 	-- iiia1_ii
 							at0016, 	-- iiia2
 							at0017, 	-- iiib
 							at0018, 	-- iiic
+							at0022, 	-- iiic1
+							at0023, 	-- iiic2
 							at0006, 	-- iv
 							at0019, 	-- iva
 							at0020]	-- ivb
@@ -163,6 +166,18 @@ ontology
 				["at0020"] = <
 					text = <"ivb">
 					description = <"FIGO Stage IVB.">
+				>
+				["at0021"] = <
+					text = <"iiia">
+					description = <"FIGO Stage IIIA.">
+				>
+				["at0022"] = <
+					text = <"iiic1">
+					description = <"FIGO Stage IIIC1.">
+				>
+				["at0023"] = <
+					text = <"iiic2">
+					description = <"FIGO Stage IIIC2.">
 				>
 			>
 		>
