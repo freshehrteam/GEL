@@ -2835,11 +2835,14 @@
                             <code_list>at0012</code_list>
                             <code_list>at0013</code_list>
                             <code_list>at0004</code_list>
+                            <code_list>at0021</code_list>
                             <code_list>at0014</code_list>
                             <code_list>at0015</code_list>
                             <code_list>at0016</code_list>
                             <code_list>at0017</code_list>
                             <code_list>at0018</code_list>
+                            <code_list>at0022</code_list>
+                            <code_list>at0023</code_list>
                             <code_list>at0006</code_list>
                             <code_list>at0019</code_list>
                             <code_list>at0020</code_list>
@@ -3029,6 +3032,18 @@
                 <term_definitions code="at0020">
                   <items id="description">FIGO Stage IVB.</items>
                   <items id="text">ivb</items>
+                </term_definitions>
+                <term_definitions code="at0021">
+                  <items id="description">FIGO Stage IIIA.</items>
+                  <items id="text">iiia</items>
+                </term_definitions>
+                <term_definitions code="at0022">
+                  <items id="description">FIGO Stage IIIC1.</items>
+                  <items id="text">iiic1</items>
+                </term_definitions>
+                <term_definitions code="at0023">
+                  <items id="description">FIGO Stage IIIC2.</items>
+                  <items id="text">iiic2</items>
                 </term_definitions>
               </children>
               <children xsi:type="C_ARCHETYPE_ROOT">
