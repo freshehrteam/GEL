@@ -1,0 +1,110 @@
+{
+    "version": "3.2.0",
+    "consentFormUpdates": [
+        {
+            "id": "c1_cf_v2_2",
+            "name": "Participant consent form \u2013 for patients with cancer (or suspected cancer) - version 2.2 dated 01/07/2016",
+            "regions": ["ENG"],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": true
+        },
+        {
+            "id": "c2_cf_v2_5",
+            "name": "Personal consultee declaration form \u2013 for personal consultees of patients with cancer (or suspected cancer) - version 2.5 dated 01/07/2016",
+            "regions": ["ENG"],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": false
+        },
+        {
+            "id": "c5_cf_v1_1",
+            "name": "Consent form for a child participant \u2013 for parents of a child with cancer (or suspected cancer) - version 1.1 dated 01/07/2016",
+            "regions": ["ENG"],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": false
+        },
+        {
+            "id": "7a_cf_v1_0",
+            "name": "Mechanism to vary consent around Additional Finding: \u2018Opt-In\u2019 and \u2018Opt-Out\u2019 forms 7a)Opt IN to Additional Findings Information Sheet and Form for adult and/or child participants (unified, not versioned by patient group)  - version 1.0 and date 19/08/2015",
+            "regions": ["ENG"],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": true
+        },
+        {
+            "id": "7b_cf_v1_0",
+            "name": "Mechanism to vary consent around Additional Finding: \u2018Opt-In\u2019 and \u2018Opt-Out\u2019 forms 7b)Opt OUT from Additional Findings form for adult and/or child participants (unified, not versioned by patient group) - version 1.0 and date 19/08/2015",
+            "regions": ["ENG"],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": true
+        },
+        {
+            "id": "c1_cf_v2_3",
+            "name": "C1 Adult with cancer - version 2.3 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": true
+        },
+        {
+            "id": "c2_cf_v2_6",
+            "name": "C2 Consultees  of an adult with cancer - version 2.6 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": false
+        },
+        {
+            "id": "c5_cf_v1_2",
+            "name": "C5 Parents of a child aged under 16 with cancer \u2013 version 1.2 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": false
+        },
+        {
+            "id": "c6_cf_v1_0",
+            "name": "C6 Parents of a deceased child aged under 16 with cancer - version 1.0 and date 01/01/2017 ",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": false,
+            "askReproductiveFindingsQuestion": false
+        },
+        {
+            "id": "c8_cf_v1_0",
+            "name": "C8 Nominated representatives, relatives or friends of a deceased adult with cancer - version 1.0 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": false,
+            "askReproductiveFindingsQuestion": false
+        },
+        {
+            "id": "7a_cf_v1_1",
+            "name": "a) Opt IN to Additional Findings for adults, parents of children or consultees - version 1.1 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": true
+        },
+        {
+            "id": "7b_cf_v1_1",
+            "name": "Opt OUT from Additional Findings for adults , parents of children or consultees - version 1.1 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ],
+            "askAdditionalFindingsQuestion": true,
+            "askReproductiveFindingsQuestion": true
+        }
+    ]
+}

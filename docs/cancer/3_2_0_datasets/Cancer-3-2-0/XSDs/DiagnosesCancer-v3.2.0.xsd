@@ -1,0 +1,1830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/3.2.0"
+    xmlns="https://genomicsengland.co.uk/xsd/cancer/3.2.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://genomicsengland.co.uk/xsd/cancer/3.2.0" vc:minVersion="1.1"
+    elementFormDefault="qualified">
+    <xs:element name="diagnoses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="metadata" type="metadata" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="subject" type="subject-29921" minOccurs="1" maxOccurs="unbounded"
+                />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="metadata">
+        <xs:sequence>
+            <xs:element name="schema-name" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="DiagnosesCancer"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="schema-version" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="3.2.0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="date-time" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>
+                        <p>The dateTime that this file was generated</p>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="source-organisation" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>
+                        <p>ODS code of the source organisation within the GMC sending the
+                            message</p>
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="source-system" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>
+                        <p>Source system. Optional but may be used to supply source with information
+                            if there are any issues with the submitted XML.</p>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="local-report-id" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>
+                        <p>Source system report Id. Optional but may be used to supply source with
+                            information if there are any issues with the submitted XML.</p>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="subject-29921">
+        <xs:sequence>
+            <xs:element name="participant-identifiers" type="participant-identifiers-39047"
+                minOccurs="1" maxOccurs="1"/>
+            <xs:element name="diagnosis" type="diagnosis-14896" minOccurs="1" maxOccurs="unbounded"
+            />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="participant-identifiers-39047">
+        <xs:sequence>
+            <xs:element name="person-identifier" minOccurs="1" maxOccurs="1"
+                type="person-identifier-42125">
+                <xs:annotation>
+                    <xs:documentation>Choice of one of either NHS Number (Wales &amp; England) OR
+                        CHI Number (Scotland) OR Health and Care Number (Northern
+                        Ireland).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="participant-id" minOccurs="1" maxOccurs="1" type="participantid-3375">
+                <xs:annotation>
+                    <xs:documentation>Participant Identifier (supplied by Genomics
+                        England)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date-of-birth" minOccurs="1" maxOccurs="1" type="xs:date">
+                <xs:annotation>
+                    <xs:documentation>The date on which a PERSON was born or is officially deemed to
+                        have been born.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="surname" minOccurs="1" maxOccurs="1" type="personfamilyname-321">
+                <xs:annotation>
+                    <xs:documentation>The participant's surname</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="forenames" minOccurs="1" maxOccurs="1" type="persongivenname-323">
+                <xs:annotation>
+                    <xs:documentation>The participant's forenames</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="person-identifier-42125">
+        <xs:choice>
+            <xs:element name="nhs-number" minOccurs="1" maxOccurs="1" type="nhsnumber-3378">
+                <xs:annotation>
+                    <xs:documentation>Validated NHS number for participant</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="chi-number" minOccurs="1" maxOccurs="1" type="chinumber-3380">
+                <xs:annotation>
+                    <xs:documentation>The COMMUNITY HEALTH INDEX NUMBER (CHI NUMBER) uniquely
+                        identifies a PATIENT on the Community Health Index (Scotland) within the NHS
+                        in Scotland. It is the equivalent of the NHS NUMBER in England and
+                        Wales.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="health-and-care-number" minOccurs="1" maxOccurs="1"
+                type="healthandcarenumber-42127">
+                <xs:annotation>
+                    <xs:documentation>Validated HEALTH AND CARE NUMBER (H&amp;C NUMBER). Uniquely
+                        identifies a PATIENT within the NHS in Northern Ireland. It is the
+                        equivalent of the NHS NUMBER in England and Wales.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:simpleType name="participantid-3375">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="\d{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="personfamilyname-321">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9\s-']{1,50}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="persongivenname-323">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9\s-']{1,50}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nhsnumber-3378">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="10"/>
+            <xs:pattern value="[0-9]{10}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="chinumber-3380">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{10}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="healthandcarenumber-42127">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{10}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="diagnosis-14896">
+        <xs:sequence>
+            <xs:element name="event-details" minOccurs="1" maxOccurs="1" type="event-details-40374">
+                <xs:annotation>
+                    <xs:documentation>The local ‘Event Reference’ combined with the Event Date, is
+                        used to identify the actual participant event involved. GMCs must ensure
+                        that local event references are not re-used to refer to different events,
+                        therefore two different events on the same date can be easily identified.
+                        GMCs must also ensure no two participants are given the same event
+                        reference. If a second submission is received with the same local event
+                        reference, then Genomics England will assume that this is an update
+                        pertaining to the same participant event, and will be used in place of the
+                        original submission; any data values previously supplied that are still
+                        applicable must therefore be included.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="morphology" minOccurs="1" maxOccurs="unbounded"
+                type="morphology-40382">
+                <xs:annotation>
+                    <xs:documentation>Choice of ICD03 or SNOMED morphology codes.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="topography" minOccurs="0" maxOccurs="1" type="topography-40383">
+                <xs:annotation>
+                    <xs:documentation>Choice of ICD03 or SNOMED topography codes.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="integrated-tnm" minOccurs="0" maxOccurs="1"
+                type="integrated-tnm-40387">
+                <xs:annotation>
+                    <xs:documentation>Record Integrated TNM stage of the tumour with TNM version
+                        where applicable.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cancer-specific-staging" minOccurs="0" maxOccurs="1"
+                type="cancer-specific-staging-38875">
+                <xs:annotation>
+                    <xs:documentation>Cancer specific staging data. Where applicable, and if
+                        available, the most appropriate cancer specific staging details should be
+                        submitted as part of the diagnosis submission. See COSD guidance for the
+                        recording of cancer site specific staging.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cancer-specific-diagnosis" minOccurs="0" maxOccurs="1"
+                type="cancer-specific-diagnosis-40391">
+                <xs:annotation>
+                    <xs:documentation>New section. COSD Cancer specific diagnosis data can be
+                        submitted as a separate Event or with Diagnosis Event. Submission is
+                        optional however, if submitted, one of the following sections must be
+                        provided</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="diagnosis-icd" minOccurs="1" maxOccurs="1"
+                type="primarydiagnosisicd-311">
+                <xs:annotation>
+                    <xs:documentation>The icd code for the agreed diagnosis</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="diagnosis-snomed-ct" minOccurs="0" maxOccurs="unbounded"
+                type="diagnosiscodesnomedct-10594">
+                <xs:annotation>
+                    <xs:documentation>Optionally provide the SNOMED CT code for the diagnosis in
+                        addition to the ICD code.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="recurrence-indicator" minOccurs="0" maxOccurs="1"
+                type="cancerrecurrencecareplanindicator-422">
+                <xs:annotation>
+                    <xs:documentation>An indication of whether a diagnosis of recurrence has been
+                        recorded for which a new Cancer Care Plan is required.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="metastatic-site" minOccurs="0" maxOccurs="unbounded" type="metastaticsite-418">
+                <xs:annotation>
+                    <xs:documentation>The site of the metastatic disease, if any, at
+                        diagnosis</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="basis-of-diagnosis" minOccurs="1" maxOccurs="1"
+                type="basisofdiagnosiscancer-3547">
+                <xs:annotation>
+                    <xs:documentation>The basis of diagnosis of cancer records show how a cancer was
+                        identified. Please use the NHS data dictionary definition of this
+                        attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tumour-laterality" minOccurs="0" maxOccurs="1"
+                type="tumourlateralitypathological-3557">
+                <xs:annotation>
+                    <xs:documentation>Tumour laterality identifies the side of the body for a tumour
+                        relating to paired organs within a PATIENT based on the evidence from a
+                        pathological examination.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="grade-of-differentiation-at-diagnosis" minOccurs="0" maxOccurs="1"
+                type="gradeofdifferentiationatdiagnosis-416">
+                <xs:annotation>
+                    <xs:documentation>GRADE OF DIFFERENTIATION (AT DIAGNOSIS) is the definitive
+                        grade of the Tumour at the time of PATIENT DIAGNOSIS. COSD Guidance:
+                        Required for all Urological cancers except prostate and testis cancer. This
+                        data item is not applicable to CNS, Sarcoma or Haematology
+                        diagnosis.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tumour-id" minOccurs="1" maxOccurs="1" type="tumourid-42261">
+                <xs:annotation>
+                    <xs:documentation>A locally allocated identifier for the participant's tumour. This should be unique for each tumour submitted from a patient.  Two tumours resected at the same time would have unique Tumour IDs. 
+                        All sample reports and event reports that relate to a Genomics England tumour sample must have a locally allocated Tumour ID. Tumour IDs must be unique within the context of a GMC Clinic and should conform to the following convention:
+                        Clinic ID proceeded by "_" proceeded by the local tumour identifier used to refer to a tumour, which must be between 1 and 16 alphanumeric characters
+                        i.e. RN3_A098BC
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="event-details-40374">
+        <xs:sequence>
+            <xs:element name="event-date" minOccurs="1" maxOccurs="1" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>Date of the clinical event or observation being reported e.g.
+                        date biopsy was taken</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="event-reference" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Unique identifier for local record of clinical event or
+                        observation</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="morphology-40382">
+        <xs:choice>
+            <xs:element name="morphology-snomed" minOccurs="1" maxOccurs="1"
+                type="morphology-snomed-42047">
+                <xs:annotation>
+                    <xs:documentation>This is the morphology of the tumour as categorised by SNOMED
+                        and the version of SNOMED. Versions of SNOMED prior to SNOMED CT cease to be
+                        licenced by The International Health Terminology Standards Development
+                        Organisation (IHTSDO) after April 2017 other than for historical
+                        content.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="morphology-icd" minOccurs="1" maxOccurs="1" type="morphologyicd-40406">
+                <xs:annotation>
+                    <xs:documentation>The morphology code for the diagnosed cancer as defined by
+                        ICDO3. This can be recorded as well as or instead of MORPHOLOGY
+                        (SNOMED).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="morphology-snomedct" minOccurs="1" maxOccurs="1"
+                type="morphologysnomedct-407">
+                <xs:annotation>
+                    <xs:documentation>The morphology code for the diagnosed cancer as defined by
+                        SNOMED CT. This can be recorded as well as or instead of MORPHOLOGY
+                        (ICD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="morphology-snomedrt" minOccurs="1" maxOccurs="1"
+                type="morphologysnomed-10579">
+                <xs:annotation>
+                    <xs:documentation>The morphology code for the diagnosed cancer as defined by
+                        SNOMED RT. This can be recorded as well as or instead of MORPHOLOGY
+                        (ICD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="morphology-snomed-42047">
+        <xs:sequence>
+            <xs:element name="morphology-snomed" minOccurs="1" maxOccurs="1" type="snomed-42181">
+                <xs:annotation>
+                    <xs:documentation>This is the morphology of the tumour as categorised by SNOMED
+                        International / SNOMED CT Versions of SNOMED prior to SNOMED CT cease to be
+                        licenced by The International Health Terminology Standards Development
+                        Organisation (IHTSDO) after April 2017 other than for historical
+                        content</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="snomed-version" minOccurs="1" maxOccurs="1" type="snomedversion-42050">
+                <xs:annotation>
+                    <xs:documentation>The version of SNOMED used to encode MORPHOLOGY (SNOMED) and
+                        TOPOGRAPHY (SNOMED) Versions of SNOMED prior to SNOMED CT cease to be
+                        licenced by The International Health Terminology Standards Development
+                        Organisation (IHTSDO) after April 2017 other than for historical
+                        content</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="topography-40383">
+        <xs:choice>
+            <xs:element name="topography-snomed" minOccurs="1" maxOccurs="1"
+                type="topography-snomed-42051">
+                <xs:annotation>
+                    <xs:documentation>This is the topographical site of the tumour as categorised by
+                        SNOMED International / SNOMED CT. Versions of SNOMED prior to SNOMED CT
+                        cease to be licenced by The International Health Terminology Standards
+                        Development Organisation (IHTSDO) after April 2017.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="topography-icd" minOccurs="1" maxOccurs="1" type="topographyicdo3-414">
+                <xs:annotation>
+                    <xs:documentation>This is the topographical site of the tumour as categorised by
+                        ICD03</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="topography-snomedct" minOccurs="1" maxOccurs="1"
+                type="topographysnomedct-573">
+                <xs:annotation>
+                    <xs:documentation>This is the topographical site of the tumour as categorised by
+                        SNOMED CT.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="topography-snomedrt" minOccurs="1" maxOccurs="1"
+                type="topographysnomed-571">
+                <xs:annotation>
+                    <xs:documentation>This is the topographical site of the tumour as categorised by
+                        SNOMED RT</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="topography-snomed-42051">
+        <xs:sequence>
+            <xs:element name="topography-snomed" minOccurs="1" maxOccurs="1" type="snomed-42181">
+                <xs:annotation>
+                    <xs:documentation>This is the topographical site of the tumour as categorised by
+                        SNOMED International / SNOMED CT Versions of SNOMED prior to SNOMED CT cease
+                        to be licenced by The International Health Terminology Standards Development
+                        Organisation (IHTSDO) after April 2017.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="snomed-version" minOccurs="1" maxOccurs="1" type="snomedversion-42050">
+                <xs:annotation>
+                    <xs:documentation>The version of SNOMED used to encode MORPHOLOGY (SNOMED) and
+                        TOPOGRAPHY (SNOMED) Versions of SNOMED prior to SNOMED CT cease to be
+                        licenced by The International Health Terminology Standards Development
+                        Organisation (IHTSDO) after April 2017 other than for historical
+                        content</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="integrated-tnm-40387">
+        <xs:sequence>
+            <xs:element name="tnm-details" minOccurs="1" maxOccurs="2" type="tnm-details-40388">
+                <xs:annotation>
+                    <xs:documentation>Record overall TNM stage grouping of the tumour OR component
+                        T, N and M stage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="integrated-tnm-version" minOccurs="1" maxOccurs="1"
+                type="tnmeditionnumber-483">
+                <xs:annotation>
+                    <xs:documentation>The UICC edition number used for Tumour, Node and Metastasis
+                        (TNM) staging for cancer diagnosis.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tnm-details-40388">
+        <xs:choice>
+            <xs:element name="component-tnm" minOccurs="1" maxOccurs="1" type="component-tnm-40389">
+                <xs:annotation>
+                    <xs:documentation>Component T, N, M scores reported
+                        individually.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tnm-stage-grouping-integrated" minOccurs="1" maxOccurs="1"
+                type="tnmstagegroupingintegrated-479">
+                <xs:annotation>
+                    <xs:documentation>Record the overall TNM stage grouping of the tumour, derived
+                        from each T, N and M component after treatment. This classification is based
+                        on all the evidence available to the clinician(s) with responsibility for
+                        assessing the patient. Such evidence arises from physical examination,
+                        imaging, endoscopy, biopsy, surgical exploration and other relevant
+                        examinations. The overall integrated TNM stage grouping indicates the tumour
+                        stage after treatment and/or after all available evidence has been
+                        collected. Note: Use UICC coding.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="component-tnm-40389">
+        <xs:sequence>
+            <xs:element name="integrated-t" minOccurs="1" maxOccurs="1"
+                type="tcategoryintegratedstage-473">
+                <xs:annotation>
+                    <xs:documentation>Tumour stage, if integrated TNM not supplied. This is the UICC
+                        code which classifies the size and extent of the primary tumour after
+                        treatment and/or after all available evidence has been
+                        collected.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="integrated-n" minOccurs="1" maxOccurs="1"
+                type="ncategoryintegratedstage-475">
+                <xs:annotation>
+                    <xs:documentation>Nodes stage, if integrated TNM not supplied. This is the UICC
+                        code which classifies the absence or presence and extent of regional lymph
+                        node metastases after treatment and/or after all available evidence has been
+                        collected</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="integrated-m" minOccurs="0" maxOccurs="1"
+                type="mcategoryintegratedstage-477">
+                <xs:annotation>
+                    <xs:documentation>Metastasis stage, if integrated TNM not supplied. This is the
+                        UICC code which classifies the absence or presence of distant metastases
+                        after treatment and/or after all available evidence has been
+                        collected.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="cancer-specific-staging-38875">
+        <xs:sequence>
+            <xs:element name="ajcc-stage" minOccurs="0" maxOccurs="1" type="ajcc-stage-40398">
+                <xs:annotation>
+                    <xs:documentation>AJCC STAGE GROUP and version.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="final-figo-stage" minOccurs="0" maxOccurs="1"
+                type="final-figo-stage-40390">
+                <xs:annotation>
+                    <xs:documentation>Final Figo Stage and Version</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="staging-upper-gi" minOccurs="0" maxOccurs="1"
+                type="staging-upper-gi-38966">
+                <xs:annotation>
+                    <xs:documentation>Priority COSD data items from UPPER GI - STAGING - LIVER HCC
+                        and PANCREAS.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="staging-urology-testicular" minOccurs="0" maxOccurs="1"
+                type="staging-urology-testicular-38968">
+                <xs:annotation>
+                    <xs:documentation>Priority COSD data items from UROLOGY - STAGING - TESTICULAR.
+                        To carry staging details for Urology (Testicular).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="international-neuroblastoma-risk-group-inrg-staging-system"
+                minOccurs="0" maxOccurs="1" type="inrgneuroblastoma-38873">
+                <xs:annotation>
+                    <xs:documentation>Related to COSD v7 CT7050. The International Neuroblastoma
+                        Risk Group Staging System (INRGSS) was designed for the International
+                        Neuroblastoma Risk Group (INRG) pre-treatment classification system. Unlike
+                        the INSS (above), the INRGSS uses only the results of imaging tests taken
+                        before surgery. It does not include surgical results or spread to lymph
+                        nodes to determine the stage. Knowledge regarding the presence or absence of
+                        image defined risk factors (IDRF) are required for this staging system. (See
+                        COSD v7 User Guide for more information)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="modified-dukes-stage" minOccurs="0" maxOccurs="1"
+                type="modifieddukes-236">
+                <xs:annotation>
+                    <xs:documentation>Dukes' stage of disease at diagnosis (based on pathological
+                        evidence but upgraded to Dukes D if clinical evidence of metastasis) Dukes D
+                        should be recorded if metastatic spread is identified either in the
+                        preoperative staging process, e.g. on CT scanning, MRI, USS, chest x-ray or
+                        at the time of operation. It is accepted that a small number of D cases are
+                        cured by further treatment such as liver resection, but for COSD metastatic
+                        spread distant from the primary should always be recorded as
+                        D.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ajcc-stage-40398">
+        <xs:sequence>
+            <xs:element name="ajcc-stage-group" minOccurs="1" maxOccurs="1"
+                type="ajccstagegroup-38870">
+                <xs:annotation>
+                    <xs:documentation>AJCC STAGE GROUP, not the UICC TNM Stage Grouping, should be
+                        collected for stageable skin cancers. American Joint Committee on Cancer
+                        staging of tumour at diagnosis. This is the final integrated stage as agreed
+                        by MDT. See COSD User Guide for site specific options.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ajcc-stage-group-version" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>AJCC Stage Group Version</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="final-figo-stage-40390">
+        <xs:sequence>
+            <xs:element name="final-figo-stage" minOccurs="1" maxOccurs="1"
+                type="finalfigostage-10637">
+                <xs:annotation>
+                    <xs:documentation>The FIGO stage is generally confirmed at pathology review in
+                        MDT meetings following surgery for uterine and vulval malignancies and for
+                        ovarian malignancies undergoing primary surgery. For ovarian malignancies
+                        planned to undergo neoadjuvant chemotherapy and for cases of cervical cancer
+                        (which is staged clinically), the final FIGO stage is determined at the time
+                        of review of clinical findings, imaging, cytology and biopsy histology at
+                        the MDT meeting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="final-figo-stage-version" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Version of final figo used for staging</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="staging-upper-gi-38966">
+        <xs:sequence>
+            <xs:element name="barcelona-clinic-liver-cancer-bclc-stage" minOccurs="0" maxOccurs="1"
+                type="barcelonacliniclivercancerbclcstage-1224">
+                <xs:annotation>
+                    <xs:documentation>The Barcelona Clinic Liver Cancer (BCLC) stage includes both
+                        anatomic and non-anatomic factors and is widely used within the UK to
+                        predict prognosis and determine treatment.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="child-pugh-score" minOccurs="0" maxOccurs="1"
+                type="childpughscore-1228">
+                <xs:annotation>
+                    <xs:documentation>Record the overall Child-Pugh score. This is the level of
+                        disease of the liver.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="portal-invasion" minOccurs="0" maxOccurs="1"
+                type="portalinvasion-1231">
+                <xs:annotation>
+                    <xs:documentation>Record whether there is involvement of the portal vein. (From
+                        UPPER GI - STAGING - LIVER HCC)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="number-of-lesions-radiological" minOccurs="0" maxOccurs="1"
+                type="numberoflesionsradiological-268">
+                <xs:annotation>
+                    <xs:documentation>Radiologically determined number of lesions. (From UPPER GI -
+                        STAGING - LIVER HCC)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="clinical-stage-pancreatic-cancer" minOccurs="0" maxOccurs="1"
+                type="clinicalstagepancreaticcancer-1234">
+                <xs:annotation>
+                    <xs:documentation>COSD UG14560, UPPER GI - STAGING - PANCREAS. Description:
+                        'Clinically agreed stage based on radiological findings of tumour extent in
+                        order to offer treatment recommendations. The category selected depends on
+                        tumour location within the pancreas and the arterial or venous
+                        involvement.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="trans-arterial-chemoembolisation" minOccurs="0" maxOccurs="1"
+                type="yesnonk-1026">
+                <xs:annotation>
+                    <xs:documentation>Was Trans Arterial Chemoembolisation (TACE) carried
+                        out?</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="staging-urology-testicular-38968">
+        <xs:sequence>
+            <xs:element name="stage-grouping-testicular" minOccurs="0" maxOccurs="1"
+                type="stagegroupingtesticular-1166">
+                <xs:annotation>
+                    <xs:documentation>TESTICULAR ONLY. Nationally agreed anatomical stage groupings
+                        as defined by The Royal Marsden Hospital (RMH).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="extranodal-metastases" minOccurs="0" maxOccurs="1"
+                type="extranodalmetastases-1168">
+                <xs:annotation>
+                    <xs:documentation>For testicular Stage 4 patients only Indicate the extent of
+                        metastatic spread (multiple items can be selected)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="lung-metastases-sub-stage-grouping" minOccurs="0" maxOccurs="1"
+                type="lungmetastasessubstagegrouping-1170">
+                <xs:annotation>
+                    <xs:documentation>For testicular cancer only Where lung metastases are
+                        identified, specify the RMH grouping.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="cancer-specific-diagnosis-40391">
+        <xs:sequence>
+            <xs:element name="diagnosis-colorectal" minOccurs="1" maxOccurs="1"
+                type="diagnosis-colorectal-38962">
+                <xs:annotation>
+                    <xs:documentation>Priority COSD data items from COLORECTAL - DIAGNOSIS. To carry
+                        diagnosis details for colorectal cancer.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="diagnosis-colorectal-38962">
+        <xs:sequence>
+            <xs:element name="synchronous-tumour-indicator" minOccurs="1" maxOccurs="unbounded"
+                type="synchronoustumourindicator-42057">
+                <xs:annotation>
+                    <xs:documentation>Related to COSD v7, CO5400. Record any synchronous tumours in
+                        the Colon as identified by the clinician at presentation. Synchronous
+                        tumours are defined as discrete tumours apparently not in continuity with
+                        other primary cancers originating in the same site or
+                        tissue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="primarydiagnosisicd-311">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9.]{3,6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="diagnosiscodesnomedct-10594">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="\d{6,18}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="snomedct-3610">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="\d{6,18}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cancerrecurrencecareplanindicator-422">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="YL">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Yes, including local recurrence</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="YD">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Yes, not including local recurrence </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NN">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>No, not recurrence</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="metastaticsite-418">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="02">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Brain </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="03">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Liver </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="04">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Lung </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="06">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Multiple metastatic sites </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="07">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Unknown metastatic site</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="08">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Skin</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="09">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Distant lymph nodes</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="10">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Bone (excluding Bone Marrow)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Bone marrow</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="99">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Other metastatic site</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="basisofdiagnosiscancer-3547">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Clinical Investigation: Includes all diagnostic techniques
+                            (e.g. X-rays, endoscopy, imaging, ultrasound,</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Clinical: Diagnosis made before death but without the benefit
+                            of any of the following (2-7)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="0">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Death Certificate: The only information available is from a
+                            death certificate</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="7">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Histology of a primary tumour: Histological examination of
+                            tissue from the primary tumour, however obtained, including all cutting
+                            and bone marrow biopsies. Also includes autopsy specimens of a primary
+                            tumour</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="6">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Histology of a metastasis: Histological examination of tissues
+                            from a metastasis, including autopsy specimens</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Cytology: Examination of cells whether from a primary or
+                            secondary site, including fluids aspirated using endoscopes or needles.
+                            Also including microscopic examination of peripheral blood films and
+                            trephine bone marrow aspirates</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Specific tumour markers: Includes biochemical and/or
+                            immunological markers which are specific for a tumour
+                            site</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="9">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Unknown: No information on how the diagnosis has been made
+                            (e.g. PAS or HISS record only)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tumourlateralitypathological-3557">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Bilateral</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="R">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Right</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="L">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Left</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="M">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Midline</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="9">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not Known</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="8">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not applicable</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="gradeofdifferentiationatdiagnosis-416">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="GX">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Grade of differentiation is not appropriate or cannot be
+                            assessed</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="G1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Well differentiated</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="G2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Moderately differentiated</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="G3">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Poorly differentiated</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="G4">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Undifferentiated / anaplastic</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tumourid-42261">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{3,9}_[a-zA-Z0-9]{1,16}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="morphologyicd-40406">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9.-\\/]{5,7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="morphologysnomedct-407">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="\d{6,18}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="morphologysnomed-10579">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{6,8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="snomed-42181">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{6,18}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="snomedversion-42050">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="01">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SNOMED II</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="02">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SNOMED 3</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="03">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SNOMED 3.5</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="04">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SNOMED RT</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="05">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SNOMED CT</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="99">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not Known </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="topographyicdo3-414">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9.\-\\/]{3,7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="topographysnomedct-573">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="\d{6,18}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="topographysnomed-571">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{6,8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tnmeditionnumber-483">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{1,2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tnmstagegroupingintegrated-479">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-Z0-9]{1,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tcategoryintegratedstage-473">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-z0-9]{1,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tcategory-32407">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ncategoryintegratedstage-475">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-z0-9]{1,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ncategory-32408">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mcategoryintegratedstage-477">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[a-zA-z0-9]{1,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mcategory-32406">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="inrgneuroblastoma-38873">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="L1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage L1: The Tumour is located only in the area where it
+                            started; no IDRFs are found on imaging scans, such as CT or
+                            MR</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="L2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage L2: The tumour has not spread beyond the area where it
+                            started and the nearby tissue; IDRFs are found on imaging scans, such as
+                            CT or MR</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="M">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage M: The tumour has spread to other parts of the body
+                            (except stage MS, see below)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="MS">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage MS: The tumour has spread to only the skin, liver,
+                            and/or bone marrow (less than 10% marrow involvement) in patients less
+                            than 18 months</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="modifieddukes-236">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="A">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Dukes A Tumour confined to wall of bowel, nodes
+                            negative</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Dukes B Tumour penetrates through the muscularis propria to
+                            involve extramural tissues, nodes negative</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="C1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Dukes C1 Metastases confined to regional lymph nodes (node/s
+                            positive but apical node negative)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="C2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Dukes C2 Metastases present in nodes at mesenteric artery
+                            ligature (apical node positive)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="D">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Dukes D Metastatic spread outside the operative
+                            field</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="99">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not Known</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ajccstagegroup-38870">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage l</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1a">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1b">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage ll</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2a">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IIA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2b">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IIB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2c">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IIC</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage III</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3a">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IIIA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3b">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IIIB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3c">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage IIIC</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 4</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="finalfigostage-10637">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="ia">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ib">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ic1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IC1</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ic2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IC2</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ic3">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IC3</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iia">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iib">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiia1_i">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIA1(i)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiia1_ii">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIA1(ii)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiia2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIA2</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiib">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiic">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIC</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iva">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IVA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ivb">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IVB</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="i">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>I</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ii">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>II</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iii">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>III</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iv">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IV</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiia">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIA</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiic1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIC1</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iiic2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>IIIC2</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="barcelonacliniclivercancerbclcstage-1224">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="0">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Very early</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="A">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Early</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Intermediate</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="C">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Advanced</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="D">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Terminal</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="childpughscore-1228">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="A">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Child-Pugh A</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Child-Pugh B</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="C">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Child-Pugh C</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="portalinvasion-1231">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="Y">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Present</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="N">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not present</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="9">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not known</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="numberoflesionsradiological-268">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="\d{1,2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="clinicalstagepancreaticcancer-1234">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="10">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Localised and resectable </display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="20">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Borderline resectable</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Unresectable (locally advanced or metastatic)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Unresectable (locally advanced)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Unresectable (metastatic)</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="yesnonk-1026">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="Y">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Yes</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="N">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>No</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="9">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Not known</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="stagegroupingtesticular-1166">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 1</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1S">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 1S</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1M">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 1M</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2A">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 2A</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 2B</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2C">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 2C</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3A">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 3A</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 3B</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3C">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 3C</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4A">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 4A</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 4B</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4C">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Stage 4C</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="extranodalmetastases-1168">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="H">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Liver involvement</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="B">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Brain involvement</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="M">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Mediastinal involvement</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="N">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Neck nodes</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="L">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Lung involvement</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="lungmetastasessubstagegrouping-1170">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="L1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>less than or equal to 3 metastases</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="L2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Greater than 3 metastases</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="L3">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>Greater than 3 metastases, one or more greater than or equal
+                            to 2cm diameter</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="synchronoustumourindicator-42057">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>CAECUM</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>APPENDIX</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>ASCENDING COLON</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>HEPATIC FLEXURE</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>TRANSVERSE COLON</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="6">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SPLENIC FLEXURE</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="7">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>DESCENDING COLON</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="8">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>SIGMOID COLON</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="9">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>RECTOSIGMOID</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="10">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <display-text>RECTUM</display-text>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

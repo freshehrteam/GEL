@@ -1,0 +1,102 @@
+{
+    "version": "3.2.0",
+    "testResultTypes": [
+        {
+            "resultValue": "xs:double",
+            "type": "absolute_cell_count",
+            "guidance": "Positive Value",
+            "description": "Absolute cell count (number of cells)"
+        },
+        {
+            "resultValue": "pass | fail",
+            "type": "agarose",
+            "guidance": "-",
+            "description": "Agarose (Pass / Fail)"
+        },
+        {
+            "resultValue": "verylow | low | medium | high | veryhigh ",
+            "type": "cellularity",
+            "guidance": "Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+            "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "delta_cq",
+            "guidance": "Positive Value / Negative Value ",
+            "description": "delta Cq"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "nanodrop_od_260_280",
+            "guidance": "Positive Value / Negative Value",
+            "description": "Nanodrop OD 260/280"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "nanodrop_concentration",
+            "guidance": "Positive Value",
+            "description": "Nanodrop concentration ng/ul"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "percent_necrosis",
+            "guidance": "0 to 100 inclusive",
+            "description": "Proportion of the submitted tumour sample that is necrotic (0-100)"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "picogreen_concentration",
+            "guidance": "Positive Value",
+            "description": "Picogreen Concentration ng/ul"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "picodrop_concentration",
+            "guidance": "Positive Value",
+            "description": "PicoDrop Concentration ng/ul"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "picodrop_od_260_280",
+            "guidance": "Positive Value / Negative Value",
+            "description": "PicoDrop OD 260/280"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "qubit",
+            "guidance": "Positive Value",
+            "description": "Qubit ng/ul"
+        },
+        {
+            "resultValue": "pass | fail",
+            "type": "summary_qc",
+            "guidance": "either pass | fail",
+            "description": "Summary QC Pass / Fail"
+        },
+        {
+            "resultValue": "low |  medium | high",
+            "type": "tumour_content",
+            "guidance": "Low <40%  Medium 40-60%, High >60%",
+            "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%."
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "trinean_od_260_280",
+            "guidance": "Positive Value / Negative Value",
+            "description": "Trinean OD 260/280"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "glomax_concentration",
+            "guidance": "Positive Value",
+            "description": "Glomax concentration ng/ul"
+        },
+        {
+            "resultValue": "xs:double",
+            "type": "trinean_concentration",
+            "guidance": "Positive Value",
+            "description": "Trinean Concentration ng/ul"
+        }
+    ]
+    
+}

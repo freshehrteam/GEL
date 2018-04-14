@@ -1,0 +1,2211 @@
+{
+    "version": "3.2.0",
+    "diseaseTypes": [
+        {
+            "type": "breast",
+            "description": "Breast",
+            "subTypes": [
+                {
+                    "subType": "ductal",
+                    "description": "Ductal"
+                },
+                {
+                    "subType": "lobular",
+                    "description": "Lobular"
+                },
+                {
+                    "subType": "medullary",
+                    "description": "Medullary"
+                },
+                {
+                    "subType": "mesenchymal",
+                    "description": "Mesenchymal"
+                },
+                {
+                    "subType": "mixed_tumour_type",
+                    "description": "Mixed tumour type"
+                },
+                {
+                    "subType": "mucinous_carcinoma",
+                    "description": "Mucinous carcinoma"
+                },
+                {
+                    "subType": "neuroendocrine",
+                    "description": "Neuroendocrine"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "papillary",
+                    "description": "Papillary"
+                },
+                {
+                    "subType": "tubular_cribform",
+                    "description": "Tubular / cribform"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "type": "colorectal",
+            "description": "Colorectal",
+            "subTypes": [
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                }
+            ]
+        },
+        {
+            "type": "lung",
+            "description": "Lung",
+            "subTypes": [
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "large_cell",
+                    "description": "Large cell"
+                },
+                {
+                    "subType": "mesothelioma",
+                    "description": "Mesothelioma"
+                },
+                {
+                    "subType": "mixed_tumour_type",
+                    "description": "Mixed tumour type"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "small_cell",
+                    "description": "Small cell"
+                },
+                {
+                    "subType": "squamous_cell",
+                    "description": "Squamous cell"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "type": "ovarian",
+            "description": "Ovarian",
+            "subTypes": [
+                {
+                    "subType": "carcinosarcoma",
+                    "description": "Carcinosarcoma"
+                },
+                {
+                    "subType": "choriocarcinoma",
+                    "description": "Choriocarcinoma"
+                },
+                {
+                    "subType": "clear_cell",
+                    "description": "Clear cell"
+                },
+                {
+                    "subType": "clear_cell_adenocarcinoma",
+                    "description": "Clear cell adenocarcinoma"
+                },
+                {
+                    "subType": "dysgerminomas",
+                    "description": "Dysgerminomas"
+                },
+                {
+                    "subType": "embryonal_carcinoma",
+                    "description": "Embryonal carcinoma"
+                },
+                {
+                    "subType": "endodermal_sinus",
+                    "description": "Endodermal sinus"
+                },
+                {
+                    "subType": "endometrioid_adenocarcinoma",
+                    "description": "Endometrioid adenocarcinoma"
+                },
+                {
+                    "subType": "germ_cell_tumour",
+                    "description": "Germ cell tumour"
+                },
+                {
+                    "subType": "granulosa_cell_tumour",
+                    "description": "Granulosa cell tumour"
+                },
+                {
+                    "subType": "granulosa_theca",
+                    "description": "Granulosa theca"
+                },
+                {
+                    "subType": "high_grade_serous_carcinoma",
+                    "description": "High grade serous carcinoma"
+                },
+                {
+                    "subType": "leydig_cell_tumour",
+                    "description": "Leydig cell tumour"
+                },
+                {
+                    "subType": "low_grade_serous_adenocarcinoma",
+                    "description": "Low grade serous adenocarcinoma"
+                },
+                {
+                    "subType": "mucinous_carcinoma",
+                    "description": "Mucinous carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "sertoli_cell_tumour",
+                    "description": "Sertoli cell tumour"
+                },
+                {
+                    "subType": "sertoli_leydig",
+                    "description": "Sertoli-Leydig"
+                },
+                {
+                    "subType": "small_cell_carcinoma_including_hypercalcaemic_type",
+                    "description": "Small cell carcinoma (including hypercalcaemic type)"
+                },
+                {
+                    "subType": "stromal_tumour",
+                    "description": "Stromal tumour"
+                },
+                {
+                    "subType": "teratoma_immature",
+                    "description": "Teratoma (immature)"
+                },
+                {
+                    "subType": "teratoma_mature",
+                    "description": "Teratoma (mature)"
+                },
+                {
+                    "subType": "teratoma_with_malignant_transformation",
+                    "description": " teratoma with malignant transformation"
+                },
+                {
+                    "subType": "transitional_cell_carcinoma",
+                    "description": "Transitional cell carcinoma"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "yolk_sac_tumour",
+                    "description": "Yolk sac tumour"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                }
+            ]
+        },
+        {
+            "type": "prostate",
+            "description": "Prostate",
+            "subTypes": [
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "small_cell",
+                    "description": "Small cell"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                }
+            ]
+        },
+        {
+            "type": "adult_glioma",
+            "description": "Adult glioma",
+            "subTypes": [
+                {
+                    "subType": "anaplastic_astrocytoma",
+                    "description": "Anaplastic astrocytoma"
+                },
+                {
+                    "subType": "anaplastic_ependymoma",
+                    "description": "Anaplastic ependymoma"
+                },
+                {
+                    "subType": "anaplastic_ganglioglioma",
+                    "description": "Anaplastic ganglioglioma"
+                },
+                {
+                    "subType": "anaplastic_oligodendroglioma",
+                    "description": "Anaplastic oligodendroglioma"
+                },
+                {
+                    "subType": "anaplastic_oligoastrocytoma",
+                    "description": "Anaplastic oligoastrocytoma"
+                },
+                {
+                    "subType": "central_neurocytoma",
+                    "description": "Central neurocytoma"
+                },
+                {
+                    "subType": "diffuse_astrocytoma",
+                    "description": "Diffuse astrocytoma"
+                },
+                {
+                    "subType": "ependymoma",
+                    "description": "Ependymoma"
+                },
+                {
+                    "subType": "extraventricular_neurocytoma",
+                    "description": "Extraventricular neurocytoma"
+                },
+                {
+                    "subType": "fibrillary_astrocytoma",
+                    "description": "Fibrillary astrocytoma"
+                },
+                {
+                    "subType": "gangliocytoma",
+                    "description": "Gangliocytoma"
+                },
+                {
+                    "subType": "ganglioglioma",
+                    "description": "Ganglioglioma"
+                },
+                {
+                    "subType": "gemistocytic_astrocytoma",
+                    "description": "Gemistocytic astrocytoma"
+                },
+                {
+                    "subType": "germinoma",
+                    "description": "Germinoma"
+                },
+                {
+                    "subType": "giant_cell_glioblastoma",
+                    "description": "Giant cell glioblastoma"
+                },
+                {
+                    "subType": "glioblastoma",
+                    "description": "Glioblastoma"
+                },
+                {
+                    "subType": "gliomatosis_cerebri",
+                    "description": "Gliomatosis cerebri"
+                },
+                {
+                    "subType": "gliosarcoma",
+                    "description": "Gliosarcoma"
+                },
+                {
+                    "subType": "mixed_germ_cell_tumour",
+                    "description": "Mixed germ cell tumour"
+                },
+                {
+                    "subType": "myxopapillary_ependymoma",
+                    "description": "Myxopapillary ependymoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "oligoastrocytoma",
+                    "description": "Oligoastrocytoma"
+                },
+                {
+                    "subType": "oligodendroglioma",
+                    "description": "Oligodendroglioma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "papillary_tumour_of_the_pineal_region",
+                    "description": "Papillary tumour of the pineal region"
+                },
+                {
+                    "subType": "pilocytic_astrocytoma",
+                    "description": "Pilocytic astrocytoma"
+                },
+                {
+                    "subType": "pilomyxoid_astrocytoma",
+                    "description": "Pilomyxoid astrocytoma"
+                },
+                {
+                    "subType": "pineal_tumour_of_intermediate_differentiation",
+                    "description": "Pineal tumour of intermediate differentiation"
+                },
+                {
+                    "subType": "pineoblastoma",
+                    "description": "Pineoblastoma"
+                },
+                {
+                    "subType": "pineocytoma",
+                    "description": "Pineocytoma"
+                },
+                {
+                    "subType": "pleomorphic_xanthoastrocytoma",
+                    "description": "Pleomorphic xanthoastrocytoma"
+                },
+                {
+                    "subType": "primitive_neuroectodermal_tumour",
+                    "description": "Primitive neuroectodermal tumour"
+                },
+                {
+                    "subType": "protoplasmic_astrocytoma",
+                    "description": "Protoplasmic astrocytoma"
+                },
+                {
+                    "subType": "subependymal_giant_cell_astrocytoma",
+                    "description": "Subependymal giant cell astrocytoma"
+                },
+                {
+                    "subType": "subependymoma",
+                    "description": "Subependymoma"
+                },
+                {
+                    "subType": "teratoma_immature",
+                    "description": "Teratoma (immature)"
+                },
+                {
+                    "subType": "teratoma_mature",
+                    "description": "Teratoma (mature)"
+                },
+                {
+                    "subType": "teratoma_with_malignant_transformation",
+                    "description": " teratoma with malignant transformation"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "type": "bladder",
+            "description": "Bladder",
+            "subTypes": [
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "sarcomatoid_carcinoma",
+                    "description": "Sarcomatoid carcinoma"
+                },
+                {
+                    "subType": "small_cell",
+                    "description": "Small cell"
+                },
+                {
+                    "subType": "squamous_cell",
+                    "description": "Squamous cell"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "urothelial_in_situ",
+                    "description": "Urothelial (in situ)"
+                },
+                {
+                    "subType": "urothelial_invasive",
+                    "description": "Urothelial (invasive)"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                }
+            ]
+        },
+        {
+            "type": "carcinoma_of_unknown_primary",
+            "description": "Carcinoma of unknown primary",
+            "subTypes": [
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "cancer_not_confirmed",
+                    "description": "Cancer not confirmed (pathology indeterminate)"
+                },
+                {
+                    "subType": "cancer_nos",
+                    "description": "Pathology indeterminate \u2013 cancer NOS (non-carcinoma, lymphoma , sarcoma etc)"
+                },
+                {
+                    "subType": "carcinoma_nos",
+                    "description": "Pathology indeterminate \u2013 carcinoma  NOS (Not otherwise specified)"
+                },
+                {
+                    "subType": "melanoma",
+                    "description": "Melanoma"
+                },
+                {
+                    "subType": "neuroendocrine",
+                    "description": "Neuroendocrine"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "small_cell",
+                    "description": "Small cell"
+                },
+                {
+                    "subType": "squamous_cell",
+                    "description": "Squamous cell"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "type": "childhood",
+            "description": "Childhood",
+            "subTypes": [
+                {
+                    "subType": "atypical_teratoid_rhabdoid_tumours",
+                    "description": "Atypical teratoid rhabdoid tumours"
+                },
+                {
+                    "subType": "childhood_other",
+                    "description": "Childhood other"
+                },
+                {
+                    "subType": "cns_pnets",
+                    "description": "CNS primitive neuroectodermal tumors"
+                },
+                {
+                    "subType": "embryonal_tumour_with_multi_layered_rosettes",
+                    "description": "Embryonal tumour with multilayered rosettes"
+                },
+                {
+                    "subType": "extracranial_rhabdoid_tumour",
+                    "description": "Extracranial rhabdoid tumour"
+                },
+                {
+                    "subType": "medulloblastoma_cla",
+                    "description": "Medulloblastoma (CLA)"
+                },
+                {
+                    "subType": "medulloblastoma_dn",
+                    "description": "Medulloblastoma (DN)"
+                },
+                {
+                    "subType": "medulloblastoma_lca",
+                    "description": "Medulloblastoma (LCA)"
+                },
+                {
+                    "subType": "medulloblastoma_mben",
+                    "description": "Medulloblastoma (MBEN)"
+                },
+                {
+                    "subType": "medulloblastoma_medullomyoblastoma",
+                    "description": "Medulloblastoma (medullomyoblastoma)"
+                },
+                {
+                    "subType": "medulloblastoma_melanotic",
+                    "description": "Medulloblastoma (melanotic)"
+                },
+                {
+                    "subType": "medulloblastoma_nos",
+                    "description": "Medulloblastoma (NOS)"
+                },
+                {
+                    "subType": "neuroblastoma_inpc",
+                    "description": "Neuroblastoma (INPC)"
+                },
+                {
+                    "subType": "neuroblastoma_nos",
+                    "description": "Neuroblastoma (NOS)"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "paediatric_malignant_glioma",
+                    "description": "Paediatric malignant glioma"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                }
+            ]
+        },
+        {
+            "type": "endometrial_carcinoma",
+            "description": "Endometrial ",
+            "subTypes": [
+                {
+                    "subType": "carcinosarcoma",
+                    "description": "Carcinosarcoma"
+                },
+                {
+                    "subType": "clear_cell",
+                    "description": "Clear cell"
+                },
+                {
+                    "subType": "endometrioid_adenocarcinoma",
+                    "description": "Endometrioid adenocarcinoma"
+                },
+                {
+                    "subType": "high_grade_endometrial_stromal_sarcoma",
+                    "description": "High grade endometrial stromal sarcoma"
+                },
+                {
+                    "subType": "low_grade_endometrial_stromal_sarcoma",
+                    "description": "Low grade endometrial stromal sarcoma'"
+                },
+                {
+                    "subType": "mucinous_carcinoma",
+                    "description": "Mucinous carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "serous_carcinoma",
+                    "description": "Serous carcinoma"
+                },
+                {
+                    "subType": "small_cell",
+                    "description": "Small cell"
+                },
+                {
+                    "subType": "transitional_cell_carcinoma",
+                    "description": "Transitional cell carcinoma"
+                },
+                {
+                    "subType": "undifferentiated_carcinoma",
+                    "description": "Undifferentiated carcinoma"
+                },
+                {
+                    "subType": "undifferentiated_uterine_sarcoma",
+                    "description": "Undifferentiated uterine sarcoma"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                }
+            ]
+        },
+        {
+            "type": "haemonc",
+            "description": "Haemato-Oncology",
+            "subTypes": [
+                {
+                    "subType": "all",
+                    "description": "(ALL) Acute lymphoblastic leukaemia"
+                },
+                {
+                    "subType": "aml",
+                    "description": "(AML) Acute myeloid Leukaemia"
+                },
+                {
+                    "subType": "cll",
+                    "description": "Chronic lymphocytic leukaemia"
+                },
+                {
+                    "subType": "burkitt_lymphoma",
+                    "description": "Burkitt lymphoma"
+                },
+                {
+                    "subType": "chronic_myeloid_leukaemia",
+                    "description": "Chronic myeloid leukaemia"
+                },
+                {
+                    "subType": "diffuse_large_b_cell_lymphoma",
+                    "description": "Diffuse large B-cell lymphoma"
+                },
+                {
+                    "subType": "haematological_malignancy_unclassified",
+                    "description": "Haematological malignancy unclassified"
+                },
+                {
+                    "subType": "high_grade_lymphoma_nos",
+                    "description": "High grade lymphoma NOS"
+                },
+                {
+                    "subType": "mediastinal_b_cell_lymphoma",
+                    "description": "Mediastinal B-cell lymphoma"
+                },
+                {
+                    "subType": "multiple_myeloma",
+                    "description": "Multiple myeloma"
+                },
+                {
+                    "subType": "myelodysplastic_syndrome_high_risk",
+                    "description": "Myelodysplastic syndrome (high risk)"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "non_hodgkins_b_cell_lymphoma_low_mod_grade",
+                    "description": "Non-Hodgkins B cell lymphoma low / moderate grade"
+                },
+                {
+                    "subType": "classical_hodgkins",
+                    "description": "Classical Hodgkins"
+                },
+                {
+                    "subType": "nodular_lymphocyte_predominant_hodgkins",
+                    "description": "Nodular Lymphocyte Predominant Hodgkins"
+                },
+                {
+                    "subType": "t_cell_lymphoma",
+                    "description": "T-cell lymphoma"
+                }
+            ]
+        },
+        {
+            "type": "hepatopancreatobiliary",
+            "description": "Hepatopancreatobiliary",
+            "subTypes": [
+                {
+                    "subType": "acinar_cell_carcinoma",
+                    "description": "Acinar cell carcinoma"
+                },
+                {
+                    "subType": "biliary_adenocarcinoma",
+                    "description": "Biliary adenocarcinoma"
+                },
+                {
+                    "subType": "biliary_adenosquamous_carcinoma",
+                    "description": "Biliary adenosquamous carcinoma"
+                },
+                {
+                    "subType": "biliary_squamous_cell_carcinoma",
+                    "description": "Biliary squamous cell carcinoma"
+                },
+                {
+                    "subType": "cholangiocarcinoma",
+                    "description": "Cholangiocarcinoma"
+                },
+                {
+                    "subType": "combined_hcc_cholangiocarcinoma",
+                    "description": "Combined HCC-cholangiocarcinoma"
+                },
+                {
+                    "subType": "fibrolamellar_hcc",
+                    "description": "Fibrolamellar HCC"
+                },
+                {
+                    "subType": "hcc_acinar",
+                    "description": "HCC acinar"
+                },
+                {
+                    "subType": "hcc_compact",
+                    "description": "HCC compact"
+                },
+                {
+                    "subType": "hcc_trabecular",
+                    "description": "HCC trabecular"
+                },
+                {
+                    "subType": "hepatocellular_carcinoma",
+                    "description": "Hepatocellular carcinoma"
+                },
+                {
+                    "subType": "ipmn_with_invasive_carcinoma",
+                    "description": "IPMN with invasive carcinoma"
+                },
+                {
+                    "subType": "lymphoepithelioma_like_hcc",
+                    "description": "Lymphoepithelioma-like HCC"
+                },
+                {
+                    "subType": "mcn_with_invasive_carcinoma",
+                    "description": "MCN with invasive carcinoma"
+                },
+                {
+                    "subType": "neuroendocrine",
+                    "description": "Neuroendocrine"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "pancreatic_adenocarcinoma",
+                    "description": "Pancreatic adenocarcinoma"
+                },
+                {
+                    "subType": "pancreatic_adenosquamous_carcinoma",
+                    "description": "Pancreatic adenosquamous carcinoma"
+                },
+                {
+                    "subType": "pancreatic_neuroendocrine_carcinoma",
+                    "description": "Pancreatic neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "sarcomatoid_hcc",
+                    "description": "Sarcomatoid HCC"
+                },
+                {
+                    "subType": "schirrous_hcc",
+                    "description": "Schirrous HCC"
+                },
+                {
+                    "subType": "serous_cystadenocarcinoma",
+                    "description": "Serous cystadenocarcinoma"
+                },
+                {
+                    "subType": "undifferentiated_hcc",
+                    "description": "Undifferentiated HCC"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "type": "malignant_melanoma",
+            "description": "Malignant Melanoma",
+            "subTypes": [
+                {
+                    "subType": "acral_lentiginous",
+                    "description": "Acral lentiginous"
+                },
+                {
+                    "subType": "anorectal_mucosal_melanoma",
+                    "description": "Anorectal mucosal melanoma"
+                },
+                {
+                    "subType": "conjunctival_melanoma",
+                    "description": "Conjunctival melanoma"
+                },
+                {
+                    "subType": "desmoplastic_melanoma",
+                    "description": "Desmoplastic melanoma"
+                },
+                {
+                    "subType": "genital_mucosal_melanoma",
+                    "description": "Genital mucosal melanoma"
+                },
+                {
+                    "subType": "lentigo_maligna",
+                    "description": "Lentigo maligna"
+                },
+                {
+                    "subType": "nodular",
+                    "description": "Nodular"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "orbital",
+                    "description": "Orbital"
+                },
+                {
+                    "subType": "oromucosal_melanoma",
+                    "description": "Oromucosal melanoma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "primary_cns",
+                    "description": "Primary CNS"
+                },
+                {
+                    "subType": "spitz",
+                    "description": "Spitz"
+                },
+                {
+                    "subType": "superficial_spreading",
+                    "description": "Superficial spreading"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "uveal_melanoma",
+                    "description": "Uveal melanoma"
+                }
+            ]
+        },
+        {
+            "type": "renal",
+            "description": "Renal",
+            "subTypes": [
+                {
+                    "subType": "chromophobe",
+                    "description": "Chromophobe"
+                },
+                {
+                    "subType": "clear_cell",
+                    "description": "Clear cell"
+                },
+                {
+                    "subType": "collecting_duct",
+                    "description": "Collecting duct"
+                },
+                {
+                    "subType": "non_specified_renal_carcinoma",
+                    "description": "Non specified renal carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "oncocytic",
+                    "description": "Oncocytic"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "papillary_type_1",
+                    "description": "Papillary Type 1"
+                },
+                {
+                    "subType": "papillary_type_2",
+                    "description": "Papillary Type 2"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "urothelial_in_situ",
+                    "description": "Urothelial (in situ)"
+                },
+                {
+                    "subType": "urothelial_invasive",
+                    "description": "Urothelial (invasive)"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                }
+            ]
+        },
+        {
+            "type": "testicular_germ_cell_tumours",
+            "description": "Testicular germ cell ",
+            "subTypes": [
+                {
+                    "subType": "choriocarcinoma",
+                    "description": "Choriocarcinoma"
+                },
+                {
+                    "subType": "classical_seminoma",
+                    "description": "Classical seminoma"
+                },
+                {
+                    "subType": "embryonal_carcinoma",
+                    "description": "Embryonal carcinoma"
+                },
+                {
+                    "subType": "germ_cell_tumour",
+                    "description": "Germ cell tumour"
+                },
+                {
+                    "subType": "granulosa_cell_tumour",
+                    "description": "Granulosa cell tumour"
+                },
+                {
+                    "subType": "leydig_cell_tumour",
+                    "description": "Leydig cell tumour"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "sertoli_cell_tumour",
+                    "description": "Sertoli cell tumour"
+                },
+                {
+                    "subType": "sertoli_leydig",
+                    "description": "Sertoli-Leydig"
+                },
+                {
+                    "subType": "spermatocytic_seminoma",
+                    "description": "Spermatocytic Seminoma"
+                },
+                {
+                    "subType": "teratoma_differentiated",
+                    "description": "Teratoma differentiated"
+                },
+                {
+                    "subType": "teratoma_undifferentiated",
+                    "description": "Teratoma undifferentiated"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "yolk_sac_tumour",
+                    "description": "Yolk sac tumour"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                }
+            ]
+        },
+        {
+            "type": "sarcoma",
+            "description": "Sarcoma",
+            "subTypes": [
+                {
+                    "subType": "adamantinoma_of_bone",
+                    "description": "Adamantinoma of bone"
+                },
+                {
+                    "subType": "alveolar_soft_part_sarcoma",
+                    "description": "Alveolar soft part sarcoma"
+                },
+                {
+                    "subType": "angiomatoid_fibrous_histiocytoma",
+                    "description": "Angiomatoid fibrous histiocytoma"
+                },
+                {
+                    "subType": "angiosarcoma",
+                    "description": "Angiosarcoma"
+                },
+                {
+                    "subType": "chordoma",
+                    "description": "Chordoma"
+                },
+                {
+                    "subType": "clear_cell",
+                    "description": "Clear cell"
+                },
+                {
+                    "subType": "conventional_chondrosarcoma",
+                    "description": "Conventional chondrosarcoma"
+                },
+                {
+                    "subType": "dedifferentiated_chondrosarcoma",
+                    "description": "Dedifferentiated chondrosarcoma"
+                },
+                {
+                    "subType": "dedifferentiated_liposarcoma",
+                    "description": "Dedifferentiated liposarcoma"
+                },
+                {
+                    "subType": "dermal_sarcoma",
+                    "description": "Dermal sarcoma"
+                },
+                {
+                    "subType": "desmoplastic_round_cell_sarcoma",
+                    "description": "Desmoplastic round cell sarcoma"
+                },
+                {
+                    "subType": "epithelioid_angiosarcoma",
+                    "description": "Epithelioid angiosarcoma"
+                },
+                {
+                    "subType": "extraskeletal_chondrosarcoma",
+                    "description": "Extraskeletal chondrosarcoma"
+                },
+                {
+                    "subType": "extraskeletal_chordoma",
+                    "description": "Extraskeletal chordoma"
+                },
+                {
+                    "subType": "gnathic_bone",
+                    "description": "Gnathic bone"
+                },
+                {
+                    "subType": "intimal_sarcoma",
+                    "description": "Intimal sarcoma"
+                },
+                {
+                    "subType": "leiomyosarcoma_from_all_sites",
+                    "description": "Leiomyosarcoma from all sites"
+                },
+                {
+                    "subType": "low_grade_fibromyxoid_sarcoma",
+                    "description": "Low grade fibromyxoid sarcoma"
+                },
+                {
+                    "subType": "malignant_peripheral_nerve_sheath_tumour",
+                    "description": "Malignant peripheral nerve sheath tumour"
+                },
+                {
+                    "subType": "malignant_rhabdoid_tumour",
+                    "description": "Malignant rhabdoid tumour"
+                },
+                {
+                    "subType": "myoepithelioma_malignant_myoepithelioma",
+                    "description": "Myoepithelioma / Malignant myoepithelioma"
+                },
+                {
+                    "subType": "myxofibrosarcoma",
+                    "description": "Myxofibrosarcoma"
+                },
+                {
+                    "subType": "myxoid_liposarcoma",
+                    "description": "Myxoid liposarcoma"
+                },
+                {
+                    "subType": "myxoinflammatory_fibroblastic_sarcoma",
+                    "description": "Myxoinflammatory fibroblastic sarcoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "ossifying_fibromyxoid_tumour",
+                    "description": "Ossifying fibromyxoid tumour"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "pleomorphic_sarcoma",
+                    "description": "Pleomorphic sarcoma"
+                },
+                {
+                    "subType": "primary_conventional_osteosarcoma",
+                    "description": "Primary conventional osteosarcoma"
+                },
+                {
+                    "subType": "pseudomyogenic_haemangioemdothelioma",
+                    "description": "Pseudomyogenic haemangioemdothelioma"
+                },
+                {
+                    "subType": "rare_sarcoma_entities",
+                    "description": "Rare sarcoma entities"
+                },
+                {
+                    "subType": "rhabdomyosarcoma",
+                    "description": "Rhabdomyosarcoma"
+                },
+                {
+                    "subType": "sarcoma_nos",
+                    "description": "Sarcoma NOS"
+                },
+                {
+                    "subType": "sclerosing_epithelioid_fibrosarcoma",
+                    "description": "Sclerosing epithelioid fibrosarcoma"
+                },
+                {
+                    "subType": "synovial_sarcoma",
+                    "description": "Synovial sarcoma - monophasic and biphasic"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "type": "upper_gastrointestinal",
+            "description": "Upper gastrointestinal ",
+            "subTypes": [
+                {
+                    "subType": "gastric_adenocarcinoma",
+                    "description": "Gastric adenocarcinoma"
+                },
+                {
+                    "subType": "gastric_carcinoma_with_lymphoid_stroma",
+                    "description": "Gastric carcinoma with lymphoid stroma"
+                },
+                {
+                    "subType": "hepatoid_adenocarcinoma",
+                    "description": "Hepatoid adenocarcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "poorly_cohesive_including_signet_ring_cell_type",
+                    "description": "Poorly cohesive including signet ring cell type"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "squamous_cell",
+                    "description": "Squamous cell"
+                }
+            ]
+        },
+        {
+            "type": "sinonasal",
+            "description": "Sinonasal",
+            "subTypes": [
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "adenoid_cystic_carcinoma",
+                    "description": "Adenoid cystic carcinoma"
+                },
+                {
+                    "subType": "inverted_papilloma",
+                    "description": "Inverted papilloma"
+                },
+                {
+                    "subType": "melanoma",
+                    "description": "Melanoma"
+                },
+                {
+                    "subType": "neuroendocrine",
+                    "description": "Neuroendocrine"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "squamous_cell",
+                    "description": "Squamous cell"
+                },
+                {
+                    "subType": "undifferentiated_carcinoma",
+                    "description": "Undifferentiated carcinoma"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                }
+            ]
+        },
+        {
+            "type": "nasopharyngeal",
+            "description": "Nasopharyngeal",
+            "subTypes": [
+                {
+                    "subType": "nasopharyngeal_carcinoma_type_i",
+                    "description": "Nasopharyngeal carcinoma Type I"
+                },
+                {
+                    "subType": "nasopharyngeal_carcinoma_type_ii",
+                    "description": "Nasopharyngeal carcinoma Type II"
+                },
+                {
+                    "subType": "nasopharyngeal_carcinoma_type_iii",
+                    "description": "Nasopharyngeal carcinoma Type III"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                }
+            ]
+        },
+        {
+            "type": "oral_oropharyngeal",
+            "description": "Oral/Oropharyngeal",
+            "subTypes": [
+                {
+                    "subType": "betel_nut_induced_oral_cancer",
+                    "description": "Betel nut-induced oral cancer"
+                },
+                {
+                    "subType": "hpv_negative_oropharyngeal_cancer",
+                    "description": "HPV negative oropharyngeal cancer"
+                },
+                {
+                    "subType": "hpv_positive_oropharyngeal_cancer",
+                    "description": "HPV positive oropharyngeal cancer"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                }
+            ]
+        },
+        {
+            "type": "unknown",
+            "description": "Unknown",
+            "subTypes": [
+                {
+                    "subType": "all",
+                    "description": "(ALL) Acute lymphoblastic leukaemia"
+                },
+                {
+                    "subType": "aml",
+                    "description": "(AML) Acute myeloid Leukaemia"
+                },
+                {
+                    "subType": "cll",
+                    "description": "Chronic lymphocytic leukaemia"
+                },
+                {
+                    "subType": "acinar_cell_carcinoma",
+                    "description": "Acinar cell carcinoma"
+                },
+                {
+                    "subType": "acral_lentiginous",
+                    "description": "Acral lentiginous"
+                },
+                {
+                    "subType": "adamantinoma_of_bone",
+                    "description": "Adamantinoma of bone"
+                },
+                {
+                    "subType": "adenocarcinoma",
+                    "description": "Adenocarcinoma"
+                },
+                {
+                    "subType": "adenoid_cystic_carcinoma",
+                    "description": "Adenoid cystic carcinoma"
+                },
+                {
+                    "subType": "alveolar_soft_part_sarcoma",
+                    "description": "Alveolar soft part sarcoma"
+                },
+                {
+                    "subType": "anaplastic_astrocytoma",
+                    "description": "Anaplastic astrocytoma"
+                },
+                {
+                    "subType": "anaplastic_ependymoma",
+                    "description": "Anaplastic ependymoma"
+                },
+                {
+                    "subType": "anaplastic_ganglioglioma",
+                    "description": "Anaplastic ganglioglioma"
+                },
+                {
+                    "subType": "anaplastic_oligodendroglioma",
+                    "description": "Anaplastic oligodendroglioma"
+                },
+                {
+                    "subType": "anaplastic_oligoastrocytoma",
+                    "description": "Anaplastic oligoastrocytoma"
+                },
+                {
+                    "subType": "angiomatoid_fibrous_histiocytoma",
+                    "description": "Angiomatoid fibrous histiocytoma"
+                },
+                {
+                    "subType": "angiosarcoma",
+                    "description": "Angiosarcoma"
+                },
+                {
+                    "subType": "anorectal_mucosal_melanoma",
+                    "description": "Anorectal mucosal melanoma"
+                },
+                {
+                    "subType": "atypical_teratoid_rhabdoid_tumours",
+                    "description": "Atypical teratoid rhabdoid tumours"
+                },
+                {
+                    "subType": "betel_nut_induced_oral_cancer",
+                    "description": "Betel nut-induced oral cancer"
+                },
+                {
+                    "subType": "biliary_adenocarcinoma",
+                    "description": "Biliary adenocarcinoma"
+                },
+                {
+                    "subType": "biliary_adenosquamous_carcinoma",
+                    "description": "Biliary adenosquamous carcinoma"
+                },
+                {
+                    "subType": "biliary_squamous_cell_carcinoma",
+                    "description": "Biliary squamous cell carcinoma"
+                },
+                {
+                    "subType": "burkitt_lymphoma",
+                    "description": "Burkitt lymphoma"
+                },
+                {
+                    "subType": "cancer_not_confirmed",
+                    "description": "Cancer not confirmed (pathology indeterminate)"
+                },
+                {
+                    "subType": "cancer_nos",
+                    "description": "Pathology indeterminate \u2013 cancer NOS (non-carcinoma, lymphoma , sarcoma etc)"
+                },
+                {
+                    "subType": "carcinoma_nos",
+                    "description": "Pathology indeterminate \u2013 carcinoma  NOS (Not otherwise specified)"
+                },
+                {
+                    "subType": "carcinosarcoma",
+                    "description": "Carcinosarcoma"
+                },
+                {
+                    "subType": "central_neurocytoma",
+                    "description": "Central neurocytoma"
+                },
+                {
+                    "subType": "childhood_other",
+                    "description": "Childhood other"
+                },
+                {
+                    "subType": "cholangiocarcinoma",
+                    "description": "Cholangiocarcinoma"
+                },
+                {
+                    "subType": "chordoma",
+                    "description": "Chordoma"
+                },
+                {
+                    "subType": "choriocarcinoma",
+                    "description": "Choriocarcinoma"
+                },
+                {
+                    "subType": "chromophobe",
+                    "description": "Chromophobe"
+                },
+                {
+                    "subType": "chronic_myeloid_leukaemia",
+                    "description": "Chronic myeloid leukaemia"
+                },
+                {
+                    "subType": "classical_seminoma",
+                    "description": "Classical seminoma"
+                },
+                {
+                    "subType": "clear_cell",
+                    "description": "Clear cell"
+                },
+                {
+                    "subType": "clear_cell_adenocarcinoma",
+                    "description": "Clear cell adenocarcinoma"
+                },
+                {
+                    "subType": "cns_pnets",
+                    "description": "CNS primitive neuroectodermal tumors"
+                },
+                {
+                    "subType": "collecting_duct",
+                    "description": "Collecting duct"
+                },
+                {
+                    "subType": "combined_hcc_cholangiocarcinoma",
+                    "description": "Combined HCC-cholangiocarcinoma"
+                },
+                {
+                    "subType": "conjunctival_melanoma",
+                    "description": "Conjunctival melanoma"
+                },
+                {
+                    "subType": "conventional_chondrosarcoma",
+                    "description": "Conventional chondrosarcoma"
+                },
+                {
+                    "subType": "dedifferentiated_chondrosarcoma",
+                    "description": "Dedifferentiated chondrosarcoma"
+                },
+                {
+                    "subType": "dedifferentiated_liposarcoma",
+                    "description": "Dedifferentiated liposarcoma"
+                },
+                {
+                    "subType": "dermal_sarcoma",
+                    "description": "Dermal sarcoma"
+                },
+                {
+                    "subType": "desmoplastic_melanoma",
+                    "description": "Desmoplastic melanoma"
+                },
+                {
+                    "subType": "desmoplastic_round_cell_sarcoma",
+                    "description": "Desmoplastic round cell sarcoma"
+                },
+                {
+                    "subType": "diffuse_astrocytoma",
+                    "description": "Diffuse astrocytoma"
+                },
+                {
+                    "subType": "diffuse_large_b_cell_lymphoma",
+                    "description": "Diffuse large B-cell lymphoma"
+                },
+                {
+                    "subType": "ductal",
+                    "description": "Ductal"
+                },
+                {
+                    "subType": "dysgerminomas",
+                    "description": "Dysgerminomas"
+                },
+                {
+                    "subType": "embryonal_carcinoma",
+                    "description": "Embryonal carcinoma"
+                },
+                {
+                    "subType": "embryonal_tumour_with_multi_layered_rosettes",
+                    "description": "Embryonal tumour with multilayered rosettes"
+                },
+                {
+                    "subType": "endodermal_sinus",
+                    "description": "Endodermal sinus"
+                },
+                {
+                    "subType": "endometrioid_adenocarcinoma",
+                    "description": "Endometrioid adenocarcinoma"
+                },
+                {
+                    "subType": "ependymoma",
+                    "description": "Ependymoma"
+                },
+                {
+                    "subType": "epithelioid_angiosarcoma",
+                    "description": "Epithelioid angiosarcoma"
+                },
+                {
+                    "subType": "extracranial_rhabdoid_tumour",
+                    "description": "Extracranial rhabdoid tumour"
+                },
+                {
+                    "subType": "extraskeletal_chondrosarcoma",
+                    "description": "Extraskeletal chondrosarcoma"
+                },
+                {
+                    "subType": "extraskeletal_chordoma",
+                    "description": "Extraskeletal chordoma"
+                },
+                {
+                    "subType": "extraventricular_neurocytoma",
+                    "description": "Extraventricular neurocytoma"
+                },
+                {
+                    "subType": "fibrillary_astrocytoma",
+                    "description": "Fibrillary astrocytoma"
+                },
+                {
+                    "subType": "fibrolamellar_hcc",
+                    "description": "Fibrolamellar HCC"
+                },
+                {
+                    "subType": "gangliocytoma",
+                    "description": "Gangliocytoma"
+                },
+                {
+                    "subType": "ganglioglioma",
+                    "description": "Ganglioglioma"
+                },
+                {
+                    "subType": "gastric_adenocarcinoma",
+                    "description": "Gastric adenocarcinoma"
+                },
+                {
+                    "subType": "gastric_carcinoma_with_lymphoid_stroma",
+                    "description": "Gastric carcinoma with lymphoid stroma"
+                },
+                {
+                    "subType": "gemistocytic_astrocytoma",
+                    "description": "Gemistocytic astrocytoma"
+                },
+                {
+                    "subType": "genital_mucosal_melanoma",
+                    "description": "Genital mucosal melanoma"
+                },
+                {
+                    "subType": "germ_cell_tumour",
+                    "description": "Germ cell tumour"
+                },
+                {
+                    "subType": "germinoma",
+                    "description": "Germinoma"
+                },
+                {
+                    "subType": "giant_cell_glioblastoma",
+                    "description": "Giant cell glioblastoma"
+                },
+                {
+                    "subType": "glioblastoma",
+                    "description": "Glioblastoma"
+                },
+                {
+                    "subType": "gliomatosis_cerebri",
+                    "description": "Gliomatosis cerebri"
+                },
+                {
+                    "subType": "gliosarcoma",
+                    "description": "Gliosarcoma"
+                },
+                {
+                    "subType": "gnathic_bone",
+                    "description": "Gnathic bone"
+                },
+                {
+                    "subType": "granulosa_cell_tumour",
+                    "description": "Granulosa cell tumour"
+                },
+                {
+                    "subType": "granulosa_theca",
+                    "description": "Granulosa theca"
+                },
+                {
+                    "subType": "haematological_malignancy_unclassified",
+                    "description": "Haematological malignancy unclassified"
+                },
+                {
+                    "subType": "hcc_acinar",
+                    "description": "HCC acinar"
+                },
+                {
+                    "subType": "hcc_compact",
+                    "description": "HCC compact"
+                },
+                {
+                    "subType": "hcc_trabecular",
+                    "description": "HCC trabecular"
+                },
+                {
+                    "subType": "hepatocellular_carcinoma",
+                    "description": "Hepatocellular carcinoma"
+                },
+                {
+                    "subType": "hepatoid_adenocarcinoma",
+                    "description": "Hepatoid adenocarcinoma"
+                },
+                {
+                    "subType": "high_grade_endometrial_stromal_sarcoma",
+                    "description": "High grade endometrial stromal sarcoma"
+                },
+                {
+                    "subType": "high_grade_lymphoma_nos",
+                    "description": "High grade lymphoma NOS"
+                },
+                {
+                    "subType": "high_grade_serous_carcinoma",
+                    "description": "High grade serous carcinoma"
+                },
+                {
+                    "subType": "hpv_negative_oropharyngeal_cancer",
+                    "description": "HPV negative oropharyngeal cancer"
+                },
+                {
+                    "subType": "hpv_positive_oropharyngeal_cancer",
+                    "description": "HPV positive oropharyngeal cancer"
+                },
+                {
+                    "subType": "intimal_sarcoma",
+                    "description": "Intimal sarcoma"
+                },
+                {
+                    "subType": "inverted_papilloma",
+                    "description": "Inverted papilloma"
+                },
+                {
+                    "subType": "ipmn_with_invasive_carcinoma",
+                    "description": "IPMN with invasive carcinoma"
+                },
+                {
+                    "subType": "large_cell",
+                    "description": "Large cell"
+                },
+                {
+                    "subType": "leiomyosarcoma_from_all_sites",
+                    "description": "Leiomyosarcoma from all sites"
+                },
+                {
+                    "subType": "lentigo_maligna",
+                    "description": "Lentigo maligna"
+                },
+                {
+                    "subType": "leydig_cell_tumour",
+                    "description": "Leydig cell tumour"
+                },
+                {
+                    "subType": "lobular",
+                    "description": "Lobular"
+                },
+                {
+                    "subType": "low_grade_endometrial_stromal_sarcoma",
+                    "description": "Low grade endometrial stromal sarcoma'"
+                },
+                {
+                    "subType": "low_grade_fibromyxoid_sarcoma",
+                    "description": "Low grade fibromyxoid sarcoma"
+                },
+                {
+                    "subType": "low_grade_serous_adenocarcinoma",
+                    "description": "Low grade serous adenocarcinoma"
+                },
+                {
+                    "subType": "lymphoepithelioma_like_hcc",
+                    "description": "Lymphoepithelioma-like HCC"
+                },
+                {
+                    "subType": "malignant_peripheral_nerve_sheath_tumour",
+                    "description": "Malignant peripheral nerve sheath tumour"
+                },
+                {
+                    "subType": "malignant_rhabdoid_tumour",
+                    "description": "Malignant rhabdoid tumour"
+                },
+                {
+                    "subType": "mcn_with_invasive_carcinoma",
+                    "description": "MCN with invasive carcinoma"
+                },
+                {
+                    "subType": "mediastinal_b_cell_lymphoma",
+                    "description": "Mediastinal B-cell lymphoma"
+                },
+                {
+                    "subType": "medullary",
+                    "description": "Medullary"
+                },
+                {
+                    "subType": "medulloblastoma_cla",
+                    "description": "Medulloblastoma (CLA)"
+                },
+                {
+                    "subType": "medulloblastoma_dn",
+                    "description": "Medulloblastoma (DN)"
+                },
+                {
+                    "subType": "medulloblastoma_lca",
+                    "description": "Medulloblastoma (LCA)"
+                },
+                {
+                    "subType": "medulloblastoma_mben",
+                    "description": "Medulloblastoma (MBEN)"
+                },
+                {
+                    "subType": "medulloblastoma_medullomyoblastoma",
+                    "description": "Medulloblastoma (medullomyoblastoma)"
+                },
+                {
+                    "subType": "medulloblastoma_melanotic",
+                    "description": "Medulloblastoma (melanotic)"
+                },
+                {
+                    "subType": "medulloblastoma_nos",
+                    "description": "Medulloblastoma (NOS)"
+                },
+                {
+                    "subType": "melanoma",
+                    "description": "Melanoma"
+                },
+                {
+                    "subType": "mesenchymal",
+                    "description": "Mesenchymal"
+                },
+                {
+                    "subType": "mesothelioma",
+                    "description": "Mesothelioma"
+                },
+                {
+                    "subType": "mixed_germ_cell_tumour",
+                    "description": "Mixed germ cell tumour"
+                },
+                {
+                    "subType": "mixed_tumour_type",
+                    "description": "Mixed tumour type"
+                },
+                {
+                    "subType": "mucinous_carcinoma",
+                    "description": "Mucinous carcinoma"
+                },
+                {
+                    "subType": "multiple_myeloma",
+                    "description": "Multiple myeloma"
+                },
+                {
+                    "subType": "myelodysplastic_syndrome_high_risk",
+                    "description": "Myelodysplastic syndrome (high risk)"
+                },
+                {
+                    "subType": "myoepithelioma_malignant_myoepithelioma",
+                    "description": "Myoepithelioma / Malignant myoepithelioma"
+                },
+                {
+                    "subType": "myxofibrosarcoma",
+                    "description": "Myxofibrosarcoma"
+                },
+                {
+                    "subType": "myxoid_liposarcoma",
+                    "description": "Myxoid liposarcoma"
+                },
+                {
+                    "subType": "myxoinflammatory_fibroblastic_sarcoma",
+                    "description": "Myxoinflammatory fibroblastic sarcoma"
+                },
+                {
+                    "subType": "myxopapillary_ependymoma",
+                    "description": "Myxopapillary ependymoma"
+                },
+                {
+                    "subType": "nasopharyngeal_carcinoma_type_i",
+                    "description": "Nasopharyngeal carcinoma Type I"
+                },
+                {
+                    "subType": "nasopharyngeal_carcinoma_type_ii",
+                    "description": "Nasopharyngeal carcinoma Type II"
+                },
+                {
+                    "subType": "nasopharyngeal_carcinoma_type_iii",
+                    "description": "Nasopharyngeal carcinoma Type III"
+                },
+                {
+                    "subType": "neuroblastoma_inpc",
+                    "description": "Neuroblastoma (INPC)"
+                },
+                {
+                    "subType": "neuroblastoma_nos",
+                    "description": "Neuroblastoma (NOS)"
+                },
+                {
+                    "subType": "neuroendocrine",
+                    "description": "Neuroendocrine"
+                },
+                {
+                    "subType": "neuroendocrine_carcinoma",
+                    "description": "Neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "nodular",
+                    "description": "Nodular"
+                },
+                {
+                    "subType": "non_specified_renal_carcinoma",
+                    "description": "Non specified renal carcinoma"
+                },
+                {
+                    "subType": "not_available",
+                    "description": "Not available"
+                },
+                {
+                    "subType": "oligoastrocytoma",
+                    "description": "Oligoastrocytoma"
+                },
+                {
+                    "subType": "oligodendroglioma",
+                    "description": "Oligodendroglioma"
+                },
+                {
+                    "subType": "oncocytic",
+                    "description": "Oncocytic"
+                },
+                {
+                    "subType": "orbital",
+                    "description": "Orbital"
+                },
+                {
+                    "subType": "oromucosal_melanoma",
+                    "description": "Oromucosal melanoma"
+                },
+                {
+                    "subType": "ossifying_fibromyxoid_tumour",
+                    "description": "Ossifying fibromyxoid tumour"
+                },
+                {
+                    "subType": "other",
+                    "description": "Other"
+                },
+                {
+                    "subType": "paediatric_malignant_glioma",
+                    "description": "Paediatric malignant glioma"
+                },
+                {
+                    "subType": "pancreatic_adenocarcinoma",
+                    "description": "Pancreatic adenocarcinoma"
+                },
+                {
+                    "subType": "pancreatic_adenosquamous_carcinoma",
+                    "description": "Pancreatic adenosquamous carcinoma"
+                },
+                {
+                    "subType": "pancreatic_neuroendocrine_carcinoma",
+                    "description": "Pancreatic neuroendocrine carcinoma"
+                },
+                {
+                    "subType": "papillary",
+                    "description": "Papillary"
+                },
+                {
+                    "subType": "papillary_tumour_of_the_pineal_region",
+                    "description": "Papillary tumour of the pineal region"
+                },
+                {
+                    "subType": "papillary_type_1",
+                    "description": "Papillary Type 1"
+                },
+                {
+                    "subType": "papillary_type_2",
+                    "description": "Papillary Type 2"
+                },
+                {
+                    "subType": "pilocytic_astrocytoma",
+                    "description": "Pilocytic astrocytoma"
+                },
+                {
+                    "subType": "pilomyxoid_astrocytoma",
+                    "description": "Pilomyxoid astrocytoma"
+                },
+                {
+                    "subType": "pineal_tumour_of_intermediate_differentiation",
+                    "description": "Pineal tumour of intermediate differentiation"
+                },
+                {
+                    "subType": "pineoblastoma",
+                    "description": "Pineoblastoma"
+                },
+                {
+                    "subType": "pineocytoma",
+                    "description": "Pineocytoma"
+                },
+                {
+                    "subType": "pleomorphic_sarcoma",
+                    "description": "Pleomorphic sarcoma"
+                },
+                {
+                    "subType": "pleomorphic_xanthoastrocytoma",
+                    "description": "Pleomorphic xanthoastrocytoma"
+                },
+                {
+                    "subType": "poorly_cohesive_including_signet_ring_cell_type",
+                    "description": "Poorly cohesive including signet ring cell type"
+                },
+                {
+                    "subType": "primary_cns",
+                    "description": "Primary CNS"
+                },
+                {
+                    "subType": "primary_conventional_osteosarcoma",
+                    "description": "Primary conventional osteosarcoma"
+                },
+                {
+                    "subType": "primitive_neuroectodermal_tumour",
+                    "description": "Primitive neuroectodermal tumour"
+                },
+                {
+                    "subType": "protoplasmic_astrocytoma",
+                    "description": "Protoplasmic astrocytoma"
+                },
+                {
+                    "subType": "pseudomyogenic_haemangioemdothelioma",
+                    "description": "Pseudomyogenic haemangioemdothelioma"
+                },
+                {
+                    "subType": "rare_sarcoma_entities",
+                    "description": "Rare sarcoma entities"
+                },
+                {
+                    "subType": "rhabdomyosarcoma",
+                    "description": "Rhabdomyosarcoma"
+                },
+                {
+                    "subType": "sarcoma_nos",
+                    "description": "Sarcoma NOS"
+                },
+                {
+                    "subType": "sarcomatoid_carcinoma",
+                    "description": "Sarcomatoid carcinoma"
+                },
+                {
+                    "subType": "sarcomatoid_hcc",
+                    "description": "Sarcomatoid HCC"
+                },
+                {
+                    "subType": "schirrous_hcc",
+                    "description": "Schirrous HCC"
+                },
+                {
+                    "subType": "sclerosing_epithelioid_fibrosarcoma",
+                    "description": "Sclerosing epithelioid fibrosarcoma"
+                },
+                {
+                    "subType": "serous_carcinoma",
+                    "description": "Serous carcinoma"
+                },
+                {
+                    "subType": "serous_cystadenocarcinoma",
+                    "description": "Serous cystadenocarcinoma"
+                },
+                {
+                    "subType": "sertoli_cell_tumour",
+                    "description": "Sertoli cell tumour"
+                },
+                {
+                    "subType": "sertoli_leydig",
+                    "description": "Sertoli-Leydig"
+                },
+                {
+                    "subType": "small_cell",
+                    "description": "Small cell"
+                },
+                {
+                    "subType": "small_cell_carcinoma_including_hypercalcaemic_type",
+                    "description": "Small cell carcinoma (including hypercalcaemic type)"
+                },
+                {
+                    "subType": "spermatocytic_seminoma",
+                    "description": "Spermatocytic Seminoma"
+                },
+                {
+                    "subType": "spitz",
+                    "description": "Spitz"
+                },
+                {
+                    "subType": "squamous_cell",
+                    "description": "Squamous cell"
+                },
+                {
+                    "subType": "stromal_tumour",
+                    "description": "Stromal tumour"
+                },
+                {
+                    "subType": "subependymal_giant_cell_astrocytoma",
+                    "description": "Subependymal giant cell astrocytoma"
+                },
+                {
+                    "subType": "subependymoma",
+                    "description": "Subependymoma"
+                },
+                {
+                    "subType": "superficial_spreading",
+                    "description": "Superficial spreading"
+                },
+                {
+                    "subType": "synovial_sarcoma",
+                    "description": "Synovial sarcoma - monophasic and biphasic"
+                },
+                {
+                    "subType": "teratoma_immature",
+                    "description": "Teratoma (immature)"
+                },
+                {
+                    "subType": "teratoma_mature",
+                    "description": "Teratoma (mature)"
+                },
+                {
+                    "subType": "teratoma_differentiated",
+                    "description": "Teratoma differentiated"
+                },
+                {
+                    "subType": "teratoma_undifferentiated",
+                    "description": "Teratoma undifferentiated"
+                },
+                {
+                    "subType": "teratoma_with_malignant_transformation",
+                    "description": " teratoma with malignant transformation"
+                },
+                {
+                    "subType": "transitional_cell_carcinoma",
+                    "description": "Transitional cell carcinoma"
+                },
+                {
+                    "subType": "tubular_cribform",
+                    "description": "Tubular / cribform"
+                },
+                {
+                    "subType": "undifferentiated_carcinoma",
+                    "description": "Undifferentiated carcinoma"
+                },
+                {
+                    "subType": "undifferentiated_hcc",
+                    "description": "Undifferentiated HCC"
+                },
+                {
+                    "subType": "undifferentiated_uterine_sarcoma",
+                    "description": "Undifferentiated uterine sarcoma"
+                },
+                {
+                    "subType": "unknown",
+                    "description": "Unknown"
+                },
+                {
+                    "subType": "urothelial_in_situ",
+                    "description": "Urothelial (in situ)"
+                },
+                {
+                    "subType": "urothelial_invasive",
+                    "description": "Urothelial (invasive)"
+                },
+                {
+                    "subType": "uveal_melanoma",
+                    "description": "Uveal melanoma"
+                },
+                {
+                    "subType": "yolk_sac_tumour",
+                    "description": "Yolk sac tumour"
+                },
+                {
+                    "subType": "non_hodgkins_b_cell_lymphoma_low_mod_grade",
+                    "description": "Non-Hodgkins B cell lymphoma low / moderate grade"
+                },
+                {
+                    "subType": "classical_hodgkins",
+                    "description": "Classical Hodgkins"
+                },
+                {
+                    "subType": "nodular_lymphocyte_predominant_hodgkins",
+                    "description": "Nodular Lymphocyte Predominant Hodgkins"
+                },
+                {
+                    "subType": "t_cell_lymphoma",
+                    "description": "T-cell lymphoma"
+                }
+            ]
+        }
+    ]
+}

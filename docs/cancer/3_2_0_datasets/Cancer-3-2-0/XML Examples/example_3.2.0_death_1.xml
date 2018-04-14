@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gelCAN:deaths xmlns:html="http://www.w3.org/1999/xhtml"
+ xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+ xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/3.2.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gelCAN:metadata>
+        <gelCAN:schema-name>DeathsCancer</gelCAN:schema-name>
+        <gelCAN:schema-version>3.2.0</gelCAN:schema-version>
+        <gelCAN:date-time>2006-05-04T18:13:51.0</gelCAN:date-time>
+        <gelCAN:source-organisation>source-organisation0</gelCAN:source-organisation>
+        <gelCAN:source-system>source-system0</gelCAN:source-system>
+        <gelCAN:local-report-id>local-report-id0</gelCAN:local-report-id>
+    </gelCAN:metadata>
+    <gelCAN:subject>
+        <gelCAN:participant-identifiers>
+            <gelCAN:person-identifier>
+                <gelCAN:health-and-care-number>0000000000</gelCAN:health-and-care-number>
+            </gelCAN:person-identifier>
+            <gelCAN:participant-id>900000017</gelCAN:participant-id>
+            <gelCAN:date-of-birth>1980-05-04</gelCAN:date-of-birth>
+            <gelCAN:surname>bloggs</gelCAN:surname>
+            <gelCAN:forenames>joanna</gelCAN:forenames>
+        </gelCAN:participant-identifiers>
+        <gelCAN:death>
+            <gelCAN:event-details>
+                <gelCAN:event-date>20016-12-04T18:13:51.0</gelCAN:event-date>
+                <gelCAN:event-reference>event-referencedasadsdsadasdsa0</gelCAN:event-reference>
+            </gelCAN:event-details>
+            <gelCAN:death-location>3</gelCAN:death-location>
+            <gelCAN:immediate-cause>I61.9</gelCAN:immediate-cause>
+            <gelCAN:underlying-cause>C50.1</gelCAN:underlying-cause>
+            <gelCAN:underlying-cause>C50.2</gelCAN:underlying-cause>
+        </gelCAN:death>
+    </gelCAN:subject>
+</gelCAN:deaths>

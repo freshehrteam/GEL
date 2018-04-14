@@ -1,0 +1,719 @@
+{
+    "version": "3.2.0",
+    "tissueTypes": [
+        {
+            "tissueType": "uss_guided_biopsy",
+            "description": "USS-guided biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "colorectal",
+                    "description": "Colorectal"
+                },
+                {
+                    "diseaseType": "prostate",
+                    "description": "Prostate"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "malignant_melanoma",
+                    "description": "Malignant Melanoma"
+                },
+                {
+                    "diseaseType": "testicular_germ_cell_tumours",
+                    "description": "Testicular germ cell "
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "non_guided_biopsy",
+            "description": "Non-guided biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "adult_glioma",
+                    "description": "Adult glioma"
+                },
+                {
+                    "diseaseType": "malignant_melanoma",
+                    "description": "Malignant Melanoma"
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "ct_guided_biopsy",
+            "description": "CT-guided biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "colorectal",
+                    "description": "Colorectal"
+                },
+                {
+                    "diseaseType": "prostate",
+                    "description": "Prostate"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "malignant_melanoma",
+                    "description": "Malignant Melanoma"
+                },
+                {
+                    "diseaseType": "testicular_germ_cell_tumours",
+                    "description": "Testicular germ cell "
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "endoscopic_biopsy",
+            "description": "Endoscopic biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "colorectal",
+                    "description": "Colorectal"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "bladder",
+                    "description": "Bladder"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "surgical_resection",
+            "description": "Surgical resection",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "colorectal",
+                    "description": "Colorectal"
+                },
+                {
+                    "diseaseType": "prostate",
+                    "description": "Prostate"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "adult_glioma",
+                    "description": "Adult glioma"
+                },
+                {
+                    "diseaseType": "malignant_melanoma",
+                    "description": "Malignant Melanoma"
+                },
+                {
+                    "diseaseType": "testicular_germ_cell_tumours",
+                    "description": "Testicular germ cell "
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "bladder",
+                    "description": "Bladder"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "stereotactically_guided_biopsy",
+            "description": "Stereotactically guided biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "prostate",
+                    "description": "Prostate"
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "adult_glioma",
+                    "description": "Adult glioma"
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "mri_guided_biopsy",
+            "description": "MRI-guided biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "colorectal",
+                    "description": "Colorectal"
+                },
+                {
+                    "diseaseType": "prostate",
+                    "description": "Prostate"
+                },
+                {
+                    "diseaseType": "malignant_melanoma",
+                    "description": "Malignant Melanoma"
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "endoscopic_ultrasound_guided_fna",
+            "description": "Endoscopic US guided FNA",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "endoscopic_ultrasound_guided_biopsy",
+            "description": "Endoscopic US guided biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "bma_tumour_sorted_cells",
+            "description": "Bone Marrow Aspirate Sorted cells",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "laparoscopic_biopsy",
+            "description": "Laparoscopic Biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "testicular_germ_cell_tumours",
+                    "description": "Testicular germ cell "
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "laparoscopic_excision",
+            "description": "Laparoscopic Excision",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        },
+        {
+            "tissueType": "non_standard_biopsy",
+            "description": "Non-Standard Biopsy",
+            "diseaseTypes": [
+                {
+                    "diseaseType": "breast",
+                    "description": "Breast"
+                },
+                {
+                    "diseaseType": "haemonc",
+                    "description": "Haemato-Oncology"
+                },
+                {
+                    "diseaseType": "ovarian",
+                    "description": "Ovarian"
+                },
+                {
+                    "diseaseType": "lung",
+                    "description": "Lung"
+                },
+                {
+                    "diseaseType": "colorectal",
+                    "description": "Colorectal"
+                },
+                {
+                    "diseaseType": "prostate",
+                    "description": "Prostate"
+                },
+                {
+                    "diseaseType": "upper_gastrointestinal",
+                    "description": "Upper gastrointestinal "
+                },
+                {
+                    "diseaseType": "hepatopancreatobiliary",
+                    "description": "Hepatopancreatobiliary"
+                },
+                {
+                    "diseaseType": "adult_glioma",
+                    "description": "Adult glioma"
+                },
+                {
+                    "diseaseType": "malignant_melanoma",
+                    "description": "Malignant Melanoma"
+                },
+                {
+                    "diseaseType": "testicular_germ_cell_tumours",
+                    "description": "Testicular germ cell "
+                },
+                {
+                    "diseaseType": "endometrial_carcinoma",
+                    "description": "Endometrial "
+                },
+                {
+                    "diseaseType": "carcinoma_of_unknown_primary",
+                    "description": "Carcinoma of unknown primary"
+                },
+                {
+                    "diseaseType": "childhood",
+                    "description": "Childhood"
+                },
+                {
+                    "diseaseType": "sarcoma",
+                    "description": "Sarcoma"
+                },
+                {
+                    "diseaseType": "bladder",
+                    "description": "Bladder"
+                },
+                {
+                    "diseaseType": "renal",
+                    "description": "Renal"
+                },
+                {
+                    "diseaseType": "oral_oropharyngeal",
+                    "description": "Oro/oropharyngeal"
+                },
+                {
+                    "diseaseType": "nasopharyngeal",
+                    "description": "Nasal / nasopharyngeal"
+                },
+                {
+                    "diseaseType": "sinonasal",
+                    "description": "Sinonasal"
+                },
+                {
+                    "diseaseType": "unknown",
+                    "description": "Unknown"
+                }
+            ]
+        }
+    ]
+}

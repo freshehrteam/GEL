@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gelCAN:cancer-care-plans xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:gelCAN="https://genomicsengland.co.uk/xsd/cancer/3.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gelCAN:metadata>
+        <gelCAN:schema-name>CarePlansCancer</gelCAN:schema-name>
+        <gelCAN:schema-version>3.2.0</gelCAN:schema-version>
+        <gelCAN:date-time>1980-05-04T18:13:51.0</gelCAN:date-time>
+        <gelCAN:source-organisation>source-organisation0</gelCAN:source-organisation>
+        <gelCAN:source-system>source-system0</gelCAN:source-system>
+        <gelCAN:local-report-id>local-report-id0</gelCAN:local-report-id>
+    </gelCAN:metadata>
+    <gelCAN:subject>
+        <gelCAN:participant-identifiers>
+            <gelCAN:person-identifier>
+                <gelCAN:nhs-number>0000000000</gelCAN:nhs-number>
+            </gelCAN:person-identifier>
+            <gelCAN:participant-id>900000017</gelCAN:participant-id>
+            <gelCAN:date-of-birth>2006-05-04</gelCAN:date-of-birth>
+            <gelCAN:surname>joanna</gelCAN:surname>
+            <gelCAN:forenames>blogger</gelCAN:forenames>
+        </gelCAN:participant-identifiers>
+        <gelCAN:cancer-care-plan>
+            <gelCAN:event-details>
+                <gelCAN:event-date>2006-05-04T18:13:51.0</gelCAN:event-date>
+                <gelCAN:event-reference>event-reference1239813dasdsad</gelCAN:event-reference>
+            </gelCAN:event-details>
+            <gelCAN:related-cancer-diagnoses>
+                <gelCAN:related-cancer-diagnosis-icd>C50.1</gelCAN:related-cancer-diagnosis-icd>
+                <gelCAN:related-cancer-diagnosis-icd>C50.2</gelCAN:related-cancer-diagnosis-icd>
+                <gelCAN:related-cancer-diagnosis-snomedct>447782002</gelCAN:related-cancer-diagnosis-snomedct>
+            </gelCAN:related-cancer-diagnoses>
+            <gelCAN:start-date>2016-05-04</gelCAN:start-date>
+            <gelCAN:treatment-intent>C</gelCAN:treatment-intent>
+            <gelCAN:performance-status>0</gelCAN:performance-status>
+            <gelCAN:outcome-of-mdt>outcome asdkljashdfjkb 345453 $#@</gelCAN:outcome-of-mdt>
+            <gelCAN:tumour-id>DEMO_655626585</gelCAN:tumour-id>
+        </gelCAN:cancer-care-plan>
+    </gelCAN:subject>
+</gelCAN:cancer-care-plans>

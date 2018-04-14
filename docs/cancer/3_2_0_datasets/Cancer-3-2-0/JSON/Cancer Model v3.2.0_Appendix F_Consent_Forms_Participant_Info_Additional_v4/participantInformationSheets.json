@@ -1,0 +1,70 @@
+{
+    "version": "3.2.0",
+    "participantInformationSheets": [
+        {
+            "id": "c1_pis_v2_3",
+            "name": "C1 Proband adult with cancer (or suspected cancer) - version 2.3 dated 01/07/2015",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "c2_pis_v2_6",
+            "name": "C2 Personal Consultees of patients with cancer (or suspected cancer) - version 2.6 dated 01/07/2016",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "c3_pis_v1_1",
+            "name": "C3 Proband child aged 6-10 with cancer (or suspected cancer) \u2013 version 1.1 and dated 01/07/2016",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "c4_pis_v1_1",
+            "name": "C4 Proband child aged 11-15 with cancer (or suspected cancer) \u2013 version 1.1 and dated 01/07/2016",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "c5_pis_v1_1",
+            "name": "C5 Parents of child with cancer (or suspected cancer) \u2013 version 1.1 dated 01/07/2016",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "c1_pis_v2_4",
+            "name": "C1 Adult with cancer - version 2.4 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        },
+        {
+            "id": "c2_pis_v2_7",
+            "name": "C2 Personal or Nominated Consultees of patients with cancer - version 2.7 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        },
+        {
+            "id": "c5_pis_v1_2",
+            "name": "C5 Parents of child aged under 16 with cancer \u2013 version 1.2 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        },
+        {
+            "id": "c6_pis_v1_0",
+            "name": "C6 Parents of a deceased child  aged under 16 with cancer - version 1.0 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        },
+        {
+            "id": "c8_pis_v1_0",
+            "name": "C8 Nominated reps, relatives or friends of deceased adult with cancer - version 1.0 and date 01/01/2017",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        }
+    ]
+}

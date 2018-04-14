@@ -1,0 +1,1898 @@
+{
+    "version": "3.2.0",
+    "sampleTypes": [
+        {
+            "type": "dna_blood_germline",
+            "description": "DNA Blood Germline (CONSTITUTIONAL DNA)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_saliva",
+            "description": "DNA Saliva (CONSTITUTIONAL DNA)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_fibroblast",
+            "description": "DNA Fibroblast (CONSITUTIONAL DNA)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_ff_germline",
+            "description": "DNA FF Germline (CONSTITUTIONAL DNA) - non tumour tissue",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_ffpe_tumour",
+            "description": "DNA FFPE Tumour (TUMOUR DNA)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_ff_tumour",
+            "description": "DNA FF Tumour (TUMOUR DNA)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "required",
+                    "rules": [{
+                        "id": 1,
+                        "rule": " Cellularity is not required for DNA FF Tumour if the Disease Subtype is lymphoma"
+                    }]
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_blood_tumour",
+            "description": "DNA Blood from blood in Haematological malignancy Tumour (TUMOUR DNA)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "dna_bone_marrow_aspirate_tumour_sorted_cells",
+            "description": "DNA Bone Marrow Aspirate Tumour Sorted Cells (TUMOUR DNA) (Haem Onc samples)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "optional",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "tumour_tissue_ffpe",
+            "description": "Tumour Tissue FFPE (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "lysate_ffpe",
+            "description": "Lysate FFPE (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "lysate_ff",
+            "description": "Lysate FF (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "lysed_tumour_cells",
+            "description": "Deparaffinised Lysed Tumour Cells in RNA-stabilised buffer  (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "buffy_coat",
+            "description": "Buffy Coats (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "streck_plasma",
+            "description": "Streck Plasma (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "edta_plasma",
+            "description": "EDTA Plasma - Plasma for ctDNA (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "lihep_plasma",
+            "description": "LiHep Plasma (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "serum",
+            "description": "Serum (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "rna_blood",
+            "description": "RNA Blood (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "tumour_tissue_ff",
+            "description": "Tumour_Tissue_FF (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "tumour_scrapings",
+            "description": "FFPE Tumour scrapings or slides (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        },
+        {
+            "type": "additional_tumour_material",
+            "description": "Additional Tumour material for research (OMICS SAMPLES)",
+            "testResults": [
+                {
+                    "test": "absolute_cell_count",
+                    "description": "Absolute cell count (number of cells)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "agarose",
+                    "description": "Agarose (Pass / Fail)",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "cellularity",
+                    "description": "The total number of cells (neoplastic and non-neoplastic) in the tumour sample from which DNA was harvested Very low (<700 cells), Low (<4,000 cells), Medium (4,000-10,000 cells), High (>10,000 cells), Very high (>50,000 cells)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "delta_cq",
+                    "description": "delta Cq",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "tumour_content",
+                    "description": "Proportion of the total number of nuclei in the submitted sample that are neoplastic nuclei (Low, Medium, High) \u2013 Low <40%; Medium 40-60%; High>60%.",
+                    "requirement": "required",
+                    "rules": []
+                },
+                {
+                    "test": "percent_necrosis",
+                    "description": "Proportion of the submitted tumour sample that is necrotic (0-100)",
+                    "requirement": "optional",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_od_260_280",
+                    "description": "Nanodrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_od_260_280",
+                    "description": "PicoDrop OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "trinean_od_260_280",
+                    "description": "Trinean OD 260/280",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "nanodrop_concentration",
+                    "description": "Nanodrop concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picogreen_concentration",
+                    "description": "Picogreen Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "picodrop_concentration",
+                    "description": "PicoDrop Concentration ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "qubit",
+                    "description": "Qubit ng/ul",
+                    "requirement": "not applicable",
+                    "rules": []
+                },
+                {
+                    "test": "summary_qc",
+                    "description": "Summary QC Pass / Fail",
+                    "requirement": "not applicable",
+                    "rules": []
+                }
+            ]
+        }
+    ]
+}

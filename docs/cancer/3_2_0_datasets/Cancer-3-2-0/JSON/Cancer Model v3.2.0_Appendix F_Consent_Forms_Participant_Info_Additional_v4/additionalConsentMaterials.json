@@ -1,0 +1,51 @@
+{
+    "version": "3.2.0",
+    "additionalConsentMaterials": [
+        {
+            "id": "8_prezis_for_participant_information_v1_0",
+            "name": "Prezis for Participant Information \u2022\t8a Prezi  For Children aged 6-10 years old, v 1.0, dated 19/08/2015 \u2022\t8b Prezi For Young People aged 11-15 years old v 1.0, dated 19/08/2015 \u2022\t8c Prezi for Adults: Introduction to the 100,000 Genomes Project v 1.0, dated 25/01/16",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "9_v1_0",
+            "name": "Introduction to the 100,000 Genomes Project v 1.0, dated 24/09/2015",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "10_a_v1_0",
+            "name": "10 (a) 100,000 Genomes Project Consent flipchart (cancer) v 1.0, dated 11/03/2016 optional for use as a visual aid only during the consent discussion with adult potential participants (and/or parents consenting for children or consultees) regarding the Cancer programme",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "11_v1_0",
+            "name": "11) Short overview DL Leaflet: \u2018The 100,000 Genomes Project\u2019 v 1.0, dated 28/08/15 optional for use with adult potential participants (unified, not versioned by patient group)",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "12_v1_0",
+            "name": "Video: \u2018Data in the 100,000 Genomes Project\u2019 animation v 1.0, dated 02/09/15",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "15_v1_0",
+            "name": "Video: \u2018The 100,000 Genomes Project: An introduction to taking part\u2019 V1.0, dated 15/07/2016",
+            "regions": ["ENG"]
+        },
+        {
+            "id": "19a_v1_0",
+            "name": "Contact details card for 100,000 Genomes Project telephone Information Line V. 1.0, dated 17/10/2016",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        },
+        {
+            "id": "19b_v1_0",
+            "name": "Poster for 100,000 Genomes Project telephone  Information Line V. 1.0, dated 17/10/2016",
+            "regions": [
+                "ENG",
+                "NIL"
+            ]
+        }
+    ]
+}

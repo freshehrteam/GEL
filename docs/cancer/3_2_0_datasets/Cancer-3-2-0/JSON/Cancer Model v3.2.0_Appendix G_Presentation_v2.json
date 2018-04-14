@@ -1,0 +1,17 @@
+{
+    "version": "3.2.0",
+    "presentations": [
+        {
+            "presentation": "symptomatic",
+            "description": "Symptomatic"
+        },
+        {
+            "presentation": "asymptomatic_incidental",
+            "description": "Asymptomatic Incidental Findings"
+        },
+        {
+            "presentation": "screen_detected",
+            "description": "Screen Detected"
+        }
+    ]
+}
