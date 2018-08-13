@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>4303b834-821c-40f2-86af-7cfc8538c573</id>
+  <name>Imaging examination result</name>
+  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.imaging_exam.v0" concept_name="Imaging examination result">
+    <Rule path="/data[at0001]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]" hide_on_form="true">
+      <eventConstraint>
+        <allowedType>PointInTime</allowedType>
+      </eventConstraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0004]" name="Imaging code" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0005]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>C01X Standard Radiography</includedValues>
+        <includedValues>C01M Mammogram</includedValues>
+        <includedValues>C02X CT Scan</includedValues>
+        <includedValues>C02C Virtual colonoscopy</includedValues>
+        <includedValues>C03X MRI Scan</includedValues>
+        <includedValues>C04X PET Scan</includedValues>
+        <includedValues>C05X Ultrasound Scan</includedValues>
+        <includedValues>C06X Nuclear Medicine imaging</includedValues>
+        <includedValues>C08A Angiography</includedValues>
+        <includedValues>C08B Barium</includedValues>
+        <includedValues>C08U Urography (IV and retrograde)</includedValues>
+        <includedValues>C09X Intervention radiography.</includedValues>
+        <includedValues>CXXX Other</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0043]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0007]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0024]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0014]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0008]" name="Ultrasound examination result">
+      <constraint xsi:type="textConstraint">
+        <includedValues>U1 Normal</includedValues>
+        <includedValues>U2 Benign</includedValues>
+        <includedValues>U3 Indeterminate/probably benign</includedValues>
+        <includedValues>U4 Suspicious of malignancy</includedValues>
+        <includedValues>U5 Highly suspicious of malignancy</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0020]" max="0" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0021]" name="Imaging report text" />
+    <Rule path="/protocol[at0025]" hide_on_form="true" />
+    <Rule path="/protocol[at0025]/items[at0027]/items[at0028]" max="0" />
+    <Rule path="/protocol[at0025]/items[at0027]/items[at0029]" max="0" />
+    <Rule path="/protocol[at0025]/items[at0027]/items[at0031]" max="0" />
+    <Rule path="/protocol[at0025]/items[at0027]/items[at0032]" max="0" />
+    <Rule path="/protocol[at0025]/items[at0027]/items[at0033]" name="Imaging report reference" />
+    <Rule path="/protocol[at0025]/items[at0027]/items[at0034]" max="0" />
+    <Rule path="/protocol[at0025]/items[at0042]" max="0" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.anatomical_location.v1" concept_name="Anatomical location" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" hide_on_form="true">
+      <Rule path="/items[at0001]" name="Anatomical site" />
+      <Rule path="/items[at0065]" max="0" />
+      <Rule path="/items[at0002]" max="0" />
+      <Rule path="/items[at0064]" max="0" />
+      <Rule path="/items[at0055]" max="0" />
+      <Rule path="/items[at0023]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.anatomical_side_gel.v0" concept_name="Anatomical side GEL" max="1" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" name="Anatomical side" hide_on_form="true" />
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.multimedia.v1" concept_name="Multimedia Resource" path="/data[at0001]/events[at0002]/data[at0003]/items[at0045]" hide_on_form="true">
+      <Rule path="/items[at0001]" max="0" />
+      <Rule path="/items[at0002]" name="Image file reference" />
+      <Rule path="/items[at0005]" max="0" />
+      <Rule path="/items[at0003]" max="0" />
+      <Rule path="/items[at0004]" max="0" />
+    </Items>
+    <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.tumour_id_gel.v0" concept_name="Tumour ID GEL" max="1" path="/protocol[at0025]/items[at0046]" name="Tumour ID" hide_on_form="true" />
+  </definition>
+</template>
