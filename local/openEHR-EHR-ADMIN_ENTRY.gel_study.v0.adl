@@ -1,0 +1,77 @@
+archetype (adl_version=1.4; uid=8f8d43a2-e3dc-4a32-a6a4-7828e71b78f1)
+	openEHR-EHR-ADMIN_ENTRY.gel_study.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-10-18">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details of a research study or registry, to which the patient is registered.">
+			keywords = <"research, study, registry", ...>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"2b26e7d0d695e8478015a277b2d2f4f3">
+		["build_uid"] = <"6b21e6be-7520-3f14-8af8-6ffab9665a2f">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- GEL_study
+		data matches {
+			ITEM_TREE[at0001] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Study name
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Registration date
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"GEL_study">
+					description = <"Details of a research study or registry, to which the patient is registered.">
+				>
+				["at0001"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Study name">
+					description = <"The name of the research study or registry.">
+				>
+				["at0005"] = <
+					text = <"Registration date">
+					description = <"The date of registration.">
+				>
+			>
+		>
+	>
